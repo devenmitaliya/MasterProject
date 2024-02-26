@@ -2,21 +2,29 @@
 for details on configuring this project to bundle and minify static web assets. */
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 a.navbar-brand[b-x8p8g49oo3] {
 =======
 a.navbar-brand[b-bq85iswkz2] {
 >>>>>>> 5705ab79e3485b323d2773add70b2d70514a04d2
+=======
+a.navbar-brand[b-x8p8g49oo3] {
+>>>>>>> 669d7d1464045d023234b4897ea6eec42c246c83
   white-space: normal;
   text-align: center;
   word-break: break-all;
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 669d7d1464045d023234b4897ea6eec42c246c83
 a[b-x8p8g49oo3] {
   color: #0077cc;
 }
 
 .btn-primary[b-x8p8g49oo3] {
+<<<<<<< HEAD
 =======
 a[b-bq85iswkz2] {
   color: #0077cc;
@@ -24,22 +32,31 @@ a[b-bq85iswkz2] {
 
 .btn-primary[b-bq85iswkz2] {
 >>>>>>> 5705ab79e3485b323d2773add70b2d70514a04d2
+=======
+>>>>>>> 669d7d1464045d023234b4897ea6eec42c246c83
   color: #fff;
   background-color: #1b6ec2;
   border-color: #1861ac;
 }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 .nav-pills .nav-link.active[b-x8p8g49oo3], .nav-pills .show > .nav-link[b-x8p8g49oo3] {
 =======
 .nav-pills .nav-link.active[b-bq85iswkz2], .nav-pills .show > .nav-link[b-bq85iswkz2] {
 >>>>>>> 5705ab79e3485b323d2773add70b2d70514a04d2
+=======
+.nav-pills .nav-link.active[b-x8p8g49oo3], .nav-pills .show > .nav-link[b-x8p8g49oo3] {
+>>>>>>> 669d7d1464045d023234b4897ea6eec42c246c83
   color: #fff;
   background-color: #1b6ec2;
   border-color: #1861ac;
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 669d7d1464045d023234b4897ea6eec42c246c83
 .border-top[b-x8p8g49oo3] {
   border-top: 1px solid #e5e5e5;
 }
@@ -52,6 +69,7 @@ a[b-bq85iswkz2] {
 }
 
 button.accept-policy[b-x8p8g49oo3] {
+<<<<<<< HEAD
 =======
 .border-top[b-bq85iswkz2] {
   border-top: 1px solid #e5e5e5;
@@ -66,15 +84,21 @@ button.accept-policy[b-x8p8g49oo3] {
 
 button.accept-policy[b-bq85iswkz2] {
 >>>>>>> 5705ab79e3485b323d2773add70b2d70514a04d2
+=======
+>>>>>>> 669d7d1464045d023234b4897ea6eec42c246c83
   font-size: 1rem;
   line-height: inherit;
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 .footer[b-x8p8g49oo3] {
 =======
 .footer[b-bq85iswkz2] {
 >>>>>>> 5705ab79e3485b323d2773add70b2d70514a04d2
+=======
+.footer[b-x8p8g49oo3] {
+>>>>>>> 669d7d1464045d023234b4897ea6eec42c246c83
   position: absolute;
   bottom: 0;
   width: 100%;
