@@ -68,6 +68,7 @@ namespace mvc.Controllers
         [HttpPost]
         public IActionResult Register(tblUser user)
         {
+            user.c_role = "User";
             _userRepositories.Register(user);
             return RedirectToAction("Login");
         }
