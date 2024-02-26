@@ -2,6 +2,9 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Npgsql;
+using System.Data;
+using mvc.Models;
 
 
 namespace mvc.Repositories
@@ -20,8 +23,8 @@ namespace mvc.Repositories
             try{
                 conn.Open();
                 using var cmd=new NpgsqlCommand("select * from  t_employeeusers where c_uemail=@c_uemail and c_password=@c_password;",conn);
-                  cmd.Parameters.AddWithValue("@c_uemail", c_uemail);
-                cmd.Parameters.AddWithValue("@c_password", c_password);   
+                  cmd.Parameters.AddWithValue("@c_uemail", email);
+                cmd.Parameters.AddWithValue("@c_password", password);   
                 var dr=cmd.ExecuteReader();
                 if (dr.Read())
             {
