@@ -59,6 +59,21 @@ namespace mvc.Controllers
             return View();
         }
 
+        [HttpGet]
+        public IActionResult Register()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public IActionResult Register(tblUser user)
+        {
+            _userRepositories.Register(user);
+            return RedirectToAction("Login");
+        }
+        
+
+
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
