@@ -41,6 +41,9 @@ namespace mvc.Controllers
             int rowcount = _userRepositories.Login(user);
             if (rowcount == 1)
             {
+                ViewData["role"]  = HttpContext.Session.GetString("role");
+                Console.WriteLine("ROLLLLLLLLLLLLEEEEEE::::" +ViewData["role"]);
+                // ViewData["role"] = role;
                 return RedirectToAction("Index", "Employee");
             }
             else
