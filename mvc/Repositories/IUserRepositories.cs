@@ -8,7 +8,6 @@ namespace mvc.Repositories
 {
   public interface IUserRepositories
   {
-
     void Register(tblUser user);
     int Login(tblUser tblUser);
 

@@ -79,8 +79,9 @@ namespace mvc.Repositories
                     }
                 }
             }
-            catch (System.Exception)
+            catch (System.Exception ex)
             {
+                Console.WriteLine(ex.Message);
                 throw;
             }
             finally
