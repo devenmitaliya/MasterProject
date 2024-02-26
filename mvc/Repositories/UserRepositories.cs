@@ -14,7 +14,7 @@ namespace mvc.Repositories
 
             cmd.Connection = conn;
             cmd.CommandType = System.Data.CommandType.Text;
-            cmd.CommandText = "SELECT * FROM t_user WHERE c_uemail= @c_uemail AND c_password=@c_password";
+            cmd.CommandText = "SELECT * FROM t_employeeusers WHERE c_uemail= @c_uemail AND c_password=@c_password";
             cmd.Parameters.AddWithValue("@c_uemail", data.c_uemail);
             cmd.Parameters.AddWithValue("@c_password", data.c_password);
             tblUser user = null;
