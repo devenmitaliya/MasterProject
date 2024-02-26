@@ -9,7 +9,7 @@ namespace mvc.Repositories
     public interface IUserRepositories
     {
     
-      tblUser Login(tblUser data);
+      void Login(string email, string password);
 
     }
 }

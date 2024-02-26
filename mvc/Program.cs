@@ -5,6 +5,14 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 builder.Services.AddSingleton<IEmployeeRepository,EmployeeRepository>();
+builder.Services.AddSession(Options =>
+    {
+        Options.IdleTimeout = TimeSpan.FromMinutes(30);
+        Options.Cookie.HttpOnly = true;
+        Options.Cookie.IsEssential = true;
+    });
+
+builder.Services.AddHttpContextAccessor();
 
 var app = builder.Build();
 
