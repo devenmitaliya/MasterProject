@@ -17,7 +17,7 @@ namespace mvc.Models
 
         public string c_empimg {get;set;}
 
-        public int c_empdepartment{get;set;}
+        public string c_empdepartment{get;set;}
 
     }
 }
