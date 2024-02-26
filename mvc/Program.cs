@@ -1,7 +1,13 @@
+using mvc.Repositories;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+builder.Services.AddSingleton<IEmployeeRepository,EmployeeRepository>();
+builder.Services.AddSingleton<IUserRepositories, UserRepositories>();
+builder.Services.AddHttpContextAccessor();
+
 
 var app = builder.Build();
 

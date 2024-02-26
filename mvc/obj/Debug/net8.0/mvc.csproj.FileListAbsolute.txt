@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 F:\PPSU\sem-08\casepoint\Master Project\mvc\bin\Debug\net8.0\appsettings.Development.json
 F:\PPSU\sem-08\casepoint\Master Project\mvc\bin\Debug\net8.0\appsettings.json
 F:\PPSU\sem-08\casepoint\Master Project\mvc\bin\Debug\net8.0\mvc.staticwebassets.runtime.json
@@ -33,39 +32,3 @@ F:\PPSU\sem-08\casepoint\Master Project\mvc\obj\Debug\net8.0\refint\mvc.dll
 F:\PPSU\sem-08\casepoint\Master Project\mvc\obj\Debug\net8.0\mvc.pdb
 F:\PPSU\sem-08\casepoint\Master Project\mvc\obj\Debug\net8.0\mvc.genruntimeconfig.cache
 F:\PPSU\sem-08\casepoint\Master Project\mvc\obj\Debug\net8.0\ref\mvc.dll
-=======
-/Users/yashveekotadiya/Desktop/MasterProgram/MasterProject/mvc/bin/Debug/net8.0/appsettings.Development.json
-/Users/yashveekotadiya/Desktop/MasterProgram/MasterProject/mvc/bin/Debug/net8.0/appsettings.json
-/Users/yashveekotadiya/Desktop/MasterProgram/MasterProject/mvc/bin/Debug/net8.0/mvc.staticwebassets.runtime.json
-/Users/yashveekotadiya/Desktop/MasterProgram/MasterProject/mvc/bin/Debug/net8.0/mvc
-/Users/yashveekotadiya/Desktop/MasterProgram/MasterProject/mvc/bin/Debug/net8.0/mvc.deps.json
-/Users/yashveekotadiya/Desktop/MasterProgram/MasterProject/mvc/bin/Debug/net8.0/mvc.runtimeconfig.json
-/Users/yashveekotadiya/Desktop/MasterProgram/MasterProject/mvc/bin/Debug/net8.0/mvc.dll
-/Users/yashveekotadiya/Desktop/MasterProgram/MasterProject/mvc/bin/Debug/net8.0/mvc.pdb
-/Users/yashveekotadiya/Desktop/MasterProgram/MasterProject/mvc/bin/Debug/net8.0/Npgsql.dll
-/Users/yashveekotadiya/Desktop/MasterProgram/MasterProject/mvc/obj/Debug/net8.0/mvc.csproj.AssemblyReference.cache
-/Users/yashveekotadiya/Desktop/MasterProgram/MasterProject/mvc/obj/Debug/net8.0/mvc.GeneratedMSBuildEditorConfig.editorconfig
-/Users/yashveekotadiya/Desktop/MasterProgram/MasterProject/mvc/obj/Debug/net8.0/mvc.AssemblyInfoInputs.cache
-/Users/yashveekotadiya/Desktop/MasterProgram/MasterProject/mvc/obj/Debug/net8.0/mvc.AssemblyInfo.cs
-/Users/yashveekotadiya/Desktop/MasterProgram/MasterProject/mvc/obj/Debug/net8.0/mvc.csproj.CoreCompileInputs.cache
-/Users/yashveekotadiya/Desktop/MasterProgram/MasterProject/mvc/obj/Debug/net8.0/mvc.MvcApplicationPartsAssemblyInfo.cache
-/Users/yashveekotadiya/Desktop/MasterProgram/MasterProject/mvc/obj/Debug/net8.0/mvc.RazorAssemblyInfo.cache
-/Users/yashveekotadiya/Desktop/MasterProgram/MasterProject/mvc/obj/Debug/net8.0/mvc.RazorAssemblyInfo.cs
-/Users/yashveekotadiya/Desktop/MasterProgram/MasterProject/mvc/obj/Debug/net8.0/mvc.sourcelink.json
-/Users/yashveekotadiya/Desktop/MasterProgram/MasterProject/mvc/obj/Debug/net8.0/staticwebassets.build.json
-/Users/yashveekotadiya/Desktop/MasterProgram/MasterProject/mvc/obj/Debug/net8.0/staticwebassets.development.json
-/Users/yashveekotadiya/Desktop/MasterProgram/MasterProject/mvc/obj/Debug/net8.0/staticwebassets/msbuild.mvc.Microsoft.AspNetCore.StaticWebAssets.props
-/Users/yashveekotadiya/Desktop/MasterProgram/MasterProject/mvc/obj/Debug/net8.0/staticwebassets/msbuild.build.mvc.props
-/Users/yashveekotadiya/Desktop/MasterProgram/MasterProject/mvc/obj/Debug/net8.0/staticwebassets/msbuild.buildMultiTargeting.mvc.props
-/Users/yashveekotadiya/Desktop/MasterProgram/MasterProject/mvc/obj/Debug/net8.0/staticwebassets/msbuild.buildTransitive.mvc.props
-/Users/yashveekotadiya/Desktop/MasterProgram/MasterProject/mvc/obj/Debug/net8.0/staticwebassets.pack.json
-/Users/yashveekotadiya/Desktop/MasterProgram/MasterProject/mvc/obj/Debug/net8.0/scopedcss/Views/Shared/_Layout.cshtml.rz.scp.css
-/Users/yashveekotadiya/Desktop/MasterProgram/MasterProject/mvc/obj/Debug/net8.0/scopedcss/bundle/mvc.styles.css
-/Users/yashveekotadiya/Desktop/MasterProgram/MasterProject/mvc/obj/Debug/net8.0/scopedcss/projectbundle/mvc.bundle.scp.css
-/Users/yashveekotadiya/Desktop/MasterProgram/MasterProject/mvc/obj/Debug/net8.0/mvc.csproj.CopyComplete
-/Users/yashveekotadiya/Desktop/MasterProgram/MasterProject/mvc/obj/Debug/net8.0/mvc.dll
-/Users/yashveekotadiya/Desktop/MasterProgram/MasterProject/mvc/obj/Debug/net8.0/refint/mvc.dll
-/Users/yashveekotadiya/Desktop/MasterProgram/MasterProject/mvc/obj/Debug/net8.0/mvc.pdb
-/Users/yashveekotadiya/Desktop/MasterProgram/MasterProject/mvc/obj/Debug/net8.0/mvc.genruntimeconfig.cache
-/Users/yashveekotadiya/Desktop/MasterProgram/MasterProject/mvc/obj/Debug/net8.0/ref/mvc.dll
->>>>>>> 5705ab79e3485b323d2773add70b2d70514a04d2

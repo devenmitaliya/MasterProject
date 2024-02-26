@@ -1,10 +1,7 @@
 {
   "Version": 1,
-<<<<<<< HEAD
   "Hash": "U4y2oZKDr5H/hO7Z5I8BBMyzV6rvhms5v4cUCcngXO8=",
-=======
-  "Hash": "AM+2PHTzLbKRN0tZJzhgJ8LKtDGtP0yCnkpFEpq8tcw=",
->>>>>>> 5705ab79e3485b323d2773add70b2d70514a04d2
+
   "Source": "mvc",
   "BasePath": "_content/mvc",
   "Mode": "Default",
@@ -12,32 +9,20 @@
   "ReferencedProjectsConfiguration": [],
   "DiscoveryPatterns": [
     {
-<<<<<<< HEAD
       "Name": "mvc\\wwwroot",
       "Source": "mvc",
       "ContentRoot": "F:\\PPSU\\sem-08\\casepoint\\Master Project\\mvc\\wwwroot\\",
-=======
-      "Name": "mvc/wwwroot",
-      "Source": "mvc",
-      "ContentRoot": "/Users/yashveekotadiya/Desktop/MasterProgram/MasterProject/mvc/wwwroot/",
->>>>>>> 5705ab79e3485b323d2773add70b2d70514a04d2
       "BasePath": "_content/mvc",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-<<<<<<< HEAD
       "Identity": "F:\\PPSU\\sem-08\\casepoint\\Master Project\\mvc\\obj\\Debug\\net8.0\\scopedcss\\bundle\\mvc.styles.css",
       "SourceId": "mvc",
       "SourceType": "Computed",
       "ContentRoot": "F:\\PPSU\\sem-08\\casepoint\\Master Project\\mvc\\obj\\Debug\\net8.0\\scopedcss\\bundle\\",
-=======
-      "Identity": "/Users/yashveekotadiya/Desktop/MasterProgram/MasterProject/mvc/obj/Debug/net8.0/scopedcss/bundle/mvc.styles.css",
-      "SourceId": "mvc",
-      "SourceType": "Computed",
-      "ContentRoot": "/Users/yashveekotadiya/Desktop/MasterProgram/MasterProject/mvc/obj/Debug/net8.0/scopedcss/bundle/",
->>>>>>> 5705ab79e3485b323d2773add70b2d70514a04d2
+
       "BasePath": "_content/mvc",
       "RelativePath": "mvc.styles.css",
       "AssetKind": "All",
@@ -50,7 +35,6 @@
       "AssetTraitValue": "ApplicationBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-<<<<<<< HEAD
       "OriginalItemSpec": "F:\\PPSU\\sem-08\\casepoint\\Master Project\\mvc\\obj\\Debug\\net8.0\\scopedcss\\bundle\\mvc.styles.css"
     },
     {
@@ -58,15 +42,7 @@
       "SourceId": "mvc",
       "SourceType": "Computed",
       "ContentRoot": "F:\\PPSU\\sem-08\\casepoint\\Master Project\\mvc\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\",
-=======
-      "OriginalItemSpec": "/Users/yashveekotadiya/Desktop/MasterProgram/MasterProject/mvc/obj/Debug/net8.0/scopedcss/bundle/mvc.styles.css"
-    },
-    {
-      "Identity": "/Users/yashveekotadiya/Desktop/MasterProgram/MasterProject/mvc/obj/Debug/net8.0/scopedcss/projectbundle/mvc.bundle.scp.css",
-      "SourceId": "mvc",
-      "SourceType": "Computed",
-      "ContentRoot": "/Users/yashveekotadiya/Desktop/MasterProgram/MasterProject/mvc/obj/Debug/net8.0/scopedcss/projectbundle/",
->>>>>>> 5705ab79e3485b323d2773add70b2d70514a04d2
+
       "BasePath": "_content/mvc",
       "RelativePath": "mvc.bundle.scp.css",
       "AssetKind": "All",
@@ -79,7 +55,6 @@
       "AssetTraitValue": "ProjectBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-<<<<<<< HEAD
       "OriginalItemSpec": "F:\\PPSU\\sem-08\\casepoint\\Master Project\\mvc\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\mvc.bundle.scp.css"
     },
     {
@@ -87,15 +62,7 @@
       "SourceId": "mvc",
       "SourceType": "Discovered",
       "ContentRoot": "F:\\PPSU\\sem-08\\casepoint\\Master Project\\mvc\\wwwroot\\",
-=======
-      "OriginalItemSpec": "/Users/yashveekotadiya/Desktop/MasterProgram/MasterProject/mvc/obj/Debug/net8.0/scopedcss/projectbundle/mvc.bundle.scp.css"
-    },
-    {
-      "Identity": "/Users/yashveekotadiya/Desktop/MasterProgram/MasterProject/mvc/wwwroot/css/site.css",
-      "SourceId": "mvc",
-      "SourceType": "Discovered",
-      "ContentRoot": "/Users/yashveekotadiya/Desktop/MasterProgram/MasterProject/mvc/wwwroot/",
->>>>>>> 5705ab79e3485b323d2773add70b2d70514a04d2
+
       "BasePath": "_content/mvc",
       "RelativePath": "css/site.css",
       "AssetKind": "All",
@@ -108,7 +75,6 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-<<<<<<< HEAD
       "OriginalItemSpec": "wwwroot\\css\\site.css"
     },
     {
@@ -116,15 +82,7 @@
       "SourceId": "mvc",
       "SourceType": "Discovered",
       "ContentRoot": "F:\\PPSU\\sem-08\\casepoint\\Master Project\\mvc\\wwwroot\\",
-=======
-      "OriginalItemSpec": "wwwroot/css/site.css"
-    },
-    {
-      "Identity": "/Users/yashveekotadiya/Desktop/MasterProgram/MasterProject/mvc/wwwroot/favicon.ico",
-      "SourceId": "mvc",
-      "SourceType": "Discovered",
-      "ContentRoot": "/Users/yashveekotadiya/Desktop/MasterProgram/MasterProject/mvc/wwwroot/",
->>>>>>> 5705ab79e3485b323d2773add70b2d70514a04d2
+
       "BasePath": "_content/mvc",
       "RelativePath": "favicon.ico",
       "AssetKind": "All",
@@ -137,7 +95,6 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-<<<<<<< HEAD
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
@@ -145,15 +102,7 @@
       "SourceId": "mvc",
       "SourceType": "Discovered",
       "ContentRoot": "F:\\PPSU\\sem-08\\casepoint\\Master Project\\mvc\\wwwroot\\",
-=======
-      "OriginalItemSpec": "wwwroot/favicon.ico"
-    },
-    {
-      "Identity": "/Users/yashveekotadiya/Desktop/MasterProgram/MasterProject/mvc/wwwroot/js/site.js",
-      "SourceId": "mvc",
-      "SourceType": "Discovered",
-      "ContentRoot": "/Users/yashveekotadiya/Desktop/MasterProgram/MasterProject/mvc/wwwroot/",
->>>>>>> 5705ab79e3485b323d2773add70b2d70514a04d2
+
       "BasePath": "_content/mvc",
       "RelativePath": "js/site.js",
       "AssetKind": "All",
@@ -166,7 +115,6 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-<<<<<<< HEAD
       "OriginalItemSpec": "wwwroot\\js\\site.js"
     },
     {
@@ -174,15 +122,7 @@
       "SourceId": "mvc",
       "SourceType": "Discovered",
       "ContentRoot": "F:\\PPSU\\sem-08\\casepoint\\Master Project\\mvc\\wwwroot\\",
-=======
-      "OriginalItemSpec": "wwwroot/js/site.js"
-    },
-    {
-      "Identity": "/Users/yashveekotadiya/Desktop/MasterProgram/MasterProject/mvc/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css",
-      "SourceId": "mvc",
-      "SourceType": "Discovered",
-      "ContentRoot": "/Users/yashveekotadiya/Desktop/MasterProgram/MasterProject/mvc/wwwroot/",
->>>>>>> 5705ab79e3485b323d2773add70b2d70514a04d2
+
       "BasePath": "_content/mvc",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.css",
       "AssetKind": "All",
@@ -195,7 +135,6 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-<<<<<<< HEAD
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
     },
     {
@@ -203,15 +142,7 @@
       "SourceId": "mvc",
       "SourceType": "Discovered",
       "ContentRoot": "F:\\PPSU\\sem-08\\casepoint\\Master Project\\mvc\\wwwroot\\",
-=======
-      "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css"
-    },
-    {
-      "Identity": "/Users/yashveekotadiya/Desktop/MasterProgram/MasterProject/mvc/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css.map",
-      "SourceId": "mvc",
-      "SourceType": "Discovered",
-      "ContentRoot": "/Users/yashveekotadiya/Desktop/MasterProgram/MasterProject/mvc/wwwroot/",
->>>>>>> 5705ab79e3485b323d2773add70b2d70514a04d2
+
       "BasePath": "_content/mvc",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.css.map",
       "AssetKind": "All",
@@ -224,7 +155,6 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-<<<<<<< HEAD
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
     },
     {
@@ -232,15 +162,7 @@
       "SourceId": "mvc",
       "SourceType": "Discovered",
       "ContentRoot": "F:\\PPSU\\sem-08\\casepoint\\Master Project\\mvc\\wwwroot\\",
-=======
-      "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css.map"
-    },
-    {
-      "Identity": "/Users/yashveekotadiya/Desktop/MasterProgram/MasterProject/mvc/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css",
-      "SourceId": "mvc",
-      "SourceType": "Discovered",
-      "ContentRoot": "/Users/yashveekotadiya/Desktop/MasterProgram/MasterProject/mvc/wwwroot/",
->>>>>>> 5705ab79e3485b323d2773add70b2d70514a04d2
+
       "BasePath": "_content/mvc",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.min.css",
       "AssetKind": "All",
@@ -253,7 +175,6 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-<<<<<<< HEAD
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
     },
     {
@@ -261,15 +182,7 @@
       "SourceId": "mvc",
       "SourceType": "Discovered",
       "ContentRoot": "F:\\PPSU\\sem-08\\casepoint\\Master Project\\mvc\\wwwroot\\",
-=======
-      "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css"
-    },
-    {
-      "Identity": "/Users/yashveekotadiya/Desktop/MasterProgram/MasterProject/mvc/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css.map",
-      "SourceId": "mvc",
-      "SourceType": "Discovered",
-      "ContentRoot": "/Users/yashveekotadiya/Desktop/MasterProgram/MasterProject/mvc/wwwroot/",
->>>>>>> 5705ab79e3485b323d2773add70b2d70514a04d2
+
       "BasePath": "_content/mvc",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.min.css.map",
       "AssetKind": "All",
@@ -282,7 +195,6 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-<<<<<<< HEAD
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
     },
     {
@@ -290,15 +202,7 @@
       "SourceId": "mvc",
       "SourceType": "Discovered",
       "ContentRoot": "F:\\PPSU\\sem-08\\casepoint\\Master Project\\mvc\\wwwroot\\",
-=======
-      "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css.map"
-    },
-    {
-      "Identity": "/Users/yashveekotadiya/Desktop/MasterProgram/MasterProject/mvc/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.css",
-      "SourceId": "mvc",
-      "SourceType": "Discovered",
-      "ContentRoot": "/Users/yashveekotadiya/Desktop/MasterProgram/MasterProject/mvc/wwwroot/",
->>>>>>> 5705ab79e3485b323d2773add70b2d70514a04d2
+
       "BasePath": "_content/mvc",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css",
       "AssetKind": "All",
@@ -311,7 +215,6 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-<<<<<<< HEAD
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
     },
     {
@@ -319,15 +222,7 @@
       "SourceId": "mvc",
       "SourceType": "Discovered",
       "ContentRoot": "F:\\PPSU\\sem-08\\casepoint\\Master Project\\mvc\\wwwroot\\",
-=======
-      "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.css"
-    },
-    {
-      "Identity": "/Users/yashveekotadiya/Desktop/MasterProgram/MasterProject/mvc/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map",
-      "SourceId": "mvc",
-      "SourceType": "Discovered",
-      "ContentRoot": "/Users/yashveekotadiya/Desktop/MasterProgram/MasterProject/mvc/wwwroot/",
->>>>>>> 5705ab79e3485b323d2773add70b2d70514a04d2
+
       "BasePath": "_content/mvc",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map",
       "AssetKind": "All",
@@ -340,7 +235,6 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-<<<<<<< HEAD
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
     },
     {
@@ -348,15 +242,7 @@
       "SourceId": "mvc",
       "SourceType": "Discovered",
       "ContentRoot": "F:\\PPSU\\sem-08\\casepoint\\Master Project\\mvc\\wwwroot\\",
-=======
-      "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map"
-    },
-    {
-      "Identity": "/Users/yashveekotadiya/Desktop/MasterProgram/MasterProject/mvc/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css",
-      "SourceId": "mvc",
-      "SourceType": "Discovered",
-      "ContentRoot": "/Users/yashveekotadiya/Desktop/MasterProgram/MasterProject/mvc/wwwroot/",
->>>>>>> 5705ab79e3485b323d2773add70b2d70514a04d2
+
       "BasePath": "_content/mvc",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css",
       "AssetKind": "All",
@@ -369,7 +255,6 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-<<<<<<< HEAD
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
     },
     {
@@ -377,15 +262,7 @@
       "SourceId": "mvc",
       "SourceType": "Discovered",
       "ContentRoot": "F:\\PPSU\\sem-08\\casepoint\\Master Project\\mvc\\wwwroot\\",
-=======
-      "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css"
-    },
-    {
-      "Identity": "/Users/yashveekotadiya/Desktop/MasterProgram/MasterProject/mvc/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map",
-      "SourceId": "mvc",
-      "SourceType": "Discovered",
-      "ContentRoot": "/Users/yashveekotadiya/Desktop/MasterProgram/MasterProject/mvc/wwwroot/",
->>>>>>> 5705ab79e3485b323d2773add70b2d70514a04d2
+
       "BasePath": "_content/mvc",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map",
       "AssetKind": "All",
@@ -398,7 +275,6 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-<<<<<<< HEAD
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
     },
     {
@@ -406,15 +282,7 @@
       "SourceId": "mvc",
       "SourceType": "Discovered",
       "ContentRoot": "F:\\PPSU\\sem-08\\casepoint\\Master Project\\mvc\\wwwroot\\",
-=======
-      "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map"
-    },
-    {
-      "Identity": "/Users/yashveekotadiya/Desktop/MasterProgram/MasterProject/mvc/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css",
-      "SourceId": "mvc",
-      "SourceType": "Discovered",
-      "ContentRoot": "/Users/yashveekotadiya/Desktop/MasterProgram/MasterProject/mvc/wwwroot/",
->>>>>>> 5705ab79e3485b323d2773add70b2d70514a04d2
+
       "BasePath": "_content/mvc",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.css",
       "AssetKind": "All",
@@ -427,7 +295,6 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-<<<<<<< HEAD
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
     },
     {
@@ -435,15 +302,7 @@
       "SourceId": "mvc",
       "SourceType": "Discovered",
       "ContentRoot": "F:\\PPSU\\sem-08\\casepoint\\Master Project\\mvc\\wwwroot\\",
-=======
-      "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css"
-    },
-    {
-      "Identity": "/Users/yashveekotadiya/Desktop/MasterProgram/MasterProject/mvc/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css.map",
-      "SourceId": "mvc",
-      "SourceType": "Discovered",
-      "ContentRoot": "/Users/yashveekotadiya/Desktop/MasterProgram/MasterProject/mvc/wwwroot/",
->>>>>>> 5705ab79e3485b323d2773add70b2d70514a04d2
+
       "BasePath": "_content/mvc",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.css.map",
       "AssetKind": "All",
@@ -456,7 +315,6 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-<<<<<<< HEAD
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
     },
     {
@@ -464,15 +322,7 @@
       "SourceId": "mvc",
       "SourceType": "Discovered",
       "ContentRoot": "F:\\PPSU\\sem-08\\casepoint\\Master Project\\mvc\\wwwroot\\",
-=======
-      "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css.map"
-    },
-    {
-      "Identity": "/Users/yashveekotadiya/Desktop/MasterProgram/MasterProject/mvc/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css",
-      "SourceId": "mvc",
-      "SourceType": "Discovered",
-      "ContentRoot": "/Users/yashveekotadiya/Desktop/MasterProgram/MasterProject/mvc/wwwroot/",
->>>>>>> 5705ab79e3485b323d2773add70b2d70514a04d2
+
       "BasePath": "_content/mvc",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.min.css",
       "AssetKind": "All",
@@ -485,7 +335,6 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-<<<<<<< HEAD
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
     },
     {
@@ -493,15 +342,7 @@
       "SourceId": "mvc",
       "SourceType": "Discovered",
       "ContentRoot": "F:\\PPSU\\sem-08\\casepoint\\Master Project\\mvc\\wwwroot\\",
-=======
-      "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css"
-    },
-    {
-      "Identity": "/Users/yashveekotadiya/Desktop/MasterProgram/MasterProject/mvc/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css.map",
-      "SourceId": "mvc",
-      "SourceType": "Discovered",
-      "ContentRoot": "/Users/yashveekotadiya/Desktop/MasterProgram/MasterProject/mvc/wwwroot/",
->>>>>>> 5705ab79e3485b323d2773add70b2d70514a04d2
+
       "BasePath": "_content/mvc",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.min.css.map",
       "AssetKind": "All",
@@ -514,7 +355,6 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-<<<<<<< HEAD
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
     },
     {
@@ -522,15 +362,7 @@
       "SourceId": "mvc",
       "SourceType": "Discovered",
       "ContentRoot": "F:\\PPSU\\sem-08\\casepoint\\Master Project\\mvc\\wwwroot\\",
-=======
-      "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css.map"
-    },
-    {
-      "Identity": "/Users/yashveekotadiya/Desktop/MasterProgram/MasterProject/mvc/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css",
-      "SourceId": "mvc",
-      "SourceType": "Discovered",
-      "ContentRoot": "/Users/yashveekotadiya/Desktop/MasterProgram/MasterProject/mvc/wwwroot/",
->>>>>>> 5705ab79e3485b323d2773add70b2d70514a04d2
+
       "BasePath": "_content/mvc",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css",
       "AssetKind": "All",
@@ -543,7 +375,6 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-<<<<<<< HEAD
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
     },
     {
@@ -551,15 +382,7 @@
       "SourceId": "mvc",
       "SourceType": "Discovered",
       "ContentRoot": "F:\\PPSU\\sem-08\\casepoint\\Master Project\\mvc\\wwwroot\\",
-=======
-      "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css"
-    },
-    {
-      "Identity": "/Users/yashveekotadiya/Desktop/MasterProgram/MasterProject/mvc/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map",
-      "SourceId": "mvc",
-      "SourceType": "Discovered",
-      "ContentRoot": "/Users/yashveekotadiya/Desktop/MasterProgram/MasterProject/mvc/wwwroot/",
->>>>>>> 5705ab79e3485b323d2773add70b2d70514a04d2
+
       "BasePath": "_content/mvc",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map",
       "AssetKind": "All",
@@ -572,7 +395,6 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-<<<<<<< HEAD
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
     },
     {
@@ -580,15 +402,7 @@
       "SourceId": "mvc",
       "SourceType": "Discovered",
       "ContentRoot": "F:\\PPSU\\sem-08\\casepoint\\Master Project\\mvc\\wwwroot\\",
-=======
-      "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map"
-    },
-    {
-      "Identity": "/Users/yashveekotadiya/Desktop/MasterProgram/MasterProject/mvc/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css",
-      "SourceId": "mvc",
-      "SourceType": "Discovered",
-      "ContentRoot": "/Users/yashveekotadiya/Desktop/MasterProgram/MasterProject/mvc/wwwroot/",
->>>>>>> 5705ab79e3485b323d2773add70b2d70514a04d2
+
       "BasePath": "_content/mvc",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css",
       "AssetKind": "All",
@@ -601,7 +415,6 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-<<<<<<< HEAD
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
     },
     {
@@ -609,15 +422,7 @@
       "SourceId": "mvc",
       "SourceType": "Discovered",
       "ContentRoot": "F:\\PPSU\\sem-08\\casepoint\\Master Project\\mvc\\wwwroot\\",
-=======
-      "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css"
-    },
-    {
-      "Identity": "/Users/yashveekotadiya/Desktop/MasterProgram/MasterProject/mvc/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map",
-      "SourceId": "mvc",
-      "SourceType": "Discovered",
-      "ContentRoot": "/Users/yashveekotadiya/Desktop/MasterProgram/MasterProject/mvc/wwwroot/",
->>>>>>> 5705ab79e3485b323d2773add70b2d70514a04d2
+
       "BasePath": "_content/mvc",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map",
       "AssetKind": "All",
@@ -630,7 +435,6 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-<<<<<<< HEAD
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
     },
     {
@@ -638,15 +442,7 @@
       "SourceId": "mvc",
       "SourceType": "Discovered",
       "ContentRoot": "F:\\PPSU\\sem-08\\casepoint\\Master Project\\mvc\\wwwroot\\",
-=======
-      "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map"
-    },
-    {
-      "Identity": "/Users/yashveekotadiya/Desktop/MasterProgram/MasterProject/mvc/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.css",
-      "SourceId": "mvc",
-      "SourceType": "Discovered",
-      "ContentRoot": "/Users/yashveekotadiya/Desktop/MasterProgram/MasterProject/mvc/wwwroot/",
->>>>>>> 5705ab79e3485b323d2773add70b2d70514a04d2
+
       "BasePath": "_content/mvc",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.css",
       "AssetKind": "All",
@@ -659,7 +455,6 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-<<<<<<< HEAD
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
     },
     {
@@ -667,15 +462,7 @@
       "SourceId": "mvc",
       "SourceType": "Discovered",
       "ContentRoot": "F:\\PPSU\\sem-08\\casepoint\\Master Project\\mvc\\wwwroot\\",
-=======
-      "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.css"
-    },
-    {
-      "Identity": "/Users/yashveekotadiya/Desktop/MasterProgram/MasterProject/mvc/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.css.map",
-      "SourceId": "mvc",
-      "SourceType": "Discovered",
-      "ContentRoot": "/Users/yashveekotadiya/Desktop/MasterProgram/MasterProject/mvc/wwwroot/",
->>>>>>> 5705ab79e3485b323d2773add70b2d70514a04d2
+
       "BasePath": "_content/mvc",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.css.map",
       "AssetKind": "All",
@@ -688,7 +475,6 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-<<<<<<< HEAD
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
     },
     {
@@ -696,15 +482,7 @@
       "SourceId": "mvc",
       "SourceType": "Discovered",
       "ContentRoot": "F:\\PPSU\\sem-08\\casepoint\\Master Project\\mvc\\wwwroot\\",
-=======
-      "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.css.map"
-    },
-    {
-      "Identity": "/Users/yashveekotadiya/Desktop/MasterProgram/MasterProject/mvc/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.min.css",
-      "SourceId": "mvc",
-      "SourceType": "Discovered",
-      "ContentRoot": "/Users/yashveekotadiya/Desktop/MasterProgram/MasterProject/mvc/wwwroot/",
->>>>>>> 5705ab79e3485b323d2773add70b2d70514a04d2
+
       "BasePath": "_content/mvc",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.min.css",
       "AssetKind": "All",
@@ -717,7 +495,6 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-<<<<<<< HEAD
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
     },
     {
@@ -725,15 +502,7 @@
       "SourceId": "mvc",
       "SourceType": "Discovered",
       "ContentRoot": "F:\\PPSU\\sem-08\\casepoint\\Master Project\\mvc\\wwwroot\\",
-=======
-      "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.min.css"
-    },
-    {
-      "Identity": "/Users/yashveekotadiya/Desktop/MasterProgram/MasterProject/mvc/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.min.css.map",
-      "SourceId": "mvc",
-      "SourceType": "Discovered",
-      "ContentRoot": "/Users/yashveekotadiya/Desktop/MasterProgram/MasterProject/mvc/wwwroot/",
->>>>>>> 5705ab79e3485b323d2773add70b2d70514a04d2
+
       "BasePath": "_content/mvc",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.min.css.map",
       "AssetKind": "All",
@@ -746,7 +515,6 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-<<<<<<< HEAD
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
     },
     {
@@ -754,15 +522,7 @@
       "SourceId": "mvc",
       "SourceType": "Discovered",
       "ContentRoot": "F:\\PPSU\\sem-08\\casepoint\\Master Project\\mvc\\wwwroot\\",
-=======
-      "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.min.css.map"
-    },
-    {
-      "Identity": "/Users/yashveekotadiya/Desktop/MasterProgram/MasterProject/mvc/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css",
-      "SourceId": "mvc",
-      "SourceType": "Discovered",
-      "ContentRoot": "/Users/yashveekotadiya/Desktop/MasterProgram/MasterProject/mvc/wwwroot/",
->>>>>>> 5705ab79e3485b323d2773add70b2d70514a04d2
+
       "BasePath": "_content/mvc",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css",
       "AssetKind": "All",
@@ -775,7 +535,6 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-<<<<<<< HEAD
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
     },
     {
@@ -783,15 +542,7 @@
       "SourceId": "mvc",
       "SourceType": "Discovered",
       "ContentRoot": "F:\\PPSU\\sem-08\\casepoint\\Master Project\\mvc\\wwwroot\\",
-=======
-      "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css"
-    },
-    {
-      "Identity": "/Users/yashveekotadiya/Desktop/MasterProgram/MasterProject/mvc/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map",
-      "SourceId": "mvc",
-      "SourceType": "Discovered",
-      "ContentRoot": "/Users/yashveekotadiya/Desktop/MasterProgram/MasterProject/mvc/wwwroot/",
->>>>>>> 5705ab79e3485b323d2773add70b2d70514a04d2
+
       "BasePath": "_content/mvc",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map",
       "AssetKind": "All",
@@ -804,7 +555,6 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-<<<<<<< HEAD
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
     },
     {
@@ -812,15 +562,7 @@
       "SourceId": "mvc",
       "SourceType": "Discovered",
       "ContentRoot": "F:\\PPSU\\sem-08\\casepoint\\Master Project\\mvc\\wwwroot\\",
-=======
-      "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map"
-    },
-    {
-      "Identity": "/Users/yashveekotadiya/Desktop/MasterProgram/MasterProject/mvc/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css",
-      "SourceId": "mvc",
-      "SourceType": "Discovered",
-      "ContentRoot": "/Users/yashveekotadiya/Desktop/MasterProgram/MasterProject/mvc/wwwroot/",
->>>>>>> 5705ab79e3485b323d2773add70b2d70514a04d2
+
       "BasePath": "_content/mvc",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css",
       "AssetKind": "All",
@@ -833,7 +575,6 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-<<<<<<< HEAD
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
     },
     {
@@ -841,15 +582,7 @@
       "SourceId": "mvc",
       "SourceType": "Discovered",
       "ContentRoot": "F:\\PPSU\\sem-08\\casepoint\\Master Project\\mvc\\wwwroot\\",
-=======
-      "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css"
-    },
-    {
-      "Identity": "/Users/yashveekotadiya/Desktop/MasterProgram/MasterProject/mvc/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map",
-      "SourceId": "mvc",
-      "SourceType": "Discovered",
-      "ContentRoot": "/Users/yashveekotadiya/Desktop/MasterProgram/MasterProject/mvc/wwwroot/",
->>>>>>> 5705ab79e3485b323d2773add70b2d70514a04d2
+
       "BasePath": "_content/mvc",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map",
       "AssetKind": "All",
@@ -862,7 +595,6 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-<<<<<<< HEAD
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
     },
     {
@@ -870,15 +602,7 @@
       "SourceId": "mvc",
       "SourceType": "Discovered",
       "ContentRoot": "F:\\PPSU\\sem-08\\casepoint\\Master Project\\mvc\\wwwroot\\",
-=======
-      "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map"
-    },
-    {
-      "Identity": "/Users/yashveekotadiya/Desktop/MasterProgram/MasterProject/mvc/wwwroot/lib/bootstrap/dist/css/bootstrap.css",
-      "SourceId": "mvc",
-      "SourceType": "Discovered",
-      "ContentRoot": "/Users/yashveekotadiya/Desktop/MasterProgram/MasterProject/mvc/wwwroot/",
->>>>>>> 5705ab79e3485b323d2773add70b2d70514a04d2
+
       "BasePath": "_content/mvc",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.css",
       "AssetKind": "All",
@@ -891,7 +615,6 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-<<<<<<< HEAD
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css"
     },
     {
@@ -899,15 +622,7 @@
       "SourceId": "mvc",
       "SourceType": "Discovered",
       "ContentRoot": "F:\\PPSU\\sem-08\\casepoint\\Master Project\\mvc\\wwwroot\\",
-=======
-      "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap.css"
-    },
-    {
-      "Identity": "/Users/yashveekotadiya/Desktop/MasterProgram/MasterProject/mvc/wwwroot/lib/bootstrap/dist/css/bootstrap.css.map",
-      "SourceId": "mvc",
-      "SourceType": "Discovered",
-      "ContentRoot": "/Users/yashveekotadiya/Desktop/MasterProgram/MasterProject/mvc/wwwroot/",
->>>>>>> 5705ab79e3485b323d2773add70b2d70514a04d2
+
       "BasePath": "_content/mvc",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.css.map",
       "AssetKind": "All",
@@ -920,7 +635,6 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-<<<<<<< HEAD
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
     },
     {
@@ -928,15 +642,7 @@
       "SourceId": "mvc",
       "SourceType": "Discovered",
       "ContentRoot": "F:\\PPSU\\sem-08\\casepoint\\Master Project\\mvc\\wwwroot\\",
-=======
-      "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap.css.map"
-    },
-    {
-      "Identity": "/Users/yashveekotadiya/Desktop/MasterProgram/MasterProject/mvc/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css",
-      "SourceId": "mvc",
-      "SourceType": "Discovered",
-      "ContentRoot": "/Users/yashveekotadiya/Desktop/MasterProgram/MasterProject/mvc/wwwroot/",
->>>>>>> 5705ab79e3485b323d2773add70b2d70514a04d2
+
       "BasePath": "_content/mvc",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.min.css",
       "AssetKind": "All",
@@ -949,7 +655,6 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-<<<<<<< HEAD
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
     },
     {
@@ -957,15 +662,7 @@
       "SourceId": "mvc",
       "SourceType": "Discovered",
       "ContentRoot": "F:\\PPSU\\sem-08\\casepoint\\Master Project\\mvc\\wwwroot\\",
-=======
-      "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap.min.css"
-    },
-    {
-      "Identity": "/Users/yashveekotadiya/Desktop/MasterProgram/MasterProject/mvc/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css.map",
-      "SourceId": "mvc",
-      "SourceType": "Discovered",
-      "ContentRoot": "/Users/yashveekotadiya/Desktop/MasterProgram/MasterProject/mvc/wwwroot/",
->>>>>>> 5705ab79e3485b323d2773add70b2d70514a04d2
+
       "BasePath": "_content/mvc",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.min.css.map",
       "AssetKind": "All",
@@ -978,7 +675,6 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-<<<<<<< HEAD
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
     },
     {
@@ -986,15 +682,7 @@
       "SourceId": "mvc",
       "SourceType": "Discovered",
       "ContentRoot": "F:\\PPSU\\sem-08\\casepoint\\Master Project\\mvc\\wwwroot\\",
-=======
-      "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap.min.css.map"
-    },
-    {
-      "Identity": "/Users/yashveekotadiya/Desktop/MasterProgram/MasterProject/mvc/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.css",
-      "SourceId": "mvc",
-      "SourceType": "Discovered",
-      "ContentRoot": "/Users/yashveekotadiya/Desktop/MasterProgram/MasterProject/mvc/wwwroot/",
->>>>>>> 5705ab79e3485b323d2773add70b2d70514a04d2
+
       "BasePath": "_content/mvc",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.css",
       "AssetKind": "All",
@@ -1007,7 +695,6 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-<<<<<<< HEAD
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
     },
     {
@@ -1015,15 +702,7 @@
       "SourceId": "mvc",
       "SourceType": "Discovered",
       "ContentRoot": "F:\\PPSU\\sem-08\\casepoint\\Master Project\\mvc\\wwwroot\\",
-=======
-      "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.css"
-    },
-    {
-      "Identity": "/Users/yashveekotadiya/Desktop/MasterProgram/MasterProject/mvc/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.css.map",
-      "SourceId": "mvc",
-      "SourceType": "Discovered",
-      "ContentRoot": "/Users/yashveekotadiya/Desktop/MasterProgram/MasterProject/mvc/wwwroot/",
->>>>>>> 5705ab79e3485b323d2773add70b2d70514a04d2
+
       "BasePath": "_content/mvc",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.css.map",
       "AssetKind": "All",
@@ -1036,7 +715,6 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-<<<<<<< HEAD
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
     },
     {
@@ -1044,15 +722,7 @@
       "SourceId": "mvc",
       "SourceType": "Discovered",
       "ContentRoot": "F:\\PPSU\\sem-08\\casepoint\\Master Project\\mvc\\wwwroot\\",
-=======
-      "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.css.map"
-    },
-    {
-      "Identity": "/Users/yashveekotadiya/Desktop/MasterProgram/MasterProject/mvc/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.min.css",
-      "SourceId": "mvc",
-      "SourceType": "Discovered",
-      "ContentRoot": "/Users/yashveekotadiya/Desktop/MasterProgram/MasterProject/mvc/wwwroot/",
->>>>>>> 5705ab79e3485b323d2773add70b2d70514a04d2
+
       "BasePath": "_content/mvc",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.min.css",
       "AssetKind": "All",
@@ -1065,7 +735,6 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-<<<<<<< HEAD
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
     },
     {
@@ -1073,15 +742,7 @@
       "SourceId": "mvc",
       "SourceType": "Discovered",
       "ContentRoot": "F:\\PPSU\\sem-08\\casepoint\\Master Project\\mvc\\wwwroot\\",
-=======
-      "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.min.css"
-    },
-    {
-      "Identity": "/Users/yashveekotadiya/Desktop/MasterProgram/MasterProject/mvc/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.min.css.map",
-      "SourceId": "mvc",
-      "SourceType": "Discovered",
-      "ContentRoot": "/Users/yashveekotadiya/Desktop/MasterProgram/MasterProject/mvc/wwwroot/",
->>>>>>> 5705ab79e3485b323d2773add70b2d70514a04d2
+
       "BasePath": "_content/mvc",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.min.css.map",
       "AssetKind": "All",
@@ -1094,7 +755,6 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-<<<<<<< HEAD
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
     },
     {
@@ -1102,15 +762,7 @@
       "SourceId": "mvc",
       "SourceType": "Discovered",
       "ContentRoot": "F:\\PPSU\\sem-08\\casepoint\\Master Project\\mvc\\wwwroot\\",
-=======
-      "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.min.css.map"
-    },
-    {
-      "Identity": "/Users/yashveekotadiya/Desktop/MasterProgram/MasterProject/mvc/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js",
-      "SourceId": "mvc",
-      "SourceType": "Discovered",
-      "ContentRoot": "/Users/yashveekotadiya/Desktop/MasterProgram/MasterProject/mvc/wwwroot/",
->>>>>>> 5705ab79e3485b323d2773add70b2d70514a04d2
+
       "BasePath": "_content/mvc",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.js",
       "AssetKind": "All",
@@ -1123,7 +775,6 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-<<<<<<< HEAD
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
     },
     {
@@ -1131,15 +782,7 @@
       "SourceId": "mvc",
       "SourceType": "Discovered",
       "ContentRoot": "F:\\PPSU\\sem-08\\casepoint\\Master Project\\mvc\\wwwroot\\",
-=======
-      "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js"
-    },
-    {
-      "Identity": "/Users/yashveekotadiya/Desktop/MasterProgram/MasterProject/mvc/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js.map",
-      "SourceId": "mvc",
-      "SourceType": "Discovered",
-      "ContentRoot": "/Users/yashveekotadiya/Desktop/MasterProgram/MasterProject/mvc/wwwroot/",
->>>>>>> 5705ab79e3485b323d2773add70b2d70514a04d2
+
       "BasePath": "_content/mvc",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.js.map",
       "AssetKind": "All",
@@ -1152,7 +795,6 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-<<<<<<< HEAD
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
     },
     {
@@ -1160,15 +802,7 @@
       "SourceId": "mvc",
       "SourceType": "Discovered",
       "ContentRoot": "F:\\PPSU\\sem-08\\casepoint\\Master Project\\mvc\\wwwroot\\",
-=======
-      "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js.map"
-    },
-    {
-      "Identity": "/Users/yashveekotadiya/Desktop/MasterProgram/MasterProject/mvc/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js",
-      "SourceId": "mvc",
-      "SourceType": "Discovered",
-      "ContentRoot": "/Users/yashveekotadiya/Desktop/MasterProgram/MasterProject/mvc/wwwroot/",
->>>>>>> 5705ab79e3485b323d2773add70b2d70514a04d2
+
       "BasePath": "_content/mvc",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.min.js",
       "AssetKind": "All",
@@ -1181,7 +815,6 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-<<<<<<< HEAD
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
     },
     {
@@ -1189,15 +822,7 @@
       "SourceId": "mvc",
       "SourceType": "Discovered",
       "ContentRoot": "F:\\PPSU\\sem-08\\casepoint\\Master Project\\mvc\\wwwroot\\",
-=======
-      "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js"
-    },
-    {
-      "Identity": "/Users/yashveekotadiya/Desktop/MasterProgram/MasterProject/mvc/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map",
-      "SourceId": "mvc",
-      "SourceType": "Discovered",
-      "ContentRoot": "/Users/yashveekotadiya/Desktop/MasterProgram/MasterProject/mvc/wwwroot/",
->>>>>>> 5705ab79e3485b323d2773add70b2d70514a04d2
+
       "BasePath": "_content/mvc",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.min.js.map",
       "AssetKind": "All",
@@ -1210,7 +835,6 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-<<<<<<< HEAD
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
     },
     {
@@ -1218,15 +842,7 @@
       "SourceId": "mvc",
       "SourceType": "Discovered",
       "ContentRoot": "F:\\PPSU\\sem-08\\casepoint\\Master Project\\mvc\\wwwroot\\",
-=======
-      "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map"
-    },
-    {
-      "Identity": "/Users/yashveekotadiya/Desktop/MasterProgram/MasterProject/mvc/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.js",
-      "SourceId": "mvc",
-      "SourceType": "Discovered",
-      "ContentRoot": "/Users/yashveekotadiya/Desktop/MasterProgram/MasterProject/mvc/wwwroot/",
->>>>>>> 5705ab79e3485b323d2773add70b2d70514a04d2
+
       "BasePath": "_content/mvc",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.js",
       "AssetKind": "All",
@@ -1239,7 +855,6 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-<<<<<<< HEAD
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
     },
     {
@@ -1247,15 +862,7 @@
       "SourceId": "mvc",
       "SourceType": "Discovered",
       "ContentRoot": "F:\\PPSU\\sem-08\\casepoint\\Master Project\\mvc\\wwwroot\\",
-=======
-      "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/js/bootstrap.esm.js"
-    },
-    {
-      "Identity": "/Users/yashveekotadiya/Desktop/MasterProgram/MasterProject/mvc/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.js.map",
-      "SourceId": "mvc",
-      "SourceType": "Discovered",
-      "ContentRoot": "/Users/yashveekotadiya/Desktop/MasterProgram/MasterProject/mvc/wwwroot/",
->>>>>>> 5705ab79e3485b323d2773add70b2d70514a04d2
+
       "BasePath": "_content/mvc",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.js.map",
       "AssetKind": "All",
@@ -1268,7 +875,6 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-<<<<<<< HEAD
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
     },
     {
@@ -1276,15 +882,7 @@
       "SourceId": "mvc",
       "SourceType": "Discovered",
       "ContentRoot": "F:\\PPSU\\sem-08\\casepoint\\Master Project\\mvc\\wwwroot\\",
-=======
-      "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/js/bootstrap.esm.js.map"
-    },
-    {
-      "Identity": "/Users/yashveekotadiya/Desktop/MasterProgram/MasterProject/mvc/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.min.js",
-      "SourceId": "mvc",
-      "SourceType": "Discovered",
-      "ContentRoot": "/Users/yashveekotadiya/Desktop/MasterProgram/MasterProject/mvc/wwwroot/",
->>>>>>> 5705ab79e3485b323d2773add70b2d70514a04d2
+
       "BasePath": "_content/mvc",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.min.js",
       "AssetKind": "All",
@@ -1297,7 +895,6 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-<<<<<<< HEAD
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
     },
     {
@@ -1305,15 +902,7 @@
       "SourceId": "mvc",
       "SourceType": "Discovered",
       "ContentRoot": "F:\\PPSU\\sem-08\\casepoint\\Master Project\\mvc\\wwwroot\\",
-=======
-      "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/js/bootstrap.esm.min.js"
-    },
-    {
-      "Identity": "/Users/yashveekotadiya/Desktop/MasterProgram/MasterProject/mvc/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.min.js.map",
-      "SourceId": "mvc",
-      "SourceType": "Discovered",
-      "ContentRoot": "/Users/yashveekotadiya/Desktop/MasterProgram/MasterProject/mvc/wwwroot/",
->>>>>>> 5705ab79e3485b323d2773add70b2d70514a04d2
+
       "BasePath": "_content/mvc",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.min.js.map",
       "AssetKind": "All",
@@ -1326,7 +915,6 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-<<<<<<< HEAD
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
     },
     {
@@ -1334,15 +922,7 @@
       "SourceId": "mvc",
       "SourceType": "Discovered",
       "ContentRoot": "F:\\PPSU\\sem-08\\casepoint\\Master Project\\mvc\\wwwroot\\",
-=======
-      "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/js/bootstrap.esm.min.js.map"
-    },
-    {
-      "Identity": "/Users/yashveekotadiya/Desktop/MasterProgram/MasterProject/mvc/wwwroot/lib/bootstrap/dist/js/bootstrap.js",
-      "SourceId": "mvc",
-      "SourceType": "Discovered",
-      "ContentRoot": "/Users/yashveekotadiya/Desktop/MasterProgram/MasterProject/mvc/wwwroot/",
->>>>>>> 5705ab79e3485b323d2773add70b2d70514a04d2
+
       "BasePath": "_content/mvc",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.js",
       "AssetKind": "All",
@@ -1355,7 +935,6 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-<<<<<<< HEAD
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js"
     },
     {
@@ -1363,15 +942,7 @@
       "SourceId": "mvc",
       "SourceType": "Discovered",
       "ContentRoot": "F:\\PPSU\\sem-08\\casepoint\\Master Project\\mvc\\wwwroot\\",
-=======
-      "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/js/bootstrap.js"
-    },
-    {
-      "Identity": "/Users/yashveekotadiya/Desktop/MasterProgram/MasterProject/mvc/wwwroot/lib/bootstrap/dist/js/bootstrap.js.map",
-      "SourceId": "mvc",
-      "SourceType": "Discovered",
-      "ContentRoot": "/Users/yashveekotadiya/Desktop/MasterProgram/MasterProject/mvc/wwwroot/",
->>>>>>> 5705ab79e3485b323d2773add70b2d70514a04d2
+
       "BasePath": "_content/mvc",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.js.map",
       "AssetKind": "All",
@@ -1384,7 +955,6 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-<<<<<<< HEAD
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
     },
     {
@@ -1392,15 +962,7 @@
       "SourceId": "mvc",
       "SourceType": "Discovered",
       "ContentRoot": "F:\\PPSU\\sem-08\\casepoint\\Master Project\\mvc\\wwwroot\\",
-=======
-      "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/js/bootstrap.js.map"
-    },
-    {
-      "Identity": "/Users/yashveekotadiya/Desktop/MasterProgram/MasterProject/mvc/wwwroot/lib/bootstrap/dist/js/bootstrap.min.js",
-      "SourceId": "mvc",
-      "SourceType": "Discovered",
-      "ContentRoot": "/Users/yashveekotadiya/Desktop/MasterProgram/MasterProject/mvc/wwwroot/",
->>>>>>> 5705ab79e3485b323d2773add70b2d70514a04d2
+
       "BasePath": "_content/mvc",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.min.js",
       "AssetKind": "All",
@@ -1413,7 +975,6 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-<<<<<<< HEAD
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
     },
     {
@@ -1421,15 +982,7 @@
       "SourceId": "mvc",
       "SourceType": "Discovered",
       "ContentRoot": "F:\\PPSU\\sem-08\\casepoint\\Master Project\\mvc\\wwwroot\\",
-=======
-      "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/js/bootstrap.min.js"
-    },
-    {
-      "Identity": "/Users/yashveekotadiya/Desktop/MasterProgram/MasterProject/mvc/wwwroot/lib/bootstrap/dist/js/bootstrap.min.js.map",
-      "SourceId": "mvc",
-      "SourceType": "Discovered",
-      "ContentRoot": "/Users/yashveekotadiya/Desktop/MasterProgram/MasterProject/mvc/wwwroot/",
->>>>>>> 5705ab79e3485b323d2773add70b2d70514a04d2
+
       "BasePath": "_content/mvc",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.min.js.map",
       "AssetKind": "All",
@@ -1442,7 +995,6 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-<<<<<<< HEAD
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
     },
     {
@@ -1450,15 +1002,7 @@
       "SourceId": "mvc",
       "SourceType": "Discovered",
       "ContentRoot": "F:\\PPSU\\sem-08\\casepoint\\Master Project\\mvc\\wwwroot\\",
-=======
-      "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/js/bootstrap.min.js.map"
-    },
-    {
-      "Identity": "/Users/yashveekotadiya/Desktop/MasterProgram/MasterProject/mvc/wwwroot/lib/bootstrap/LICENSE",
-      "SourceId": "mvc",
-      "SourceType": "Discovered",
-      "ContentRoot": "/Users/yashveekotadiya/Desktop/MasterProgram/MasterProject/mvc/wwwroot/",
->>>>>>> 5705ab79e3485b323d2773add70b2d70514a04d2
+
       "BasePath": "_content/mvc",
       "RelativePath": "lib/bootstrap/LICENSE",
       "AssetKind": "All",
@@ -1471,7 +1015,6 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-<<<<<<< HEAD
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\LICENSE"
     },
     {
@@ -1479,15 +1022,7 @@
       "SourceId": "mvc",
       "SourceType": "Discovered",
       "ContentRoot": "F:\\PPSU\\sem-08\\casepoint\\Master Project\\mvc\\wwwroot\\",
-=======
-      "OriginalItemSpec": "wwwroot/lib/bootstrap/LICENSE"
-    },
-    {
-      "Identity": "/Users/yashveekotadiya/Desktop/MasterProgram/MasterProject/mvc/wwwroot/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js",
-      "SourceId": "mvc",
-      "SourceType": "Discovered",
-      "ContentRoot": "/Users/yashveekotadiya/Desktop/MasterProgram/MasterProject/mvc/wwwroot/",
->>>>>>> 5705ab79e3485b323d2773add70b2d70514a04d2
+
       "BasePath": "_content/mvc",
       "RelativePath": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js",
       "AssetKind": "All",
@@ -1500,7 +1035,6 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-<<<<<<< HEAD
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
     },
     {
@@ -1508,15 +1042,7 @@
       "SourceId": "mvc",
       "SourceType": "Discovered",
       "ContentRoot": "F:\\PPSU\\sem-08\\casepoint\\Master Project\\mvc\\wwwroot\\",
-=======
-      "OriginalItemSpec": "wwwroot/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js"
-    },
-    {
-      "Identity": "/Users/yashveekotadiya/Desktop/MasterProgram/MasterProject/mvc/wwwroot/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js",
-      "SourceId": "mvc",
-      "SourceType": "Discovered",
-      "ContentRoot": "/Users/yashveekotadiya/Desktop/MasterProgram/MasterProject/mvc/wwwroot/",
->>>>>>> 5705ab79e3485b323d2773add70b2d70514a04d2
+
       "BasePath": "_content/mvc",
       "RelativePath": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js",
       "AssetKind": "All",
@@ -1529,7 +1055,6 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-<<<<<<< HEAD
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
     },
     {
@@ -1537,15 +1062,7 @@
       "SourceId": "mvc",
       "SourceType": "Discovered",
       "ContentRoot": "F:\\PPSU\\sem-08\\casepoint\\Master Project\\mvc\\wwwroot\\",
-=======
-      "OriginalItemSpec": "wwwroot/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"
-    },
-    {
-      "Identity": "/Users/yashveekotadiya/Desktop/MasterProgram/MasterProject/mvc/wwwroot/lib/jquery-validation-unobtrusive/LICENSE.txt",
-      "SourceId": "mvc",
-      "SourceType": "Discovered",
-      "ContentRoot": "/Users/yashveekotadiya/Desktop/MasterProgram/MasterProject/mvc/wwwroot/",
->>>>>>> 5705ab79e3485b323d2773add70b2d70514a04d2
+
       "BasePath": "_content/mvc",
       "RelativePath": "lib/jquery-validation-unobtrusive/LICENSE.txt",
       "AssetKind": "All",
@@ -1558,7 +1075,6 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-<<<<<<< HEAD
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
     },
     {
@@ -1566,15 +1082,7 @@
       "SourceId": "mvc",
       "SourceType": "Discovered",
       "ContentRoot": "F:\\PPSU\\sem-08\\casepoint\\Master Project\\mvc\\wwwroot\\",
-=======
-      "OriginalItemSpec": "wwwroot/lib/jquery-validation-unobtrusive/LICENSE.txt"
-    },
-    {
-      "Identity": "/Users/yashveekotadiya/Desktop/MasterProgram/MasterProject/mvc/wwwroot/lib/jquery-validation/dist/additional-methods.js",
-      "SourceId": "mvc",
-      "SourceType": "Discovered",
-      "ContentRoot": "/Users/yashveekotadiya/Desktop/MasterProgram/MasterProject/mvc/wwwroot/",
->>>>>>> 5705ab79e3485b323d2773add70b2d70514a04d2
+
       "BasePath": "_content/mvc",
       "RelativePath": "lib/jquery-validation/dist/additional-methods.js",
       "AssetKind": "All",
@@ -1587,7 +1095,6 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-<<<<<<< HEAD
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js"
     },
     {
@@ -1595,15 +1102,7 @@
       "SourceId": "mvc",
       "SourceType": "Discovered",
       "ContentRoot": "F:\\PPSU\\sem-08\\casepoint\\Master Project\\mvc\\wwwroot\\",
-=======
-      "OriginalItemSpec": "wwwroot/lib/jquery-validation/dist/additional-methods.js"
-    },
-    {
-      "Identity": "/Users/yashveekotadiya/Desktop/MasterProgram/MasterProject/mvc/wwwroot/lib/jquery-validation/dist/additional-methods.min.js",
-      "SourceId": "mvc",
-      "SourceType": "Discovered",
-      "ContentRoot": "/Users/yashveekotadiya/Desktop/MasterProgram/MasterProject/mvc/wwwroot/",
->>>>>>> 5705ab79e3485b323d2773add70b2d70514a04d2
+
       "BasePath": "_content/mvc",
       "RelativePath": "lib/jquery-validation/dist/additional-methods.min.js",
       "AssetKind": "All",
@@ -1616,7 +1115,6 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-<<<<<<< HEAD
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js"
     },
     {
@@ -1624,15 +1122,7 @@
       "SourceId": "mvc",
       "SourceType": "Discovered",
       "ContentRoot": "F:\\PPSU\\sem-08\\casepoint\\Master Project\\mvc\\wwwroot\\",
-=======
-      "OriginalItemSpec": "wwwroot/lib/jquery-validation/dist/additional-methods.min.js"
-    },
-    {
-      "Identity": "/Users/yashveekotadiya/Desktop/MasterProgram/MasterProject/mvc/wwwroot/lib/jquery-validation/dist/jquery.validate.js",
-      "SourceId": "mvc",
-      "SourceType": "Discovered",
-      "ContentRoot": "/Users/yashveekotadiya/Desktop/MasterProgram/MasterProject/mvc/wwwroot/",
->>>>>>> 5705ab79e3485b323d2773add70b2d70514a04d2
+
       "BasePath": "_content/mvc",
       "RelativePath": "lib/jquery-validation/dist/jquery.validate.js",
       "AssetKind": "All",
@@ -1645,7 +1135,6 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-<<<<<<< HEAD
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js"
     },
     {
@@ -1653,15 +1142,7 @@
       "SourceId": "mvc",
       "SourceType": "Discovered",
       "ContentRoot": "F:\\PPSU\\sem-08\\casepoint\\Master Project\\mvc\\wwwroot\\",
-=======
-      "OriginalItemSpec": "wwwroot/lib/jquery-validation/dist/jquery.validate.js"
-    },
-    {
-      "Identity": "/Users/yashveekotadiya/Desktop/MasterProgram/MasterProject/mvc/wwwroot/lib/jquery-validation/dist/jquery.validate.min.js",
-      "SourceId": "mvc",
-      "SourceType": "Discovered",
-      "ContentRoot": "/Users/yashveekotadiya/Desktop/MasterProgram/MasterProject/mvc/wwwroot/",
->>>>>>> 5705ab79e3485b323d2773add70b2d70514a04d2
+
       "BasePath": "_content/mvc",
       "RelativePath": "lib/jquery-validation/dist/jquery.validate.min.js",
       "AssetKind": "All",
@@ -1674,7 +1155,6 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-<<<<<<< HEAD
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
     },
     {
@@ -1682,15 +1162,7 @@
       "SourceId": "mvc",
       "SourceType": "Discovered",
       "ContentRoot": "F:\\PPSU\\sem-08\\casepoint\\Master Project\\mvc\\wwwroot\\",
-=======
-      "OriginalItemSpec": "wwwroot/lib/jquery-validation/dist/jquery.validate.min.js"
-    },
-    {
-      "Identity": "/Users/yashveekotadiya/Desktop/MasterProgram/MasterProject/mvc/wwwroot/lib/jquery-validation/LICENSE.md",
-      "SourceId": "mvc",
-      "SourceType": "Discovered",
-      "ContentRoot": "/Users/yashveekotadiya/Desktop/MasterProgram/MasterProject/mvc/wwwroot/",
->>>>>>> 5705ab79e3485b323d2773add70b2d70514a04d2
+
       "BasePath": "_content/mvc",
       "RelativePath": "lib/jquery-validation/LICENSE.md",
       "AssetKind": "All",
@@ -1703,7 +1175,6 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-<<<<<<< HEAD
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\LICENSE.md"
     },
     {
@@ -1711,15 +1182,7 @@
       "SourceId": "mvc",
       "SourceType": "Discovered",
       "ContentRoot": "F:\\PPSU\\sem-08\\casepoint\\Master Project\\mvc\\wwwroot\\",
-=======
-      "OriginalItemSpec": "wwwroot/lib/jquery-validation/LICENSE.md"
-    },
-    {
-      "Identity": "/Users/yashveekotadiya/Desktop/MasterProgram/MasterProject/mvc/wwwroot/lib/jquery/dist/jquery.js",
-      "SourceId": "mvc",
-      "SourceType": "Discovered",
-      "ContentRoot": "/Users/yashveekotadiya/Desktop/MasterProgram/MasterProject/mvc/wwwroot/",
->>>>>>> 5705ab79e3485b323d2773add70b2d70514a04d2
+
       "BasePath": "_content/mvc",
       "RelativePath": "lib/jquery/dist/jquery.js",
       "AssetKind": "All",
@@ -1732,7 +1195,6 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-<<<<<<< HEAD
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.js"
     },
     {
@@ -1740,15 +1202,7 @@
       "SourceId": "mvc",
       "SourceType": "Discovered",
       "ContentRoot": "F:\\PPSU\\sem-08\\casepoint\\Master Project\\mvc\\wwwroot\\",
-=======
-      "OriginalItemSpec": "wwwroot/lib/jquery/dist/jquery.js"
-    },
-    {
-      "Identity": "/Users/yashveekotadiya/Desktop/MasterProgram/MasterProject/mvc/wwwroot/lib/jquery/dist/jquery.min.js",
-      "SourceId": "mvc",
-      "SourceType": "Discovered",
-      "ContentRoot": "/Users/yashveekotadiya/Desktop/MasterProgram/MasterProject/mvc/wwwroot/",
->>>>>>> 5705ab79e3485b323d2773add70b2d70514a04d2
+
       "BasePath": "_content/mvc",
       "RelativePath": "lib/jquery/dist/jquery.min.js",
       "AssetKind": "All",
@@ -1761,7 +1215,6 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-<<<<<<< HEAD
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.min.js"
     },
     {
@@ -1769,15 +1222,7 @@
       "SourceId": "mvc",
       "SourceType": "Discovered",
       "ContentRoot": "F:\\PPSU\\sem-08\\casepoint\\Master Project\\mvc\\wwwroot\\",
-=======
-      "OriginalItemSpec": "wwwroot/lib/jquery/dist/jquery.min.js"
-    },
-    {
-      "Identity": "/Users/yashveekotadiya/Desktop/MasterProgram/MasterProject/mvc/wwwroot/lib/jquery/dist/jquery.min.map",
-      "SourceId": "mvc",
-      "SourceType": "Discovered",
-      "ContentRoot": "/Users/yashveekotadiya/Desktop/MasterProgram/MasterProject/mvc/wwwroot/",
->>>>>>> 5705ab79e3485b323d2773add70b2d70514a04d2
+
       "BasePath": "_content/mvc",
       "RelativePath": "lib/jquery/dist/jquery.min.map",
       "AssetKind": "All",
@@ -1790,7 +1235,6 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-<<<<<<< HEAD
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
@@ -1798,15 +1242,7 @@
       "SourceId": "mvc",
       "SourceType": "Discovered",
       "ContentRoot": "F:\\PPSU\\sem-08\\casepoint\\Master Project\\mvc\\wwwroot\\",
-=======
-      "OriginalItemSpec": "wwwroot/lib/jquery/dist/jquery.min.map"
-    },
-    {
-      "Identity": "/Users/yashveekotadiya/Desktop/MasterProgram/MasterProject/mvc/wwwroot/lib/jquery/LICENSE.txt",
-      "SourceId": "mvc",
-      "SourceType": "Discovered",
-      "ContentRoot": "/Users/yashveekotadiya/Desktop/MasterProgram/MasterProject/mvc/wwwroot/",
->>>>>>> 5705ab79e3485b323d2773add70b2d70514a04d2
+
       "BasePath": "_content/mvc",
       "RelativePath": "lib/jquery/LICENSE.txt",
       "AssetKind": "All",
@@ -1819,11 +1255,8 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-<<<<<<< HEAD
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\LICENSE.txt"
-=======
-      "OriginalItemSpec": "wwwroot/lib/jquery/LICENSE.txt"
->>>>>>> 5705ab79e3485b323d2773add70b2d70514a04d2
+
     }
   ]
 }
