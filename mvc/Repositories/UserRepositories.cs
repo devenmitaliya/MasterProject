@@ -2,11 +2,26 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using mvc.Models;
 
 namespace mvc.Repositories
 {
     public class UserRepositories:CommanRepository,IUserRepositories
     {
+        public void Register(tblUser user)
+        {
+            NpgsqlCommand cmd = new NpgsqlCommand();
+            conn.Open();
+            cmd.Connection = conn;
+            cmd.CommandType = System.Data.CommandType.Text;
+            cmd.CommandText = "INSERT INTO t_employeeusers(c_uname, c_uemail, c_password, c_role) VALUES(@c_uname, @c_uemail, @c_password, @c_role)";
+            cmd.Parameters.AddWithValue("@c_uname", user.c_uname);
+            cmd.Parameters.AddWithValue("@c_uemail", user.c_uemail);
+            cmd.Parameters.AddWithValue("@c_password", user.c_password);
+            cmd.Parameters.AddWithValue("@c_role", user.c_role);
+            cmd.ExecuteNonQuery();
+            conn.Close();
+        }
         public tblUser Login(tblUser data)
         {
            NpgsqlCommand cmd = new NpgsqlCommand();
