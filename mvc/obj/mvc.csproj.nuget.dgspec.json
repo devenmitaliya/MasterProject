@@ -17,12 +17,15 @@
           "C:\\Users\\hp\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
+          "net6.0",
           "net6.0"
         ],
         "sources": {
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {}
@@ -35,6 +38,8 @@
         }
       },
       "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
@@ -67,4 +72,6 @@
       }
     }
   }
+}
+}
 }
