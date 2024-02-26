@@ -17,7 +17,7 @@ namespace mvc.Repositories
                 .Build();
                                             
 
-                conn = new NpgsqlConnection(myConfig.GetConnectionString("Myconnection"));
+                conn = new NpgsqlConnection(myConfig.GetConnectionString("MyConnection"));
         }
     }
 }

@@ -1,3 +1,7 @@
 ﻿<Project>
+<<<<<<< HEAD
   <Import Project="..\build\mvc.props" />
+=======
+  <Import Project="../build/mvc.props" />
+>>>>>>> 5705ab79e3485b323d2773add70b2d70514a04d2
 </Project>
