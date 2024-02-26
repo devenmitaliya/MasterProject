@@ -5,38 +5,40 @@ using System.Threading.Tasks;
 
 namespace mvc.Repositories
 {
-    public class UserRepositories:CommanRepository,IUserRepositories
+    public class UserRepositories : CommanRepository, IUserRepositories
     {
-        public tblUser Login(tblUser data)
-        {
-           NpgsqlCommand cmd = new NpgsqlCommand();
+          private readonly IHttpContextAccessor _httpContextAccessor;
 
+       public UserRepositories(IHttpContextAccessor httpContextAccessor)
+       {
+        _httpContextAccessor=httpContextAccessor;
+       }
+       
+       public void Login(string email, string password){
 
-            cmd.Connection = conn;
-            cmd.CommandType = System.Data.CommandType.Text;
-            cmd.CommandText = "SELECT * FROM t_employeeusers WHERE c_uemail= @c_uemail AND c_password=@c_password";
-            cmd.Parameters.AddWithValue("@c_uemail", data.c_uemail);
-            cmd.Parameters.AddWithValue("@c_password", data.c_password);
-            tblUser user = null;
-            conn.Open();
-            DataTable dt = new DataTable();
-            dt.Load(cmd.ExecuteReader());
-
-            if (dt.Rows.Count > 0)
+            try{
+                conn.Open();
+                using var cmd=new NpgsqlCommand("select * from  t_employeeusers where c_uemail=@c_uemail and c_password=@c_password;",conn);
+                  cmd.Parameters.AddWithValue("@c_uemail", c_uemail);
+                cmd.Parameters.AddWithValue("@c_password", c_password);   
+                var dr=cmd.ExecuteReader();
+                if (dr.Read())
             {
-                user = (from DataRow dr in dt.Rows
-                        select new tblUser()
-                        {
-                           
-                            c_uname = dr["c_uname"].ToString(),
-                            c_uemail = dr["c_uemail"].ToString(),
-                            c_password = dr["c_password"].ToString(),
-                            c_role = dr["c_role"].ToString(),
-                        }).ToList().FirstOrDefault();
+            var session=_httpContextAccessor.HttpContext.Session;
+            session.SetString("c_role",dr["c_role"].ToString());
+             session.SetString("c_uname",dr["c_uname"].ToString());
+           session.SetInt32("c_uid",(int)dr["c_uid"]);
             }
 
-            conn.Close();
-            return user;
+                
+
+            }catch(Exception e){
+                Console.WriteLine(e.Message);
+            }finally{
+                conn.Close();
+            }
         }
-    }
+
+
+}
 }
