@@ -5,6 +5,8 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
+using mvc.Models;
+using mvc.Repositories;
 
 namespace mvc.Controllers
 {
@@ -12,9 +14,11 @@ namespace mvc.Controllers
     public class UserController : Controller
     {
         private readonly ILogger<UserController> _logger;
+        private readonly IUserRepositories _userRepositories;
 
-        public UserController(ILogger<UserController> logger)
+        public UserController(ILogger<UserController> logger, IUserRepositories userRepositories)
         {
+            _userRepositories = userRepositories;
             _logger = logger;
         }
 
@@ -24,14 +28,34 @@ namespace mvc.Controllers
         }
 
         [HttpGet]
-         public IActionResult Login()
+        public IActionResult Login()
         {
             return View();
         }
 
         [HttpPost]
-         public IActionResult Loginmodel()
+        public IActionResult Login(tblUser user)
         {
+
+            int rowcount = _userRepositories.Login(user);
+            if (rowcount == 1)
+            {
+                if (HttpContext.Session.GetString("role") == "admin")
+                {
+                    Console.WriteLine(HttpContext.Session.GetString("role"));
+                    return RedirectToAction("Index", "Task");
+                }
+                else
+                {
+                    Console.WriteLine(HttpContext.Session.GetString("role"));
+                    return RedirectToAction("TaskManager", "Task");
+                }
+
+            }
+            else
+            {
+                return RedirectToAction("Login");
+            }
             return View();
         }
 
