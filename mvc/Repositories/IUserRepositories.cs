@@ -6,10 +6,11 @@ using mvc.Models;
 
 namespace mvc.Repositories
 {
-    public interface IUserRepositories
-    {
-    
-      void Login(string email, string password);
+  public interface IUserRepositories
+  {
 
-    }
+    void Register(tblUser user);
+    int Login(tblUser tblUser);
+
+  }
 }
