@@ -28,12 +28,18 @@ namespace mvc.Controllers
         {
             return View();
         }
+         [HttpGet]
+         public IActionResult Register()
+        {
+            return View();
+        }
 
         [HttpPost]
          public IActionResult Loginmodel()
         {
             return View();
         }
+        
 
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]

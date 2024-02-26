@@ -1,0 +1,184 @@
+@* @model WEBAPI.Models.tblUser
+
+
+@{
+    ViewBag.Title = "Register";
+} *@
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+<style>
+    body {
+        background-color: #f8f9fa;
+    }
+
+    .container {
+        margin-top: 50px;
+    }
+
+    .card {
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .card-header {
+        background-color: #0a55a6;
+        color: #fff;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .card-body {
+        padding: 20px;
+    }
+
+    .mb-3 {
+        margin-bottom: 1rem;
+    }
+
+    .btn-primary {
+        background-color: #0a55a6;
+        border-color: #0a55a6;
+    }
+
+    .btn-primary:hover {
+        background-color: #007bff;
+        border-color: #007bff;
+    }
+
+    .text-center a {
+        color: #007bff;
+        text-decoration: none;
+    }
+
+    .text-center a:hover {
+        text-decoration: underline;
+    }
+</style>
+
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-header">
+                    <h2 class="mb-4">Register Form</h2>
+                </div>
+                <div class="card-body">
+                    <div class="form-horizontal">
+                        <div class="form-group">
+                            <p>Username</p>
+                            <div class="col-md-10">
+                                <input type="text" class="form-control" id="txtUserName" required>
+                                <span class="text-danger" id="userNameError"></span>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <p>Email</p>
+                            <div class="col-md-10">
+                                <input type="email" class="form-control" id="txtEmail" required>
+                                <span class="text-danger" id="emailError"></span>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <p>Password</p>
+                            <div class="col-md-10">
+                                <input type="password" class="form-control" id="txtPassword" required>
+                                <span class="text-danger" id="passwordError"></span>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <p>Confirm Password</p>
+                            <div class="col-md-10">
+                                <input type="password" class="form-control" id="txtCPassword" required>
+                                <span class="text-danger" id="confirmPasswordError"></span>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-md-offset-2 col-md-10">
+                                <input type="submit" value="Register" class="btn btn-primary" id="btnRegister"
+                                    onclick="Register()" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+
+@* <script>
+    function Register() {
+        var user = {
+            c_username: $("#txtUserName").val(),
+            c_email: $("#txtEmail").val(),
+            c_password: $("#txtPassword").val(),
+            c_cpassword: $("#txtPassword").val()
+        }
+        var settings = {
+            "url": "https://localhost:7010/api/UserApi/Register",
+            "method": "POST",
+            "timeout": 0,
+            "headers": {
+                "Content-Type": "application/json"
+            },
+            "data": JSON.stringify(user)
+        }
+        console.log(user);
+        $.ajax(settings).done(function (response) {
+            console.log(response);
+            alert('Successfully Registered!');
+            window.location = "/UserMVC/Login";
+        }).fail(function (response) {
+            alert(response.responseText);
+            window.location = "/UserMVC/Register";
+        });
+
+
+        // Function to validate form fields
+        function validateForm() {
+            var isValid = true;
+
+            // Validate username
+            var username = $("#txtUserName").val().trim();
+            if (username === "") {
+                $("#userNameError").text("Username is required.");
+                isValid = false;
+            } else {
+                $("#userNameError").text("");
+            }
+
+            // Validate email
+            var email = $("#txtEmail").val().trim();
+            if (email === "") {
+                $("#emailError").text("Email is required.");
+                isValid = false;
+            } else {
+                $("#emailError").text("");
+            }
+
+            // Validate password
+            var password = $("#txtPassword").val().trim();
+            if (password === "") {
+                $("#passwordError").text("Password is required.");
+                isValid = false;
+            } else {
+                $("#passwordError").text("");
+            }
+
+            // Validate confirm password
+            var confirmPassword = $("#txtCPassword").val().trim();
+            if (confirmPassword === "") {
+                $("#confirmPasswordError").text("Confirm Password is required.");
+                isValid = false;
+            } else {
+                $("#confirmPasswordError").text("");
+            }
+
+            return isValid;
+        }
+    }
+</script> *@
