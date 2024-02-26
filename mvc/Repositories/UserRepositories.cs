@@ -19,32 +19,6 @@ namespace mvc.Repositories
             _httpContextAccessor = httpContextAccessor;
         }
 
-        public void Register(tblUser user)
-        {
-            NpgsqlCommand cmd = new NpgsqlCommand();
-            try
-            {
-                conn.Open();
-                cmd.Connection = conn;
-                cmd.CommandType = System.Data.CommandType.Text;
-                cmd.CommandText = "INSERT INTO t_employeeusers(c_uname, c_uemail, c_password, c_role) VALUES(@c_uname, @c_uemail, @c_password, @c_role)";
-                cmd.Parameters.AddWithValue("@c_uname", user.c_uname);
-                cmd.Parameters.AddWithValue("@c_uemail", user.c_uemail);
-                cmd.Parameters.AddWithValue("@c_password", user.c_password);
-                cmd.Parameters.AddWithValue("@c_role", user.c_role);
-                cmd.ExecuteNonQuery();
-            }
-            catch (System.Exception ex)
-            {
-                Console.WriteLine(ex.Message);
-                throw;
-            }
-            finally
-            {
-                conn.Close();
-            }
-        }
-
         public int Login(tblUser user)
         {
             int rowCount = 0;
@@ -76,6 +50,45 @@ namespace mvc.Repositories
             conn.Close();
 
             return rowCount;
+        }
+
+
+
+        public void Register(tblUser user)
+        {
+            int rowCount = 0;
+            string username = "";
+            int studentID = 0;
+
+
+            try
+            {
+                conn.Open();
+                // int roleId = GetTaskTypeId(user.c_role, conn);
+                // Console.WriteLine("IDDDDDDDDDDDDDDDD" + roleId);
+                using (var cmd = new NpgsqlCommand("INSERT INTO t_employeeusers(c_uname, c_uemail, c_password, c_role) VALUES(@c_uname, @c_uemail, @c_password, @c_role)", conn))
+                {
+                    cmd.Parameters.AddWithValue("@c_uname", user.c_uname);
+                    cmd.Parameters.AddWithValue("@c_uemail", user.c_uemail);
+                    cmd.Parameters.AddWithValue("@c_password", user.c_password);
+                    cmd.Parameters.AddWithValue("@c_role", user.c_role);
+
+                    cmd.ExecuteNonQuery();
+
+
+
+                }
+            }
+            catch (System.Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+                throw;
+            }
+            finally
+            {
+                conn.Close();
+            }
+
         }
     }
 }

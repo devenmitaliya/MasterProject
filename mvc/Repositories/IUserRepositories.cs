@@ -12,5 +12,5 @@ namespace mvc.Repositories
       public void Register(tblUser user);
       int Login(tblUser user);
 
-    }
+  }
 }

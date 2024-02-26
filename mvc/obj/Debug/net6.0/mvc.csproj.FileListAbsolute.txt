@@ -1,0 +1,94 @@
+<<<<<<< HEAD
+C:\Users\Hardik\Desktop\Master\MasterProject\mvc\obj\Debug\net6.0\mvc.csproj.AssemblyReference.cache
+C:\Users\Hardik\Desktop\Master\MasterProject\mvc\obj\Debug\net6.0\mvc.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Hardik\Desktop\Master\MasterProject\mvc\obj\Debug\net6.0\mvc.AssemblyInfoInputs.cache
+C:\Users\Hardik\Desktop\Master\MasterProject\mvc\obj\Debug\net6.0\mvc.AssemblyInfo.cs
+C:\Users\Hardik\Desktop\Master\MasterProject\mvc\obj\Debug\net6.0\mvc.csproj.CoreCompileInputs.cache
+C:\Users\Hardik\Desktop\Master\MasterProject\mvc\obj\Debug\net6.0\mvc.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Hardik\Desktop\Master\MasterProject\mvc\obj\Debug\net6.0\mvc.RazorAssemblyInfo.cache
+C:\Users\Hardik\Desktop\Master\MasterProject\mvc\obj\Debug\net6.0\mvc.RazorAssemblyInfo.cs
+=======
+C:\Users\bhush\OneDrive\Desktop\MasterProject\mvc\obj\Debug\net6.0\mvc.csproj.AssemblyReference.cache
+C:\Users\bhush\OneDrive\Desktop\MasterProject\mvc\obj\Debug\net6.0\mvc.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\bhush\OneDrive\Desktop\MasterProject\mvc\obj\Debug\net6.0\mvc.AssemblyInfoInputs.cache
+C:\Users\bhush\OneDrive\Desktop\MasterProject\mvc\obj\Debug\net6.0\mvc.AssemblyInfo.cs
+C:\Users\bhush\OneDrive\Desktop\MasterProject\mvc\obj\Debug\net6.0\mvc.csproj.CoreCompileInputs.cache
+C:\Users\bhush\OneDrive\Desktop\MasterProject\mvc\obj\Debug\net6.0\mvc.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\bhush\OneDrive\Desktop\MasterProject\mvc\obj\Debug\net6.0\mvc.RazorAssemblyInfo.cache
+C:\Users\bhush\OneDrive\Desktop\MasterProject\mvc\obj\Debug\net6.0\mvc.RazorAssemblyInfo.cs
+C:\Users\bhush\OneDrive\Desktop\MasterProject\mvc\bin\Debug\net6.0\appsettings.Development.json
+C:\Users\bhush\OneDrive\Desktop\MasterProject\mvc\bin\Debug\net6.0\appsettings.json
+C:\Users\bhush\OneDrive\Desktop\MasterProject\mvc\bin\Debug\net6.0\mvc.staticwebassets.runtime.json
+C:\Users\bhush\OneDrive\Desktop\MasterProject\mvc\bin\Debug\net6.0\mvc.exe
+C:\Users\bhush\OneDrive\Desktop\MasterProject\mvc\bin\Debug\net6.0\mvc.deps.json
+C:\Users\bhush\OneDrive\Desktop\MasterProject\mvc\bin\Debug\net6.0\mvc.runtimeconfig.json
+C:\Users\bhush\OneDrive\Desktop\MasterProject\mvc\bin\Debug\net6.0\mvc.dll
+C:\Users\bhush\OneDrive\Desktop\MasterProject\mvc\bin\Debug\net6.0\mvc.pdb
+C:\Users\bhush\OneDrive\Desktop\MasterProject\mvc\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\bhush\OneDrive\Desktop\MasterProject\mvc\bin\Debug\net6.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\bhush\OneDrive\Desktop\MasterProject\mvc\bin\Debug\net6.0\Npgsql.dll
+C:\Users\bhush\OneDrive\Desktop\MasterProject\mvc\bin\Debug\net6.0\System.Diagnostics.DiagnosticSource.dll
+C:\Users\bhush\OneDrive\Desktop\MasterProject\mvc\bin\Debug\net6.0\System.Text.Encodings.Web.dll
+C:\Users\bhush\OneDrive\Desktop\MasterProject\mvc\bin\Debug\net6.0\System.Text.Json.dll
+C:\Users\bhush\OneDrive\Desktop\MasterProject\mvc\bin\Debug\net6.0\runtimes\browser\lib\net6.0\System.Text.Encodings.Web.dll
+C:\Users\bhush\OneDrive\Desktop\MasterProject\mvc\obj\Debug\net6.0\staticwebassets\msbuild.mvc.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\bhush\OneDrive\Desktop\MasterProject\mvc\obj\Debug\net6.0\staticwebassets\msbuild.build.mvc.props
+C:\Users\bhush\OneDrive\Desktop\MasterProject\mvc\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.mvc.props
+C:\Users\bhush\OneDrive\Desktop\MasterProject\mvc\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.mvc.props
+C:\Users\bhush\OneDrive\Desktop\MasterProject\mvc\obj\Debug\net6.0\staticwebassets.pack.json
+C:\Users\bhush\OneDrive\Desktop\MasterProject\mvc\obj\Debug\net6.0\staticwebassets.build.json
+C:\Users\bhush\OneDrive\Desktop\MasterProject\mvc\obj\Debug\net6.0\staticwebassets.development.json
+C:\Users\bhush\OneDrive\Desktop\MasterProject\mvc\obj\Debug\net6.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+C:\Users\bhush\OneDrive\Desktop\MasterProject\mvc\obj\Debug\net6.0\scopedcss\bundle\mvc.styles.css
+C:\Users\bhush\OneDrive\Desktop\MasterProject\mvc\obj\Debug\net6.0\scopedcss\projectbundle\mvc.bundle.scp.css
+C:\Users\bhush\OneDrive\Desktop\MasterProject\mvc\obj\Debug\net6.0\mvc.csproj.CopyComplete
+C:\Users\bhush\OneDrive\Desktop\MasterProject\mvc\obj\Debug\net6.0\mvc.dll
+C:\Users\bhush\OneDrive\Desktop\MasterProject\mvc\obj\Debug\net6.0\refint\mvc.dll
+C:\Users\bhush\OneDrive\Desktop\MasterProject\mvc\obj\Debug\net6.0\mvc.pdb
+C:\Users\bhush\OneDrive\Desktop\MasterProject\mvc\obj\Debug\net6.0\mvc.genruntimeconfig.cache
+C:\Users\bhush\OneDrive\Desktop\MasterProject\mvc\obj\Debug\net6.0\ref\mvc.dll
+>>>>>>> 669d7d1464045d023234b4897ea6eec42c246c83
+C:\Users\Hardik\Desktop\Master\MasterProject\mvc\obj\Debug\net6.0\mvc.dll
+C:\Users\Hardik\Desktop\Master\MasterProject\mvc\obj\Debug\net6.0\refint\mvc.dll
+C:\Users\Hardik\Desktop\Master\MasterProject\mvc\obj\Debug\net6.0\mvc.pdb
+F:\PPSU\sem-08\casepoint\Master Project\mvc\obj\Debug\net6.0\mvc.csproj.AssemblyReference.cache
+F:\PPSU\sem-08\casepoint\Master Project\mvc\obj\Debug\net6.0\mvc.GeneratedMSBuildEditorConfig.editorconfig
+F:\PPSU\sem-08\casepoint\Master Project\mvc\obj\Debug\net6.0\mvc.AssemblyInfoInputs.cache
+F:\PPSU\sem-08\casepoint\Master Project\mvc\obj\Debug\net6.0\mvc.AssemblyInfo.cs
+F:\PPSU\sem-08\casepoint\Master Project\mvc\obj\Debug\net6.0\mvc.csproj.CoreCompileInputs.cache
+F:\PPSU\sem-08\casepoint\Master Project\mvc\obj\Debug\net6.0\mvc.MvcApplicationPartsAssemblyInfo.cache
+F:\PPSU\sem-08\casepoint\Master Project\mvc\obj\Debug\net6.0\mvc.RazorAssemblyInfo.cache
+F:\PPSU\sem-08\casepoint\Master Project\mvc\obj\Debug\net6.0\mvc.RazorAssemblyInfo.cs
+F:\PPSU\sem-08\casepoint\Master Project\mvc\obj\Debug\net6.0\mvc.sourcelink.json
+F:\PPSU\sem-08\casepoint\Master Project\mvc\obj\Debug\net6.0\mvc.dll
+F:\PPSU\sem-08\casepoint\Master Project\mvc\obj\Debug\net6.0\refint\mvc.dll
+F:\PPSU\sem-08\casepoint\Master Project\mvc\obj\Debug\net6.0\mvc.pdb
+F:\PPSU\sem-08\casepoint\Master Project\mvc\bin\Debug\net6.0\appsettings.Development.json
+F:\PPSU\sem-08\casepoint\Master Project\mvc\bin\Debug\net6.0\appsettings.json
+F:\PPSU\sem-08\casepoint\Master Project\mvc\bin\Debug\net6.0\mvc.staticwebassets.runtime.json
+F:\PPSU\sem-08\casepoint\Master Project\mvc\bin\Debug\net6.0\mvc.exe
+F:\PPSU\sem-08\casepoint\Master Project\mvc\bin\Debug\net6.0\mvc.deps.json
+F:\PPSU\sem-08\casepoint\Master Project\mvc\bin\Debug\net6.0\mvc.runtimeconfig.json
+F:\PPSU\sem-08\casepoint\Master Project\mvc\bin\Debug\net6.0\mvc.dll
+F:\PPSU\sem-08\casepoint\Master Project\mvc\bin\Debug\net6.0\mvc.pdb
+F:\PPSU\sem-08\casepoint\Master Project\mvc\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+F:\PPSU\sem-08\casepoint\Master Project\mvc\bin\Debug\net6.0\Microsoft.Extensions.Logging.Abstractions.dll
+F:\PPSU\sem-08\casepoint\Master Project\mvc\bin\Debug\net6.0\Npgsql.dll
+F:\PPSU\sem-08\casepoint\Master Project\mvc\bin\Debug\net6.0\System.Diagnostics.DiagnosticSource.dll
+F:\PPSU\sem-08\casepoint\Master Project\mvc\bin\Debug\net6.0\System.Security.Permissions.dll
+F:\PPSU\sem-08\casepoint\Master Project\mvc\bin\Debug\net6.0\System.Text.Encodings.Web.dll
+F:\PPSU\sem-08\casepoint\Master Project\mvc\bin\Debug\net6.0\System.Text.Json.dll
+F:\PPSU\sem-08\casepoint\Master Project\mvc\bin\Debug\net6.0\runtimes\browser\lib\net6.0\System.Text.Encodings.Web.dll
+F:\PPSU\sem-08\casepoint\Master Project\mvc\obj\Debug\net6.0\staticwebassets.build.json
+F:\PPSU\sem-08\casepoint\Master Project\mvc\obj\Debug\net6.0\staticwebassets.development.json
+F:\PPSU\sem-08\casepoint\Master Project\mvc\obj\Debug\net6.0\staticwebassets\msbuild.mvc.Microsoft.AspNetCore.StaticWebAssets.props
+F:\PPSU\sem-08\casepoint\Master Project\mvc\obj\Debug\net6.0\staticwebassets\msbuild.build.mvc.props
+F:\PPSU\sem-08\casepoint\Master Project\mvc\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.mvc.props
+F:\PPSU\sem-08\casepoint\Master Project\mvc\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.mvc.props
+F:\PPSU\sem-08\casepoint\Master Project\mvc\obj\Debug\net6.0\staticwebassets.pack.json
+F:\PPSU\sem-08\casepoint\Master Project\mvc\obj\Debug\net6.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+F:\PPSU\sem-08\casepoint\Master Project\mvc\obj\Debug\net6.0\scopedcss\bundle\mvc.styles.css
+F:\PPSU\sem-08\casepoint\Master Project\mvc\obj\Debug\net6.0\scopedcss\projectbundle\mvc.bundle.scp.css
+F:\PPSU\sem-08\casepoint\Master Project\mvc\obj\Debug\net6.0\mvc.csproj.Up2Date
+F:\PPSU\sem-08\casepoint\Master Project\mvc\obj\Debug\net6.0\mvc.genruntimeconfig.cache
+F:\PPSU\sem-08\casepoint\Master Project\mvc\obj\Debug\net6.0\ref\mvc.dll

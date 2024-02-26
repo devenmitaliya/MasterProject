@@ -33,6 +33,7 @@ namespace mvc.Controllers
             return View();
         }
 
+
         [HttpPost]
         public IActionResult Login(tblUser user)
         {
@@ -40,17 +41,7 @@ namespace mvc.Controllers
             int rowcount = _userRepositories.Login(user);
             if (rowcount == 1)
             {
-                if (HttpContext.Session.GetString("role") == "admin")
-                {
-                    Console.WriteLine(HttpContext.Session.GetString("role"));
-                    return RedirectToAction("Index", "Task");
-                }
-                else
-                {
-                    Console.WriteLine(HttpContext.Session.GetString("role"));
-                    return RedirectToAction("TaskManager", "Task");
-                }
-
+                return RedirectToAction("Index", "Employee");
             }
             else
             {
@@ -65,14 +56,20 @@ namespace mvc.Controllers
             return View();
         }
 
+
         [HttpPost]
         public IActionResult Register(tblUser user)
         {
             user.c_role = "User";
+            Console.WriteLine(user.c_role);
             _userRepositories.Register(user);
+            Console.WriteLine(user.c_role);
+            Console.WriteLine(user.c_uemail);
+            Console.WriteLine(user.c_uid);
+            Console.WriteLine(user.c_password);
             return RedirectToAction("Login");
         }
-        
+
 
 
 
