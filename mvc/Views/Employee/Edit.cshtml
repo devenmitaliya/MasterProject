@@ -1,0 +1,77 @@
+@model tblEmployee
+
+@{
+    ViewData["Title"] = "UpdateEmployeeData";
+}
+
+<div>
+    <div >
+        <h2 >Update Employee Data</h2>
+    </div>
+    <form asp-action="Edit" method="post" enctype="multipart/form-data">
+        <input type="hidden" asp-for="c_empid">
+
+        <div>
+            <label asp-for="c_empname"></label>
+            <input asp-for="c_empname" value="@Model.c_empname" />
+            <span asp-validation-for="c_empname"></span>
+        </div>
+			
+		<div>
+            <label asp-for="c_empgender">Gender</label><br>
+            <input type="radio" asp-for="c_empgender" value="Male" checked="@(Model.c_empgender == "Male")" /> Male
+            <input type="radio" asp-for="c_empgender" value="Female" checked="@(Model.c_empgender == "Female")" /> Female
+            <input type="radio" asp-for="c_empgender" value="Other" checked="@(Model.c_empgender == "Other")" /> Other
+            <span asp-validation-for="c_empgender"></span>
+        </div>
+        
+        <div>
+            <label asp-for="c_empdob"></label>
+            <input asp-for="c_empdob" type="date" value="@Model.c_empdob.ToString("yyyy-MM-dd")" />
+            <span asp-validation-for="c_empdob"></span>
+        </div>
+
+        
+
+        <div>
+            <label asp-for="c_empshift">Shift</label><br>
+            @foreach (var lang in new List<string> { "Morning", "Afternoon" })
+            {
+                <input type="checkbox" name="c_empshift" value="@lang" @(Model.c_empshift.Contains(lang) ? "checked" : "") /> @lang
+            }
+            <span asp-validation-for="c_empshift"></span>
+        </div>
+
+        <div>
+			<label asp-for="c_empdept">Department--:</label>
+			<select asp-for="c_empdept" required>
+				<option value="">Select Category</option>
+				<option value="stationary">Sales</option>
+				<option value="mobile">Marketing</option>
+				<option value="electronics">Human Resources</option>
+			</select>
+			<span asp-validation-for="c_empdept"></span>
+		</div>
+
+        <div>
+            <label asp-for="c_empimg">Photo:</label><br>
+            <input type="file" asp-for="c_empimg" class="custom-file-input" name="fileInput" id="fileInput" />
+            <label class="custom-file-label" for="fileInput">@Model.c_empimg</label>
+            <span asp-validation-for="c_empimg"></span>
+        </div>
+
+        
+        <div>
+            <button type="submit" class="btn btn-primary">Update Employee</button>
+            <a asp-action="Index" class="btn btn-primary">Back to List</a>
+        </div>
+    </form>
+
+    <script>
+        
+        document.getElementById('fileInput').addEventListener('change', function () {
+            var fileName = this.value.split('\\').pop();
+            document.querySelector('.custom-file-label[for="fileInput"]').innerText = fileName;
+        });
+    </script>
+</div>

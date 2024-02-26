@@ -1,0 +1,52 @@
+@model tblEmployee
+
+@{
+    ViewData["Title"] = "Employee Data";
+}
+
+<div>
+    <h2>Employee Data</h2>
+
+    <form asp-action="Add" method="post">
+        <input type="hidden" asp-for="c_empid">
+        <div>
+            <label asp-for="c_empname">Employee Name</label><br>
+            <input asp-for="c_empname">
+            <span asp-validation-for="c_empname"></span>
+        </div>
+
+        <div>
+            <label asp-for="c_empgender">Gender</label><br>
+            <input type="radio" asp-for="c_empgender" value="Male" /> Male
+            <input type="radio" asp-for="c_empgender" value="Female" /> Female
+            <input type="radio" asp-for="c_empgender" value="Other" /> Other
+            <span asp-validation-for="c_empgender"></span>
+        </div>
+
+        <div>
+            <label asp-for="c_empdob">Date of Birth</label><br>
+            <input asp-for="c_empdob" type="date" />
+            <span asp-validation-for="c_empdob"></span>
+        </div>
+
+        <div>
+            <label asp-for="c_empshift">Shift</label><br>
+            <input type="checkbox" asp-for="@Model.c_empshift" value="Morning" /> Morning
+            <input type="checkbox" asp-for="@Model.c_empshift" value="Afternoon" /> Afternoon
+            <span asp-validation-for="c_empshift"></span>
+        </div>
+
+        <div>
+            
+        </div>
+
+        <div>
+            <label asp-for="c_empimg">Photo</label>
+            <input type="file" asp-for="c_empimg"/>
+            <span asp-validation-for="c_empimg"></span>
+        </div>
+
+        <button type="submit" >Add Employee</button>
+        <a asp-action="Index" >Back to List</a>
+    </form>
+</div>
