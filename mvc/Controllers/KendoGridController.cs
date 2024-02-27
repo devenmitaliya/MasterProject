@@ -10,7 +10,7 @@ using Microsoft.Extensions.Logging;
 
 namespace mvc.Controllers
 {
-    [Route("[controller]")]
+    // [Route("[controller]")]
     public class KendoGridController : Controller
     {
         private readonly ILogger<KendoGridController> _logger;
@@ -27,54 +27,77 @@ namespace mvc.Controllers
             return View();
         }
 
+        [HttpGet]
         [Produces("application/json")]
         public IActionResult GetAllEmployee()
         {
-            List<tblEmployee> emp = _employeeRepository.GetAllEmployee();
-            return Json(emp);
+            List<tblEmployee> employees = _employeeRepository.GetAllEmployee();
+            return Json(employees);
         }
 
+        [HttpGet]
         public IActionResult Details(int id)
         {
-            tblEmployee emp = _employeeRepository.GetOneEmployee(id);
-            if (emp == null)
+            tblEmployee employee = _employeeRepository.GetOneEmployee(id);
+            if (employee == null)
             {
                 return NotFound();
             }
-            return Json(emp);
+            return Json(employee);
         }
 
-        public IActionResult Create(tblEmployee emp)
-        {
-            if (ModelState.IsValid)
-            {
-                _employeeRepository.AddEmployee(emp);
-                return Json(new { success = true, message = "ok" });
-            }
-            return Json(new { success = false, message = "ok" });
-        }
-
-         public IActionResult Edit(tblEmployee emp)
-        {
-            if (ModelState.IsValid)
-            {
-                _employeeRepository.EditEmployee(emp);
-                return Json(new { success = true, message = "ok" });
-            }
-            return Json(new { success = false, message = "not ok" });
-        }
-
-        public IActionResult Delete(tblEmployee emp)
+        [HttpPost]
+        public IActionResult Add(tblEmployee emp)
         {
             try
             {
-               
-                _employeeRepository.DeleteEmployee(emp);
-                return Json(new { success = true, message = "ok" });
+                // Your logic to add the employee to the database
+                _employeeRepository.AddEmployee(emp);
+                return Json(new { success = true, message = "Employee added successfully", data = emp });
             }
             catch (Exception ex)
             {
-                return Json(new { success = false, message = "not ok" });
+                return Json(new { success = false, message = ex.Message });
+            }
+        }
+
+        [HttpPost]
+        public IActionResult EditEmployee(tblEmployee emp)
+        {
+            try
+            {
+                _logger.LogInformation($"Received emp: {emp}");
+                _logger.LogInformation("Employee edited successfully");
+
+                // Log or debug statements to inspect emp and ensure it has the correct values
+                _employeeRepository.EditEmployee(emp);
+                return Json(new { success = true, message = "Employee edited successfully", data = emp });
+            }
+            catch (Exception ex)
+            {
+                return Json(new { success = false, message = ex.Message });
+            }
+        }
+
+
+
+        [HttpDelete]
+        public IActionResult Delete(int id)
+        {
+            try
+            {
+                var employee = _employeeRepository.GetOneEmployee(id);
+                if (employee == null)
+                {
+                    return Json(new { success = false, message = "Employee not found" });
+                }
+
+                _employeeRepository.DeleteEmployee(employee);
+                return Json(new { success = true, message = "Employee deleted successfully" });
+            }
+            catch (Exception ex)
+            {
+                return Json(new { success = false, message = ex.Message });
             }
         }
 
@@ -82,7 +105,8 @@ namespace mvc.Controllers
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {
-            return View("Error!");
+            return View("Error");
         }
     }
+
 }

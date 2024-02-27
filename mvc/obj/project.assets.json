@@ -1416,24 +1416,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Dhruvi kava\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\LENOVO\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Interns Data\\GitProject\\MasterProject\\mvc\\mvc.csproj",
+      "projectUniqueName": "D:\\casepoint Internship\\MasterProject\\mvc\\mvc.csproj",
       "projectName": "mvc",
-      "projectPath": "D:\\Interns Data\\GitProject\\MasterProject\\mvc\\mvc.csproj",
-      "packagesPath": "C:\\Users\\Dhruvi kava\\.nuget\\packages\\",
-      "outputPath": "D:\\Interns Data\\GitProject\\MasterProject\\mvc\\obj\\",
+      "projectPath": "D:\\casepoint Internship\\MasterProject\\mvc\\mvc.csproj",
+      "packagesPath": "C:\\Users\\LENOVO\\.nuget\\packages\\",
+      "outputPath": "D:\\casepoint Internship\\MasterProject\\mvc\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\Dhruvi kava\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\LENOVO\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

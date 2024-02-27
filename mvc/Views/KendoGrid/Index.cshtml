@@ -1,0 +1,239 @@
+@* @{
+Layout = "_layout";
+}
+
+@model List<tblEmployee>
+
+<link rel="stylesheet" href="https://kendo.cdn.telerik.com/2021.2.616/styles/kendo.common.min.css" />
+<link rel="stylesheet" href="https://kendo.cdn.telerik.com/2021.2.616/styles/kendo.default.min.css" />
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://kendo.cdn.telerik.com/2021.2.616/js/kendo.all.min.js"></script>
+
+<div id="grid"></div>
+
+@section Scripts {
+<script>
+$(document).ready(function () {
+var dataSource = new kendo.data.DataSource({
+transport: {
+read: {
+url: "http://localhost:5110/KendoGrid/GetAllEmployee",
+dataType: "json"
+},
+create: {
+url: "http://localhost:5110/KendoGrid/Add",
+type: "POST",
+contentType: "application/json"
+data: function (data) {
+console.log("Data to be sent:", data);
+return JSON.stringify(data);
+},
+},
+update: {
+url: "http://localhost:5110/KendoGrid/EditEmployee",
+type: "PUT", // Change the request type to PUT
+contentType: "application/json",
+},
+destroy: {
+url: function (data) {
+return "http://localhost:5110/KendoGrid/Delete/" + data.c_empid;
+},
+type: "DELETE",
+dataType: "json"
+}
+},
+pageSize: 10,
+schema: {
+model: {
+id: "c_empid",
+fields: {
+c_empid: { type: "number", editable: false, nullable: false },
+c_empname: { type: "string", validation: { required: true } },
+c_empgender: { type: "string", validation: { required: true } },
+c_empdob: { type: "date", validation: { required: true } },
+c_empshift: { type: "string", validation: { required: true } },
+c_empimg: { type: "string", validation: { required: true } },
+c_empdepartment: { type: "number", validation: { required: true } }
+}
+}
+}
+});
+
+$("#grid").kendoGrid({
+dataSource: dataSource,
+columns: [
+{ field: "c_empid", title: "Employee ID" },
+{ field: "c_empname", title: "Employee Name" },
+{ field: "c_empgender", title: "Gender" },
+{ field: "c_empdob", title: "Date of Birth", format: "{0:MM/dd/yyyy}" },
+{ field: "c_empshift", title: "Employee Shift" },
+{ field: "c_empimg", title: "Profile" },
+{ field: "c_empdepartment", title: "Department" },
+{ command: ["edit", "destroy"], title: "&nbsp;", width: "200px" }
+],
+editable: "popup",
+toolbar: ["create"],
+pageable: true,
+sortable: true,
+filterable: true,
+});
+
+dataSource.bind("requestEnd", function (e) {
+if (e.type === "create" || e.type === "update" || e.type === "destroy") {
+dataSource.read();
+}
+});
+
+$("#grid").on("click", ".k-grid-cancel-changes", function () {
+dataSource.cancelChanges();
+});
+});
+</script>
+} *@
+
+
+@model List<tblEmployee>
+
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://kendo.cdn.telerik.com/2021.2.616/js/kendo.all.min.js"></script>
+<link rel="stylesheet" href="https://kendo.cdn.telerik.com/2021.2.616/styles/kendo.common.min.css" />
+<link rel="stylesheet" href="https://kendo.cdn.telerik.com/2021.2.616/styles/kendo.default.min.css" />
+
+<div id="grid"></div>
+
+<script>
+
+    $(document).ready(function () {
+        var dataSource = new kendo.data.DataSource({
+            transport: {
+                read: {
+                    url: "http://localhost:5110/KendoGrid/GetAllEmployee",
+                    dataType: "json",
+                },
+                create: {
+                    url: "http://localhost:5110/KendoGrid/Add",
+                    type: "POST",
+                    dataType: "json",
+                    data: function (data) {
+                        data.c_empdob = kendo.toString(data.c_empdob, "yyyy-MM-dd");
+                        console.log("Data to be sent:", data);
+                        return JSON.stringify(data);
+                    },
+                },
+                update: {
+                    url: "http://localhost:5110/KendoGrid/EditEmployee",
+                    dataType: "json",
+                    type: "POST",  // Change "PUT" to "POST"
+                    data: function (data) {
+                        data.c_empdob = kendo.toString(data.c_empdob, "yyyy-MM-dd");
+                        console.log("Update Data:", data);
+                        return JSON.stringify(data);
+                    }
+                },
+
+                destroy: {
+                    url: function (data) {
+                        return "http://localhost:5110/KendoGrid/Delete/" + data.c_empid;
+                    },
+                    type: "DELETE",
+                    dataType: "json"
+                }
+            },
+            pageSize: 10,
+            schema: {
+                model: {
+                    id: "c_empid",
+                    fields: {
+                        c_empid: { type: "number", editable: false, nullable: false },
+                        c_empname: { type: "string", validation: { required: true } },
+                        c_empgender: { type: "string", validation: { required: true } },
+                        c_empdob: { type: "date", validation: { required: true } },
+                        c_empshift: { type: "string", validation: { required: true } },
+                        c_empimg: { type: "string", validation: { required: true } },
+                        c_empdepartment: { type: "string", validation: { required: true } }
+                    }
+                }
+            }
+        });
+
+        $("#grid").kendoGrid({
+            dataSource: dataSource,
+            columns: [
+                { field: "c_empid", title: "emp ID" },
+                { field: "c_empname", title: "emp Name" },
+                { field: "c_empgender", title: "c_empgender" },
+                { field: "c_empdob", title: "c_empdob", format: "{0:yyyy-MM-dd}", editor: dateEditor },
+                { field: "c_empshift", title: "c_shift" },
+                { field: "c_empimg", title: "c_img" },
+                { field: "c_empdepartment", title: "c_depart" },
+                { command: ["edit", "destroy"], title: "&nbsp;", width: "200px" }
+            ],
+            editable: "popup",
+            toolbar: ["create"],
+            pageable: true,
+            sortable: true,
+            filterable: true,
+        });
+
+        function genderTypeRadioEditor(container, options) {
+            $('<input type="radio" name="' + options.field + '" value="Male" required/> Male' +
+                '<input type="radio" name="' + options.field + '" value="Female" required/> Female' +
+                '<label  name=" value="Female" required/>')
+                .appendTo(container);
+        }
+        function dateEditor(container, options) {
+            $('<input name="' + options.field + '" data-bind="value:' + options.field + '" />')
+                .appendTo(container)
+                .kendoDatePicker({
+                    format: "yyyy-MM-dd",
+                    value: new Date()
+                });
+        }
+        function shiftCheckboxEditor(container, options) {
+
+            var checkboxWrapper = $('<div>').appendTo(container);
+
+
+            checkboxWrapper.kendoCheckBoxGroup({
+                items: [
+                    { label: "Day", value: "Day" },
+                    { label: "Night", value: "Night" },
+
+                ]
+            });
+            var checkboxGroup = checkboxWrapper.data("kendoCheckBoxGroup");
+            checkboxGroup.value(options.model.c_shift ? options.model.c_shift.split(",") : []);
+            checkboxGroup.bind("change", function (e) {
+                options.model.set("c_shift", e.sender.value().join(","));
+            });
+        }
+
+        function deptDropDownEditor(container, options) {
+            $('<input required data-text-field="c_depname" data-value-field="c_depid" data-bind="value:' + options.field + '"/>')
+                .appendTo(container)
+                .kendoDropDownList({
+                    autoBind: false,
+                    dataSource: {
+                        transport: {
+                            read: {
+                                url: "https://localhost:7249/mvckendogrid/viewdept",
+                                dataType: "json"
+                            }
+                        }
+                    }
+                });
+        }
+
+        dataSource.bind("requestEnd", function (e) {
+            if (e.type === "create" || e.type === "update" || e.type === "destroy") {
+                dataSource.read();
+            }
+        });
+        $("#grid").on("click", ".k-grid-cancel-changes", function () {
+            dataSource.cancelChanges();
+        });
+    });
+
+
+</script>
