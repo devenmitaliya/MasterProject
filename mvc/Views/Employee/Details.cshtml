@@ -1,0 +1,19 @@
+@model tblEmployee
+
+@{
+    ViewData["Title"] = "Get One Employee";
+}
+
+<h2>Employee Details</h2>
+
+<div>
+    <strong>Employee Id:</strong>@Model.c_empid <br>
+    <strong>Employee Name:</strong>@Model.c_empname <br>
+    <strong>Gender:</strong>@Model.c_empgender <br>
+    <strong>Date of Birth:</strong>@Model.c_empdob <br>
+    <strong>Shift:</strong>@Model.c_empshift <br>
+    <strong>Image:</strong>@Model.c_empimg <br>
+    <strong>Department:</strong>@Model.c_empdepartment <br>
+</div>
+
+<a asp-action="Index" class="btn btn-primary">Back to List</a>
