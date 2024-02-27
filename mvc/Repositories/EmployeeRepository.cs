@@ -35,7 +35,7 @@ namespace mvc.Repositories
                             c_empshift = dr["c_empshift"].ToString(),
                             c_empimg = dr["c_empimg"].ToString(),
                             //c_empdepartment = dr["c_empdepartment"].ToString(),
-                             c_empdepartment = Convert.ToInt32(dr["c_empdepartment"]),
+                            c_empdepartment = Convert.ToInt32(dr["c_empdepartment"]),
                         };
                         empList.Add(emp);
 
@@ -76,7 +76,7 @@ namespace mvc.Repositories
                         emp.c_empdob = DateTime.Parse(dr["c_empdob"].ToString());
                         emp.c_empshift = dr["c_empshift"].ToString();
                         emp.c_empimg = dr["c_empimg"].ToString();
-                       // emp.c_empdepartment = dr["c_empdepartment"].ToString();
+                        // emp.c_empdepartment = dr["c_empdepartment"].ToString();
                         emp.c_empdepartment = Convert.ToInt32(dr["c_empdepartment"]);
                     }
                 }
@@ -101,7 +101,7 @@ namespace mvc.Repositories
                 conn.Open();
                 var cmd = new NpgsqlCommand();
                 cmd.Connection = conn;
-               // int deptId = GetDepartmentId(emp.c_empdepartment, conn);
+                // int deptId = GetDepartmentId(emp.c_empdepartment, conn);
 
                 cmd.CommandType = CommandType.Text;
                 cmd.CommandText = "INSERT INTO t_employee(c_empname, c_empgender, c_empdob, c_empshift, c_empimg, c_empdepartment) VALUES ( @c_empname, @c_empgender, @c_empdob, @c_empshift, @c_empimg, @c_empdepartment)";
@@ -151,8 +151,6 @@ namespace mvc.Repositories
             return deptId;
         }
 
-
-
         public void EditEmployee(tblEmployee emp)
         {
             try
@@ -160,7 +158,7 @@ namespace mvc.Repositories
                 conn.Open();
                 var cmd = new NpgsqlCommand();
                 cmd.Connection = conn;
-               // int deptId = GetDepartmentId(emp.c_empdepartment, conn);
+                // int deptId = GetDepartmentId(emp.c_empdepartment, conn);
                 cmd.CommandType = CommandType.Text;
                 cmd.CommandText = "UPDATE t_employee SET c_empname=@c_empname , c_empgender=@c_empgender , c_empdob=@c_empdob , c_empshift=@c_empshift , c_empimg=@c_empimg , c_empdepartment=@c_empdepartment WHERE c_empid =@c_empid ";
 

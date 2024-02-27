@@ -34,6 +34,12 @@ namespace mvc.Controllers
             List<tblEmployee> employees = _employeeRepository.GetAllEmployee();
             return Json(employees);
         }
+        
+        [HttpGet]
+        public IActionResult Viewdept(){
+            List<tblDepartment> departments = _employeeRepository.GetAllDepartment();
+            return Json(departments);
+        }
 
         [HttpGet]
         public IActionResult Details(int id)

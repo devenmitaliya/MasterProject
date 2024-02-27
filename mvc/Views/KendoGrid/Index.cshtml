@@ -162,11 +162,11 @@ dataSource.cancelChanges();
             columns: [
                 { field: "c_empid", title: "emp ID" },
                 { field: "c_empname", title: "emp Name" },
-                { field: "c_empgender", title: "c_empgender" },
+                { field: "c_empgender", title: "c_empgender" , editor: genderTypeRadioEditor },
                 { field: "c_empdob", title: "c_empdob", format: "{0:yyyy-MM-dd}", editor: dateEditor },
-                { field: "c_empshift", title: "c_shift" },
+                { field: "c_empshift", title: "c_shift" , editor : shiftCheckboxEditor },
                 { field: "c_empimg", title: "c_img" },
-                { field: "c_empdepartment", title: "c_depart" },
+                { field: "c_empdepartment", title: "c_depart" , editor : deptDropDownEditor },
                 { command: ["edit", "destroy"], title: "&nbsp;", width: "200px" }
             ],
             editable: "popup",
@@ -197,27 +197,27 @@ dataSource.cancelChanges();
 
             checkboxWrapper.kendoCheckBoxGroup({
                 items: [
-                    { label: "Day", value: "Day" },
-                    { label: "Night", value: "Night" },
+                    { label: "Morning", value: "Morning" },
+                    { label: "Afternoon", value: "Afternoon" },
 
                 ]
             });
             var checkboxGroup = checkboxWrapper.data("kendoCheckBoxGroup");
-            checkboxGroup.value(options.model.c_shift ? options.model.c_shift.split(",") : []);
+            checkboxGroup.value(options.model.c_empshift ? options.model.c_empshift.split(",") : []);
             checkboxGroup.bind("change", function (e) {
-                options.model.set("c_shift", e.sender.value().join(","));
+                options.model.set("c_empshift", e.sender.value().join(","));
             });
         }
 
         function deptDropDownEditor(container, options) {
-            $('<input required data-text-field="c_depname" data-value-field="c_depid" data-bind="value:' + options.field + '"/>')
+            $('<input required data-text-field="c_departmentname" data-value-field="c_departmentid" data-bind="value:' + options.field + '"/>')
                 .appendTo(container)
                 .kendoDropDownList({
                     autoBind: false,
                     dataSource: {
                         transport: {
                             read: {
-                                url: "https://localhost:7249/mvckendogrid/viewdept",
+                                url: "http://localhost:5110/KendoGrid/Viewdept",
                                 dataType: "json"
                             }
                         }
