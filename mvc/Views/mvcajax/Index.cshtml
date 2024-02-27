@@ -26,7 +26,7 @@
 </div>
 
 <!-- Add Employee -->
-@* 
+
 <div>
     <h2>Add Employee</h2>
     <form id="addEmpForm">
@@ -35,12 +35,51 @@
             <input type="text" id="c_empname" name="c_empname">
         </div>
         <div>
-            <label >Gender :</label>
-            <input type="radio" for="c_empgender" value="Male">
-            
+            <label>Gender :</label>
+            <input type="radio" for="c_empgender" value="Male" name="c_empgender">
+            <label for="Male">Male</label>
+
+            <input type="radio" for="c_empgender" value="Female" name="c_empgender">
+            <label for="Female">Female</label>
+
+            <input type="radio" for="c_empgender" value="Other" name="c_empgender">
+            <label for="Other">Other</label>
         </div>
+        <div>
+            <label for="c_empdob">Date of Birth</label>
+            <input for="c_empdob" type="date" id="c_empdob" name="c_empdob">
+        </div>
+        <div>
+            <label>Shift</label><br>
+            <div>
+                <input type="checkbox" for="c_empshift" value="Morning" name="Morning">
+                <label for="morning">Morning</label>
+            </div>
+            <div>
+                <input type="checkbox" for="c_empshift" value="Afternoon" name="Afetrnoon">
+                <label for="afternoon">Afternoon</label>
+            </div>
+            <div>
+                <label for="c_empimg">Photo</label>
+                <input for="c_empimg" type="file" id="c_empimg" name="c_empimg">
+            </div>
+        </div>
+
+        <div>
+            <label for="c_empdepartment">Department :</label>
+            <select name="c_empdepartment" id="c_empdepartment">
+                <option value="1">Sales</option>
+                <option value="2">Marketing</option>
+                <option value="3">Human Resources</option>
+                <option value="4">Finance</option>
+                <option value="5">Engineering</option>
+            </select>
+        </div>
+
+        <button type="button" id="addEmpButton">Add</button>
+        <input type="button" name="reset" id="reset" onclick="ResetEmp()" value="Reset">
     </form>
-</div> *@
+</div>
 
 
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
@@ -55,13 +94,15 @@
 {
     <script>
         function ResetEmp() {
-            $().val(0);
-            $().val("");
-            $().val("");
-            $().val("");
-            $().val("");
-            $().val("");
+            $('#c_empid').val(0);
+            $('#c_empname').val("");
+            $("input[name='c_empgender']").prop('checked', false);
+            $('#c_empdob').val("");
+            $("input[name='c_empshift']").prop('checked', false);
+            $('#c_empimg').val("");
+            $('#c_empdepartment').val(0);
         }
+
 
         $(document).ready(function () {
             loadEmployee();
@@ -76,25 +117,52 @@
                         empTable.empty();
                         data.forEach((emp) => {
                             const row = `<tr>
-                                <td>${emp.c_empid}</td>
-                                <td>${emp.c_empname}</td>
-                                <td>${emp.c_empgender}</td>
-                                <td>${emp.c_empdob}</td>
-                                <td>${emp.c_empshift}</td>
-                                <td>${emp.c_empimg}</td>
-                                <td>${emp.c_empdepartment}</td>
-                                <td>
-                                    <button data-id="${emp.c_empid}">Details</button>
-                                    <button data-id="${emp.c_empid}">Edit</button>
-                                    <button data-id="${emp.c_empid}">Delete</button>
-                                </td>
-                            </tr>`;
+                                        <td>${emp.c_empid}</td>
+                                        <td>${emp.c_empname}</td>
+                                        <td>${emp.c_empgender}</td>
+                                        <td>${emp.c_empdob}</td>
+                                        <td>${emp.c_empshift}</td>
+                                        <td>${emp.c_empimg}</td>
+                                        <td>${emp.c_empdepartment}</td>
+                                        <td>
+                                            <button data-id="${emp.c_empid}" class="details">Details</button>
+                                            <button data-id="${emp.c_empid}">Edit</button>
+                                            <button data-id="${emp.c_empid}">Delete</button>
+                                        </td>
+                                    </tr>`;
                             empTable.append(row);
                         });
                     }
                 });
             }
 
+            $('#addEmpButton').on('click', function () {
+                var emp = {
+                    c_empname: $('#c_empname').val(),
+                    c_empgender: $("input[name='c_empgender']:checked").val(),
+                    c_empdob: $('#c_empdob').val(),
+                    c_empshift: $("input[name='c_empshift']:checked").map(function () { return $(this).val(); }).get(),
+                    c_empimg: $('#c_empimg').val(),
+                    c_empdepartment: $('#c_empdepartment').val(),
+                };
+
+                $.ajax({
+                    url: '/mvcajax/Add',
+                    type: 'POST',
+                    data: JSON.stringify(emp),
+                    contentType: 'application/json; charset=utf-8',
+                    success: function (data) {
+                        console.log(data);
+                        loadEmployee();
+                        ResetEmp();
+
+                        alert(data.message);
+                    }
+                });
+            });
+
+
+        $('#empTable').on('click','.details',)
 
 
         });
