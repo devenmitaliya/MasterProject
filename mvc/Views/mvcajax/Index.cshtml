@@ -174,7 +174,7 @@
             // Load employee data when the page is ready
             loadEmployee();
 
-            $.ajax({
+             $.ajax({
                 url: '/mvcajax/department',
                 type: 'GET',
                 dataType: 'json',
@@ -189,10 +189,15 @@
                         console.error('Invalid data format:', data);
                     }
                 }
-            });
-            
-            function loadEmployee() {
-                $.ajax({
+            }); 
+        });
+
+
+
+
+
+       function loadEmployee(){
+          $.ajax({
                     url: "/mvcajax/GetAll",
                     type: 'GET',
                     dataType: 'json',
@@ -218,8 +223,10 @@
                         });
                     }
                 });
-            }
-        });
+            
+}
+
+
 
         $('#empTable').on('click', '.edit', editEmployee);
 
@@ -319,11 +326,7 @@
                     }
                 });
             });
-
             
-            // Your code for loading department dropdown remains unchanged
-            
-
             // Your code for adding an employee remains unchanged
             $('#addEmpButton').on('click', function () {
                 var emp = {
@@ -359,5 +362,11 @@
                 $('#c_empimg').val("");
                 $('#c_empdepartment').val(0);
             }
+
+
+            function loadDepartment(){
+                
+            }
+    
     </script>
 }

@@ -105,6 +105,7 @@ namespace mvc.Repositories
                 var cmd = new NpgsqlCommand();
                 cmd.Connection = conn;
                 int deptId = GetDepartmentId(emp.c_empdepartment, conn);
+                Console.WriteLine("DEP ID"+deptId);
                 string shifts = string.Join(",", emp.c_empshift);
                 cmd.CommandType = CommandType.Text;
                 cmd.CommandText = "INSERT INTO t_employee(c_empname, c_empgender, c_empdob, c_empshift, c_empimg, c_empdepartment) VALUES ( @c_empname, @c_empgender, @c_empdob, @c_empshift, @c_empimg, @c_empdepartment)";
