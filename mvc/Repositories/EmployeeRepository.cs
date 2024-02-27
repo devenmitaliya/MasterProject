@@ -150,7 +150,7 @@ namespace mvc.Repositories
 
 
 
-        public void AddEmployee(tblEmployee emp)
+        public void EditEmployee(tblEmployee emp)
         {
             try
             {
