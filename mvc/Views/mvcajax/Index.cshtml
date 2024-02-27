@@ -1,0 +1,102 @@
+@model tblEmployee
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<div>
+    <h2>Emplyees</h2>
+    <table id="empTable">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Employee Name</th>
+                <th>Gender</th>
+                <th>Date of Birth</th>
+                <th>Shift</th>
+                <th>Image</th>
+                <th>Department</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+
+        </tbody>
+    </table>
+</div>
+
+<!-- Add Employee -->
+@* 
+<div>
+    <h2>Add Employee</h2>
+    <form id="addEmpForm">
+        <div>
+            <label for="c_empname">Employee Name :</label>
+            <input type="text" id="c_empname" name="c_empname">
+        </div>
+        <div>
+            <label >Gender :</label>
+            <input type="radio" for="c_empgender" value="Male">
+            
+        </div>
+    </form>
+</div> *@
+
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+<!-- jQuery -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<!-- Bootstrap JS -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+@section Scripts
+{
+    <script>
+        function ResetEmp() {
+            $().val(0);
+            $().val("");
+            $().val("");
+            $().val("");
+            $().val("");
+            $().val("");
+        }
+
+        $(document).ready(function () {
+            loadEmployee();
+
+            function loadEmployee() {
+                $.ajax({
+                    url: "/mvcajax/GetAll",
+                    type: 'GET',
+                    dataType: 'json',
+                    success: function (data) {
+                        var empTable = $('#empTable tbody');
+                        empTable.empty();
+                        data.forEach((emp) => {
+                            const row = `<tr>
+                                <td>${emp.c_empid}</td>
+                                <td>${emp.c_empname}</td>
+                                <td>${emp.c_empgender}</td>
+                                <td>${emp.c_empdob}</td>
+                                <td>${emp.c_empshift}</td>
+                                <td>${emp.c_empimg}</td>
+                                <td>${emp.c_empdepartment}</td>
+                                <td>
+                                    <button data-id="${emp.c_empid}">Details</button>
+                                    <button data-id="${emp.c_empid}">Edit</button>
+                                    <button data-id="${emp.c_empid}">Delete</button>
+                                </td>
+                            </tr>`;
+                            empTable.append(row);
+                        });
+                    }
+                });
+            }
+
+
+
+        });
+    </script>
+}
