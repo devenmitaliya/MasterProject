@@ -44,8 +44,9 @@ namespace mvc.Repositories
                     }
                 }
             }
-            catch (System.Exception)
+            catch (Exception ex)
             {
+                Console.WriteLine(ex.Message);
                 throw;
             }
             finally
@@ -83,7 +84,7 @@ namespace mvc.Repositories
                     }
                 }
             }
-            catch (System.Exception ex)
+            catch (Exception ex)
             {
                 Console.WriteLine(ex.Message);
                 throw;
@@ -120,8 +121,9 @@ namespace mvc.Repositories
 
 
             }
-            catch (System.Exception)
+            catch (Exception ex)
             {
+                Console.WriteLine(ex.Message);
                 throw;
             }
             finally
@@ -138,7 +140,7 @@ namespace mvc.Repositories
 
             try
             {
-                conn.Open();
+                // conn.Open();
                 using (var cmd = new NpgsqlCommand("SELECT c_departmentid FROM t_department WHERE c_departmentname = @c_departmentname", conn))
                 {
                     cmd.Parameters.AddWithValue("@c_departmentname", c_departmentname);
@@ -153,14 +155,14 @@ namespace mvc.Repositories
                     }
                 }
             }
-            catch (System.Exception ex)
+            catch (Exception ex)
             {
                 Console.WriteLine(ex.Message);
                 throw;
             }
             finally
             {
-                conn.Close();
+                // conn.Close();
             }
 
             return deptId;
@@ -192,8 +194,9 @@ namespace mvc.Repositories
                 cmd.ExecuteNonQuery();
 
             }
-            catch (System.Exception)
+            catch (Exception ex)
             {
+                Console.WriteLine(ex.Message);
                 throw;
             }
             finally
@@ -219,8 +222,9 @@ namespace mvc.Repositories
                 cmd.ExecuteNonQuery();
 
             }
-            catch (System.Exception)
+            catch (Exception ex)
             {
+                Console.WriteLine(ex.Message);
                 throw;
             }
             finally
@@ -254,10 +258,12 @@ namespace mvc.Repositories
                         };
                         departments.Add(department);
                     }
+                    
                 }
             }
-            catch (Exception)
+            catch (Exception ex)
             {
+                Console.WriteLine(ex.Message);
                 throw;
             }
             finally
