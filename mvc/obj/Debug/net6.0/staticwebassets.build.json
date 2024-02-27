@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "GWrLBs7MC/pQpXX7lLxByha/TCGlVfM2imdgRqcq7Xo=",
+  "Hash": "KuUHx3u8zMpkpHjCZThrhdqzEN4T8mLvxzxHesE5sWk=",
   "Source": "mvc",
   "BasePath": "_content/mvc",
   "Mode": "Default",
@@ -1193,6 +1193,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Identity": "F:\\PPSU\\sem-08\\casepoint\\Master Project\\mvc\\wwwroot\\uploads\\cabinet salon.png",
+      "SourceId": "mvc",
+      "SourceType": "Discovered",
+      "ContentRoot": "F:\\PPSU\\sem-08\\casepoint\\Master Project\\mvc\\wwwroot\\",
+      "BasePath": "_content/mvc",
+      "RelativePath": "uploads/cabinet salon.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\cabinet salon.png"
     }
   ]
 }

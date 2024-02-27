@@ -138,7 +138,7 @@ namespace mvc.Repositories
 
             try
             {
-                conn.Open();
+                // conn.Open();
                 using (var cmd = new NpgsqlCommand("SELECT c_departmentid FROM t_department WHERE c_departmentname = @c_departmentname", conn))
                 {
                     cmd.Parameters.AddWithValue("@c_departmentname", c_departmentname);
@@ -159,7 +159,7 @@ namespace mvc.Repositories
             }
             finally
             {
-                conn.Close();
+                // conn.Close();
             }
 
             return deptId;
