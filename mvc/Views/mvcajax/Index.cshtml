@@ -66,14 +66,11 @@
         </div>
 
         <div>
-            <label for="c_empdepartment">Department :</label>
-            <select name="c_empdepartment" id="c_empdepartment">
-                <option value="1">Sales</option>
-                <option value="2">Marketing</option>
-                <option value="3">Human Resources</option>
-                <option value="4">Finance</option>
-                <option value="5">Engineering</option>
-            </select>
+           <label>Department</label>
+                <select class="form-control" id="c_empdepartment" name="c_empdepartment" asp-for="c_empdepartment">
+                    <option value="">Select Department</option>
+                </select>
+                <span asp-validation-for="c_empdepartment" class="text-danger"></span>
         </div>
 
         <button type="button" id="addEmpButton">Add</button>
@@ -93,78 +90,139 @@
 @section Scripts
 {
     <script>
-        function ResetEmp() {
-            $('#c_empid').val(0);
-            $('#c_empname').val("");
-            $("input[name='c_empgender']").prop('checked', false);
-            $('#c_empdob').val("");
-            $("input[name='c_empshift']").prop('checked', false);
-            $('#c_empimg').val("");
-            $('#c_empdepartment').val(0);
+        $(document).ready(function () {
+        // Function to load employee data
+            function loadEmployee() {
+            $.ajax({
+                url: "/mvcajax/GetAll",
+                type: 'GET',
+                dataType: 'json',
+                success: function (data) {
+                    var empTable = $('#empTable tbody');
+                    empTable.empty();
+                    data.forEach((emp) => {
+                    const row = `<tr>
+                        <td>${emp.c_empid}</td>
+                        <td>${emp.c_empname}</td>
+                        <td>${emp.c_empgender}</td>
+                        <td>${emp.c_empdob}</td>
+                        <td>${emp.c_empshift}</td>
+                        <td>${emp.c_empimg}</td>
+                        <td>${emp.c_empdepartment}</td>
+                        <td>
+                            <button data-id="${emp.c_empid}" class="details">Details</button>
+                            <button data-id="${emp.c_empid}">Edit</button>
+                            <button data-id="${emp.c_empid}" class="delete">Delete</button>
+                        </td>
+                    </tr>`;
+                    empTable.append(row);
+                    });
+                }
+            });
         }
 
 
-        $(document).ready(function () {
-            loadEmployee();
+        $('#empTable').on('click', '.delete', deleteEmployee);
+            function deleteEmployee()
+            {
+                var empId = $(this).data('id');
+               
+                var result = confirm("Are you sure for delete !");
+                if(result)
+                {
+                    $.ajax({                  
+                        url:'/mvcajax/Delete/',
+                        type:'POST',
+                        data: {id: empId},
+                        dataType: 'json',
+                        success:function(data){
+                           loadEmployee();
+                        },
+                    });
+                }
+            }
 
-            function loadEmployee() {
+        // Function to handle click event on Details button
+        $('#empTable').on('click', '.details', function () {
+            var empId = $(this).data('id');
+            // You need to implement a function to fetch details for the employee with the specified ID
+            // You can use an AJAX request to your server-side endpoint to fetch the details
+            $.ajax({
+                url: '/mvcajax/Details/' + empId,
+                type: 'GET',
+                dataType: 'json',
+                success: function (data) {
+                    // Handle the response and display the details
+                    console.log(data);
+                    // Example: Display details in an alert
+                    alert('Employee Details:\n' +
+                        'Name: ' + data.c_empname + '\n' +
+                        'Gender: ' + data.c_empgender + '\n' +
+                        'Date of Birth: ' + data.c_empdob + '\n' +
+                        'Shift: ' + data.c_empshift + '\n' +
+                        'Department: ' + data.c_empdepartment);
+                    },
+                    error: function (xhr, status, error) {
+                        console.error('Error fetching employee details:', status, error);
+                        }
+                    });
+                });
+
+                // Load employee data when the page is ready
+                loadEmployee();
+                // Your code for loading department dropdown remains unchanged
                 $.ajax({
-                    url: "/mvcajax/GetAll",
+                    url: '/mvcajax/Department',
                     type: 'GET',
                     dataType: 'json',
                     success: function (data) {
-                        var empTable = $('#empTable tbody');
-                        empTable.empty();
-                        data.forEach((emp) => {
-                            const row = `<tr>
-                                        <td>${emp.c_empid}</td>
-                                        <td>${emp.c_empname}</td>
-                                        <td>${emp.c_empgender}</td>
-                                        <td>${emp.c_empdob}</td>
-                                        <td>${emp.c_empshift}</td>
-                                        <td>${emp.c_empimg}</td>
-                                        <td>${emp.c_empdepartment}</td>
-                                        <td>
-                                            <button data-id="${emp.c_empid}" class="details">Details</button>
-                                            <button data-id="${emp.c_empid}">Edit</button>
-                                            <button data-id="${emp.c_empid}">Delete</button>
-                                        </td>
-                                    </tr>`;
-                            empTable.append(row);
+                        if (Array.isArray(data)) {
+                        var dropdown = $('#c_empdepartment');
+                        dropdown.empty().append($('<option value="">Select Department</option>'));
+                        data.forEach(function (item) {
+                            dropdown.append($('<option>').val(item.c_departmentname).text(item.c_departmentname));
                         });
-                    }
-                });
-            }
+                        } else {
+                            console.error('Invalid data format:', data);
+                            }
+                        }
+                    });
 
-            $('#addEmpButton').on('click', function () {
-                var emp = {
-                    c_empname: $('#c_empname').val(),
-                    c_empgender: $("input[name='c_empgender']:checked").val(),
-                    c_empdob: $('#c_empdob').val(),
-                    c_empshift: $("input[name='c_empshift']:checked").map(function () { return $(this).val(); }).get(),
-                    c_empimg: $('#c_empimg').val(),
-                    c_empdepartment: $('#c_empdepartment').val(),
-                };
+                    // Your code for adding an employee remains unchanged
+                    $('#addEmpButton').on('click', function () {
+                        var emp = {
+                            c_empname: $('#c_empname').val(),
+                            c_empgender: $("input[name='c_empgender']:checked").val(),
+                            c_empdob: $('#c_empdob').val(),
+                            c_empshift: $("input[name='c_empshift']:checked").map(function () { return $(this).val(); }).get(),
+                            c_empimg: $('#c_empimg').val(),
+                            c_empdepartment: $('#c_empdepartment').val(),
+                            };
 
-                $.ajax({
-                    url: '/mvcajax/Add',
-                    type: 'POST',
-                    data: JSON.stringify(emp),
-                    contentType: 'application/json; charset=utf-8',
-                    success: function (data) {
-                        console.log(data);
-                        loadEmployee();
-                        ResetEmp();
+                        $.ajax({
+                            url: '/mvcajax/Add',
+                            type: 'POST',
+                            data: JSON.stringify(emp),
+                            contentType: 'application/json; charset=utf-8',
+                            success: function (data) {
+                                console.log(data);
+                                loadEmployee();
+                                ResetEmp();
+                                alert(data.message);
+                                }
+                            });
+                        });
 
-                        alert(data.message);
-                    }
-                });
-            });
-
-
-        $('#empTable').on('click','.details',)
-
-
-        });
+                                // Your code for resetting the form remains unchanged
+                        function ResetEmp() {
+                            $('#c_empid').val(0);
+                            $('#c_empname').val("");
+                            $("input[name='c_empgender']").prop('checked', false);
+                            $('#c_empdob').val("");
+                            $("input[name='c_empshift']").prop('checked', false);
+                            $('#c_empimg').val("");
+                            $('#c_empdepartment').val(0);
+                        }
+                    });
     </script>
 }

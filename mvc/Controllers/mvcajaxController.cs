@@ -68,6 +68,12 @@ namespace mvc.Controllers
             return Json(employee);
         }
 
+        [HttpGet]
+        public IActionResult Department()
+        {
+            return Json(_employeeRepository.GetAllDepartment());
+        }
+
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()

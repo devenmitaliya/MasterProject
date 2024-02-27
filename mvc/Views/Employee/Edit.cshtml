@@ -23,8 +23,10 @@
             <label asp-for="c_empgender" class="control-label">Gender</label><br>
             <div>
                 <input type="radio" asp-for="c_empgender" value="Male" checked="@(Model.c_empgender == "Male")" /> Male
-                <input type="radio" asp-for="c_empgender" value="Female" checked="@(Model.c_empgender == "Female")" /> Female
-                <input type="radio" asp-for="c_empgender" value="Other" checked="@(Model.c_empgender == "Other")" /> Other
+                <input type="radio" asp-for="c_empgender" value="Female" checked="@(Model.c_empgender == "Female")" />
+                Female
+                <input type="radio" asp-for="c_empgender" value="Other" checked="@(Model.c_empgender == "Other")" />
+                Other
             </div>
             <span asp-validation-for="c_empgender" class="text-danger"></span>
         </div>
@@ -35,33 +37,29 @@
             <span asp-validation-for="c_empdob" class="text-danger"></span>
         </div>
 
-        <div class="form-group">
-            <label asp-for="c_empshift" class="control-label">Shift</label><br>
-            @foreach (var lang in new List<string> { "Morning", "Afternoon" })
-            {
-                <div class="form-check form-check-inline">
-                    <input type="checkbox" name="c_empshift" value="@lang" @(Model.c_empshift.Contains(lang) ? "checked" : "") class="form-check-input" />
-                    <label class="form-check-label">@lang</label>
-                </div>
-            }
-            <span asp-validation-for="c_empshift" class="text-danger"></span>
+
+        <div>
+            <p>Shift</p>
+            <input type="checkbox" name="c_empshift" value="Morning"
+                checked='@Model.c_empshift.Contains("Morning")'>Morning
+            <input type="checkbox" name="c_empshift" value="Afternoon"
+                checked='@Model.c_empshift.Contains("Afternoon")'>Afternoon
         </div>
 
+
         <div class="form-group">
-            <label asp-for="c_empdepartment" class="control-label">Department</label>
-            <select asp-for="c_empdepartment" class="form-control" required>
-                <option value="">Select Category</option>
-                <option value="stationary">Sales</option>
-                <option value="mobile">Marketing</option>
-                <option value="electronics">Human Resources</option>
-            </select>
-            <span asp-validation-for="c_empdepartment" class="text-danger"></span>
-        </div>
+        <label>Department:</label>
+        <select class="form-control" name="c_empdepartment">
+            <option value="">Select Department</option>
+        </select>
+        <span asp-validation-for="c_empdepartment" class="text-danger"></span>
+    </div>
+
 
         <div class="form-group">
             <label asp-for="c_empimg" class="control-label">Photo</label><br>
             <div class="custom-file">
-                <input type="file" asp-for="c_empimg" class="custom-file-input" name="fileInput" id="fileInput" />
+                <input type="file" asp-for="c_empimg" class="custom-file-input" name="c_empimg" id="fileInput" />
                 <label class="custom-file-label" for="fileInput">@Model.c_empimg</label>
             </div>
             <span asp-validation-for="c_empimg" class="text-danger"></span>
@@ -76,6 +74,34 @@
 
 @section Scripts {
     <script>
+        $(document).ready(function () {
+
+            $.ajax({
+                url: '/Employee/Department',
+                type: 'GET',
+                dataType: 'json',
+                success: function (data) {
+                    if (Array.isArray(data)) {
+                        var dropdown = $('#c_empdepartment');
+                        dropdown.empty().append($('<option value="">Select Department</option>'));
+                        data.forEach(function (item) {
+                            var option = $('<option>').val(item.c_departmentname).text(item.c_departmentname);
+                            if (item.c_departmentname === '@Model.c_empdepartment') {
+                                option.prop('selected', true);
+                            }
+                            dropdown.append(option);
+                        });
+                    } else {
+                        console.error('Invalid data format:', data);
+                    }
+                },
+                error: function (xhr, status, error) {
+                    console.error('Error fetching designations:', status, error);
+                }
+            });
+
+        });
+
         document.getElementById('fileInput').addEventListener('change', function () {
             var fileName = this.value.split('\\').pop();
             document.querySelector('.custom-file-label[for="fileInput"]').innerText = fileName;

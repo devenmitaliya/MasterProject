@@ -41,8 +41,14 @@ namespace mvc.Controllers
 
         public IActionResult Add(tblEmployee emp)
         {
+            // if (emp.c_empshift != null)
+            // {
+            //     string selectedShifts = string.Join(",", emp.c_empshift);
+            //     emp.c_empshift = selectedShifts; // Assign the concatenated string back to the property
+            // }
+            // Console.WriteLine(emp.c_empshift);
             _employeeRepository.AddEmployee(emp);
-            return View("Index", "Employee");
+            return RedirectToAction("Index");
         }
 
 
@@ -79,22 +85,27 @@ namespace mvc.Controllers
 
         public IActionResult Delete(int id)
         {
-            // Assuming 'admin' username is checked here
             if (HttpContext.Session.GetString("role") == "Admin")
             {
                 var employee = _employeeRepository.GetOneEmployee(id);
                 _employeeRepository.DeleteEmployee(employee);
 
-                return View("Index", "Employee");
+                return RedirectToAction("Index", "Employee");
             }
             return RedirectToAction("Index", "Employee");
         }
 
+        public IActionResult Department()
+        {
+            return Json(_employeeRepository.GetAllDepartment());
+        }
+        public IActionResult Details(int id)
+        {
+            tblEmployee emp = _employeeRepository.GetOneEmployee(id);
 
+            return View(emp);
 
-
-
-
+        }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
