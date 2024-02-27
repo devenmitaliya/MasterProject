@@ -51,13 +51,13 @@ namespace mvc.Controllers
         [HttpGet]
         public IActionResult Edit(int id)
         {
-            // if (HttpContext.Session.GetString("role") == "admin")
-            // {
-            var employee = _employeeRepository.GetOneEmployee(id);
+            if (HttpContext.Session.GetString("role") == "Admin")
+            {
+                var employee = _employeeRepository.GetOneEmployee(id);
 
-            return View(employee);
-            // }
-            // return RedirectToAction("Login", "User");
+                return View(employee);
+            }
+            return RedirectToAction("Index", "Employee");
         }
 
 
@@ -65,15 +65,14 @@ namespace mvc.Controllers
         public IActionResult Edit(int id, tblEmployee employee)
         {
 
-            // Assuming 'admin' username is checked here
-            // if (HttpContext.Session.GetString("role") == "admin")
-            // {
+            if (HttpContext.Session.GetString("role") == "Admin")
+            {
 
-            _employeeRepository.EditEmployee(employee);
+                _employeeRepository.EditEmployee(employee);
+                return RedirectToAction("Index", "Employee");
+
+            }
             return RedirectToAction("Index", "Employee");
-
-            // }
-            // return RedirectToAction("Login", "User");
         }
 
 
@@ -81,14 +80,14 @@ namespace mvc.Controllers
         public IActionResult Delete(int id)
         {
             // Assuming 'admin' username is checked here
-            // if (HttpContext.Session.GetString("role") == "admin")
-            // {
-            var employee = _employeeRepository.GetOneEmployee(id);
-            _employeeRepository.DeleteEmployee(employee);
+            if (HttpContext.Session.GetString("role") == "Admin")
+            {
+                var employee = _employeeRepository.GetOneEmployee(id);
+                _employeeRepository.DeleteEmployee(employee);
 
-            return View("Index", "Employee");
-            // }
-            // return RedirectToAction("Login", "User");
+                return View("Index", "Employee");
+            }
+            return RedirectToAction("Index", "Employee");
         }
 
 
