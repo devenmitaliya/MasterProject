@@ -71,7 +71,7 @@
 
         <div class="form-group">
             <label>Department</label>
-            <select class="form-control" id="c_empdepartment" name="c_empdepartment" asp-for="c_empdepartment">
+            <select class="form-control" id="c_empdepartment" name="c_empdepartment" for="c_empdepartment">
                 <option value="">Select Department</option>
             </select>
             <span asp-validation-for="c_empdepartment" class="text-danger"></span>
@@ -171,7 +171,26 @@
 {
     <script>
         $(document).ready(function () {
-            // Function to load employee data
+            // Load employee data when the page is ready
+            loadEmployee();
+
+            $.ajax({
+                url: '/mvcajax/department',
+                type: 'GET',
+                dataType: 'json',
+                success: function (data) {
+                    if (Array.isArray(data)) {
+                        var dropdown = $('#c_empdepartment');
+                        dropdown.empty().append($('<option value="">Select Department</option>'));
+                        data.forEach(function (item) {
+                            dropdown.append($('<option>').val(item.c_departmentname).text(item.c_departmentname));
+                        });
+                    } else {
+                        console.error('Invalid data format:', data);
+                    }
+                }
+            });
+            
             function loadEmployee() {
                 $.ajax({
                     url: "/mvcajax/GetAll",
@@ -200,8 +219,9 @@
                     }
                 });
             }
+        });
 
-            $('#empTable').on('click', '.edit', editEmployee);
+        $('#empTable').on('click', '.edit', editEmployee);
 
             function editEmployee() {
                 var empId = $(this).data('id');
@@ -256,12 +276,6 @@
                 $('#editEmployeeModal').modal('hide');
             }
 
-
-            $('#close1').on('click', closeEditEmployeeModal);
-            function closeEditEmployeeModal() {
-                $('#editEmployeeModal').modal('hide');
-            }
-
             $('#empTable').on('click', '.delete', deleteEmployee);
             function deleteEmployee() {
                 var empId = $(this).data('id');
@@ -306,25 +320,9 @@
                 });
             });
 
-            // Load employee data when the page is ready
-            loadEmployee();
+            
             // Your code for loading department dropdown remains unchanged
-            $.ajax({
-                url: '/mvcajax/Department',
-                type: 'GET',
-                dataType: 'json',
-                success: function (data) {
-                    if (Array.isArray(data)) {
-                        var dropdown = $('#c_empdepartment');
-                        dropdown.empty().append($('<option value="">Select Department</option>'));
-                        data.forEach(function (item) {
-                            dropdown.append($('<option>').val(item.c_departmentname).text(item.c_departmentname));
-                        });
-                    } else {
-                        console.error('Invalid data format:', data);
-                    }
-                }
-            });
+            
 
             // Your code for adding an employee remains unchanged
             $('#addEmpButton').on('click', function () {
@@ -361,6 +359,5 @@
                 $('#c_empimg').val("");
                 $('#c_empdepartment').val(0);
             }
-        });
     </script>
 }
