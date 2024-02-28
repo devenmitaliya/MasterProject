@@ -29,11 +29,12 @@
             <tr>
                 <td>@employee.c_empid</td>
                 <td>@employee.c_empname</td>
-                <td>@employee.c_empgender</td>
+                <td>@employee.c_empgender </td>
                 <td>@employee.c_empdob.ToString("dd-MM-yyyy")</td>
                 <td>@string.Join(", ", employee.c_empshift)</td>
                 <td>
-                    <img src="@Url.Content(employee.c_empimg)" alt="Employee Photo" />
+                   <img src="@Url.Content("~/uploads/" + employee.c_empimg)" alt="Employee Photo"  style="width: 100px; height: 100px;" />
+
                 </td>
                 <td>@employee.c_empdepartment</td>
                 <td>

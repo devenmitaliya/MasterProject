@@ -1,0 +1,285 @@
+@model tblEmployee
+
+@{
+    @* ViewBag.Title = "Index2"; *@
+    var role = Context.Session.GetString("role");
+}
+
+<div>
+    <h2>Employees</h2>
+    <table id="empTable" class="table">
+        <thead class="thead-dark">
+            <tr>
+                <th>Id</th>
+                <th>Employee Name</th>
+                <th>Gender</th>
+                <th>Date of Birth</th>
+                <th>Shift</th>
+                <th>Image</th>
+                <th>Department</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+
+        </tbody>
+    </table>
+</div>
+
+<!-- Add Employee -->
+
+<div>
+    <h2>Add Employee</h2>
+    <form id="addEmpForm">
+        <div class="form-group">
+            <label for="c_empname">Employee Name :</label>
+            <input type="text" id="c_empname" name="c_empname" class="form-control">
+        </div>
+        <div class="form-group">
+            <label>Gender :</label><br>
+            <div class="form-check form-check-inline">
+                <input type="radio" id="male" value="Male" name="c_empgender" class="form-check-input">
+                <label for="male" class="form-check-label">Male</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input type="radio" id="female" value="Female" name="c_empgender" class="form-check-input">
+                <label for="female" class="form-check-label">Female</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input type="radio" id="other" value="Other" name="c_empgender" class="form-check-input">
+                <label for="other" class="form-check-label">Other</label>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="c_empdob">Date of Birth</label>
+            <input for="c_empdob" type="date" id="c_empdob" name="c_empdob" class="form-control">
+        </div>
+        <div class="form-group">
+            <label>Shift</label><br>
+            <div class="form-check form-check-inline">
+                <input type="checkbox" id="morning" value="Morning" name="c_empshift" class="form-check-input">
+                <label for="morning" class="form-check-label">Morning</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input type="checkbox" id="afternoon" value="Afternoon" name="c_empshift" class="form-check-input">
+                <label for="afternoon" class="form-check-label">Afternoon</label>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="fileInput">Photo</label><br>
+            <input type="file" id="imgFile"  class="form-control"/>
+            @* <label class="custom-file-label" for="imgFile"></label> *@
+            <span class="text-danger"></span>
+        </div>
+
+        <div class="form-group">
+            <label>Department</label>
+            <select class="form-control" id="c_empdepartment" name="c_empdepartment" for="c_empdepartment">
+                <option value="">Select Department</option>
+            </select>
+            <span asp-validation-for="c_empdepartment" class="text-danger"></span>
+        </div>
+
+        <button type="button" id="addEmpButton" class="btn btn-primary">Add</button>
+        <input type="button" name="reset" id="reset" onclick="ResetEmp()" value="Reset" class="btn btn-secondary">
+    </form>
+</div>
+
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+<!-- jQuery -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<!-- Bootstrap JS -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+@section Scripts
+{
+    <script>
+
+        $(document).ready(function () {
+           
+            loadEmployee();
+
+        });
+
+        function loadEmployee() {
+            $.ajax({
+                url: "/mvcajax/GetAll",
+                type: 'GET',
+                dataType: 'json',
+                success: function (data) {
+                    var empTable = $('#empTable tbody');
+                    empTable.empty();
+                    data.forEach((emp) => {
+                        const row = `<tr>
+                                            <td>${emp.c_empid}</td>
+                                            <td>${emp.c_empname}</td>
+                                            <td>${emp.c_empgender}</td>
+                                            <td>${emp.c_empdob}</td>
+                                            <td>${emp.c_empshift}</td>
+                                             @* <img src="@Url.Content("~/uploads/" + emp.c_empimg)" alt="Employee Photo"  style="width: 100px; height: 100px;" /> *@
+                                            <td>
+                                                 <img src='/uploads/${emp.c_empimg}' alt="Employee Photo" style="width: 100px; height: 100px;" />
+                                            </td>
+                                            <td>${emp.c_empdepartment}</td>
+                                            <td>
+                                                <button data-id="${emp.c_empid}" class="btn btn-primary details">Details</button>
+                                            </td>
+                                        </tr>`;
+                        empTable.append(row);
+                    });
+                }
+            });
+            setTimeout(function () {
+                console.log('Employee data loaded successfully');
+                loadDepartments();
+            }, 2000);
+
+        }
+
+
+        function loadDepartments(){
+            $.ajax({
+                url: '/mvcajax/department',
+                type: 'GET',
+                dataType: 'json',
+                success: function (data) {
+                    if (Array.isArray(data)) {
+                        var dropdown = $('#c_empdepartment');
+                        dropdown.empty().append($('<option value="">Select Department</option>'));
+                        data.forEach(function (item) {
+                            dropdown.append($('<option>').val(item.c_departmentname).text(item.c_departmentname));
+                        });
+                    } else {
+                        console.error('Invalid data format:', data);
+                    }
+                }
+            });
+        }
+
+
+
+
+
+
+
+        function fetchDepartmentData(response) {
+            $.ajax({
+                url: '/mvcajax/department',
+                type: 'GET',
+                dataType: 'json',
+                success: function (data) {
+                    console.log(data);
+
+                    populateDepartmentDropdown(data, response);
+                },
+                error: function (xhr, status, error) {
+                    handleDepartmentFetchError(xhr, status, error);
+                }
+            });
+        }
+
+        function populateDepartmentDropdown(data, response) {
+            var dropdown = $('#c_edit_empdepartment');
+    dropdown.empty().append($('<option value="">Select Department</option>'));
+
+    data.forEach(function (department) {
+        var option = $('<option>').val(department.c_departmentname).text(department.c_departmentname);
+        dropdown.append(option);
+        if (department.c_departmentid == response.c_empdepartment) {
+            option.prop('selected', true);
+        }
+    });
+            var departmentIdFromBackend = response.c_empdepartment;
+            if (departmentIdFromBackend) {
+                dropdown.val(department.c_departmentname);
+            }
+        }
+
+
+        function handleDepartmentFetchError(xhr, status, error) {
+            console.error('Error fetching departments:', status, error);
+            $('#departmentValidationError').text('Error fetching departments. Please try again.');
+        }
+
+        $('#addEmpButton').on('click', function () {
+
+
+            var formData = new FormData();
+            formData.append("c_empname", $('#c_empname').val());
+            formData.append("c_empdob", $('#c_empdob').val());
+            formData.append("c_empgender", $("input[name='c_empgender']:checked").val());
+            formData.append("c_empshift",$("input[name='c_empshift']:checked").map(function () { return $(this).val(); }).get());
+            var photoFile = $('#imgFile')[0].files[0];
+                console.log("IMAGE FILE:::    " +photoFile);
+                debugger;
+                formData.append("photo", photoFile);
+            formData.append("c_empdepartment", $('#c_empdepartment').val());
+
+            console.log(formData);
+            debugger;
+            console.log('Selected department:', emp.c_empimg);
+            $.ajax({
+                url: '/mvcajax/Add/',
+                type: 'POST',
+                data: formData,
+                processData: false,
+                contentType: false,
+                success: function (data) {
+                    console.log(data);
+                    debugger;
+                    loadEmployee();
+                    ResetEmp();
+                },
+                error: function (xhr, status, error) {
+                    console.log(emp);
+                    console.error('Error fetching employee details:', status, error);
+                }
+            });
+        });      
+
+        
+
+        
+        $('#empTable').on('click', '.details', function () {
+            var empId = $(this).data('id');
+           
+            $.ajax({
+                url: '/mvcajax/Details/' + empId,
+                type: 'GET',
+                dataType: 'json',
+                success: function (data) {
+                    
+                    console.log(data);
+                    
+                    alert('Employee Details:\n' +
+                        'Name: ' + data.c_empname + '\n' +
+                        'Gender: ' + data.c_empgender + '\n' +
+                        'Date of Birth: ' + data.c_empdob + '\n' +
+                        'Image: ' + data.c_empimg + '\n' +
+                        'Shift: ' + data.c_empshift + '\n' +
+                        'Department: ' + data.c_empdepartment);
+                },
+                error: function (xhr, status, error) {
+                    console.error('Error fetching employee details:', status, error);
+                }
+            });
+        });
+
+
+        
+        function ResetEmp() {
+            $('#c_empid').val(0);
+            $('#c_empname').val("");
+            $("input[name='c_empgender']").prop('checked', false);
+            $('#c_empdob').val("");
+            $("input[name='c_empshift']").prop('checked', false);
+            $('#c_empimg').val("");
+            $('#c_empdepartment').val(0);
+        }
+
+
+    </script>
+}
