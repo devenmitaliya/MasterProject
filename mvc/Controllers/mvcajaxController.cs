@@ -38,18 +38,19 @@ namespace mvc.Controllers
         [HttpPost]
         public IActionResult Add(tblEmployee emp)
         {
+            Console.WriteLine("Departmentttttttttttttt   "+ emp.c_empdepartment);
             _employeeRepository.AddEmployee(emp);
             return Json(new { success = true });
         }
 
-        [HttpPost]
+        [HttpPut]
         public IActionResult Edit(int id, tblEmployee employee)
         {
             _employeeRepository.EditEmployee(employee);
             return Json(new { success = true });
         }
 
-        [HttpPost]
+        [HttpDelete]
         public IActionResult Delete(int id)
         {
             var employee = _employeeRepository.GetOneEmployee(id);

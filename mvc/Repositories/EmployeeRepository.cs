@@ -104,9 +104,15 @@ namespace mvc.Repositories
                 conn.Open();
                 var cmd = new NpgsqlCommand();
                 cmd.Connection = conn;
+                Console.WriteLine("nameeeeeeeeeeeeeee "+emp.c_empdepartment);
                 int deptId = GetDepartmentId(emp.c_empdepartment, conn);
                 Console.WriteLine("DEP ID"+deptId);
+                Console.WriteLine("NAME: "+emp.c_empname);
+                Console.WriteLine("Gender::: "+emp.c_empgender);
+                Console.WriteLine("DOB:::: "+ emp.c_empdob);
+                Console.WriteLine("IMG : "+emp.c_empimg);
                 string shifts = string.Join(",", emp.c_empshift);
+                Console.WriteLine("SHIFT  "+shifts);
                 cmd.CommandType = CommandType.Text;
                 cmd.CommandText = "INSERT INTO t_employee(c_empname, c_empgender, c_empdob, c_empshift, c_empimg, c_empdepartment) VALUES ( @c_empname, @c_empgender, @c_empdob, @c_empshift, @c_empimg, @c_empdepartment)";
 
@@ -138,13 +144,11 @@ namespace mvc.Repositories
         private int GetDepartmentId(string c_departmentname, NpgsqlConnection conn)
         {
             int deptId = 0;
-
             try
             {
-                // conn.Open();
-                using (var cmd = new NpgsqlCommand("SELECT c_departmentid FROM t_department WHERE c_departmentname = @c_departmentname", conn))
+                using (var cmd = new NpgsqlCommand("SELECT c_departmentid FROM t_department WHERE c_departmentname = @departmentname", conn))
                 {
-                    cmd.Parameters.AddWithValue("@c_departmentname", c_departmentname);
+                    cmd.Parameters.AddWithValue("@departmentname", c_departmentname);
 
                     using (var reader = cmd.ExecuteReader())
                     {
@@ -161,10 +165,6 @@ namespace mvc.Repositories
                 Console.WriteLine(ex.Message);
                 throw;
             }
-            finally
-            {
-                // conn.Close();
-            }
 
             return deptId;
         }
@@ -179,6 +179,11 @@ namespace mvc.Repositories
                 var cmd = new NpgsqlCommand();
                 cmd.Connection = conn;
                 int deptId = GetDepartmentId(emp.c_empdepartment, conn);
+                Console.WriteLine("DEP ID"+deptId);
+                Console.WriteLine("NAME: "+emp.c_empname);
+                Console.WriteLine("Gender::: "+emp.c_empgender);
+                Console.WriteLine("DOB:::: "+ emp.c_empdob);
+                Console.WriteLine("IMG : "+emp.c_empimg);
                 cmd.CommandType = CommandType.Text;
                 string shifts = string.Join(",", emp.c_empshift);
 
