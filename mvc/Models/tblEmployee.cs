@@ -19,5 +19,7 @@ namespace mvc.Models
 
         public string c_empdepartment{get;set;}
 
+        public IFormFile photo{get;set;}
+
     }
 }

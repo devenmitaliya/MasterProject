@@ -5,67 +5,80 @@ build_property.UsingMicrosoftNETSdkWeb = true
 build_property.ProjectTypeGuids = 
 build_property.InvariantGlobalization = 
 build_property.PlatformNeutralAssembly = 
-build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = mvc
 build_property.RootNamespace = mvc
-build_property.ProjectDir = F:\PPSU\sem-08\casepoint\Master Project\mvc\
-build_property.EnableComHosting = 
-build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.ProjectDir = D:\GitProject\MasterProject\mvc\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = F:\PPSU\sem-08\casepoint\Master Project\mvc
+build_property.MSBuildProjectDirectory = D:\GitProject\MasterProject\mvc
 build_property._RazorSourceGeneratorDebug = 
 
-[F:/PPSU/sem-08/casepoint/Master Project/mvc/Views/Employee/Add.cshtml]
+[D:/GitProject/MasterProject/mvc/Views/ajaxuser/login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcYWpheHVzZXJcbG9naW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/GitProject/MasterProject/mvc/Views/ajaxuser/Register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcYWpheHVzZXJcUmVnaXN0ZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/GitProject/MasterProject/mvc/Views/Employee/Add.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbG95ZWVcQWRkLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/PPSU/sem-08/casepoint/Master Project/mvc/Views/Employee/Details.cshtml]
+[D:/GitProject/MasterProject/mvc/Views/Employee/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbG95ZWVcRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/PPSU/sem-08/casepoint/Master Project/mvc/Views/Employee/Edit.cshtml]
+[D:/GitProject/MasterProject/mvc/Views/Employee/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbG95ZWVcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/PPSU/sem-08/casepoint/Master Project/mvc/Views/Employee/Index.cshtml]
+[D:/GitProject/MasterProject/mvc/Views/Employee/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbG95ZWVcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/PPSU/sem-08/casepoint/Master Project/mvc/Views/Home/Index.cshtml]
+[D:/GitProject/MasterProject/mvc/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/PPSU/sem-08/casepoint/Master Project/mvc/Views/Home/Privacy.cshtml]
+[D:/GitProject/MasterProject/mvc/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/PPSU/sem-08/casepoint/Master Project/mvc/Views/Shared/Error.cshtml]
+[D:/GitProject/MasterProject/mvc/Views/mvcajax/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcbXZjYWpheFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/GitProject/MasterProject/mvc/Views/mvcajax/Index2.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcbXZjYWpheFxJbmRleDIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/GitProject/MasterProject/mvc/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/PPSU/sem-08/casepoint/Master Project/mvc/Views/Shared/_ValidationScriptsPartial.cshtml]
+[D:/GitProject/MasterProject/mvc/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/PPSU/sem-08/casepoint/Master Project/mvc/Views/User/Login.cshtml]
+[D:/GitProject/MasterProject/mvc/Views/User/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/PPSU/sem-08/casepoint/Master Project/mvc/Views/User/Register.cshtml]
+[D:/GitProject/MasterProject/mvc/Views/User/Register.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxSZWdpc3Rlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/PPSU/sem-08/casepoint/Master Project/mvc/Views/_ViewImports.cshtml]
+[D:/GitProject/MasterProject/mvc/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/PPSU/sem-08/casepoint/Master Project/mvc/Views/_ViewStart.cshtml]
+[D:/GitProject/MasterProject/mvc/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/PPSU/sem-08/casepoint/Master Project/mvc/Views/Shared/_Layout.cshtml]
+[D:/GitProject/MasterProject/mvc/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-x8p8g49oo3
