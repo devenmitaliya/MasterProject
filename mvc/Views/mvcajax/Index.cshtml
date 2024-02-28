@@ -9,7 +9,8 @@
 
 <div>
     <h2>Employees </h2>
-    <table id="empTable" class="table">
+    <a class="btn btn-primary mt-2" onclick="Logout()">Logout</a>
+    <table id="empTable" class="table mt-2">
         <thead class="thead-dark">
             <tr>
                 <th>Id</th>
@@ -365,7 +366,7 @@
                         $('#c_edit_empdepartment').val(data.c_empdepartment);
                         console.log(data.c_empdepartment);
 
-fetchDepartmentData(data);
+                    fetchDepartmentData(data);
 
                     },
                 });
@@ -458,7 +459,10 @@ fetchDepartmentData(data);
         });
 
 
-        
+        function Logout()
+        {
+            window.location.href = '@Url.Action("Login","ajaxuser")';
+        }
         function ResetEmp() {
             $('#c_empid').val(0);
             $('#c_empname').val("");
