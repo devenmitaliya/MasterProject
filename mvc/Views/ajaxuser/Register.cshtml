@@ -1,0 +1,112 @@
+@model mvc.Models.tblUser
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+    }
+
+    .container {
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        width: 300px;
+    }
+
+    h2 {
+        text-align: center;
+        color: #333;
+    }
+
+    label {
+        display: block;
+        margin: 10px 0 5px;
+        color: #555;
+    }
+
+    input {
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 10px;
+        box-sizing: border-box;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+
+    button {
+        width: 100%;
+        padding: 10px;
+        background-color: #28a745; /* Updated button color */
+        color: #fff;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+    button:hover {
+        background-color: #218838; /* Updated button hover color */
+    }
+
+    .alert {
+        color: #721c24;
+        background-color: #f8d7da;
+        border: 1px solid #f5c6cb;
+        border-radius: 4px;
+        padding: 10px;
+        margin-bottom: 15px;
+        display: none;
+    }
+</style>
+
+<h2>Register</h2>
+
+<div class="container">
+    <div>
+        <label>Username:</label>
+        <input type="text" id="c_uname" name="c_uname" />
+    </div>
+    <div>
+        <label>Email:</label>
+        <input type="text" id="c_uemail" name="c_uemail" />
+    </div>
+    <div>
+        <label>Password:</label>
+        <input type="password" id="c_password" name="c_password" />
+    </div>
+    <div>
+        <button id="registerBtn">Register</button>
+    </div>
+</div>
+
+@section Scripts
+{
+    <script>
+        $(document).ready(function () {
+            $('#registerBtn').on('click', function () {
+                var user = {
+                    c_uname: $('#c_uname').val(),
+                    c_uemail: $('#c_uemail').val(),
+                    c_password: $('#c_password').val()
+                };
+
+                $.ajax({
+                    url: '/ajaxuser/Register', // Updated the URL
+                    type: 'POST',
+                    contentType: 'application/json; charset=utf-8',
+                    data: JSON.stringify(user),
+                    success: function (result) {
+                        alert(result.message);
+                        window.location.href = '/ajaxuser/Login'; // Updated the redirect URL
+                    },
+                    error: function (error) {
+                        console.log(error);
+                    }
+                });
+            });
+        });
+    </script>
+}
