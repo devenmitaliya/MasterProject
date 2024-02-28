@@ -104,15 +104,8 @@ namespace mvc.Repositories
                 conn.Open();
                 var cmd = new NpgsqlCommand();
                 cmd.Connection = conn;
-                Console.WriteLine("nameeeeeeeeeeeeeee "+emp.c_empdepartment);
                 int deptId = GetDepartmentId(emp.c_empdepartment, conn);
-                Console.WriteLine("DEP ID"+deptId);
-                Console.WriteLine("NAME: "+emp.c_empname);
-                Console.WriteLine("Gender::: "+emp.c_empgender);
-                Console.WriteLine("DOB:::: "+ emp.c_empdob);
-                Console.WriteLine("IMG : "+emp.c_empimg);
                 string shifts = string.Join(",", emp.c_empshift);
-                Console.WriteLine("SHIFT  "+shifts);
                 cmd.CommandType = CommandType.Text;
                 cmd.CommandText = "INSERT INTO t_employee(c_empname, c_empgender, c_empdob, c_empshift, c_empimg, c_empdepartment) VALUES ( @c_empname, @c_empgender, @c_empdob, @c_empshift, @c_empimg, @c_empdepartment)";
 
@@ -179,13 +172,9 @@ namespace mvc.Repositories
                 var cmd = new NpgsqlCommand();
                 cmd.Connection = conn;
                 int deptId = GetDepartmentId(emp.c_empdepartment, conn);
-                Console.WriteLine("DEP ID"+deptId);
-                Console.WriteLine("NAME: "+emp.c_empname);
-                Console.WriteLine("Gender::: "+emp.c_empgender);
-                Console.WriteLine("DOB:::: "+ emp.c_empdob);
-                Console.WriteLine("IMG : "+emp.c_empimg);
                 cmd.CommandType = CommandType.Text;
                 string shifts = string.Join(",", emp.c_empshift);
+
 
                 cmd.CommandText = "UPDATE t_employee SET c_empname=@c_empname , c_empgender=@c_empgender , c_empdob=@c_empdob , c_empshift=@c_empshift , c_empimg=@c_empimg , c_empdepartment=@c_empdepartment WHERE c_empid =@c_empid ";
 

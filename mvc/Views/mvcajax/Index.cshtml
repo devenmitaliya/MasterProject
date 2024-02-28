@@ -2,6 +2,7 @@
 
 @{
     ViewBag.Title = "Index";
+    var role = Context.Session.GetString("role");
 }
 
 <div>
@@ -65,8 +66,10 @@
             </div>
         </div>
         <div class="form-group">
-            <label for="c_empimg">Photo</label>
-            <input for="c_empimg" type="file" id="c_empimg" name="c_empimg" class="form-control-file">
+            <label for="fileInput">Photo</label><br>
+            <input type="file" id="imgFile"  class="form-control"/>
+            @* <label class="custom-file-label" for="imgFile"></label> *@
+            <span class="text-danger"></span>
         </div>
 
         <div class="form-group">
@@ -133,8 +136,10 @@
                         </div>
                     </div>
                     <div class="form-group">
-                        <label for="c_edit_empimg">Photo</label>
-                        <input type="file" id="c_edit_empimg" name="c_edit_empimg" class="form-control-file">
+                        <label for="fileInput">Photo</label><br>
+                        <input type="file" id="editimgFile"  class="form-control"/>
+                        @* <label class="custom-file-label" for="imgFile"></label> *@
+                        <span class="text-danger"></span>
                     </div>
                     <div class="form-group">
                         <label>Department</label>
@@ -169,7 +174,7 @@
     <script>
 
         $(document).ready(function () {
-            // Load employee data when the page is ready
+           
             loadEmployee();
 
         });
@@ -189,7 +194,10 @@
                                             <td>${emp.c_empgender}</td>
                                             <td>${emp.c_empdob}</td>
                                             <td>${emp.c_empshift}</td>
-                                            <td>${emp.c_empimg}</td>
+                                             @* <img src="@Url.Content("~/uploads/" + emp.c_empimg)" alt="Employee Photo"  style="width: 100px; height: 100px;" /> *@
+                                            <td>
+                                                 <img src='/uploads/${emp.c_empimg}' alt="Employee Photo" style="width: 100px; height: 100px;" />
+                                            </td>
                                             <td>${emp.c_empdepartment}</td>
                                             <td>
                                                 <button data-id="${emp.c_empid}" class="btn btn-primary details">Details</button>
@@ -204,10 +212,6 @@
             setTimeout(function () {
                 console.log('Employee data loaded successfully');
                 loadDepartments();
-            }, 2000);
-            setTimeout(function () {
-                console.log('Employee data loaded successfully');
-                fetchDepartmentData();
             }, 2000);
 
         }
@@ -256,15 +260,15 @@
 
         function populateDepartmentDropdown(data, response) {
             var dropdown = $('#c_edit_empdepartment');
-            dropdown.empty().append($('<option value="">Select Department</option>'));
+    dropdown.empty().append($('<option value="">Select Department</option>'));
 
-            data.forEach(function (department) {
-                var option = $('<option>').val(department.c_departmentname).text(department.c_departmentname);
-                dropdown.append(option);
-                if (department.c_departmentid == response.c_empdepartment) {
-                    option.prop('selected', true);
-                }
-            });
+    data.forEach(function (department) {
+        var option = $('<option>').val(department.c_departmentname).text(department.c_departmentname);
+        dropdown.append(option);
+        if (department.c_departmentid == response.c_empdepartment) {
+            option.prop('selected', true);
+        }
+    });
             var departmentIdFromBackend = response.c_empdepartment;
             if (departmentIdFromBackend) {
                 dropdown.val(department.c_departmentname);
@@ -277,29 +281,23 @@
             $('#departmentValidationError').text('Error fetching departments. Please try again.');
         }
 
-        // Your code for adding an employee remains unchanged
         $('#addEmpButton').on('click', function () {
-            debugger;
-            var emp = {
-                c_empname: $('#c_empname').val(),
-                c_empgender: $("input[name='c_empgender']:checked").val(),
-                c_empdob: $('#c_empdob').val(),
-                c_empshift: $("input[name='c_empshift']:checked").map(function () { return $(this).val(); }).get(),
-                c_empimg: $('#c_empimg').val(),
-                c_empdepartment: $('#c_empdepartment').val(),
-            };
+
 
             var formData = new FormData();
             formData.append("c_empname", $('#c_empname').val());
             formData.append("c_empdob", $('#c_empdob').val());
             formData.append("c_empgender", $("input[name='c_empgender']:checked").val());
             formData.append("c_empshift",$("input[name='c_empshift']:checked").map(function () { return $(this).val(); }).get());
-            formData.append("c_empimg", $('#c_empimg').val());
+            var photoFile = $('#imgFile')[0].files[0];
+                console.log("IMAGE FILE:::    " +photoFile);
+                debugger;
+                formData.append("photo", photoFile);
             formData.append("c_empdepartment", $('#c_empdepartment').val());
 
             console.log(formData);
             debugger;
-            console.log('Selected department:', emp.c_empdepartment);
+            console.log('Selected department:', emp.c_empimg);
             $.ajax({
                 url: '/mvcajax/Add/',
                 type: 'POST',
@@ -311,7 +309,6 @@
                     debugger;
                     loadEmployee();
                     ResetEmp();
-                    alert(data.message);
                 },
                 error: function (xhr, status, error) {
                     console.log(emp);
@@ -339,12 +336,12 @@
                         $('input[name=c_edit_empgender][value=' + data.c_empgender + ']').prop('checked', true);
                         console.log(data.c_empdob);
                         var date = new Date(data.c_empdob);
-var year = date.getFullYear();
-var month = ("0" + (date.getMonth() + 1)).slice(-2); // Adding 1 to month because getMonth() returns zero-based index
-var day = ("0" + date.getDate()).slice(-2);
+                        var year = date.getFullYear();
+                        var month = ("0" + (date.getMonth() + 1)).slice(-2); 
+                        var day = ("0" + date.getDate()).slice(-2);
 
-var formattedDate = year + "-" + month + "-" + day;
-$('#c_edit_empdob').val(formattedDate);
+                        var formattedDate = year + "-" + month + "-" + day;
+                        $('#c_edit_empdob').val(formattedDate);
 
                         $('input[name=c_edit_empshift]').prop('checked', false);
                         if (data.c_empshift.includes('Morning')) {
@@ -353,11 +350,12 @@ $('#c_edit_empdob').val(formattedDate);
                         if (data.c_empshift.includes('Afternoon')) {
                             $('#edit_afternoon').prop('checked', true);
                         }
-
+                        debugger;
                          if (data.c_empimg) {
-                            $('#c_edit_empimg').text(data.c_empimg);
+                            $('#editimgFile').text(data.c_empimg);
+                            console.log(data.c_empimg);
                         } else {
-                            $('#c_edit_empimg').text('No file selected');
+                            $('#editimgFile').text('No file selected');
                         }
 
                         $('#c_edit_empdepartment').val(data.c_empdepartment);
@@ -372,31 +370,24 @@ fetchDepartmentData(data);
 
         $('#updateEmployeeButton').on('click', updateEmployee);
         function updateEmployee() {
-            var employee = {
-                c_empid: $('#c_empid').val(),
-                c_empname: $('#c_edit_empname').val(),
-                c_empgender: $('input[name=c_edit_empgender]:checked').val(),
-                c_empdob: $('#c_edit_empdob').val(),
-                c_empshift: $('input[name=c_edit_empshift]:checked').val(),
-                c_empimg: $('#c_edit_empimg').val(),
-                c_empdepartment: $('#c_edit_empdepartment').val(),
-            };
 
-console.log(employee);
-debugger;
             var formData = new FormData();
             formData.append("c_empname", $('#c_edit_empname').val());
             formData.append("c_empdob", $('#c_edit_empdob').val());
             formData.append("c_empgender", $("input[name='c_edit_empgender']:checked").val());
             formData.append("c_empshift",$("input[name='c_edit_empshift']:checked").map(function () { return $(this).val(); }).get());
-            formData.append("c_empimg", $('#c_edit_empimg').val());
-            formData.append("c_empdepartment", $('#c_empdepartment').val());
+            var photoFile = $('#editimgFile')[0].files[0];
+            console.log("IMAGE FILE:::    " +photoFile);
+            debugger;
+            formData.append("photo", photoFile);
+            formData.append("c_empdepartment", $('#c_edit_empdepartment').val());
 
             console.log(formData);
             debugger;
             console.log('Selected department:', employee.c_empdepartment);
+            var empId = $('#c_empid').val();
             $.ajax({
-                url: '/mvcajax/Edit/?id=' + employee.c_empid,
+                url: '/mvcajax/Edit/' + empId,
                 type: 'PUT',
                 data: formData,
                 processData: false,
@@ -405,7 +396,6 @@ debugger;
                     console.log(data);
                     loadEmployee();
                     ResetEmp();
-                    alert(data.message);
                 },
                 error: function (xhr, status, error) {
                     console.log(formData);
@@ -437,23 +427,23 @@ debugger;
             }
         }
 
-        // Function to handle click event on Details button
+        
         $('#empTable').on('click', '.details', function () {
             var empId = $(this).data('id');
-            // You need to implement a function to fetch details for the employee with the specified ID
-            // You can use an AJAX request to your server-side endpoint to fetch the details
+           
             $.ajax({
                 url: '/mvcajax/Details/' + empId,
                 type: 'GET',
                 dataType: 'json',
                 success: function (data) {
-                    // Handle the response and display the details
+                    
                     console.log(data);
-                    // Example: Display details in an alert
+                    
                     alert('Employee Details:\n' +
                         'Name: ' + data.c_empname + '\n' +
                         'Gender: ' + data.c_empgender + '\n' +
                         'Date of Birth: ' + data.c_empdob + '\n' +
+                        'Image: ' + data.c_empimg + '\n' +
                         'Shift: ' + data.c_empshift + '\n' +
                         'Department: ' + data.c_empdepartment);
                 },
@@ -464,7 +454,7 @@ debugger;
         });
 
 
-        // Your code for resetting the form remains unchanged
+        
         function ResetEmp() {
             $('#c_empid').val(0);
             $('#c_empname').val("");

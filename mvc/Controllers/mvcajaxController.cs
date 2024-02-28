@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
+using System.IO; 
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using mvc.Models;
@@ -16,15 +17,23 @@ namespace mvc.Controllers
         private readonly ILogger<mvcajaxController> _logger;
 
         private readonly IEmployeeRepository _employeeRepository;
+        // private readonly IWebHostEnvironment _hostingEnvironment;
+        // private string file;
 
 
-        public mvcajaxController(ILogger<mvcajaxController> logger, IEmployeeRepository employeeRepository)
+        public mvcajaxController(ILogger<mvcajaxController> logger, IEmployeeRepository employeeRepository,IWebHostEnvironment hostingEnvironment)
         {
             _logger = logger;
             _employeeRepository = employeeRepository;
+            // _hostingEnvironment = hostingEnvironment;
         }
 
         public IActionResult Index()
+        {
+            
+            return View();
+        }
+        public IActionResult Index2()
         {
             return View();
         }
@@ -36,16 +45,58 @@ namespace mvc.Controllers
         }
 
         [HttpPost]
-        public IActionResult Add(tblEmployee emp)
+        public IActionResult Add(tblEmployee emp ,IFormFile photo)
         {
-            Console.WriteLine("Departmentttttttttttttt   "+ emp.c_empdepartment);
+             if (photo != null)
+            {
+                var uploadsFolder = Path.Combine("D:\\GitProject\\MasterProject\\mvc\\wwwroot", "uploads");
+                string uniqueFilename = Guid.NewGuid().ToString() + "_" + photo.FileName;
+                string filepath = Path.Combine(uploadsFolder, uniqueFilename);
+
+
+                using (var stream = new FileStream(filepath, FileMode.Create))
+                {
+                    photo.CopyTo(stream);
+                }
+
+                Console.WriteLine("Upload PHOTO ::::    " + uniqueFilename);
+                emp.c_empimg = uniqueFilename;
+
+                Console.WriteLine("C IMAGE : : : : :      "+emp.c_empimg);
+            }else{
+                Console.WriteLine("NOT FOUND");
+            }
+
+
+            Console.WriteLine( emp.c_empimg);
             _employeeRepository.AddEmployee(emp);
             return Json(new { success = true });
         }
 
         [HttpPut]
-        public IActionResult Edit(int id, tblEmployee employee)
+        public IActionResult Edit(int id, tblEmployee employee,IFormFile photo)
         {
+            if (photo != null)
+            {
+                var uploadsFolder = Path.Combine("D:\\GitProject\\MasterProject\\mvc\\wwwroot", "uploads");
+                string uniqueFilename = Guid.NewGuid().ToString() + "_" + photo.FileName;
+                string filepath = Path.Combine(uploadsFolder, uniqueFilename);
+
+
+                using (var stream = new FileStream(filepath, FileMode.Create))
+                {
+                    photo.CopyTo(stream);
+                }
+
+                Console.WriteLine("Upload PHOTO ::::    " + uniqueFilename);
+                employee.c_empimg = uniqueFilename;
+
+                Console.WriteLine("C IMAGE : : : : :      "+employee.c_empimg);
+            }else{
+                Console.WriteLine("NOT FOUND");
+            }
+
+            employee.c_empid = id;
             _employeeRepository.EditEmployee(employee);
             return Json(new { success = true });
         }
