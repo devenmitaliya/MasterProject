@@ -13,6 +13,10 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "D:\\casepoint Internship\\MasterProject\\mvc\\wwwroot\\images\\th.jpeg",
+      "PackagePath": "staticwebassets\\images\\th.jpeg"
+    },
+    {
       "Id": "D:\\casepoint Internship\\MasterProject\\mvc\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },

@@ -5,6 +5,7 @@ using System.Linq;
 using mvc.Models;
 using mvc.Repositories;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 
@@ -14,12 +15,16 @@ namespace mvc.Controllers
     public class KendoGridController : Controller
     {
         private readonly ILogger<KendoGridController> _logger;
+        private string file; // declare it at the class level
         private readonly IEmployeeRepository _employeeRepository;
+        private readonly IWebHostEnvironment _hostingEnvironment;
+        // private readonly IHostingEnvironment _hostingEnviroment;
 
-        public KendoGridController(ILogger<KendoGridController> logger, IEmployeeRepository employeeRepository)
+        public KendoGridController(ILogger<KendoGridController> logger, IEmployeeRepository employeeRepository, IWebHostEnvironment hostingEnvironment)
         {
             _logger = logger;
             _employeeRepository = employeeRepository;
+            _hostingEnvironment = hostingEnvironment;
         }
 
         public IActionResult Index()
@@ -34,9 +39,10 @@ namespace mvc.Controllers
             List<tblEmployee> employees = _employeeRepository.GetAllEmployee();
             return Json(employees);
         }
-        
+
         [HttpGet]
-        public IActionResult Viewdept(){
+        public IActionResult Viewdept()
+        {
             List<tblDepartment> departments = _employeeRepository.GetAllDepartment();
             return Json(departments);
         }
@@ -52,60 +58,51 @@ namespace mvc.Controllers
             return Json(employee);
         }
 
-        [HttpPost]
-        public IActionResult Add(tblEmployee emp)
-        {
-            try
-            {
-                // Your logic to add the employee to the database
-                _employeeRepository.AddEmployee(emp);
-                return Json(new { success = true, message = "Employee added successfully", data = emp });
-            }
-            catch (Exception ex)
-            {
-                return Json(new { success = false, message = ex.Message });
-            }
-        }
+        // [HttpGet]
+        // public IActionResult Add()
+        // {
+        //     // Assuming you have a method to retrieve departments, replace it with your actual logic
+        //     var departments = _employeeRepository.GetAllDepartment();
+        //     ViewBag.Departments = departments; // Pass departments to ViewBag
+        //     return View();
+        // }
+
 
         [HttpPost]
-        public IActionResult EditEmployee(tblEmployee emp)
+public async Task<IActionResult> Add(tblEmployee emp, IFormFile temp_name)
+{
+    try
+    {
+        Console.WriteLine("Add action called.");
+        if (temp_name != null && temp_name.Length > 0)
         {
-            try
-            {
-                _logger.LogInformation($"Received emp: {emp}");
-                _logger.LogInformation("Employee edited successfully");
+            var uploadsFolder = Path.Combine(@"D:\\casepoint Internship\\MasterProject\\mvc\\wwwroot", "images");
 
-                // Log or debug statements to inspect emp and ensure it has the correct values
-                _employeeRepository.EditEmployee(emp);
-                return Json(new { success = true, message = "Employee edited successfully", data = emp });
-            }
-            catch (Exception ex)
+            string uniqueFilename = Guid.NewGuid().ToString() + "_" + Path.GetFileName(temp_name.FileName);
+            string filePath = Path.Combine(uploadsFolder, uniqueFilename);
+
+            using (var stream = new FileStream(filePath, FileMode.Create))
             {
-                return Json(new { success = false, message = ex.Message });
+                await temp_name.CopyToAsync(stream);
             }
+
+            emp.c_empimg = uniqueFilename;
+        }
+        else
+        {
+            Console.WriteLine("Image not found");
         }
 
+        _employeeRepository.AddEmployee(emp);
 
-
-        [HttpDelete]
-        public IActionResult Delete(int id)
-        {
-            try
-            {
-                var employee = _employeeRepository.GetOneEmployee(id);
-                if (employee == null)
-                {
-                    return Json(new { success = false, message = "Employee not found" });
-                }
-
-                _employeeRepository.DeleteEmployee(employee);
-                return Json(new { success = true, message = "Employee deleted successfully" });
-            }
-            catch (Exception ex)
-            {
-                return Json(new { success = false, message = ex.Message });
-            }
-        }
+        return Ok("Employee Added Successfully");
+    }
+    catch (Exception ex)
+    {
+        Console.WriteLine("Error adding employee: " + ex.Message);
+        return StatusCode(500, "An error occurred while adding the employee.");
+    }
+}
 
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]

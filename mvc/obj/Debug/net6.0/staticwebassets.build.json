@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "L1hvYQ1VZLX/TJL1GFgptNgDtHEUUtTy3fARPoH4DKY=",
+  "Hash": "Y4Yw6vJAYDwE51AltExie4vJMluIOIHNuxg+uKZ27Qo=",
   "Source": "mvc",
   "BasePath": "_content/mvc",
   "Mode": "Default",
@@ -91,6 +91,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "D:\\casepoint Internship\\MasterProject\\mvc\\wwwroot\\images\\th.jpeg",
+      "SourceId": "mvc",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\casepoint Internship\\MasterProject\\mvc\\wwwroot\\",
+      "BasePath": "_content/mvc",
+      "RelativePath": "images/th.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\th.jpeg"
     },
     {
       "Identity": "D:\\casepoint Internship\\MasterProject\\mvc\\wwwroot\\js\\site.js",

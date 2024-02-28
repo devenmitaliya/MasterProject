@@ -1,97 +1,3 @@
-@* @{
-Layout = "_layout";
-}
-
-@model List<tblEmployee>
-
-<link rel="stylesheet" href="https://kendo.cdn.telerik.com/2021.2.616/styles/kendo.common.min.css" />
-<link rel="stylesheet" href="https://kendo.cdn.telerik.com/2021.2.616/styles/kendo.default.min.css" />
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script src="https://kendo.cdn.telerik.com/2021.2.616/js/kendo.all.min.js"></script>
-
-<div id="grid"></div>
-
-@section Scripts {
-<script>
-$(document).ready(function () {
-var dataSource = new kendo.data.DataSource({
-transport: {
-read: {
-url: "http://localhost:5110/KendoGrid/GetAllEmployee",
-dataType: "json"
-},
-create: {
-url: "http://localhost:5110/KendoGrid/Add",
-type: "POST",
-contentType: "application/json"
-data: function (data) {
-console.log("Data to be sent:", data);
-return JSON.stringify(data);
-},
-},
-update: {
-url: "http://localhost:5110/KendoGrid/EditEmployee",
-type: "PUT", // Change the request type to PUT
-contentType: "application/json",
-},
-destroy: {
-url: function (data) {
-return "http://localhost:5110/KendoGrid/Delete/" + data.c_empid;
-},
-type: "DELETE",
-dataType: "json"
-}
-},
-pageSize: 10,
-schema: {
-model: {
-id: "c_empid",
-fields: {
-c_empid: { type: "number", editable: false, nullable: false },
-c_empname: { type: "string", validation: { required: true } },
-c_empgender: { type: "string", validation: { required: true } },
-c_empdob: { type: "date", validation: { required: true } },
-c_empshift: { type: "string", validation: { required: true } },
-c_empimg: { type: "string", validation: { required: true } },
-c_empdepartment: { type: "number", validation: { required: true } }
-}
-}
-}
-});
-
-$("#grid").kendoGrid({
-dataSource: dataSource,
-columns: [
-{ field: "c_empid", title: "Employee ID" },
-{ field: "c_empname", title: "Employee Name" },
-{ field: "c_empgender", title: "Gender" },
-{ field: "c_empdob", title: "Date of Birth", format: "{0:MM/dd/yyyy}" },
-{ field: "c_empshift", title: "Employee Shift" },
-{ field: "c_empimg", title: "Profile" },
-{ field: "c_empdepartment", title: "Department" },
-{ command: ["edit", "destroy"], title: "&nbsp;", width: "200px" }
-],
-editable: "popup",
-toolbar: ["create"],
-pageable: true,
-sortable: true,
-filterable: true,
-});
-
-dataSource.bind("requestEnd", function (e) {
-if (e.type === "create" || e.type === "update" || e.type === "destroy") {
-dataSource.read();
-}
-});
-
-$("#grid").on("click", ".k-grid-cancel-changes", function () {
-dataSource.cancelChanges();
-});
-});
-</script>
-} *@
-
-
 @model List<tblEmployee>
 
 
@@ -165,7 +71,7 @@ dataSource.cancelChanges();
                 { field: "c_empgender", title: "c_empgender" , editor: genderTypeRadioEditor },
                 { field: "c_empdob", title: "c_empdob", format: "{0:yyyy-MM-dd}", editor: dateEditor },
                 { field: "c_empshift", title: "c_shift" , editor : shiftCheckboxEditor },
-                { field: "c_empimg", title: "c_img" },
+                { field: "c_empimg", title: "c_img" , editor : imageUploadEditor , template : "<img src='#: c_empimg #' alt='Employee Photo' style='width: 50px; height: 50px;' />" },
                 { field: "c_empdepartment", title: "c_depart" , editor : deptDropDownEditor },
                 { command: ["edit", "destroy"], title: "&nbsp;", width: "200px" }
             ],
@@ -208,6 +114,34 @@ dataSource.cancelChanges();
                 options.model.set("c_empshift", e.sender.value().join(","));
             });
         }
+
+        function imageUploadEditor(container, options) {
+            console.log("Image upload editor initialized.");
+            $('<input type="file" name="temp_name" class="k-input" />')
+                .appendTo(container)
+                .kendoUpload({
+                    async: {
+                        saveUrl: "http://localhost:5110/KendoGrid/Add",
+                        autoUpload: true,
+                    },
+                    success: function (e) {
+                        console.log("Upload successful:", e.response);
+                        options.model.set("c_empimg", e.response.fileName);
+                    },
+                    error: function (e) {
+                        console.log("Upload error:", e);
+                    }
+                });
+        }
+
+
+        
+        function imageNameChange(e) {
+                $.each(e.files, function (index, value) {
+                    var fileNameWithPath = "/images/" + value.name;
+                    $("#c_empimg").val(fileNameWithPath).change();
+                });
+            }
 
         function deptDropDownEditor(container, options) {
             $('<input required data-text-field="c_departmentname" data-value-field="c_departmentid" data-bind="value:' + options.field + '"/>')
