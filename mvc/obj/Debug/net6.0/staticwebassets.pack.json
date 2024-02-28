@@ -1,247 +1,307 @@
 {
   "Files": [
     {
-      "Id": "F:\\PPSU\\sem-08\\casepoint\\Master Project\\mvc\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\mvc.bundle.scp.css",
+      "Id": "D:\\Interns Data\\GitProject\\MasterProject\\mvc\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\mvc.bundle.scp.css",
       "PackagePath": "staticwebassets\\mvc.bundle.scp.css"
     },
     {
-      "Id": "F:\\PPSU\\sem-08\\casepoint\\Master Project\\mvc\\wwwroot\\css\\site.css",
+      "Id": "D:\\Interns Data\\GitProject\\MasterProject\\mvc\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
-      "Id": "F:\\PPSU\\sem-08\\casepoint\\Master Project\\mvc\\wwwroot\\favicon.ico",
+      "Id": "D:\\Interns Data\\GitProject\\MasterProject\\mvc\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
-      "Id": "F:\\PPSU\\sem-08\\casepoint\\Master Project\\mvc\\wwwroot\\js\\site.js",
+      "Id": "D:\\Interns Data\\GitProject\\MasterProject\\mvc\\wwwroot\\images\\3f064ac2-d3ef-4118-a859-6d81cd318f3b_book.png",
+      "PackagePath": "staticwebassets\\images\\3f064ac2-d3ef-4118-a859-6d81cd318f3b_book.png"
+    },
+    {
+      "Id": "D:\\Interns Data\\GitProject\\MasterProject\\mvc\\wwwroot\\images\\4689ae80-e87f-4928-a733-7245e7c3325f_book.png",
+      "PackagePath": "staticwebassets\\images\\4689ae80-e87f-4928-a733-7245e7c3325f_book.png"
+    },
+    {
+      "Id": "D:\\Interns Data\\GitProject\\MasterProject\\mvc\\wwwroot\\images\\4b5e90c8-6860-41b2-82d9-1f44d566dfd5_email.jpg",
+      "PackagePath": "staticwebassets\\images\\4b5e90c8-6860-41b2-82d9-1f44d566dfd5_email.jpg"
+    },
+    {
+      "Id": "D:\\Interns Data\\GitProject\\MasterProject\\mvc\\wwwroot\\images\\57a43c97-d8be-428a-949e-d36ac9209020_scholarship.jpg",
+      "PackagePath": "staticwebassets\\images\\57a43c97-d8be-428a-949e-d36ac9209020_scholarship.jpg"
+    },
+    {
+      "Id": "D:\\Interns Data\\GitProject\\MasterProject\\mvc\\wwwroot\\images\\6443ea58-69f8-4b29-97ec-75062b2ea57b_email.jpg",
+      "PackagePath": "staticwebassets\\images\\6443ea58-69f8-4b29-97ec-75062b2ea57b_email.jpg"
+    },
+    {
+      "Id": "D:\\Interns Data\\GitProject\\MasterProject\\mvc\\wwwroot\\images\\6b6520c6-2701-4a75-a178-de0a1278e217_announce.png",
+      "PackagePath": "staticwebassets\\images\\6b6520c6-2701-4a75-a178-de0a1278e217_announce.png"
+    },
+    {
+      "Id": "D:\\Interns Data\\GitProject\\MasterProject\\mvc\\wwwroot\\images\\72a2289d-4076-489f-82cb-8e023233246c_studymaterial.png",
+      "PackagePath": "staticwebassets\\images\\72a2289d-4076-489f-82cb-8e023233246c_studymaterial.png"
+    },
+    {
+      "Id": "D:\\Interns Data\\GitProject\\MasterProject\\mvc\\wwwroot\\images\\7664c015-4945-4fae-9a3d-5407da5fc9ab_github.jpg",
+      "PackagePath": "staticwebassets\\images\\7664c015-4945-4fae-9a3d-5407da5fc9ab_github.jpg"
+    },
+    {
+      "Id": "D:\\Interns Data\\GitProject\\MasterProject\\mvc\\wwwroot\\images\\95885dfc-9be2-4200-8096-10cc837e4b91_contact.jpg",
+      "PackagePath": "staticwebassets\\images\\95885dfc-9be2-4200-8096-10cc837e4b91_contact.jpg"
+    },
+    {
+      "Id": "D:\\Interns Data\\GitProject\\MasterProject\\mvc\\wwwroot\\images\\9c30e434-0982-4d68-812b-5179d4055ae2_email.jpg",
+      "PackagePath": "staticwebassets\\images\\9c30e434-0982-4d68-812b-5179d4055ae2_email.jpg"
+    },
+    {
+      "Id": "D:\\Interns Data\\GitProject\\MasterProject\\mvc\\wwwroot\\images\\9f9253ac-ab09-4476-9fc2-9f9ed1f57bd6_wallpaper.jpg",
+      "PackagePath": "staticwebassets\\images\\9f9253ac-ab09-4476-9fc2-9f9ed1f57bd6_wallpaper.jpg"
+    },
+    {
+      "Id": "D:\\Interns Data\\GitProject\\MasterProject\\mvc\\wwwroot\\images\\b469c918-cafe-4089-8a06-54a508421ce4_contact.jpg",
+      "PackagePath": "staticwebassets\\images\\b469c918-cafe-4089-8a06-54a508421ce4_contact.jpg"
+    },
+    {
+      "Id": "D:\\Interns Data\\GitProject\\MasterProject\\mvc\\wwwroot\\images\\d5a9672d-5f5f-480d-bd57-32c9e04dfc03_demo.png",
+      "PackagePath": "staticwebassets\\images\\d5a9672d-5f5f-480d-bd57-32c9e04dfc03_demo.png"
+    },
+    {
+      "Id": "D:\\Interns Data\\GitProject\\MasterProject\\mvc\\wwwroot\\images\\d5ad14eb-4dd3-4714-9b6c-3d3c009722c0_ecommerce-shopping.jpg",
+      "PackagePath": "staticwebassets\\images\\d5ad14eb-4dd3-4714-9b6c-3d3c009722c0_ecommerce-shopping.jpg"
+    },
+    {
+      "Id": "D:\\Interns Data\\GitProject\\MasterProject\\mvc\\wwwroot\\images\\e53671d5-7a5f-42e9-94ed-fb831e7fad76_cart.jpg",
+      "PackagePath": "staticwebassets\\images\\e53671d5-7a5f-42e9-94ed-fb831e7fad76_cart.jpg"
+    },
+    {
+      "Id": "D:\\Interns Data\\GitProject\\MasterProject\\mvc\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },
     {
-      "Id": "F:\\PPSU\\sem-08\\casepoint\\Master Project\\mvc\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "Id": "D:\\Interns Data\\GitProject\\MasterProject\\mvc\\wwwroot\\lib\\bootstrap\\LICENSE",
       "PackagePath": "staticwebassets\\lib\\bootstrap"
     },
     {
-      "Id": "F:\\PPSU\\sem-08\\casepoint\\Master Project\\mvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "Id": "D:\\Interns Data\\GitProject\\MasterProject\\mvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
     },
     {
-      "Id": "F:\\PPSU\\sem-08\\casepoint\\Master Project\\mvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "Id": "D:\\Interns Data\\GitProject\\MasterProject\\mvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
     },
     {
-      "Id": "F:\\PPSU\\sem-08\\casepoint\\Master Project\\mvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "Id": "D:\\Interns Data\\GitProject\\MasterProject\\mvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
     },
     {
-      "Id": "F:\\PPSU\\sem-08\\casepoint\\Master Project\\mvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "Id": "D:\\Interns Data\\GitProject\\MasterProject\\mvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
     },
     {
-      "Id": "F:\\PPSU\\sem-08\\casepoint\\Master Project\\mvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "Id": "D:\\Interns Data\\GitProject\\MasterProject\\mvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
     },
     {
-      "Id": "F:\\PPSU\\sem-08\\casepoint\\Master Project\\mvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "Id": "D:\\Interns Data\\GitProject\\MasterProject\\mvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
     },
     {
-      "Id": "F:\\PPSU\\sem-08\\casepoint\\Master Project\\mvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "Id": "D:\\Interns Data\\GitProject\\MasterProject\\mvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
     },
     {
-      "Id": "F:\\PPSU\\sem-08\\casepoint\\Master Project\\mvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "Id": "D:\\Interns Data\\GitProject\\MasterProject\\mvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
     },
     {
-      "Id": "F:\\PPSU\\sem-08\\casepoint\\Master Project\\mvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "Id": "D:\\Interns Data\\GitProject\\MasterProject\\mvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
     },
     {
-      "Id": "F:\\PPSU\\sem-08\\casepoint\\Master Project\\mvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "Id": "D:\\Interns Data\\GitProject\\MasterProject\\mvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
     },
     {
-      "Id": "F:\\PPSU\\sem-08\\casepoint\\Master Project\\mvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "Id": "D:\\Interns Data\\GitProject\\MasterProject\\mvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
     },
     {
-      "Id": "F:\\PPSU\\sem-08\\casepoint\\Master Project\\mvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "Id": "D:\\Interns Data\\GitProject\\MasterProject\\mvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
     },
     {
-      "Id": "F:\\PPSU\\sem-08\\casepoint\\Master Project\\mvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "Id": "D:\\Interns Data\\GitProject\\MasterProject\\mvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
     },
     {
-      "Id": "F:\\PPSU\\sem-08\\casepoint\\Master Project\\mvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "Id": "D:\\Interns Data\\GitProject\\MasterProject\\mvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
     },
     {
-      "Id": "F:\\PPSU\\sem-08\\casepoint\\Master Project\\mvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "Id": "D:\\Interns Data\\GitProject\\MasterProject\\mvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
     },
     {
-      "Id": "F:\\PPSU\\sem-08\\casepoint\\Master Project\\mvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "Id": "D:\\Interns Data\\GitProject\\MasterProject\\mvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
     },
     {
-      "Id": "F:\\PPSU\\sem-08\\casepoint\\Master Project\\mvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "Id": "D:\\Interns Data\\GitProject\\MasterProject\\mvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
     },
     {
-      "Id": "F:\\PPSU\\sem-08\\casepoint\\Master Project\\mvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "Id": "D:\\Interns Data\\GitProject\\MasterProject\\mvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
     },
     {
-      "Id": "F:\\PPSU\\sem-08\\casepoint\\Master Project\\mvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "Id": "D:\\Interns Data\\GitProject\\MasterProject\\mvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
     },
     {
-      "Id": "F:\\PPSU\\sem-08\\casepoint\\Master Project\\mvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "Id": "D:\\Interns Data\\GitProject\\MasterProject\\mvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
     },
     {
-      "Id": "F:\\PPSU\\sem-08\\casepoint\\Master Project\\mvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "Id": "D:\\Interns Data\\GitProject\\MasterProject\\mvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
     },
     {
-      "Id": "F:\\PPSU\\sem-08\\casepoint\\Master Project\\mvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "Id": "D:\\Interns Data\\GitProject\\MasterProject\\mvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
     },
     {
-      "Id": "F:\\PPSU\\sem-08\\casepoint\\Master Project\\mvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "Id": "D:\\Interns Data\\GitProject\\MasterProject\\mvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
     },
     {
-      "Id": "F:\\PPSU\\sem-08\\casepoint\\Master Project\\mvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "Id": "D:\\Interns Data\\GitProject\\MasterProject\\mvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
     },
     {
-      "Id": "F:\\PPSU\\sem-08\\casepoint\\Master Project\\mvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "Id": "D:\\Interns Data\\GitProject\\MasterProject\\mvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
     },
     {
-      "Id": "F:\\PPSU\\sem-08\\casepoint\\Master Project\\mvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "Id": "D:\\Interns Data\\GitProject\\MasterProject\\mvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
     },
     {
-      "Id": "F:\\PPSU\\sem-08\\casepoint\\Master Project\\mvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "Id": "D:\\Interns Data\\GitProject\\MasterProject\\mvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
     },
     {
-      "Id": "F:\\PPSU\\sem-08\\casepoint\\Master Project\\mvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "Id": "D:\\Interns Data\\GitProject\\MasterProject\\mvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
     },
     {
-      "Id": "F:\\PPSU\\sem-08\\casepoint\\Master Project\\mvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "Id": "D:\\Interns Data\\GitProject\\MasterProject\\mvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
     },
     {
-      "Id": "F:\\PPSU\\sem-08\\casepoint\\Master Project\\mvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "Id": "D:\\Interns Data\\GitProject\\MasterProject\\mvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
     },
     {
-      "Id": "F:\\PPSU\\sem-08\\casepoint\\Master Project\\mvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "Id": "D:\\Interns Data\\GitProject\\MasterProject\\mvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
     },
     {
-      "Id": "F:\\PPSU\\sem-08\\casepoint\\Master Project\\mvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "Id": "D:\\Interns Data\\GitProject\\MasterProject\\mvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
     },
     {
-      "Id": "F:\\PPSU\\sem-08\\casepoint\\Master Project\\mvc\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "Id": "D:\\Interns Data\\GitProject\\MasterProject\\mvc\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
     },
     {
-      "Id": "F:\\PPSU\\sem-08\\casepoint\\Master Project\\mvc\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "Id": "D:\\Interns Data\\GitProject\\MasterProject\\mvc\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
     },
     {
-      "Id": "F:\\PPSU\\sem-08\\casepoint\\Master Project\\mvc\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "Id": "D:\\Interns Data\\GitProject\\MasterProject\\mvc\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
     },
     {
-      "Id": "F:\\PPSU\\sem-08\\casepoint\\Master Project\\mvc\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "Id": "D:\\Interns Data\\GitProject\\MasterProject\\mvc\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
     },
     {
-      "Id": "F:\\PPSU\\sem-08\\casepoint\\Master Project\\mvc\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "Id": "D:\\Interns Data\\GitProject\\MasterProject\\mvc\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
     },
     {
-      "Id": "F:\\PPSU\\sem-08\\casepoint\\Master Project\\mvc\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "Id": "D:\\Interns Data\\GitProject\\MasterProject\\mvc\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
     },
     {
-      "Id": "F:\\PPSU\\sem-08\\casepoint\\Master Project\\mvc\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "Id": "D:\\Interns Data\\GitProject\\MasterProject\\mvc\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
     },
     {
-      "Id": "F:\\PPSU\\sem-08\\casepoint\\Master Project\\mvc\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "Id": "D:\\Interns Data\\GitProject\\MasterProject\\mvc\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
     },
     {
-      "Id": "F:\\PPSU\\sem-08\\casepoint\\Master Project\\mvc\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "Id": "D:\\Interns Data\\GitProject\\MasterProject\\mvc\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
     },
     {
-      "Id": "F:\\PPSU\\sem-08\\casepoint\\Master Project\\mvc\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "Id": "D:\\Interns Data\\GitProject\\MasterProject\\mvc\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
     },
     {
-      "Id": "F:\\PPSU\\sem-08\\casepoint\\Master Project\\mvc\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "Id": "D:\\Interns Data\\GitProject\\MasterProject\\mvc\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
     },
     {
-      "Id": "F:\\PPSU\\sem-08\\casepoint\\Master Project\\mvc\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "Id": "D:\\Interns Data\\GitProject\\MasterProject\\mvc\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
     },
     {
-      "Id": "F:\\PPSU\\sem-08\\casepoint\\Master Project\\mvc\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "Id": "D:\\Interns Data\\GitProject\\MasterProject\\mvc\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
     },
     {
-      "Id": "F:\\PPSU\\sem-08\\casepoint\\Master Project\\mvc\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "Id": "D:\\Interns Data\\GitProject\\MasterProject\\mvc\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
     },
     {
-      "Id": "F:\\PPSU\\sem-08\\casepoint\\Master Project\\mvc\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "Id": "D:\\Interns Data\\GitProject\\MasterProject\\mvc\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
     },
     {
-      "Id": "F:\\PPSU\\sem-08\\casepoint\\Master Project\\mvc\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "Id": "D:\\Interns Data\\GitProject\\MasterProject\\mvc\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
     },
     {
-      "Id": "F:\\PPSU\\sem-08\\casepoint\\Master Project\\mvc\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "Id": "D:\\Interns Data\\GitProject\\MasterProject\\mvc\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
     },
     {
-      "Id": "F:\\PPSU\\sem-08\\casepoint\\Master Project\\mvc\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "Id": "D:\\Interns Data\\GitProject\\MasterProject\\mvc\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
     },
     {
-      "Id": "F:\\PPSU\\sem-08\\casepoint\\Master Project\\mvc\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "Id": "D:\\Interns Data\\GitProject\\MasterProject\\mvc\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
     },
     {
-      "Id": "F:\\PPSU\\sem-08\\casepoint\\Master Project\\mvc\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "Id": "D:\\Interns Data\\GitProject\\MasterProject\\mvc\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
     },
     {
-      "Id": "F:\\PPSU\\sem-08\\casepoint\\Master Project\\mvc\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "Id": "D:\\Interns Data\\GitProject\\MasterProject\\mvc\\wwwroot\\lib\\jquery\\LICENSE.txt",
       "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
     },
     {
-      "Id": "F:\\PPSU\\sem-08\\casepoint\\Master Project\\mvc\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "Id": "D:\\Interns Data\\GitProject\\MasterProject\\mvc\\wwwroot\\lib\\jquery\\dist\\jquery.js",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
     },
     {
-      "Id": "F:\\PPSU\\sem-08\\casepoint\\Master Project\\mvc\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "Id": "D:\\Interns Data\\GitProject\\MasterProject\\mvc\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
     },
     {
-      "Id": "F:\\PPSU\\sem-08\\casepoint\\Master Project\\mvc\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "Id": "D:\\Interns Data\\GitProject\\MasterProject\\mvc\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
     },
     {

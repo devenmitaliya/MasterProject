@@ -1,0 +1,64 @@
+@model mvc.Models.tblUser
+
+<style>
+    .container {
+        width: 50%;
+        margin: 0 left;
+        padding: 20px;
+    }
+
+    .k-form-group {
+        margin-bottom: 20px;
+    }
+</style>
+
+<div class="container">
+    @if (!string.IsNullOrEmpty(ViewBag.Message))
+    {
+        <div class="alert alert-danger" role="alert">
+            @ViewBag.Message
+        </div>
+    }
+    <h2>Registration Form</h2>
+    <form asp-action="Register" method="post">
+        <div class="k-form-group">
+            <input name="c_uname" id="c_uname" class="k-textbox" style="width: 100%" placeholder="User Name">
+        </div>
+        <div class="k-form-group">
+            <input type="hidden" name="c_role" id="c_role" value="User">
+        </div>
+        <div class="k-form-group">
+            <input type="email" name="c_uemail" id="c_uemail" class="k-textbox" style="width: 100%"
+                placeholder="Email">
+        </div>
+        <div class="k-form-group">
+            <input type="password" name="c_password" id="c_password" class="k-textbox" style="width: 100%"
+                placeholder="Password">
+        </div>
+        <div class="k-form-group">
+            <input type="password" name="c_cpassword" id="c_cpassword" class="k-textbox" style="width: 100%"
+                placeholder="Confirm Password">
+        </div>
+        <button id="sub" type="submit" class="k-button k-primary">Submit</button>
+    </form>
+</div>
+
+@section Scripts {
+    <script>
+        $(document).ready(() => {
+            $("#c_uname").kendoTextBox({});
+            $("#c_uemail").kendoTextBox({ type: "email" });
+            $("#c_password").kendoTextBox({ type: "password" });
+            $("#sub").click(function (e) {
+                var password = $("#c_password").val();
+                var c_cpassword = $("#c_cpassword").val();
+
+                if (password != c_cpassword) {
+                    e.preventDefault();
+                    alert("Passwords do not match.");
+                }
+            });
+
+        });
+    </script>
+}
