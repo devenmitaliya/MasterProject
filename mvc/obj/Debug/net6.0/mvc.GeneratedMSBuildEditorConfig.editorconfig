@@ -15,6 +15,14 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = D:\GitProject\MasterProject\mvc
 build_property._RazorSourceGeneratorDebug = 
 
+[D:/GitProject/MasterProject/mvc/Views/ajaxuser/login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcYWpheHVzZXJcbG9naW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/GitProject/MasterProject/mvc/Views/ajaxuser/Register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcYWpheHVzZXJcUmVnaXN0ZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/GitProject/MasterProject/mvc/Views/Employee/Add.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbG95ZWVcQWRkLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
