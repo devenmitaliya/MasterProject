@@ -1,0 +1,82 @@
+@model mvc.Models.tblEmployee
+@{
+    var genders = new List<string> { "Male", "Female", "Other" };
+    var shifts = new List<string> { "Morning", "Afternoon" };
+}
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Edit Employee</title>
+    <link rel="stylesheet" href="https://kendo.cdn.telerik.com/2022.1.119/styles/kendo.default-v2.min.css" />
+</head>
+
+<body>
+    <div id="example">
+        <form method="post" enctype="multipart/form-data" action="/KendoComponentEmployee/Edit">
+            <div class="k-content">
+                <!-- Hidden input for employee ID -->
+                <input type="hidden" id="c_empid" name="c_empid" value="@Model.c_empid" />
+
+                <label for="c_empname">Name</label>
+                <input id="c_empname" name="c_empname" value="@Model.c_empname" />
+
+                <label for="c_empgender">Gender</label><br>
+                @foreach (var gender in genders)
+                {
+                    <input type="radio" id="@gender" name="c_empgender" value="@gender" @(gender == Model.c_empgender ?
+                    "checked" : "") />
+                    <label for="@gender">@gender</label>
+                }
+                <br>
+
+                <label for="c_empdob">Date of Birth</label>
+                <input id="c_empdob" name="c_empdob" value="@Model.c_empdob.ToString("yyyy-MM-dd")" />
+
+                <label for="c_empshift">Shift</label><br>
+                @foreach (var shift in shifts)
+                {
+                    <input type="checkbox" id="@shift" name="c_empshift" value="@shift" @(Model.c_empshift.Contains(shift) ?
+                    "checked" : "") />
+                    <label for="@shift">@shift</label>
+                }<br>
+
+                <label for="c_empimg">Image</label>
+                <input type="file" id="c_empimg" name="c_empimg" />
+
+                <label for="c_empdepartment">Department</label>
+                <select id="c_empdepartment" name="c_empdepartment">
+                    @{
+                        foreach (var department in ViewBag.Departments)
+                        {
+                            var isSelected = department.c_departmentname == Model.c_empdepartment ? "selected" : "";
+                            <option value="@department.c_departmentname" selected="@isSelected">@department.c_departmentname
+                            </option>
+                        }
+                    }
+                </select><br><br>
+
+
+                <input type="submit" value="Update Employee" class="k-button k-primary" />
+            </div>
+        </form>
+    </div>
+
+    @section Scripts {
+        <script src="https://kendo.cdn.telerik.com/2022.1.119/js/jquery.min.js"></script>
+        <script src="https://kendo.cdn.telerik.com/2022.1.119/js/kendo.all.min.js"></script>
+        <script>
+            $(document).ready(function () {
+                $("#c_empname").kendoTextBox();
+                $("#c_empdob").kendoDatePicker({
+                    format: "yyyy-MM-dd"
+                });
+                $("#c_empimg").kendoUpload();
+                $("#c_empdepartment").kendoDropDownList();
+            });
+        </script>
+    }
+</body>
+
+</html>
