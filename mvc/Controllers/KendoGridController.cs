@@ -15,21 +15,48 @@ namespace mvc.Controllers
     public class KendoGridController : Controller
     {
         private readonly ILogger<KendoGridController> _logger;
-        private string file; // declare it at the class level
+        //private string file; // declare it at the class level
         private readonly IEmployeeRepository _employeeRepository;
-        private readonly IWebHostEnvironment _hostingEnvironment;
+        // private readonly IWebHostEnvironment _hostingEnvironment;
         // private readonly IHostingEnvironment _hostingEnviroment;
+        private readonly IWebHostEnvironment _hostingEnvironment;
 
-        public KendoGridController(ILogger<KendoGridController> logger, IEmployeeRepository employeeRepository, IWebHostEnvironment hostingEnvironment)
+
+        public KendoGridController(ILogger<KendoGridController> logger, IEmployeeRepository employeeRepository,IWebHostEnvironment hostingEnvironment )
         {
             _logger = logger;
             _employeeRepository = employeeRepository;
             _hostingEnvironment = hostingEnvironment;
+
+            // _hostingEnvironment = hostingEnvironment;
         }
 
         public IActionResult Index()
         {
             return View();
+        }
+
+
+        [HttpPost]
+
+        public IActionResult UploadPhoto(tblEmployee emp , IFormFile photo)
+        {
+            if (photo != null)
+            {
+                string filename = photo.FileName;
+                string filepath = Path.Combine(_hostingEnvironment.WebRootPath, "images", filename);
+
+                using (var stream = new FileStream(filepath, FileMode.Create))
+                {
+
+                    photo.CopyTo(stream);
+                }
+
+                file = filename;
+
+            }
+
+            return Json("Image Uploaded");
         }
 
         [HttpGet]
@@ -57,52 +84,75 @@ namespace mvc.Controllers
             }
             return Json(employee);
         }
+        static string file = "";
 
-        // [HttpGet]
-        // public IActionResult Add()
-        // {
-        //     // Assuming you have a method to retrieve departments, replace it with your actual logic
-        //     var departments = _employeeRepository.GetAllDepartment();
-        //     ViewBag.Departments = departments; // Pass departments to ViewBag
-        //     return View();
-        // }
+        [HttpPost]
+        public IActionResult Add(tblEmployee emp)
+        {
+            // try
+            // {
+                // string filename = Path.GetFileName(emp.c_empimg.FileName);
+                // string filepath = Path.Combine(_hostingEnvironment.WebRootPath, "images", filename);
+
+                // using (var stream = new FileStream(filepath, FileMode.Create))
+                // {
+                //     emp.c_empimg.CopyTo(stream);
+                // }
+
+                // Console.WriteLine("Photo Add" + filename);
+                // file = filename;
+                emp.c_empimg = file;
+                _employeeRepository.AddEmployee(emp);
+                return Json(new { success = true, message = "Employee added successfully", data = emp });
+            // }
+            // catch (Exception ex)
+            // {
+            //     return Json(new { success = false, message = ex.Message });
+            // }
+        }
 
 
         [HttpPost]
-public async Task<IActionResult> Add(tblEmployee emp, IFormFile temp_name)
-{
-    try
-    {
-        Console.WriteLine("Add action called.");
-        if (temp_name != null && temp_name.Length > 0)
+        public IActionResult EditEmployee(tblEmployee emp)
         {
-            var uploadsFolder = Path.Combine(@"D:\\casepoint Internship\\MasterProject\\mvc\\wwwroot", "images");
+            // try
+            // {
 
-            string uniqueFilename = Guid.NewGuid().ToString() + "_" + Path.GetFileName(temp_name.FileName);
-            string filePath = Path.Combine(uploadsFolder, uniqueFilename);
+            //     _logger.LogInformation($"Received emp: {emp}");
+            //     _logger.LogInformation("Employee edited successfully");
 
-            using (var stream = new FileStream(filePath, FileMode.Create))
+                // Log or debug statements to inspect emp and ensure it has the correct values
+                emp.c_empimg = file;
+                _employeeRepository.EditEmployee(emp);
+                return Json(new { success = true, message = "Employee edited successfully", data = emp });
+            // }
+            // catch (Exception ex)
+            // {
+            //     return Json(new { success = false, message = ex.Message });
+            // }
+        }
+
+
+
+        [HttpDelete]
+        public IActionResult Delete(int id)
+        {
+            try
             {
-                await temp_name.CopyToAsync(stream);
+                var employee = _employeeRepository.GetOneEmployee(id);
+                if (employee == null)
+                {
+                    return Json(new { success = false, message = "Employee not found" });
+                }
+
+                _employeeRepository.DeleteEmployee(employee);
+                return Json(new { success = true, message = "Employee deleted successfully" });
             }
-
-            emp.c_empimg = uniqueFilename;
+            catch (Exception ex)
+            {
+                return Json(new { success = false, message = ex.Message });
+            }
         }
-        else
-        {
-            Console.WriteLine("Image not found");
-        }
-
-        _employeeRepository.AddEmployee(emp);
-
-        return Ok("Employee Added Successfully");
-    }
-    catch (Exception ex)
-    {
-        Console.WriteLine("Error adding employee: " + ex.Message);
-        return StatusCode(500, "An error occurred while adding the employee.");
-    }
-}
 
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]

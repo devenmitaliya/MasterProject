@@ -57,7 +57,8 @@
                         c_empdob: { type: "date", validation: { required: true } },
                         c_empshift: { type: "string", validation: { required: true } },
                         c_empimg: { type: "string", validation: { required: true } },
-                        c_empdepartment: { type: "string", validation: { required: true } }
+                        c_empdepartment: { type: "string", validation: { required: true } },
+                        //photo:{type : "file" , validation:{required:true}}
                     }
                 }
             }
@@ -71,7 +72,12 @@
                 { field: "c_empgender", title: "c_empgender" , editor: genderTypeRadioEditor },
                 { field: "c_empdob", title: "c_empdob", format: "{0:yyyy-MM-dd}", editor: dateEditor },
                 { field: "c_empshift", title: "c_shift" , editor : shiftCheckboxEditor },
-                { field: "c_empimg", title: "c_img" , editor : imageUploadEditor , template : "<img src='#: c_empimg #' alt='Employee Photo' style='width: 50px; height: 50px;' />" },
+             //   { field: "c_empimg", title: "c_img" , editor : imageUploadEditor , template : "<img src='#: c_empimg #' alt='Employee Photo' style='width: 50px; height: 50px;' />" },
+                {
+                        field: "c_empimg", title: "emp Photo",
+                        editor: imageupload,
+                        template: "<img src='/images/#= c_empimg #' alt='emp Photo' style='max-width: 100px; max-height: 100px;'/>"
+                },
                 { field: "c_empdepartment", title: "c_depart" , editor : deptDropDownEditor },
                 { command: ["edit", "destroy"], title: "&nbsp;", width: "200px" }
             ],
@@ -81,6 +87,10 @@
             sortable: true,
             filterable: true,
         });
+
+        function imageupload(container, options) {
+            $('<input name="photo" type="file" id="photo" data-role="upload" data-async=\'{ "saveUrl": "http://localhost:5110/KendoGrid/UploadPhoto", "autoUpload": true }\' class="k-input k-textbox">').appendTo(container);
+        }
 
         function genderTypeRadioEditor(container, options) {
             $('<input type="radio" name="' + options.field + '" value="Male" required/> Male' +
