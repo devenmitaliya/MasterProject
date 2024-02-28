@@ -139,6 +139,7 @@ namespace mvc.Repositories
             try
             {
                 // conn.Open();
+                Console.WriteLine("Department : "+c_departmentname);
                 using (var cmd = new NpgsqlCommand("SELECT c_departmentid FROM t_department WHERE c_departmentname = @c_departmentname", conn))
                 {
                     cmd.Parameters.AddWithValue("@c_departmentname", c_departmentname);
@@ -149,6 +150,8 @@ namespace mvc.Repositories
                         {
                             deptId = reader.GetInt32(0);
                         }
+
+                        Console.WriteLine("DEPARTMENT ID: " + deptId);
                     }
                 }
             }
@@ -174,10 +177,12 @@ namespace mvc.Repositories
                 conn.Open();
                 var cmd = new NpgsqlCommand();
                 cmd.Connection = conn;
+                Console.WriteLine(emp.c_empdepartment);
                 int deptId = GetDepartmentId(emp.c_empdepartment, conn);
                 cmd.CommandType = CommandType.Text;
                 string shifts = string.Join(",", emp.c_empshift);
 
+                Console.WriteLine(emp.c_empid + ":::::::" + emp.c_empdepartment);
                 cmd.CommandText = "UPDATE t_employee SET c_empname=@c_empname , c_empgender=@c_empgender , c_empdob=@c_empdob , c_empshift=@c_empshift , c_empimg=@c_empimg , c_empdepartment=@c_empdepartment WHERE c_empid =@c_empid ";
 
                 cmd.Parameters.AddWithValue("@c_empid", emp.c_empid);

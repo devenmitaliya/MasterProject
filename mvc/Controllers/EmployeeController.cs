@@ -91,7 +91,7 @@ namespace mvc.Controllers
 
 
         [HttpPost]
-        public IActionResult Edit(int id, tblEmployee employee)
+        public IActionResult Edit(tblEmployee employee)
         {
             if (HttpContext.Session.GetString("role") == "Admin")
             {
