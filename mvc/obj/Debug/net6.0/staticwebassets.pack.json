@@ -1,248 +1,384 @@
 {
   "Files": [
     {
-      "Id": "F:\\PPSU\\sem-08\\casepoint\\Master Project\\mvc\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\mvc.bundle.scp.css",
+      "Id": "D:\\casepoint Internship\\MasterProject\\mvc\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\mvc.bundle.scp.css",
       "PackagePath": "staticwebassets\\mvc.bundle.scp.css"
     },
     {
-      "Id": "F:\\PPSU\\sem-08\\casepoint\\Master Project\\mvc\\wwwroot\\css\\site.css",
+      "Id": "D:\\casepoint Internship\\MasterProject\\mvc\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
-      "Id": "F:\\PPSU\\sem-08\\casepoint\\Master Project\\mvc\\wwwroot\\favicon.ico",
+      "Id": "D:\\casepoint Internship\\MasterProject\\mvc\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
-      "Id": "F:\\PPSU\\sem-08\\casepoint\\Master Project\\mvc\\wwwroot\\js\\site.js",
+      "Id": "D:\\casepoint Internship\\MasterProject\\mvc\\wwwroot\\images\\09413437-395d-472a-b5cd-51b04e050b3c_i1.jpg",
+      "PackagePath": "staticwebassets\\images\\09413437-395d-472a-b5cd-51b04e050b3c_i1.jpg"
+    },
+    {
+      "Id": "D:\\casepoint Internship\\MasterProject\\mvc\\wwwroot\\images\\0f34754d-146d-48a2-8f02-d0e50dd756e9_i1.jpg",
+      "PackagePath": "staticwebassets\\images\\0f34754d-146d-48a2-8f02-d0e50dd756e9_i1.jpg"
+    },
+    {
+      "Id": "D:\\casepoint Internship\\MasterProject\\mvc\\wwwroot\\images\\13d960d3-758e-4605-920a-af0288fa8027_my project.jpg",
+      "PackagePath": "staticwebassets\\images\\13d960d3-758e-4605-920a-af0288fa8027_my project.jpg"
+    },
+    {
+      "Id": "D:\\casepoint Internship\\MasterProject\\mvc\\wwwroot\\images\\184f54a3-0097-4f43-a09a-671ad0e7a25d_my project.jpg",
+      "PackagePath": "staticwebassets\\images\\184f54a3-0097-4f43-a09a-671ad0e7a25d_my project.jpg"
+    },
+    {
+      "Id": "D:\\casepoint Internship\\MasterProject\\mvc\\wwwroot\\images\\370e6710-227f-4701-a97e-364992b4f4b7_i1.jpg",
+      "PackagePath": "staticwebassets\\images\\370e6710-227f-4701-a97e-364992b4f4b7_i1.jpg"
+    },
+    {
+      "Id": "D:\\casepoint Internship\\MasterProject\\mvc\\wwwroot\\images\\3e733096-c105-4b88-b855-c5fe1be2a693_i1.jpg",
+      "PackagePath": "staticwebassets\\images\\3e733096-c105-4b88-b855-c5fe1be2a693_i1.jpg"
+    },
+    {
+      "Id": "D:\\casepoint Internship\\MasterProject\\mvc\\wwwroot\\images\\3f667411-a221-4055-bcd0-4da6bf8a0816_i1.jpg",
+      "PackagePath": "staticwebassets\\images\\3f667411-a221-4055-bcd0-4da6bf8a0816_i1.jpg"
+    },
+    {
+      "Id": "D:\\casepoint Internship\\MasterProject\\mvc\\wwwroot\\images\\42c4a9f2-4a9d-4f86-9dee-22f0d439356c_my project.jpg",
+      "PackagePath": "staticwebassets\\images\\42c4a9f2-4a9d-4f86-9dee-22f0d439356c_my project.jpg"
+    },
+    {
+      "Id": "D:\\casepoint Internship\\MasterProject\\mvc\\wwwroot\\images\\50272cb9-5de1-467d-b9a6-ecec4667c117_i1.jpg",
+      "PackagePath": "staticwebassets\\images\\50272cb9-5de1-467d-b9a6-ecec4667c117_i1.jpg"
+    },
+    {
+      "Id": "D:\\casepoint Internship\\MasterProject\\mvc\\wwwroot\\images\\53f1887d-8dec-478d-b9e5-f611bd9b11a3_i1.jpg",
+      "PackagePath": "staticwebassets\\images\\53f1887d-8dec-478d-b9e5-f611bd9b11a3_i1.jpg"
+    },
+    {
+      "Id": "D:\\casepoint Internship\\MasterProject\\mvc\\wwwroot\\images\\6d5f7f4b-0cd5-4420-aa06-82f1b8de3a37_i1.jpg",
+      "PackagePath": "staticwebassets\\images\\6d5f7f4b-0cd5-4420-aa06-82f1b8de3a37_i1.jpg"
+    },
+    {
+      "Id": "D:\\casepoint Internship\\MasterProject\\mvc\\wwwroot\\images\\75fb7a42-c252-4809-b857-eee49345758f_i1.jpg",
+      "PackagePath": "staticwebassets\\images\\75fb7a42-c252-4809-b857-eee49345758f_i1.jpg"
+    },
+    {
+      "Id": "D:\\casepoint Internship\\MasterProject\\mvc\\wwwroot\\images\\8848d86c-3d9b-47c5-b785-204fee63f9b0_Screenshot (84).png",
+      "PackagePath": "staticwebassets\\images\\8848d86c-3d9b-47c5-b785-204fee63f9b0_Screenshot (84).png"
+    },
+    {
+      "Id": "D:\\casepoint Internship\\MasterProject\\mvc\\wwwroot\\images\\8892b59d-27a1-4c56-ba41-24687c236e01_my project.jpg",
+      "PackagePath": "staticwebassets\\images\\8892b59d-27a1-4c56-ba41-24687c236e01_my project.jpg"
+    },
+    {
+      "Id": "D:\\casepoint Internship\\MasterProject\\mvc\\wwwroot\\images\\MS Dhoni.jpg",
+      "PackagePath": "staticwebassets\\images\\MS Dhoni.jpg"
+    },
+    {
+      "Id": "D:\\casepoint Internship\\MasterProject\\mvc\\wwwroot\\images\\Screenshot (100).png",
+      "PackagePath": "staticwebassets\\images\\Screenshot (100).png"
+    },
+    {
+      "Id": "D:\\casepoint Internship\\MasterProject\\mvc\\wwwroot\\images\\Screenshot (148).png",
+      "PackagePath": "staticwebassets\\images\\Screenshot (148).png"
+    },
+    {
+      "Id": "D:\\casepoint Internship\\MasterProject\\mvc\\wwwroot\\images\\a55351c5-2ddf-4149-a8eb-2b8d5aecdea2_my project.jpg",
+      "PackagePath": "staticwebassets\\images\\a55351c5-2ddf-4149-a8eb-2b8d5aecdea2_my project.jpg"
+    },
+    {
+      "Id": "D:\\casepoint Internship\\MasterProject\\mvc\\wwwroot\\images\\b24a2f1d-e2a0-4d5f-a15b-12f325156e15_i1.jpg",
+      "PackagePath": "staticwebassets\\images\\b24a2f1d-e2a0-4d5f-a15b-12f325156e15_i1.jpg"
+    },
+    {
+      "Id": "D:\\casepoint Internship\\MasterProject\\mvc\\wwwroot\\images\\b83a2ed9-d9af-4056-a985-adfead6e3af7_MS Dhoni.jpg",
+      "PackagePath": "staticwebassets\\images\\b83a2ed9-d9af-4056-a985-adfead6e3af7_MS Dhoni.jpg"
+    },
+    {
+      "Id": "D:\\casepoint Internship\\MasterProject\\mvc\\wwwroot\\images\\bbae5ffd-19e1-42e9-914f-adc0940487fa_i1.jpg",
+      "PackagePath": "staticwebassets\\images\\bbae5ffd-19e1-42e9-914f-adc0940487fa_i1.jpg"
+    },
+    {
+      "Id": "D:\\casepoint Internship\\MasterProject\\mvc\\wwwroot\\images\\c20332e4-2c03-4950-934e-9fe63b3e12b8_i1.jpg",
+      "PackagePath": "staticwebassets\\images\\c20332e4-2c03-4950-934e-9fe63b3e12b8_i1.jpg"
+    },
+    {
+      "Id": "D:\\casepoint Internship\\MasterProject\\mvc\\wwwroot\\images\\d34396b5-0cc7-406e-8898-c70c28d1d701_i1.jpg",
+      "PackagePath": "staticwebassets\\images\\d34396b5-0cc7-406e-8898-c70c28d1d701_i1.jpg"
+    },
+    {
+      "Id": "D:\\casepoint Internship\\MasterProject\\mvc\\wwwroot\\images\\e97c20c2-fece-4378-99af-b2828cc819d3_MS Dhoni.jpg",
+      "PackagePath": "staticwebassets\\images\\e97c20c2-fece-4378-99af-b2828cc819d3_MS Dhoni.jpg"
+    },
+    {
+      "Id": "D:\\casepoint Internship\\MasterProject\\mvc\\wwwroot\\images\\f0305149-49a4-4372-a2db-e30e46aa7a48_MS Dhoni.jpg",
+      "PackagePath": "staticwebassets\\images\\f0305149-49a4-4372-a2db-e30e46aa7a48_MS Dhoni.jpg"
+    },
+    {
+      "Id": "D:\\casepoint Internship\\MasterProject\\mvc\\wwwroot\\images\\f666a165-cf46-45c8-b16c-d915d6ff7719_i1.jpg",
+      "PackagePath": "staticwebassets\\images\\f666a165-cf46-45c8-b16c-d915d6ff7719_i1.jpg"
+    },
+    {
+      "Id": "D:\\casepoint Internship\\MasterProject\\mvc\\wwwroot\\images\\i1.jpg",
+      "PackagePath": "staticwebassets\\images\\i1.jpg"
+    },
+    {
+      "Id": "D:\\casepoint Internship\\MasterProject\\mvc\\wwwroot\\images\\th.jpeg",
+      "PackagePath": "staticwebassets\\images\\th.jpeg"
+    },
+    {
+      "Id": "D:\\casepoint Internship\\MasterProject\\mvc\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },
     {
-      "Id": "F:\\PPSU\\sem-08\\casepoint\\Master Project\\mvc\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "Id": "D:\\casepoint Internship\\MasterProject\\mvc\\wwwroot\\lib\\bootstrap\\LICENSE",
       "PackagePath": "staticwebassets\\lib\\bootstrap"
     },
     {
-      "Id": "F:\\PPSU\\sem-08\\casepoint\\Master Project\\mvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "Id": "D:\\casepoint Internship\\MasterProject\\mvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
     },
     {
-      "Id": "F:\\PPSU\\sem-08\\casepoint\\Master Project\\mvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "Id": "D:\\casepoint Internship\\MasterProject\\mvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
     },
     {
-      "Id": "F:\\PPSU\\sem-08\\casepoint\\Master Project\\mvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "Id": "D:\\casepoint Internship\\MasterProject\\mvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
     },
     {
-      "Id": "F:\\PPSU\\sem-08\\casepoint\\Master Project\\mvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "Id": "D:\\casepoint Internship\\MasterProject\\mvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
     },
     {
-      "Id": "F:\\PPSU\\sem-08\\casepoint\\Master Project\\mvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "Id": "D:\\casepoint Internship\\MasterProject\\mvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
     },
     {
-      "Id": "F:\\PPSU\\sem-08\\casepoint\\Master Project\\mvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "Id": "D:\\casepoint Internship\\MasterProject\\mvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
     },
     {
-      "Id": "F:\\PPSU\\sem-08\\casepoint\\Master Project\\mvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "Id": "D:\\casepoint Internship\\MasterProject\\mvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
     },
     {
-      "Id": "F:\\PPSU\\sem-08\\casepoint\\Master Project\\mvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "Id": "D:\\casepoint Internship\\MasterProject\\mvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
     },
     {
-      "Id": "F:\\PPSU\\sem-08\\casepoint\\Master Project\\mvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "Id": "D:\\casepoint Internship\\MasterProject\\mvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
     },
     {
-      "Id": "F:\\PPSU\\sem-08\\casepoint\\Master Project\\mvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "Id": "D:\\casepoint Internship\\MasterProject\\mvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
     },
     {
-      "Id": "F:\\PPSU\\sem-08\\casepoint\\Master Project\\mvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "Id": "D:\\casepoint Internship\\MasterProject\\mvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
     },
     {
-      "Id": "F:\\PPSU\\sem-08\\casepoint\\Master Project\\mvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "Id": "D:\\casepoint Internship\\MasterProject\\mvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
     },
     {
-      "Id": "F:\\PPSU\\sem-08\\casepoint\\Master Project\\mvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "Id": "D:\\casepoint Internship\\MasterProject\\mvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
     },
     {
-      "Id": "F:\\PPSU\\sem-08\\casepoint\\Master Project\\mvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "Id": "D:\\casepoint Internship\\MasterProject\\mvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
     },
     {
-      "Id": "F:\\PPSU\\sem-08\\casepoint\\Master Project\\mvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "Id": "D:\\casepoint Internship\\MasterProject\\mvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
     },
     {
-      "Id": "F:\\PPSU\\sem-08\\casepoint\\Master Project\\mvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "Id": "D:\\casepoint Internship\\MasterProject\\mvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
     },
     {
-      "Id": "F:\\PPSU\\sem-08\\casepoint\\Master Project\\mvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "Id": "D:\\casepoint Internship\\MasterProject\\mvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
     },
     {
-      "Id": "F:\\PPSU\\sem-08\\casepoint\\Master Project\\mvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "Id": "D:\\casepoint Internship\\MasterProject\\mvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
     },
     {
-      "Id": "F:\\PPSU\\sem-08\\casepoint\\Master Project\\mvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "Id": "D:\\casepoint Internship\\MasterProject\\mvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
     },
     {
-      "Id": "F:\\PPSU\\sem-08\\casepoint\\Master Project\\mvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "Id": "D:\\casepoint Internship\\MasterProject\\mvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
     },
     {
-      "Id": "F:\\PPSU\\sem-08\\casepoint\\Master Project\\mvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "Id": "D:\\casepoint Internship\\MasterProject\\mvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
     },
     {
-      "Id": "F:\\PPSU\\sem-08\\casepoint\\Master Project\\mvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "Id": "D:\\casepoint Internship\\MasterProject\\mvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
     },
     {
-      "Id": "F:\\PPSU\\sem-08\\casepoint\\Master Project\\mvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "Id": "D:\\casepoint Internship\\MasterProject\\mvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
     },
     {
-      "Id": "F:\\PPSU\\sem-08\\casepoint\\Master Project\\mvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "Id": "D:\\casepoint Internship\\MasterProject\\mvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
     },
     {
-      "Id": "F:\\PPSU\\sem-08\\casepoint\\Master Project\\mvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "Id": "D:\\casepoint Internship\\MasterProject\\mvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
     },
     {
-      "Id": "F:\\PPSU\\sem-08\\casepoint\\Master Project\\mvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "Id": "D:\\casepoint Internship\\MasterProject\\mvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
     },
     {
-      "Id": "F:\\PPSU\\sem-08\\casepoint\\Master Project\\mvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "Id": "D:\\casepoint Internship\\MasterProject\\mvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
     },
     {
-      "Id": "F:\\PPSU\\sem-08\\casepoint\\Master Project\\mvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "Id": "D:\\casepoint Internship\\MasterProject\\mvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
     },
     {
-      "Id": "F:\\PPSU\\sem-08\\casepoint\\Master Project\\mvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "Id": "D:\\casepoint Internship\\MasterProject\\mvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
     },
     {
-      "Id": "F:\\PPSU\\sem-08\\casepoint\\Master Project\\mvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "Id": "D:\\casepoint Internship\\MasterProject\\mvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
     },
     {
-      "Id": "F:\\PPSU\\sem-08\\casepoint\\Master Project\\mvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "Id": "D:\\casepoint Internship\\MasterProject\\mvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
     },
     {
-      "Id": "F:\\PPSU\\sem-08\\casepoint\\Master Project\\mvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "Id": "D:\\casepoint Internship\\MasterProject\\mvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
     },
     {
-      "Id": "F:\\PPSU\\sem-08\\casepoint\\Master Project\\mvc\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "Id": "D:\\casepoint Internship\\MasterProject\\mvc\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
     },
     {
-      "Id": "F:\\PPSU\\sem-08\\casepoint\\Master Project\\mvc\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "Id": "D:\\casepoint Internship\\MasterProject\\mvc\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
     },
     {
-      "Id": "F:\\PPSU\\sem-08\\casepoint\\Master Project\\mvc\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "Id": "D:\\casepoint Internship\\MasterProject\\mvc\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
     },
     {
-      "Id": "F:\\PPSU\\sem-08\\casepoint\\Master Project\\mvc\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "Id": "D:\\casepoint Internship\\MasterProject\\mvc\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
     },
     {
-      "Id": "F:\\PPSU\\sem-08\\casepoint\\Master Project\\mvc\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "Id": "D:\\casepoint Internship\\MasterProject\\mvc\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
     },
     {
-      "Id": "F:\\PPSU\\sem-08\\casepoint\\Master Project\\mvc\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "Id": "D:\\casepoint Internship\\MasterProject\\mvc\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
     },
     {
-      "Id": "F:\\PPSU\\sem-08\\casepoint\\Master Project\\mvc\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "Id": "D:\\casepoint Internship\\MasterProject\\mvc\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
     },
     {
-      "Id": "F:\\PPSU\\sem-08\\casepoint\\Master Project\\mvc\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "Id": "D:\\casepoint Internship\\MasterProject\\mvc\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
     },
     {
-      "Id": "F:\\PPSU\\sem-08\\casepoint\\Master Project\\mvc\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "Id": "D:\\casepoint Internship\\MasterProject\\mvc\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
     },
     {
-      "Id": "F:\\PPSU\\sem-08\\casepoint\\Master Project\\mvc\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "Id": "D:\\casepoint Internship\\MasterProject\\mvc\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
     },
     {
-      "Id": "F:\\PPSU\\sem-08\\casepoint\\Master Project\\mvc\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "Id": "D:\\casepoint Internship\\MasterProject\\mvc\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
     },
     {
-      "Id": "F:\\PPSU\\sem-08\\casepoint\\Master Project\\mvc\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "Id": "D:\\casepoint Internship\\MasterProject\\mvc\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
     },
     {
-      "Id": "F:\\PPSU\\sem-08\\casepoint\\Master Project\\mvc\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "Id": "D:\\casepoint Internship\\MasterProject\\mvc\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
     },
     {
-      "Id": "F:\\PPSU\\sem-08\\casepoint\\Master Project\\mvc\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "Id": "D:\\casepoint Internship\\MasterProject\\mvc\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
     },
     {
-      "Id": "F:\\PPSU\\sem-08\\casepoint\\Master Project\\mvc\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "Id": "D:\\casepoint Internship\\MasterProject\\mvc\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
     },
     {
-      "Id": "F:\\PPSU\\sem-08\\casepoint\\Master Project\\mvc\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "Id": "D:\\casepoint Internship\\MasterProject\\mvc\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
     },
     {
-      "Id": "F:\\PPSU\\sem-08\\casepoint\\Master Project\\mvc\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "Id": "D:\\casepoint Internship\\MasterProject\\mvc\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
     },
     {
-      "Id": "F:\\PPSU\\sem-08\\casepoint\\Master Project\\mvc\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "Id": "D:\\casepoint Internship\\MasterProject\\mvc\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
     },
     {
-      "Id": "F:\\PPSU\\sem-08\\casepoint\\Master Project\\mvc\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "Id": "D:\\casepoint Internship\\MasterProject\\mvc\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
     },
     {
-      "Id": "F:\\PPSU\\sem-08\\casepoint\\Master Project\\mvc\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "Id": "D:\\casepoint Internship\\MasterProject\\mvc\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
     },
     {
-      "Id": "F:\\PPSU\\sem-08\\casepoint\\Master Project\\mvc\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "Id": "D:\\casepoint Internship\\MasterProject\\mvc\\wwwroot\\lib\\jquery\\LICENSE.txt",
       "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
     },
     {
-      "Id": "F:\\PPSU\\sem-08\\casepoint\\Master Project\\mvc\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "Id": "D:\\casepoint Internship\\MasterProject\\mvc\\wwwroot\\lib\\jquery\\dist\\jquery.js",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
     },
     {
-      "Id": "F:\\PPSU\\sem-08\\casepoint\\Master Project\\mvc\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "Id": "D:\\casepoint Internship\\MasterProject\\mvc\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
     },
     {
-      "Id": "F:\\PPSU\\sem-08\\casepoint\\Master Project\\mvc\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "Id": "D:\\casepoint Internship\\MasterProject\\mvc\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "F:\\PPSU\\sem-08\\casepoint\\Master Project\\mvc\\wwwroot\\uploads\\GIT-FirstPart.ppt",
+      "PackagePath": "staticwebassets\\uploads\\GIT-FirstPart.ppt"
+    },
+    {
+      "Id": "F:\\PPSU\\sem-08\\casepoint\\Master Project\\mvc\\wwwroot\\uploads\\IMG_4341.jpg",
+      "PackagePath": "staticwebassets\\uploads\\IMG_4341.jpg"
+    },
+    {
+      "Id": "F:\\PPSU\\sem-08\\casepoint\\Master Project\\mvc\\wwwroot\\uploads\\Internship Review.pdf",
+      "PackagePath": "staticwebassets\\uploads\\Internship Review.pdf"
+    },
+    {
+      "Id": "F:\\PPSU\\sem-08\\casepoint\\Master Project\\mvc\\wwwroot\\uploads\\Letter A Logo With Business and Arrow Concept..png",
+      "PackagePath": "staticwebassets\\uploads\\Letter A Logo With Business and Arrow Concept..png"
+    },
+    {
+      "Id": "F:\\PPSU\\sem-08\\casepoint\\Master Project\\mvc\\wwwroot\\uploads\\Untitled design.gif",
+      "PackagePath": "staticwebassets\\uploads\\Untitled design.gif"
+    },
+    {
+      "Id": "F:\\PPSU\\sem-08\\casepoint\\Master Project\\mvc\\wwwroot\\uploads\\Untitled design45454554.png",
+      "PackagePath": "staticwebassets\\uploads\\Untitled design45454554.png"
     },
     {
       "Id": "F:\\PPSU\\sem-08\\casepoint\\Master Project\\mvc\\wwwroot\\uploads\\cabinet salon.png",
