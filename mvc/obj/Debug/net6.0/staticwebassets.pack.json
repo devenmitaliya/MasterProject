@@ -357,6 +357,34 @@
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
+      "Id": "F:\\PPSU\\sem-08\\casepoint\\Master Project\\mvc\\wwwroot\\uploads\\GIT-FirstPart.ppt",
+      "PackagePath": "staticwebassets\\uploads\\GIT-FirstPart.ppt"
+    },
+    {
+      "Id": "F:\\PPSU\\sem-08\\casepoint\\Master Project\\mvc\\wwwroot\\uploads\\IMG_4341.jpg",
+      "PackagePath": "staticwebassets\\uploads\\IMG_4341.jpg"
+    },
+    {
+      "Id": "F:\\PPSU\\sem-08\\casepoint\\Master Project\\mvc\\wwwroot\\uploads\\Internship Review.pdf",
+      "PackagePath": "staticwebassets\\uploads\\Internship Review.pdf"
+    },
+    {
+      "Id": "F:\\PPSU\\sem-08\\casepoint\\Master Project\\mvc\\wwwroot\\uploads\\Letter A Logo With Business and Arrow Concept..png",
+      "PackagePath": "staticwebassets\\uploads\\Letter A Logo With Business and Arrow Concept..png"
+    },
+    {
+      "Id": "F:\\PPSU\\sem-08\\casepoint\\Master Project\\mvc\\wwwroot\\uploads\\Untitled design.gif",
+      "PackagePath": "staticwebassets\\uploads\\Untitled design.gif"
+    },
+    {
+      "Id": "F:\\PPSU\\sem-08\\casepoint\\Master Project\\mvc\\wwwroot\\uploads\\Untitled design45454554.png",
+      "PackagePath": "staticwebassets\\uploads\\Untitled design45454554.png"
+    },
+    {
+      "Id": "F:\\PPSU\\sem-08\\casepoint\\Master Project\\mvc\\wwwroot\\uploads\\cabinet salon.png",
+      "PackagePath": "staticwebassets\\uploads\\cabinet salon.png"
+    },
+    {
       "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.build.mvc.props",
       "PackagePath": "build\\mvc.props"
     },
