@@ -5,8 +5,10 @@
     var role = Context.Session.GetString("role");
 }
 
+
+
 <div>
-    <h2>Employees</h2>
+    <h2>Employees </h2>
     <table id="empTable" class="table">
         <thead class="thead-dark">
             <tr>
@@ -201,8 +203,10 @@
                                             <td>${emp.c_empdepartment}</td>
                                             <td>
                                                 <button data-id="${emp.c_empid}" class="btn btn-primary details">Details</button>
-                                                <button data-id="${emp.c_empid}" class="btn btn-secondary edit">Edit</button>
+                                                @if(role == "Admin"){
+                                                    <button data-id="${emp.c_empid}" class="btn btn-secondary edit">Edit</button>
                                                 <button data-id="${emp.c_empid}" class="btn btn-danger delete">Delete</button>
+                                                }
                                             </td>
                                         </tr>`;
                         empTable.append(row);

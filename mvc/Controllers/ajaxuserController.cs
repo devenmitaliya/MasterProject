@@ -33,13 +33,13 @@ namespace mvc.Controllers
             _userRepositories.Login(user);
 
             var role = HttpContext.Session.GetString("role");
-            if(role == "Admin")
-            {
+            // if(role == "Admin")
+            // {
                 return Json(new { success = true, redirectUrl = Url.Action("Index", "mvcajax") });
-            }
-            else{
-                return Json(new { success = true, redirectUrl = Url.Action("Index2", "mvcajax") });
-            }
+            // }
+            // else{
+                // return Json(new { success = true, redirectUrl = Url.Action("Index2", "mvcajax") });
+            // }
             
            
             // int rowCount = _userRepositories.Login(user);
