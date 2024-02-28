@@ -1,0 +1,73 @@
+@model mvc.Models.tblEmployee
+@{
+    var genders = new List<string> { "Male", "Female", "Other" };
+    var shifts = new List<string> { "Morning", "Afternoon" };
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add Employee</title>
+    <link rel="stylesheet" href="https://kendo.cdn.telerik.com/2022.1.119/styles/kendo.default-v2.min.css" />
+</head>
+<body>
+    <div id="example">
+        <form method="post" enctype="multipart/form-data" action="/KendoComponentEmployee/Add">
+            <div class="k-content">
+                <label for="c_empname">Name</label>
+                <input id="c_empname" name="c_empname" />
+
+                <label for="c_empgender">Gender</label><br>
+                @foreach (var gender in genders)
+                {
+                    <input type="radio" id="@gender" name="c_empgender" value="@gender" />
+                    <label for="@gender">@gender</label>
+                }
+                <br>
+
+                <label  for="c_empdob">Date of Birth</label>
+                <input id="c_empdob" name="c_empdob" />
+
+                <label for="c_empshift">Shift</label><br>
+                @foreach (var shift in shifts)
+                {
+                    <input type="checkbox" id="@shift" name="c_empshift" value="@shift" />
+                    <label for="@shift">@shift</label>
+                }<br>
+
+                <label for="c_empimg">Image</label>
+                <input type="file" id="c_empimg" name="c_empimg" />
+
+                <label for="c_empdepartment">Department</label>
+                <select id="c_empdepartment" name="c_empdepartment">
+                    @foreach (var department in ViewBag.Departments)
+                    {
+                        <option value="@department.c_departmentname">@department.c_departmentname</option>
+                    }
+                </select><br><br>
+
+                
+                <input type="submit" value="Add Employee" class="k-button k-primary" />
+            </div>
+        </form>
+    </div>
+
+    @section Scripts {
+        <script src="https://kendo.cdn.telerik.com/2022.1.119/js/jquery.min.js"></script>
+        <script src="https://kendo.cdn.telerik.com/2022.1.119/js/kendo.all.min.js"></script>
+        <script>
+            $(document).ready(function() {
+                $("#c_empname").kendoTextBox();
+              $(document).ready(function() {
+    $("#c_empdob").kendoDatePicker({
+        format: "yyyy-MM-dd" // Example format: "yyyy-MM-dd"
+    });
+});
+
+                $("#c_empimg").kendoUpload();
+                $("#c_empdepartment").kendoDropDownList();
+            });
+        </script>
+    }
+</body>
+</html>

@@ -1416,19 +1416,22 @@
     ]
   },
   "packageFolders": {
-    "/Users/yashveekotadiya/.nuget/packages/": {}
+    "C:\\Users\\DELL\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/yashveekotadiya/Desktop/new master/MasterProject/mvc/mvc.csproj",
+      "projectUniqueName": "F:\\PPSU\\sem-08\\casepoint\\Master Project\\mvc\\mvc.csproj",
       "projectName": "mvc",
-      "projectPath": "/Users/yashveekotadiya/Desktop/new master/MasterProject/mvc/mvc.csproj",
-      "packagesPath": "/Users/yashveekotadiya/.nuget/packages/",
-      "outputPath": "/Users/yashveekotadiya/Desktop/new master/MasterProject/mvc/obj/",
+      "projectPath": "F:\\PPSU\\sem-08\\casepoint\\Master Project\\mvc\\mvc.csproj",
+      "packagesPath": "C:\\Users\\DELL\\.nuget\\packages\\",
+      "outputPath": "F:\\PPSU\\sem-08\\casepoint\\Master Project\\mvc\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/yashveekotadiya/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\DELL\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net6.0"
@@ -1472,6 +1475,24 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.AspNetCore.App.Ref",
+            "version": "[6.0.25, 6.0.25]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Host.win-x64",
+            "version": "[6.0.25, 6.0.25]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Ref",
+            "version": "[6.0.25, 6.0.25]"
+          },
+          {
+            "name": "Microsoft.WindowsDesktop.App.Ref",
+            "version": "[6.0.25, 6.0.25]"
+          }
+        ],
         "frameworkReferences": {
           "Microsoft.AspNetCore.App": {
             "privateAssets": "none"
@@ -1480,7 +1501,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.100/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200-preview.23624.5\\RuntimeIdentifierGraph.json"
       }
     }
   }

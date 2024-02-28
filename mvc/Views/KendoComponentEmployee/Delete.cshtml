@@ -1,0 +1,57 @@
+@model mvc.Models.tblEmployee
+
+<div>
+    <h2>Employee Delete</h2>
+
+    <div>
+        <label>ID:</label>
+        <span id="empId">@Model.c_empid</span>
+    </div>
+
+    <div>
+        <label>Name:</label>
+        <input id="empName" value="@Model.c_empname" />
+    </div>
+
+    <div>
+        <label>Gender:</label>
+        <input id="empGender" value="@Model.c_empgender" />
+    </div>
+
+    <div>
+        <label>Date of Birth:</label>
+        <input id="empDob" value="@Model.c_empdob.ToString("yyyy-MM-dd")" />
+    </div>
+
+    <div>
+        <label>Shift:</label>
+        <input id="empShift" value="@string.Join(',', Model.c_empshift)" />
+    </div>
+
+    <div>
+        <label>Department:</label>
+        <input id="empDepartment" value="@Model.c_empdepartment" />
+    </div>
+
+    <div>
+        <label>Employee Picture:</label>
+        <img id="empPic" src="@Model.c_empimg" alt="@Model.c_empimg" width="175px" />
+    </div>
+
+    <form asp-action="Delete" asp-route-id="@Model.c_empid">
+        <input type="submit" class="btn btn-danger" value="Delete" />
+        <a asp-action="Index" class="btn btn-primary">Back to List</a>
+    </form>
+</div>
+
+@section Scripts {
+    <script>
+        $(document).ready(function () {
+            $("#empName").kendoTextBox();
+            $("#empGender").kendoTextBox();
+            $("#empDob").kendoDatePicker();
+            $("#empShift").kendoTextBox();
+            $("#empDepartment").kendoTextBox();
+        });
+    </script>
+}

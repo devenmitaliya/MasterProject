@@ -1,0 +1,148 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/yashveekotadiya/Desktop/new master/MasterProject/API/API.csproj": {}
+  },
+  "projects": {
+    "/Users/yashveekotadiya/Desktop/new master/MasterProject/API/API.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/yashveekotadiya/Desktop/new master/MasterProject/API/API.csproj",
+        "projectName": "API",
+        "projectPath": "/Users/yashveekotadiya/Desktop/new master/MasterProject/API/API.csproj",
+        "packagesPath": "/Users/yashveekotadiya/.nuget/packages/",
+        "outputPath": "/Users/yashveekotadiya/Desktop/new master/MasterProject/API/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/yashveekotadiya/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "/Users/yashveekotadiya/Desktop/new master/MasterProject/mvc/mvc.csproj": {
+                "projectPath": "/Users/yashveekotadiya/Desktop/new master/MasterProject/mvc/mvc.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Cors": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.AspNetCore.OpenApi": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.4.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.100/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/yashveekotadiya/Desktop/new master/MasterProject/mvc/mvc.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/yashveekotadiya/Desktop/new master/MasterProject/mvc/mvc.csproj",
+        "projectName": "mvc",
+        "projectPath": "/Users/yashveekotadiya/Desktop/new master/MasterProject/mvc/mvc.csproj",
+        "packagesPath": "/Users/yashveekotadiya/.nuget/packages/",
+        "outputPath": "/Users/yashveekotadiya/Desktop/new master/MasterProject/mvc/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/yashveekotadiya/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Session": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "npgsql": {
+              "target": "Package",
+              "version": "[8.0.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.100/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

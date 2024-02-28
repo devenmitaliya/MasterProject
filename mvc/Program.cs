@@ -8,6 +8,17 @@ builder.Services.AddSingleton<IEmployeeRepository, EmployeeRepository>();
 builder.Services.AddSingleton<IUserRepositories, UserRepositories>();
 builder.Services.AddHttpContextAccessor();
 builder.Services.AddSession();
+// In Startup.cs
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowAll",
+        builder =>
+        {
+            builder.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader();
+        });
+});
+
+
 
 
 var app = builder.Build();
@@ -24,7 +35,8 @@ app.UseHttpsRedirection();
 app.UseStaticFiles();
 
 app.UseRouting();
-
+// In Configure method
+app.UseCors("AllowAll");
 app.UseSession();
 
 app.UseAuthorization();

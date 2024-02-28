@@ -13,11 +13,13 @@ namespace mvc.Models
 
         public string c_empgender{get;set;}
         public DateTime c_empdob {get;set;}
-        public string c_empshift {get;set;}
+        public List<string> c_empshift { get; set; }
 
         public string c_empimg {get;set;}
 
         public string c_empdepartment{get;set;}
+
+        public IFormFile photo{get;set;}
 
     }
 }
