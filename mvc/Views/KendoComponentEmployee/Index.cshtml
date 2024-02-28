@@ -9,7 +9,7 @@
 <h2>Employee List</h2>
 
 <p>
-    @Html.ActionLink("Add Employee", "Add", "KendoComponentEmployee", null, new { @class = "btn btn-primary" })
+    @Html.ActionLink("Add Employee", "Add", "KendoComponentEmployee", null, new { @class = "btn btn-primary" })&nbsp;<button class="btn btn-primary" onclick="logout()">Logout</button>
 </p>
 
 <div class="table-responsive">
@@ -35,7 +35,7 @@
                     <td>@item.c_empgender</td>
                     <td>@item.c_empdob.ToShortDateString()</td>
                     <td>@string.Join(", ", item.c_empshift)</td>
-                    <td><img src="@Url.Content("~/images/" + item.c_empimg)" alt="Employee Image" style="max-width: 100px;" /></td>
+                    <td><img src="@Url.Content("~/uploads/" + item.c_empimg)" alt="Employee Image" style="max-width: 100px;" /></td>
                     <td>@item.c_empdepartment</td>
                     <td>
                         @Html.ActionLink("Details", "Details", new { id = item.c_empid }, new { @class = "btn btn-info btn-sm" })
@@ -72,6 +72,11 @@
                 }
             });
         });
+
+
+        function logout() {
+        window.location.href = '@Url.Action("Login", "KendoComponentUser")';
+        }
     </script>
 }
 

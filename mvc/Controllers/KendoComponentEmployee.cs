@@ -51,15 +51,17 @@ namespace mvc.Controllers
             return Json(dept);
         }
 
-        public IActionResult Details(int id)
-        {
-            tblEmployee emp = _employeeRepository.GetOneEmployee(id);
-            if (emp == null)
+       public IActionResult Details(int id)
             {
-                return NotFound();
+                var employee = _employeeRepository.GetOneEmployee(id);
+                if (employee == null)
+                {
+                    return NotFound();
+                }
+                //  ViewBag.Title = "Employee Details";
+                return View(employee);
             }
-            return Json(emp);
-        }
+
 
 
         //  static string file = "";
@@ -80,7 +82,7 @@ namespace mvc.Controllers
             {
                 if (c_empimg != null && c_empimg.Length > 0)
                 {
-                    var uploadsFolder = Path.Combine(_hostingEnvironment.WebRootPath, "images");
+                    var uploadsFolder = Path.Combine(_hostingEnvironment.WebRootPath, "uploads");
                     string uniqueFilename = Guid.NewGuid().ToString() + "_" + Path.GetFileName(c_empimg.FileName);
                     string filePath = Path.Combine(uploadsFolder, uniqueFilename);
 
@@ -149,7 +151,7 @@ public IActionResult Edit(tblEmployee emp, IFormFile c_empimg)
     {
         if (c_empimg != null && c_empimg.Length > 0)
         {
-            var uploadsFolder = Path.Combine(_hostingEnvironment.WebRootPath, "images");
+            var uploadsFolder = Path.Combine(_hostingEnvironment.WebRootPath, "uploads");
             string uniqueFilename = Guid.NewGuid().ToString() + "_" + Path.GetFileName(c_empimg.FileName);
             string filePath = Path.Combine(uploadsFolder, uniqueFilename);
 

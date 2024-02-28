@@ -305,6 +305,70 @@
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
+      "Id": "D:\\Interns Data\\GitProject\\MasterProject\\mvc\\wwwroot\\uploads\\3f064ac2-d3ef-4118-a859-6d81cd318f3b_book.png",
+      "PackagePath": "staticwebassets\\uploads\\3f064ac2-d3ef-4118-a859-6d81cd318f3b_book.png"
+    },
+    {
+      "Id": "D:\\Interns Data\\GitProject\\MasterProject\\mvc\\wwwroot\\uploads\\4689ae80-e87f-4928-a733-7245e7c3325f_book.png",
+      "PackagePath": "staticwebassets\\uploads\\4689ae80-e87f-4928-a733-7245e7c3325f_book.png"
+    },
+    {
+      "Id": "D:\\Interns Data\\GitProject\\MasterProject\\mvc\\wwwroot\\uploads\\4b5e90c8-6860-41b2-82d9-1f44d566dfd5_email.jpg",
+      "PackagePath": "staticwebassets\\uploads\\4b5e90c8-6860-41b2-82d9-1f44d566dfd5_email.jpg"
+    },
+    {
+      "Id": "D:\\Interns Data\\GitProject\\MasterProject\\mvc\\wwwroot\\uploads\\57a43c97-d8be-428a-949e-d36ac9209020_scholarship.jpg",
+      "PackagePath": "staticwebassets\\uploads\\57a43c97-d8be-428a-949e-d36ac9209020_scholarship.jpg"
+    },
+    {
+      "Id": "D:\\Interns Data\\GitProject\\MasterProject\\mvc\\wwwroot\\uploads\\6443ea58-69f8-4b29-97ec-75062b2ea57b_email.jpg",
+      "PackagePath": "staticwebassets\\uploads\\6443ea58-69f8-4b29-97ec-75062b2ea57b_email.jpg"
+    },
+    {
+      "Id": "D:\\Interns Data\\GitProject\\MasterProject\\mvc\\wwwroot\\uploads\\6b6520c6-2701-4a75-a178-de0a1278e217_announce.png",
+      "PackagePath": "staticwebassets\\uploads\\6b6520c6-2701-4a75-a178-de0a1278e217_announce.png"
+    },
+    {
+      "Id": "D:\\Interns Data\\GitProject\\MasterProject\\mvc\\wwwroot\\uploads\\72a2289d-4076-489f-82cb-8e023233246c_studymaterial.png",
+      "PackagePath": "staticwebassets\\uploads\\72a2289d-4076-489f-82cb-8e023233246c_studymaterial.png"
+    },
+    {
+      "Id": "D:\\Interns Data\\GitProject\\MasterProject\\mvc\\wwwroot\\uploads\\7664c015-4945-4fae-9a3d-5407da5fc9ab_github.jpg",
+      "PackagePath": "staticwebassets\\uploads\\7664c015-4945-4fae-9a3d-5407da5fc9ab_github.jpg"
+    },
+    {
+      "Id": "D:\\Interns Data\\GitProject\\MasterProject\\mvc\\wwwroot\\uploads\\95885dfc-9be2-4200-8096-10cc837e4b91_contact.jpg",
+      "PackagePath": "staticwebassets\\uploads\\95885dfc-9be2-4200-8096-10cc837e4b91_contact.jpg"
+    },
+    {
+      "Id": "D:\\Interns Data\\GitProject\\MasterProject\\mvc\\wwwroot\\uploads\\9c30e434-0982-4d68-812b-5179d4055ae2_email.jpg",
+      "PackagePath": "staticwebassets\\uploads\\9c30e434-0982-4d68-812b-5179d4055ae2_email.jpg"
+    },
+    {
+      "Id": "D:\\Interns Data\\GitProject\\MasterProject\\mvc\\wwwroot\\uploads\\9f9253ac-ab09-4476-9fc2-9f9ed1f57bd6_wallpaper.jpg",
+      "PackagePath": "staticwebassets\\uploads\\9f9253ac-ab09-4476-9fc2-9f9ed1f57bd6_wallpaper.jpg"
+    },
+    {
+      "Id": "D:\\Interns Data\\GitProject\\MasterProject\\mvc\\wwwroot\\uploads\\b469c918-cafe-4089-8a06-54a508421ce4_contact.jpg",
+      "PackagePath": "staticwebassets\\uploads\\b469c918-cafe-4089-8a06-54a508421ce4_contact.jpg"
+    },
+    {
+      "Id": "D:\\Interns Data\\GitProject\\MasterProject\\mvc\\wwwroot\\uploads\\cabinet salon.png",
+      "PackagePath": "staticwebassets\\uploads\\cabinet salon.png"
+    },
+    {
+      "Id": "D:\\Interns Data\\GitProject\\MasterProject\\mvc\\wwwroot\\uploads\\d5a9672d-5f5f-480d-bd57-32c9e04dfc03_demo.png",
+      "PackagePath": "staticwebassets\\uploads\\d5a9672d-5f5f-480d-bd57-32c9e04dfc03_demo.png"
+    },
+    {
+      "Id": "D:\\Interns Data\\GitProject\\MasterProject\\mvc\\wwwroot\\uploads\\d5ad14eb-4dd3-4714-9b6c-3d3c009722c0_ecommerce-shopping.jpg",
+      "PackagePath": "staticwebassets\\uploads\\d5ad14eb-4dd3-4714-9b6c-3d3c009722c0_ecommerce-shopping.jpg"
+    },
+    {
+      "Id": "D:\\Interns Data\\GitProject\\MasterProject\\mvc\\wwwroot\\uploads\\e53671d5-7a5f-42e9-94ed-fb831e7fad76_cart.jpg",
+      "PackagePath": "staticwebassets\\uploads\\e53671d5-7a5f-42e9-94ed-fb831e7fad76_cart.jpg"
+    },
+    {
       "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.build.mvc.props",
       "PackagePath": "build\\mvc.props"
     },
