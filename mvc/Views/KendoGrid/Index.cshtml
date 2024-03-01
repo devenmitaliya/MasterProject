@@ -30,7 +30,7 @@
                 update: {
                     url: "http://localhost:5110/KendoGrid/EditEmployee",
                     dataType: "json",
-                    type: "POST",  // Change "PUT" to "POST"
+                    type: "POST",  // Change "PUT" to "POST"    
                     data: function (data) {
                         data.c_empdob = kendo.toString(data.c_empdob, "yyyy-MM-dd");
                         console.log("Update Data:", data);
@@ -95,9 +95,11 @@
         function genderTypeRadioEditor(container, options) {
             $('<input type="radio" name="' + options.field + '" value="Male" required/> Male' +
                 '<input type="radio" name="' + options.field + '" value="Female" required/> Female' +
-                '<label  name=" value="Female" required/>')
+                '<label name=" value="Female" required/>')
                 .appendTo(container);
         }
+
+
         function dateEditor(container, options) {
             $('<input name="' + options.field + '" data-bind="value:' + options.field + '" />')
                 .appendTo(container)
@@ -153,21 +155,37 @@
                 });
             }
 
-        function deptDropDownEditor(container, options) {
-            $('<input required data-text-field="c_departmentname" data-value-field="c_departmentid" data-bind="value:' + options.field + '"/>')
-                .appendTo(container)
-                .kendoDropDownList({
-                    autoBind: false,
-                    dataSource: {
-                        transport: {
-                            read: {
-                                url: "http://localhost:5110/KendoGrid/Viewdept",
-                                dataType: "json"
-                            }
-                        }
+    function deptDropDownEditor(container, options) {
+    // Create the dropdown without autoBind
+    var dropdown = $('<input required data-text-field="c_departmentname" data-value-field="c_departmentname" data-bind="value:' + options.field + '"/>')
+        .appendTo(container)
+        .kendoDropDownList({
+            autoBind: false, // Set autoBind to false
+            dataSource: {
+                transport: {
+                    read: {
+                        url: "http://localhost:5110/KendoGrid/Viewdept",
+                        dataType: "json"
                     }
-                });
-        }
+                }
+            },
+            change: function() {
+                dropdown.trigger("change");
+            }
+        })
+        .data("kendoDropDownList");
+    
+    // Manually trigger the data source read after the dropdown is created
+    dropdown.dataSource.read();
+
+    // Set the initial value during edit
+    if (!options.model.isNew()) {
+        dropdown.one("dataBound", function() {
+            dropdown.value(options.model[options.field]);
+        });
+    }
+}
+
 
         dataSource.bind("requestEnd", function (e) {
             if (e.type === "create" || e.type === "update" || e.type === "destroy") {

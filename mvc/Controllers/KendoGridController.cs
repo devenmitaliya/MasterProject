@@ -15,10 +15,8 @@ namespace mvc.Controllers
     public class KendoGridController : Controller
     {
         private readonly ILogger<KendoGridController> _logger;
-        //private string file; // declare it at the class level
         private readonly IEmployeeRepository _employeeRepository;
-        // private readonly IWebHostEnvironment _hostingEnvironment;
-        // private readonly IHostingEnvironment _hostingEnviroment;
+       
         private readonly IWebHostEnvironment _hostingEnvironment;
 
 
@@ -28,7 +26,6 @@ namespace mvc.Controllers
             _employeeRepository = employeeRepository;
             _hostingEnvironment = hostingEnvironment;
 
-            // _hostingEnvironment = hostingEnvironment;
         }
 
         public IActionResult Index()
@@ -89,47 +86,20 @@ namespace mvc.Controllers
         [HttpPost]
         public IActionResult Add(tblEmployee emp)
         {
-            // try
-            // {
-                // string filename = Path.GetFileName(emp.c_empimg.FileName);
-                // string filepath = Path.Combine(_hostingEnvironment.WebRootPath, "images", filename);
-
-                // using (var stream = new FileStream(filepath, FileMode.Create))
-                // {
-                //     emp.c_empimg.CopyTo(stream);
-                // }
-
-                // Console.WriteLine("Photo Add" + filename);
-                // file = filename;
+         
                 emp.c_empimg = file;
                 _employeeRepository.AddEmployee(emp);
                 return Json(new { success = true, message = "Employee added successfully", data = emp });
-            // }
-            // catch (Exception ex)
-            // {
-            //     return Json(new { success = false, message = ex.Message });
-            // }
+            
         }
-
 
         [HttpPost]
         public IActionResult EditEmployee(tblEmployee emp)
         {
-            // try
-            // {
-
-            //     _logger.LogInformation($"Received emp: {emp}");
-            //     _logger.LogInformation("Employee edited successfully");
-
-                // Log or debug statements to inspect emp and ensure it has the correct values
                 emp.c_empimg = file;
                 _employeeRepository.EditEmployee(emp);
                 return Json(new { success = true, message = "Employee edited successfully", data = emp });
-            // }
-            // catch (Exception ex)
-            // {
-            //     return Json(new { success = false, message = ex.Message });
-            // }
+        
         }
 
 
@@ -153,7 +123,6 @@ namespace mvc.Controllers
                 return Json(new { success = false, message = ex.Message });
             }
         }
-
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
