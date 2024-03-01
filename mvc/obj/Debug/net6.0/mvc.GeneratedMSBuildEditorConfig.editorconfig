@@ -102,12 +102,12 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS2VuZG9HcmlkXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/PPSU/sem-08/casepoint/Master Project/mvc/Views/mvcajax/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcbXZjYWpheFxJbmRleC5jc2h0bWw=
+[F:/PPSU/sem-08/casepoint/Master Project/mvc/Views/mvcajax/Admin.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcbXZjYWpheFxBZG1pbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/PPSU/sem-08/casepoint/Master Project/mvc/Views/mvcajax/Index2.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcbXZjYWpheFxJbmRleDIuY3NodG1s
+[F:/PPSU/sem-08/casepoint/Master Project/mvc/Views/mvcajax/User.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcbXZjYWpheFxVc2VyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [F:/PPSU/sem-08/casepoint/Master Project/mvc/Views/Shared/Error.cshtml]

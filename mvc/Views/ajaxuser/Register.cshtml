@@ -6,7 +6,7 @@
         background-color: #f4f4f4;
         margin: 0;
         padding: 0;
-        height: 100vh;
+        @* height: 100vh; *@
     }
 
     .container {
@@ -14,7 +14,7 @@
         padding: 20px;
         border-radius: 8px;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        width: 300px;
+        @* width: 500px; *@
     }
 
     h2 {
@@ -50,7 +50,6 @@
 
     button:hover {
         background-color: #218838;
-        /* Updated button hover color */
     }
 
     .alert {
@@ -83,8 +82,13 @@
     <div>
         <button id="registerBtn">Register</button>
     </div>
-</div>
 
+    <div class="mt-5">
+        Already registered? <a href="~/ajaxuser/Login">Login </a>
+    </div>
+</div>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 @section Scripts
 {
     <script>

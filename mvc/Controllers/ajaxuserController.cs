@@ -33,36 +33,14 @@ namespace mvc.Controllers
             _userRepositories.Login(user);
 
             var role = HttpContext.Session.GetString("role");
-            // if(role == "Admin")
-            // {
-                return Json(new { success = true, redirectUrl = Url.Action("Index", "mvcajax") });
-            // }
-            // else{
-                // return Json(new { success = true, redirectUrl = Url.Action("Index2", "mvcajax") });
-            // }
-            
-           
-            // int rowCount = _userRepositories.Login(user);
-
-            // if (rowCount == 1)
-            // {
-            //     var role = HttpContext.Session.GetString("role");
-
-            //     if (role == "Admin")
-            //     {
-            //         // Redirect to Index action for admin
-            //         return Json(new { success = true, redirectUrl = Url.Action("Index", "MvcAjax") });
-            //     }
-            //     else
-            //     {
-            //         // Redirect to Index action for non-admin users
-            //         return Json(new { success = true, redirectUrl = Url.Action("Index2", "MvcAjax") });
-            //     }
-            // }
-            // else
-            // {
-            //     return Json(new { success = true, redirectUrl = Url.Action("Index2", "MvcAjax") });
-            // }
+            if (role == "Admin")
+            {
+                return Json(new { success = true, redirectUrl = Url.Action("Admin", "mvcajax") });
+            }
+            else
+            {
+                return Json(new { success = true, redirectUrl = Url.Action("User", "mvcajax") });
+            }
         }
 
 

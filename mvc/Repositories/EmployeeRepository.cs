@@ -291,7 +291,7 @@ namespace mvc.Repositories
                 conn.Open();
                 cmd.Connection = conn;
                 cmd.CommandType = CommandType.Text;
-                cmd.CommandText = "SELECT c_empid, c_empname, c_empgender, c_empdob, c_empshift, c_empimg, c_empdepartment FROM t_employee e, t_department d WHERE e.c_empdepartment = d.c_departmentid AND c_username = @username  ORDER BY c_empid ";
+                cmd.CommandText = "SELECT c_empid, c_empname, c_empgender, c_empdob, c_empshift, c_empimg, c_empdepartment, c_departmentname FROM t_employee e, t_department d WHERE e.c_empdepartment = d.c_departmentid AND c_username = @username  ORDER BY c_empid ";
 
                 cmd.Parameters.AddWithValue("@username", user);
 
@@ -311,6 +311,7 @@ namespace mvc.Repositories
                             // c_empshift = dr["c_empshift"].ToString(),
                             c_empimg = dr["c_empimg"].ToString(),
                             c_empdepartment = dr["c_empdepartment"].ToString(),
+                            department = dr["c_departmentname"].ToString()
                             // c_empdepartment = Convert.ToInt32(dr["c_empdepartment"]),
                         };
                         empList.Add(employee);
