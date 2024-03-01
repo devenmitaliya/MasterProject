@@ -49,6 +49,10 @@
       "PackagePath": "staticwebassets\\images\\42c4a9f2-4a9d-4f86-9dee-22f0d439356c_my project.jpg"
     },
     {
+      "Id": "F:\\PPSU\\sem-08\\casepoint\\Master Project\\mvc\\wwwroot\\images\\483b64b6-5d43-4832-bfcd-3cc3c17b1384_Internship Plan.png",
+      "PackagePath": "staticwebassets\\images\\483b64b6-5d43-4832-bfcd-3cc3c17b1384_Internship Plan.png"
+    },
+    {
       "Id": "F:\\PPSU\\sem-08\\casepoint\\Master Project\\mvc\\wwwroot\\images\\50272cb9-5de1-467d-b9a6-ecec4667c117_i1.jpg",
       "PackagePath": "staticwebassets\\images\\50272cb9-5de1-467d-b9a6-ecec4667c117_i1.jpg"
     },
@@ -71,6 +75,18 @@
     {
       "Id": "F:\\PPSU\\sem-08\\casepoint\\Master Project\\mvc\\wwwroot\\images\\8892b59d-27a1-4c56-ba41-24687c236e01_my project.jpg",
       "PackagePath": "staticwebassets\\images\\8892b59d-27a1-4c56-ba41-24687c236e01_my project.jpg"
+    },
+    {
+      "Id": "F:\\PPSU\\sem-08\\casepoint\\Master Project\\mvc\\wwwroot\\images\\8f75953e-054c-4be6-a5d8-e315be05ec45_Internship Plan.png",
+      "PackagePath": "staticwebassets\\images\\8f75953e-054c-4be6-a5d8-e315be05ec45_Internship Plan.png"
+    },
+    {
+      "Id": "F:\\PPSU\\sem-08\\casepoint\\Master Project\\mvc\\wwwroot\\images\\93f7ef15-1877-4240-82a2-699c4cb43ba4_Clarent LOGO.png",
+      "PackagePath": "staticwebassets\\images\\93f7ef15-1877-4240-82a2-699c4cb43ba4_Clarent LOGO.png"
+    },
+    {
+      "Id": "F:\\PPSU\\sem-08\\casepoint\\Master Project\\mvc\\wwwroot\\images\\9ac6d268-72b8-461a-9270-460a5edf1a81_Internship Plan.png",
+      "PackagePath": "staticwebassets\\images\\9ac6d268-72b8-461a-9270-460a5edf1a81_Internship Plan.png"
     },
     {
       "Id": "F:\\PPSU\\sem-08\\casepoint\\Master Project\\mvc\\wwwroot\\images\\Screenshot (82).png",
@@ -379,6 +395,10 @@
     {
       "Id": "F:\\PPSU\\sem-08\\casepoint\\Master Project\\mvc\\wwwroot\\uploads\\89f3a7e5-28c7-4ffe-9f2c-72af1a0b9b9d_maths.png",
       "PackagePath": "staticwebassets\\uploads\\89f3a7e5-28c7-4ffe-9f2c-72af1a0b9b9d_maths.png"
+    },
+    {
+      "Id": "F:\\PPSU\\sem-08\\casepoint\\Master Project\\mvc\\wwwroot\\uploads\\8e4da10f-4c70-43d3-9a36-d448f316a9da_IMG_4341.jpg",
+      "PackagePath": "staticwebassets\\uploads\\8e4da10f-4c70-43d3-9a36-d448f316a9da_IMG_4341.jpg"
     },
     {
       "Id": "F:\\PPSU\\sem-08\\casepoint\\Master Project\\mvc\\wwwroot\\uploads\\Course.png",

@@ -41,12 +41,16 @@ namespace mvc.Controllers
                 List<tblEmployee> employees = _employeeRepository.GetAllEmployee();
                 return View(employees);
             }
-            else
+            else if (HttpContext.Session.GetString("role") == "User")
             {
                 var user = HttpContext.Session.GetString("username");
                 Console.WriteLine("USER    : : : : : : ::::    " + user);
                 List<tblEmployee> employees = _employeeRepository.GetEmployeeFromUserName(user);
                 return View(employees);
+            }
+            else
+            {
+                return RedirectToAction("Login", "User");
             }
         }
 
@@ -55,25 +59,35 @@ namespace mvc.Controllers
         {
             // var user = HttpContext.Session.GetString("username");
             // Console.WriteLine("USER    : : :", user);
-            return View();
+
+            if (HttpContext.Session.GetString("username") != "")
+            {
+
+                return View();
+            }
+            else
+            {
+                return RedirectToAction("Login", "User");
+            }
         }
 
+        [HttpPost]
         public IActionResult Add(tblEmployee emp)
         {
             if (emp.photo != null && emp.photo.Length > 0)
             {
                 try
                 {
-                    string filename = Path.GetFileName(emp.photo.FileName);
-                    string filepath = Path.Combine(_hostingEnvironment.WebRootPath, "uploads", filename);
+                    string uploadsFolder = Path.Combine(_hostingEnvironment.WebRootPath, "uploads");
+                    string uniqueFileName = Guid.NewGuid().ToString() + "_" + emp.photo.FileName;
+                    string filePath = Path.Combine(uploadsFolder, uniqueFileName);
 
-                    using (var stream = new FileStream(filepath, FileMode.Create))
+                    using (var stream = new FileStream(filePath, FileMode.Create))
                     {
                         emp.photo.CopyTo(stream);
                     }
 
-                    Console.WriteLine("Photo uploaded successfully: " + filename);
-                    file = filename;
+                    emp.c_empimg = uniqueFileName;
                 }
                 catch (Exception ex)
                 {
@@ -84,16 +98,11 @@ namespace mvc.Controllers
             {
                 Console.WriteLine("No photo uploaded.");
             }
-            emp.c_empimg = file;
-            // var user = HttpContext.Session.GetString("username");
-            // Console.WriteLine("USER    : : :", user);
-            // emp.c_username = user;
+
             _employeeRepository.AddEmployee(emp);
+
             return RedirectToAction("Index");
         }
-
-
-
 
         [HttpGet]
         public IActionResult Edit(int id)
@@ -180,6 +189,13 @@ namespace mvc.Controllers
 
 
             return Json("Image Uploaded");
+        }
+
+        public IActionResult Logout()
+        {
+            HttpContext.Session.SetString("role", "");
+            HttpContext.Session.SetString("username", "");
+            return RedirectToAction("Login", "User");
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]

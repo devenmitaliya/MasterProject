@@ -14,14 +14,14 @@ namespace api.Controllers
     [Route("api/[controller]")]
     public class EmployeeApiController : ControllerBase
     {
-         private readonly IEmployeeRepository _employeeRepository;
-        private readonly IWebHostEnvironment hostEnvironment;
+        private readonly IEmployeeRepository _employeeRepository;
+        private readonly IWebHostEnvironment _hostEnvironment;
 
 
         public EmployeeApiController(IEmployeeRepository employeeRepository, IWebHostEnvironment hostEnvironment)
         {
             _employeeRepository = employeeRepository;
-            this.hostEnvironment = hostEnvironment;
+            _hostEnvironment = hostEnvironment;
         }
 
 
@@ -40,26 +40,31 @@ namespace api.Controllers
             return Ok(departments);
         }
         [HttpPost]
-        public IActionResult Add([FromForm] tblEmployee emp, IFormFile ephoto)
+        public IActionResult Add([FromForm] tblEmployee emp)
         {
 
-            if (ephoto != null)
+            if (emp.photo != null)
             {
-                var uploadsFolder = Path.Combine("/Users/yashveekotadiya/Desktop/new master/MasterProject/mvc/wwwroot/", "images");
-                string uniqueFilename = Guid.NewGuid().ToString() + "_" + ephoto.FileName;
+                //  var uploadsFolder = Path.Combine(_hostEnvironment.WebRootPath, "images");
+
+                // var uploadsFolder = Path.Combine("/Users/yashveekotadiya/Desktop/newmaster/MasterProject/mvc/wwwroot/", "images");
+                var uploadsFolder = Path.Combine(_hostEnvironment.WebRootPath, "uploads");                
+                string uniqueFilename = Guid.NewGuid().ToString() + "_" + emp.photo.FileName;
                 string filepath = Path.Combine(uploadsFolder, uniqueFilename);
 
 
                 using (var stream = new FileStream(filepath, FileMode.Create))
                 {
-                    ephoto.CopyTo(stream);
+                    emp.photo.CopyTo(stream);
                 }
 
                 Console.WriteLine("Upload PHOTO ::::    " + uniqueFilename);
                 emp.c_empimg = uniqueFilename;
 
-                Console.WriteLine("C IMAGE : : : : :      "+emp.c_empimg);
-            }else{
+                Console.WriteLine("C IMAGE : : : : :      " + emp.c_empimg);
+            }
+            else
+            {
                 Console.WriteLine("NOT FOUND");
             }
 
@@ -72,33 +77,32 @@ namespace api.Controllers
         }
 
         [HttpPut]
-        public IActionResult Edit([FromForm]tblEmployee emp, IFormFile ephoto)
+        public IActionResult Edit([FromForm] tblEmployee emp)
         {
-if (ephoto != null)
+            if (emp.photo != null)
             {
-                var uploadsFolder = Path.Combine("/Users/yashveekotadiya/Desktop/New/MVC/wwwroot/", "images");
-                string uniqueFilename = Guid.NewGuid().ToString() + "_" + ephoto.FileName;
+                //  var uploadsFolder = Path.Combine(_hostEnvironment.WebRootPath, "images");
+
+                // var uploadsFolder = Path.Combine("/Users/yashveekotadiya/Desktop/newmaster/MasterProject/mvc/wwwroot/", "images");
+                var uploadsFolder = Path.Combine("/Users/yashveekotadiya/Desktop/newmaster/MasterProject/mvc/wwwroot/", "images");
+                string uniqueFilename = Guid.NewGuid().ToString() + "_" + emp.photo.FileName;
                 string filepath = Path.Combine(uploadsFolder, uniqueFilename);
 
 
                 using (var stream = new FileStream(filepath, FileMode.Create))
                 {
-                    ephoto.CopyTo(stream);
+                    emp.photo.CopyTo(stream);
                 }
 
                 Console.WriteLine("Upload PHOTO ::::    " + uniqueFilename);
                 emp.c_empimg = uniqueFilename;
 
-                Console.WriteLine("C IMAGE : : : : :      "+emp.c_empimg);
-            }else{
+                Console.WriteLine("C IMAGE : : : : :      " + emp.c_empimg);
+            }
+            else
+            {
                 Console.WriteLine("NOT FOUND");
             }
-
-
-
-
-
-
 
 
 

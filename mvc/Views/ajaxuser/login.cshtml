@@ -68,7 +68,8 @@
         <button id="loginBtn">Login</button>
     </div>
 </div>
-
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 @section Scripts
 {
     <script>
@@ -85,6 +86,8 @@
                     contentType: 'application/json; charset=utf-8',
                     data: JSON.stringify(user),
                     success: function (result) {
+                        console.log(result);
+                        debugger;
                         if (result.success) {
                             window.location.href = result.redirectUrl;
                         } else {

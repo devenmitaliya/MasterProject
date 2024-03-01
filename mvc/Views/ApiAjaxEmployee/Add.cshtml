@@ -1,0 +1,231 @@
+@model tblEmployee
+
+
+
+<div class="container">
+    <h2>Employee Data</h2>
+
+    <form id="employeeForm" method="post">
+        <div class="mb-3">
+            <label for="c_empname" class="form-label">Employee Name</label>
+            <input asp-for="c_empname" name="c_empname" class="form-control" id="c_empname" required>
+            <div class="invalid-feedback">
+                Please enter employee name.
+            </div>
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">Gender</label><br>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="c_empgender" value="Male" required>
+                <label class="form-check-label" for="male">Male</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="c_empgender" value="Female" required>
+                <label class="form-check-label" for="female">Female</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="c_empgender" value="Other" required>
+                <label class="form-check-label" for="other">Other</label>
+            </div>
+        </div>
+
+        <div class="mb-3">
+            <label for="c_empdob" class="form-label">Date of Birth</label>
+            <input asp-for="c_empdob" type="date" class="form-control" name="c_empdob" id="c_empdob" required>
+            <div class="invalid-feedback">
+                Please enter date of birth.
+            </div>
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">Shift</label><br>
+            <div class="form-check form-check-inline">
+                <input type="checkbox" name="c_empshift" value="Morning">
+                <label class="form-check-label" for="morning">Morning</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input type="checkbox" name="c_empshift" value="Afternoon">
+                <label class="form-check-label" for="afternoon">Afternoon</label>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div>
+                <label>Department</label>
+                <select class="form-control" id="c_empdepartment" name="c_empdepartment">
+                    <option value="">Select Department</option>
+                </select>
+                <span class="text-danger" id="departmentValidationError"></span>
+            </div>
+        </div>
+
+        <div class="mb-3">
+            <label for="c_empimg" class="form-label">Photo</label>
+            <input  type="file" class="form-control" name="imgFile" id="imgFile">
+        </div>
+
+        <button type="submit" class="btn btn-primary" onclick="addEmployee()">Add Employee</button>
+        <a asp-action="Index" class="btn btn-secondary">Back to List</a>
+    </form>
+</div>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+@*
+@section Scripts {
+<script>
+$(document).ready(function () {
+
+$.ajax({
+url: 'https://localhost:7044/api/EmployeeApi/api/Department',
+type: 'GET',
+dataType: 'json',
+success: function (data) {
+if (Array.isArray(data)) {
+var dropdown = $('#c_empdepartment');
+dropdown.empty().append($('<option value="">Select Department</option>'));
+data.forEach(function (department) {
+// Append each department as an option to the dropdown
+dropdown.append($('<option>').val(department.c_departmentname).text(department.c_departmentname));
+});
+} else {
+console.error('Invalid data format:', data);
+}
+},
+error: function (xhr, status, error) {
+console.error('Error fetching departments:', status, error);
+$('#departmentValidationError').text('Error fetching departments. Please try again.');
+}
+});
+
+
+
+
+
+});
+
+// Function to add employee via AJAX
+function addEmployee() {
+var employeeData = {
+c_empname: "string345678",
+c_empgender: "string",
+c_empdob: "2024-02-27T12:04:33.089Z",
+c_empshift: "string",
+c_empdepartment: "Engineering",
+c_empimg: "dummy_image.jpg"
+
+@* c_empname: $('input[name="c_empname"]').val(),
+c_empgender: $('input[name="c_empgender"]:checked').val(),
+c_empdob: $('input[name="c_empdob"]').val(),
+c_empshift: $('input[name="c_empshift"]:checked').map(function () { return $(this).val(); }).get().join(),
+c_empdepartment: $('#c_empdepartment').val(),
+c_empimg: $('input[name="c_empimg"]').val()
+};
+
+var settings = {
+"url": 'https://localhost:7044/api/EmployeeApi',
+"method": 'POST',
+"timeout": 0,
+"headers": {
+"Content-Type" : "application/json",
+},
+"data": JSON.stringify(employeeData),
+
+};
+
+$.ajax(settings).done(function (response) {
+alert('Successfully Added Employee!');
+// Optionally, redirect to another page
+window.location.href = '/Employee/Index';
+}).fail(function (xhr, status, error) {
+console.error('Error adding employee:', status, error);
+alert('Error adding employee. Please try again.');
+});
+}
+
+
+</script>
+} *@
+
+
+@section Scripts {
+    <script>
+        $(document).ready(function () {
+            // Fetch departments when the page loads
+            $.ajax({
+                url: 'https://localhost:7084/api/EmployeeApi/api/Department',
+                type: 'GET',
+                dataType: 'json',
+                success: function (data) {
+                    if (Array.isArray(data)) {
+                        var dropdown = $('#c_empdepartment');
+                        dropdown.empty().append($('<option value="">Select Department</option>'));
+                        data.forEach(function (department) {
+                            // Append each department as an option to the dropdown
+                            dropdown.append($('<option>').val(department.c_departmentname).text(department.c_departmentname));
+                        });
+                    } else {
+                        console.error('Invalid data format:', data);
+                    }
+                },
+                error: function (xhr, status, error) {
+                    console.error('Error fetching departments:', status, error);
+                    $('#departmentValidationError').text('Error fetching departments. Please try again.');
+                }
+            });
+        });
+        // Function to add employee via AJAX
+       function addEmployee() {
+    // Create a FormData object to handle file uploads
+    var formData = new FormData();
+    
+    // Get the file object from the file input
+  
+    // Append other employee data to FormData
+    formData.append('c_empname', $('input[name="c_empname"]').val());
+    formData.append('c_empgender', $('input[name="c_empgender"]:checked').val());
+    formData.append('c_empdob', $('input[name="c_empdob"]').val());
+    formData.append('c_empshift', $('input[name="c_empshift"]:checked').map(function () { return $(this).val(); }).get().join());
+    formData.append('c_empdepartment', $('#c_empdepartment').val());
+    formData.append('c_empimg', 'a');
+  var photoFile = $('#imgFile')[0].files[0];
+  console.log("IMAGE FILE:::    " +photoFile);
+  debugger;
+    formData.append("photo", photoFile);
+
+    console.log($('input[name="c_empname"]').val());
+    console.log($('input[name="c_empgender"]:checked').val());
+    console.log($('input[name="c_empdob"]').val());
+    console.log($('input[name="c_empshift"]:checked').map(function () { return $(this).val(); }).get().join());
+    console.log($('#c_empdepartment').val());
+    @* console.log(); *@
+    @* console.log(); *@
+debugger;
+    @* formData.append('c_empimg','a'); *@
+
+    // Make AJAX request with FormData
+    $.ajax({
+        url: 'https://localhost:7084/api/EmployeeApi',
+        method: 'POST',
+        timeout: 0,
+        processData: false, // Important for FormData
+        contentType: false, // Important for FormData
+        data: formData,
+        success: function (response) {
+            // On success, show a success message and optionally redirect
+            alert('Successfully Added Employee!');
+            window.location.href = '/ApiAjaxEmployee/Index'; // Redirect to employee index page
+        },
+        error: function (xhr, status, error) {
+            // On failure, log the error and show an error message
+           alert('Error');
+          window.location.href = '/ApiAjaxEmployee/Index';
+        }
+    });
+}
+
+
+
+
+
+    </script>
+}

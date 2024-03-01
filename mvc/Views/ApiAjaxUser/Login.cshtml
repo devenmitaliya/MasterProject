@@ -1,0 +1,59 @@
+@* @using WebAPI.Models *@
+@model tblLogin
+
+@{
+    ViewBag.Title = "Login";
+}
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
+    integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<div class="form-horizontal">
+    <div class="form-group">
+        <p>Email</p>
+        <div class="col-md-10">
+            <input type="text" class="form-control" id="txtEmail">
+        </div>
+    </div>
+
+    <div class="form-group">
+        <p>Password</p>
+        <div class="col-md-10">
+            <input type="password" class="form-control" id="txtPassword">
+        </div>
+    </div>
+
+    <div class="form-group">
+        <div class="col-md-offset-2 col-md-10">
+            <input type="submit" value="Login" class="btn btn-primary" id="btnLogin" onclick="Login()" />
+        </div>
+    </div>
+</div>
+
+<script>
+    function Login() {
+        var user = {
+            c_uemail: $('#txtEmail').val(),
+            c_password: $('#txtPassword').val()
+        };
+
+        var settings = {
+            "url": "https://localhost:7084/api/UserApi/Login",
+            "method": "POST",
+            "timeout": 0,
+            "headers": {
+                "Content-Type": "application/json"
+            },
+            "data": JSON.stringify(user)
+        };
+
+        $.ajax(settings).done(function (response) {
+            alert('Successfully Logged In!');
+            window.location = "/ApiAjaxEmployee/Index";
+        }).fail(function (response) {
+            console.log(response.statusText);
+            alert('Invalid credentials. Please try again.');
+        });
+    }
+</script>
