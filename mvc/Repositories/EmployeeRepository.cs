@@ -10,6 +10,12 @@ namespace mvc.Repositories
 {
     public class EmployeeRepository : CommanRepository, IEmployeeRepository
     {
+        private readonly IHttpContextAccessor _httpContextAccessor;
+        public EmployeeRepository(IHttpContextAccessor httpContextAccessor)
+        {
+            _httpContextAccessor = httpContextAccessor;
+        }
+
         public List<tblEmployee> GetAllEmployee()
         {
             List<tblEmployee> empList = new List<tblEmployee>();
@@ -41,7 +47,7 @@ namespace mvc.Repositories
                             // c_empdepartment = Convert.ToInt32(dr["c_empdepartment"]),
                         };
                         empList.Add(emp);
-                    
+
                     }
                 }
             }
@@ -109,15 +115,19 @@ namespace mvc.Repositories
                 int deptId = GetDepartmentId(emp.c_empdepartment, conn);
                 string shifts = string.Join(",", emp.c_empshift);
                 cmd.CommandType = CommandType.Text;
-                cmd.CommandText = "INSERT INTO t_employee(c_empname, c_empgender, c_empdob, c_empshift, c_empimg, c_empdepartment) VALUES ( @c_empname, @c_empgender, @c_empdob, @c_empshift, @c_empimg, @c_empdepartment)";
+                cmd.CommandText = "INSERT INTO t_employee(c_empname, c_empgender, c_empdob, c_empshift, c_empimg, c_empdepartment, c_username) VALUES ( @c_empname, @c_empgender, @c_empdob, @c_empshift, @c_empimg, @c_empdepartment, @user)";
 
+                var session = _httpContextAccessor.HttpContext.Session;
+                var user = session.GetString("username");
+                // Console.WriteLine("OK USER DATA GET :    "+user);
                 // cmd.Parameters.AddWithValue("@id", emp.id);
                 cmd.Parameters.AddWithValue("@c_empname", emp.c_empname);
                 cmd.Parameters.AddWithValue("@c_empgender", emp.c_empgender);
                 cmd.Parameters.AddWithValue("@c_empdob", emp.c_empdob);
                 cmd.Parameters.AddWithValue("@c_empshift", shifts);
                 cmd.Parameters.AddWithValue("@c_empimg", emp.c_empimg);
-                cmd.Parameters.AddWithValue("@c_empdepartment", emp.c_empdepartment);
+                cmd.Parameters.AddWithValue("@c_empdepartment", deptId);
+                cmd.Parameters.AddWithValue("@user", user);
 
                 cmd.ExecuteNonQuery();
 
@@ -177,14 +187,15 @@ namespace mvc.Repositories
                 string shifts = string.Join(",", emp.c_empshift);
 
 
-                cmd.CommandText = "UPDATE t_employee SET c_empname=@c_empname , c_empgender=@c_empgender , c_empdob=@c_empdob , c_empshift=@c_empshift , c_empimg=@c_empimg , c_empdepartment=@c_empdepartment WHERE c_empid =@c_empid ";
+                // cmd.CommandText = "UPDATE t_employee SET c_empname=@c_empname , c_empgender=@c_empgender , c_empdob=@c_empdob , c_empshift=@c_empshift , c_empimg=@c_empimg , c_empdepartment=@c_empdepartment WHERE c_empid =@c_empid ";
+                cmd.CommandText = "UPDATE t_employee SET  c_empshift=@c_empshift , c_empdepartment=@c_empdepartment WHERE c_empid =@c_empid ";
 
                 cmd.Parameters.AddWithValue("@c_empid", emp.c_empid);
-                cmd.Parameters.AddWithValue("@c_empname", emp.c_empname);
-                cmd.Parameters.AddWithValue("@c_empgender", emp.c_empgender);
-                cmd.Parameters.AddWithValue("@c_empdob", emp.c_empdob);
+                // cmd.Parameters.AddWithValue("@c_empname", emp.c_empname);
+                // cmd.Parameters.AddWithValue("@c_empgender", emp.c_empgender);
+                // cmd.Parameters.AddWithValue("@c_empdob", emp.c_empdob);
                 cmd.Parameters.AddWithValue("@c_empshift", shifts);
-                cmd.Parameters.AddWithValue("@c_empimg", emp.c_empimg);
+                // cmd.Parameters.AddWithValue("@c_empimg", emp.c_empimg);
                 cmd.Parameters.AddWithValue("@c_empdepartment", emp.c_empdepartment);
 
                 cmd.ExecuteNonQuery();
@@ -254,7 +265,7 @@ namespace mvc.Repositories
                         };
                         departments.Add(department);
                     }
-                    
+
                 }
             }
             catch (Exception ex)
@@ -268,6 +279,56 @@ namespace mvc.Repositories
             }
 
             return departments;
+        }
+
+
+        public List<tblEmployee> GetEmployeeFromUserName(string user)
+        {
+            Console.WriteLine("USER DATA :: : : : : " + user);
+            List<tblEmployee> empList = new List<tblEmployee>();
+            NpgsqlCommand cmd = new NpgsqlCommand();
+            try
+            {
+                conn.Open();
+                cmd.Connection = conn;
+                cmd.CommandType = CommandType.Text;
+                cmd.CommandText = "SELECT c_empid, c_empname, c_empgender, c_empdob, c_empshift, c_empimg, c_empdepartment FROM t_employee e, t_department d WHERE e.c_empdepartment = d.c_departmentid AND c_username = @username  ORDER BY c_empid ";
+
+                cmd.Parameters.AddWithValue("@username", user);
+
+                using (var dr = cmd.ExecuteReader())
+                {
+                    while (dr.Read())
+                    {
+                        var employee = new tblEmployee
+                        {
+                            c_empid = Convert.ToInt32(dr["c_empid"]),
+                            c_empname = dr["c_empname"].ToString(),
+                            c_empgender = dr["c_empgender"].ToString(),
+                            c_empdob = DateTime.Parse(dr["c_empdob"].ToString()),
+                            // c_empshift = !string.IsNullOrEmpty(dr["c_empshift"].ToString()) ? dr["c_empshift"].ToString().Split(",").ToList() : new List<string>(),
+
+                            c_empshift = dr["c_empshift"].ToString().Split(',').ToList(),
+                            // c_empshift = dr["c_empshift"].ToString(),
+                            c_empimg = dr["c_empimg"].ToString(),
+                            c_empdepartment = dr["c_empdepartment"].ToString(),
+                            // c_empdepartment = Convert.ToInt32(dr["c_empdepartment"]),
+                        };
+                        empList.Add(employee);
+
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+                throw;
+            }
+            finally
+            {
+                conn.Close();
+            }
+            return empList;
         }
 
 
