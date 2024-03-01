@@ -365,8 +365,20 @@
       "PackagePath": "staticwebassets\\uploads\\d5ad14eb-4dd3-4714-9b6c-3d3c009722c0_ecommerce-shopping.jpg"
     },
     {
+      "Id": "D:\\Interns Data\\GitProject\\MasterProject\\mvc\\wwwroot\\uploads\\e18b1e68-edc9-485b-b921-de0a33f4d685_announce.png",
+      "PackagePath": "staticwebassets\\uploads\\e18b1e68-edc9-485b-b921-de0a33f4d685_announce.png"
+    },
+    {
+      "Id": "D:\\Interns Data\\GitProject\\MasterProject\\mvc\\wwwroot\\uploads\\e3564dab-1513-4f12-bc9a-b8ebcc3f5925_announce.png",
+      "PackagePath": "staticwebassets\\uploads\\e3564dab-1513-4f12-bc9a-b8ebcc3f5925_announce.png"
+    },
+    {
       "Id": "D:\\Interns Data\\GitProject\\MasterProject\\mvc\\wwwroot\\uploads\\e53671d5-7a5f-42e9-94ed-fb831e7fad76_cart.jpg",
       "PackagePath": "staticwebassets\\uploads\\e53671d5-7a5f-42e9-94ed-fb831e7fad76_cart.jpg"
+    },
+    {
+      "Id": "D:\\Interns Data\\GitProject\\MasterProject\\mvc\\wwwroot\\uploads\\f31b951a-2106-456c-bf32-0ffcb5fc6928_linkedin.jpg",
+      "PackagePath": "staticwebassets\\uploads\\f31b951a-2106-456c-bf32-0ffcb5fc6928_linkedin.jpg"
     },
     {
       "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.build.mvc.props",

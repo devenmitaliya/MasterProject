@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "ydrI2DRHyn74Lu7TELsR3zBU60GttDDhHjzQZ2Phpj4=",
+  "Hash": "QI64n2AlDlxw4bYkrUP7HLAvl/Yfi7ErpQVPcr2rdVY=",
   "Source": "mvc",
   "BasePath": "_content/mvc",
   "Mode": "Default",
@@ -1765,6 +1765,44 @@
       "OriginalItemSpec": "wwwroot\\uploads\\d5ad14eb-4dd3-4714-9b6c-3d3c009722c0_ecommerce-shopping.jpg"
     },
     {
+      "Identity": "D:\\Interns Data\\GitProject\\MasterProject\\mvc\\wwwroot\\uploads\\e18b1e68-edc9-485b-b921-de0a33f4d685_announce.png",
+      "SourceId": "mvc",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Interns Data\\GitProject\\MasterProject\\mvc\\wwwroot\\",
+      "BasePath": "_content/mvc",
+      "RelativePath": "uploads/e18b1e68-edc9-485b-b921-de0a33f4d685_announce.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\e18b1e68-edc9-485b-b921-de0a33f4d685_announce.png"
+    },
+    {
+      "Identity": "D:\\Interns Data\\GitProject\\MasterProject\\mvc\\wwwroot\\uploads\\e3564dab-1513-4f12-bc9a-b8ebcc3f5925_announce.png",
+      "SourceId": "mvc",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Interns Data\\GitProject\\MasterProject\\mvc\\wwwroot\\",
+      "BasePath": "_content/mvc",
+      "RelativePath": "uploads/e3564dab-1513-4f12-bc9a-b8ebcc3f5925_announce.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\e3564dab-1513-4f12-bc9a-b8ebcc3f5925_announce.png"
+    },
+    {
       "Identity": "D:\\Interns Data\\GitProject\\MasterProject\\mvc\\wwwroot\\uploads\\e53671d5-7a5f-42e9-94ed-fb831e7fad76_cart.jpg",
       "SourceId": "mvc",
       "SourceType": "Discovered",
@@ -1782,6 +1820,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\uploads\\e53671d5-7a5f-42e9-94ed-fb831e7fad76_cart.jpg"
+    },
+    {
+      "Identity": "D:\\Interns Data\\GitProject\\MasterProject\\mvc\\wwwroot\\uploads\\f31b951a-2106-456c-bf32-0ffcb5fc6928_linkedin.jpg",
+      "SourceId": "mvc",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Interns Data\\GitProject\\MasterProject\\mvc\\wwwroot\\",
+      "BasePath": "_content/mvc",
+      "RelativePath": "uploads/f31b951a-2106-456c-bf32-0ffcb5fc6928_linkedin.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\f31b951a-2106-456c-bf32-0ffcb5fc6928_linkedin.jpg"
     }
   ]
 }

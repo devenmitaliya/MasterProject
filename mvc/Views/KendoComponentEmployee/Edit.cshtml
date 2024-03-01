@@ -20,33 +20,45 @@
                 <input type="hidden" id="c_empid" name="c_empid" value="@Model.c_empid" />
 
                 <label for="c_empname">Name</label>
-                <input id="c_empname" name="c_empname" value="@Model.c_empname" />
+                <input id="c_empname" name="c_empname" value="@Model.c_empname" readonly/>
 
-                <label for="c_empgender">Gender</label><br>
-                @foreach (var gender in genders)
-                {
-                    <input type="radio" id="@gender" name="c_empgender" value="@gender" @(gender == Model.c_empgender ?
-                    "checked" : "") />
-                    <label for="@gender">@gender</label>
-                }
-                <br>
+                @* <label for="c_empgender">Gender</label><br>
+                    @foreach (var gender in genders)
+                    {
+                        <input type="radio" id="@gender" name="c_empgender" value="@gender" @(gender == Model.c_empgender ? "checked" : "") readonly/>
+                        <label for="@gender">@gender</label>
+                    }
+                    <br> *@
+
+                    <label for="c_empgender">Gender</label><br>
+                    <input type="text" id="c_empgender" name="c_empgender" value="@Model.c_empgender" readonly/><br/>
+
 
                 <label for="c_empdob">Date of Birth</label>
-                <input id="c_empdob" name="c_empdob" value="@Model.c_empdob.ToString("yyyy-MM-dd")" />
+                <input id="c_empdob" name="c_empdob" value="@Model.c_empdob.ToString("yyyy-MM-dd")" readonly/>
 
                 <label for="c_empshift">Shift</label><br>
                 @foreach (var shift in shifts)
                 {
-                    <input type="checkbox" id="@shift" name="c_empshift" value="@shift" @(Model.c_empshift.Contains(shift) ?
-                    "checked" : "") />
+                    <input type="checkbox" id="@shift" name="c_empshift" value="@shift" @(Model.c_empshift.Contains(shift) ? "checked" : "") />
                     <label for="@shift">@shift</label>
                 }<br>
 
+                @* <label for="c_empimg">Image</label>
+                <input type="file" id="c_empimg" name="c_empimg" /> *@
                 <label for="c_empimg">Image</label>
-                <input type="file" id="c_empimg" name="c_empimg" />
+                @if (string.IsNullOrEmpty(Model.c_empimg))
+                {
+                    <input type="file" id="c_empimg" name="c_empimg" readonly/>
+                }
+                else
+                {
+                    <input type="text" id="c_empimg" name="c_empimg" value="@Model.c_empimg" readonly/>
+                }
+
 
                 <label for="c_empdepartment">Department</label>
-                <select id="c_empdepartment" name="c_empdepartment">
+                @* <select id="c_empdepartment" name="c_empdepartment">
                     @{
                         foreach (var department in ViewBag.Departments)
                         {
@@ -55,7 +67,24 @@
                             </option>
                         }
                     }
-                </select><br><br>
+                </select><br><br> *@
+
+                <select id="c_empdepartment" name="c_empdepartment">
+    @foreach (var department in ViewBag.Departments)
+    {
+        if (department.c_departmentname == Model.c_empdepartment)
+        {
+            <option value="@department.c_departmentname" selected="selected">@department.c_departmentname</option>
+        }
+        else
+        {
+            <option value="@department.c_departmentname">@department.c_departmentname</option>
+        }
+    }
+</select>
+
+
+                
 
 
                 <input type="submit" value="Update Employee" class="k-button k-primary" />
@@ -69,6 +98,7 @@
         <script>
             $(document).ready(function () {
                 $("#c_empname").kendoTextBox();
+                $("#c_empgender").kendoTextBox();
                 $("#c_empdob").kendoDatePicker({
                     format: "yyyy-MM-dd"
                 });
