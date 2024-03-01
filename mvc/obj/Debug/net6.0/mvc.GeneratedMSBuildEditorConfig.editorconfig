@@ -50,6 +50,38 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[F:/PPSU/sem-08/casepoint/Master Project/mvc/Views/KendoComponentEmployee/Add.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS2VuZG9Db21wb25lbnRFbXBsb3llZVxBZGQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/PPSU/sem-08/casepoint/Master Project/mvc/Views/KendoComponentEmployee/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS2VuZG9Db21wb25lbnRFbXBsb3llZVxEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/PPSU/sem-08/casepoint/Master Project/mvc/Views/KendoComponentEmployee/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS2VuZG9Db21wb25lbnRFbXBsb3llZVxEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/PPSU/sem-08/casepoint/Master Project/mvc/Views/KendoComponentEmployee/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS2VuZG9Db21wb25lbnRFbXBsb3llZVxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/PPSU/sem-08/casepoint/Master Project/mvc/Views/KendoComponentEmployee/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS2VuZG9Db21wb25lbnRFbXBsb3llZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/PPSU/sem-08/casepoint/Master Project/mvc/Views/KendoComponentUser/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS2VuZG9Db21wb25lbnRVc2VyXExvZ2luLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/PPSU/sem-08/casepoint/Master Project/mvc/Views/KendoComponentUser/Register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS2VuZG9Db21wb25lbnRVc2VyXFJlZ2lzdGVyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/PPSU/sem-08/casepoint/Master Project/mvc/Views/KendoGrid/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS2VuZG9HcmlkXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [F:/PPSU/sem-08/casepoint/Master Project/mvc/Views/mvcajax/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcbXZjYWpheFxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 

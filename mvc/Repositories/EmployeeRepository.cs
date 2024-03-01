@@ -38,6 +38,7 @@ namespace mvc.Repositories
                             // c_empshift = dr["c_empshift"].ToString(),
                             c_empimg = dr["c_empimg"].ToString(),
                             c_empdepartment = dr["c_empdepartment"].ToString(),
+                            // c_empdepartment = Convert.ToInt32(dr["c_empdepartment"]),
                         };
                         empList.Add(emp);
                     
@@ -81,6 +82,7 @@ namespace mvc.Repositories
                         emp.c_empshift = dr["c_empshift"].ToString().Split(",").ToList();
                         emp.c_empimg = dr["c_empimg"].ToString();
                         emp.c_empdepartment = dr["c_empdepartment"].ToString();
+                        // emp.c_empdepartment = Convert.ToInt32(dr["c_empdepartment"]);
                     }
                 }
             }
@@ -115,7 +117,7 @@ namespace mvc.Repositories
                 cmd.Parameters.AddWithValue("@c_empdob", emp.c_empdob);
                 cmd.Parameters.AddWithValue("@c_empshift", shifts);
                 cmd.Parameters.AddWithValue("@c_empimg", emp.c_empimg);
-                cmd.Parameters.AddWithValue("@c_empdepartment", deptId);
+                cmd.Parameters.AddWithValue("@c_empdepartment", emp.c_empdepartment);
 
                 cmd.ExecuteNonQuery();
 
@@ -162,8 +164,6 @@ namespace mvc.Repositories
             return deptId;
         }
 
-
-
         public void EditEmployee(tblEmployee emp)
         {
             try
@@ -171,6 +171,7 @@ namespace mvc.Repositories
                 conn.Open();
                 var cmd = new NpgsqlCommand();
                 cmd.Connection = conn;
+                Console.WriteLine(emp.c_empdepartment);
                 int deptId = GetDepartmentId(emp.c_empdepartment, conn);
                 cmd.CommandType = CommandType.Text;
                 string shifts = string.Join(",", emp.c_empshift);
@@ -184,7 +185,7 @@ namespace mvc.Repositories
                 cmd.Parameters.AddWithValue("@c_empdob", emp.c_empdob);
                 cmd.Parameters.AddWithValue("@c_empshift", shifts);
                 cmd.Parameters.AddWithValue("@c_empimg", emp.c_empimg);
-                cmd.Parameters.AddWithValue("@c_empdepartment", deptId);
+                cmd.Parameters.AddWithValue("@c_empdepartment", emp.c_empdepartment);
 
                 cmd.ExecuteNonQuery();
 
