@@ -7,6 +7,8 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using mvc.Models;
 using mvc.Repositories;
+using mvc.Models; // Adjust namespace as necessary
+
 
 namespace mvc.Controllers
 {
@@ -33,13 +35,26 @@ namespace mvc.Controllers
 
         public IActionResult Index()
         {
-            List<tblEmployee> employees = _employeeRepository.GetAllEmployee();
-            return View(employees);
+
+            if (HttpContext.Session.GetString("role") == "Admin")
+            {
+                List<tblEmployee> employees = _employeeRepository.GetAllEmployee();
+                return View(employees);
+            }
+            else
+            {
+                var user = HttpContext.Session.GetString("username");
+                Console.WriteLine("USER    : : : : : : ::::    " + user);
+                List<tblEmployee> employees = _employeeRepository.GetEmployeeFromUserName(user);
+                return View(employees);
+            }
         }
 
         [HttpGet]
         public IActionResult Add()
         {
+            // var user = HttpContext.Session.GetString("username");
+            // Console.WriteLine("USER    : : :", user);
             return View();
         }
 
@@ -70,6 +85,9 @@ namespace mvc.Controllers
                 Console.WriteLine("No photo uploaded.");
             }
             emp.c_empimg = file;
+            // var user = HttpContext.Session.GetString("username");
+            // Console.WriteLine("USER    : : :", user);
+            // emp.c_username = user;
             _employeeRepository.AddEmployee(emp);
             return RedirectToAction("Index");
         }
@@ -146,6 +164,8 @@ namespace mvc.Controllers
         {
             return Json(_employeeRepository.GetAllDepartment());
         }
+
+
         public IActionResult Details(int id)
         {
             tblEmployee emp = _employeeRepository.GetOneEmployee(id);

@@ -117,6 +117,10 @@
       "PackagePath": "staticwebassets/images/c20332e4-2c03-4950-934e-9fe63b3e12b8_i1.jpg"
     },
     {
+      "Id": "/Users/yashveekotadiya/Desktop/newmaster/MasterProject/mvc/wwwroot/images/cabinet salon.png",
+      "PackagePath": "staticwebassets/images/cabinet salon.png"
+    },
+    {
       "Id": "/Users/yashveekotadiya/Desktop/newmaster/MasterProject/mvc/wwwroot/images/d34396b5-0cc7-406e-8898-c70c28d1d701_i1.jpg",
       "PackagePath": "staticwebassets/images/d34396b5-0cc7-406e-8898-c70c28d1d701_i1.jpg"
     },
@@ -405,6 +409,10 @@
       "PackagePath": "staticwebassets/uploads/GTU.png"
     },
     {
+      "Id": "/Users/yashveekotadiya/Desktop/newmaster/MasterProject/mvc/wwwroot/uploads/Golden Minimal Floral Frame Design Studio Logo.png",
+      "PackagePath": "staticwebassets/uploads/Golden Minimal Floral Frame Design Studio Logo.png"
+    },
+    {
       "Id": "/Users/yashveekotadiya/Desktop/newmaster/MasterProject/mvc/wwwroot/uploads/IMG_4341.jpg",
       "PackagePath": "staticwebassets/uploads/IMG_4341.jpg"
     },
@@ -423,6 +431,14 @@
     {
       "Id": "/Users/yashveekotadiya/Desktop/newmaster/MasterProject/mvc/wwwroot/uploads/Screenshot 2024-01-15 104118.png",
       "PackagePath": "staticwebassets/uploads/Screenshot 2024-01-15 104118.png"
+    },
+    {
+      "Id": "/Users/yashveekotadiya/Desktop/newmaster/MasterProject/mvc/wwwroot/uploads/Screenshot 2024-02-24 002836.png",
+      "PackagePath": "staticwebassets/uploads/Screenshot 2024-02-24 002836.png"
+    },
+    {
+      "Id": "/Users/yashveekotadiya/Desktop/newmaster/MasterProject/mvc/wwwroot/uploads/Screenshot 2024-02-24 005011.png",
+      "PackagePath": "staticwebassets/uploads/Screenshot 2024-02-24 005011.png"
     },
     {
       "Id": "/Users/yashveekotadiya/Desktop/newmaster/MasterProject/mvc/wwwroot/uploads/TechnoFy.jpg",

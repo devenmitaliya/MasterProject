@@ -19,5 +19,7 @@ namespace mvc.Repositories
         void DeleteEmployee(tblEmployee emp);
 
         List<tblDepartment> GetAllDepartment();
+
+        List<tblEmployee> GetEmployeeFromUserName(string user);
     }
 }

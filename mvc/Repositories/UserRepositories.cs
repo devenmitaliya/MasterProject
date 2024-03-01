@@ -22,7 +22,7 @@ namespace mvc.Repositories
         public int Login(tblUser user)
         {
             int rowCount = 0;
-            string role = "";
+            string role = "" , uname = "";
 
             try
             {
@@ -41,9 +41,11 @@ namespace mvc.Repositories
 
                             role = reader.GetString(3);
                             rowCount = reader.GetInt32(4);
+                            uname = reader.GetString(1);
 
                             var session = _httpContextAccessor.HttpContext.Session;
                             session.SetString("role", role);
+                            session.SetString("username", uname);
                         }
                     }
 
@@ -85,8 +87,6 @@ namespace mvc.Repositories
                     cmd.Parameters.AddWithValue("@c_role", user.c_role);
 
                     cmd.ExecuteNonQuery();
-
-
 
                 }
             }
