@@ -64,14 +64,14 @@
             </div>
         </div>
 
-        <div class="mb-3">
+        @* <div class="mb-3">
             <label for="c_empimg" class="form-label">Photo</label>
             <input asp-for="c_empimg" type="file" class="form-control" id="c_empimg">
-        </div>
+        </div> *@
 
         <div class="form-group">
             <label for="fileInput">Photo</label><br>
-            <input type="file" id="c_empimg" asp-for="photo"  class="custom-file-input" />
+            <input type="file" id="c_empimg" asp-for="photo"  class="custom-file-input form-control" />
             <label class="custom-file-label" for="c_empimg"></label>
             <span class="text-danger"></span>
         </div>

@@ -245,8 +245,60 @@
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
+      "Id": "F:\\PPSU\\sem-08\\casepoint\\Master Project\\mvc\\wwwroot\\uploads\\39289488-1382-49f0-85f1-363240628f31_1324947.jpeg",
+      "PackagePath": "staticwebassets\\uploads\\39289488-1382-49f0-85f1-363240628f31_1324947.jpeg"
+    },
+    {
+      "Id": "F:\\PPSU\\sem-08\\casepoint\\Master Project\\mvc\\wwwroot\\uploads\\77f58981-fc58-4b45-ab5d-19d34ec0ecb5_1324947.jpeg",
+      "PackagePath": "staticwebassets\\uploads\\77f58981-fc58-4b45-ab5d-19d34ec0ecb5_1324947.jpeg"
+    },
+    {
+      "Id": "F:\\PPSU\\sem-08\\casepoint\\Master Project\\mvc\\wwwroot\\uploads\\80896176-b375-4e5c-bab1-4cee6acffb73_1324947.jpeg",
+      "PackagePath": "staticwebassets\\uploads\\80896176-b375-4e5c-bab1-4cee6acffb73_1324947.jpeg"
+    },
+    {
+      "Id": "F:\\PPSU\\sem-08\\casepoint\\Master Project\\mvc\\wwwroot\\uploads\\89f3a7e5-28c7-4ffe-9f2c-72af1a0b9b9d_maths.png",
+      "PackagePath": "staticwebassets\\uploads\\89f3a7e5-28c7-4ffe-9f2c-72af1a0b9b9d_maths.png"
+    },
+    {
+      "Id": "F:\\PPSU\\sem-08\\casepoint\\Master Project\\mvc\\wwwroot\\uploads\\Course.png",
+      "PackagePath": "staticwebassets\\uploads\\Course.png"
+    },
+    {
+      "Id": "F:\\PPSU\\sem-08\\casepoint\\Master Project\\mvc\\wwwroot\\uploads\\GTU.png",
+      "PackagePath": "staticwebassets\\uploads\\GTU.png"
+    },
+    {
+      "Id": "F:\\PPSU\\sem-08\\casepoint\\Master Project\\mvc\\wwwroot\\uploads\\IMG_4341.jpg",
+      "PackagePath": "staticwebassets\\uploads\\IMG_4341.jpg"
+    },
+    {
+      "Id": "F:\\PPSU\\sem-08\\casepoint\\Master Project\\mvc\\wwwroot\\uploads\\Letter A Logo With Business and Arrow Concept..png",
+      "PackagePath": "staticwebassets\\uploads\\Letter A Logo With Business and Arrow Concept..png"
+    },
+    {
+      "Id": "F:\\PPSU\\sem-08\\casepoint\\Master Project\\mvc\\wwwroot\\uploads\\Screenshot 2024-01-15 104118.png",
+      "PackagePath": "staticwebassets\\uploads\\Screenshot 2024-01-15 104118.png"
+    },
+    {
+      "Id": "F:\\PPSU\\sem-08\\casepoint\\Master Project\\mvc\\wwwroot\\uploads\\TimeLine chart.png",
+      "PackagePath": "staticwebassets\\uploads\\TimeLine chart.png"
+    },
+    {
+      "Id": "F:\\PPSU\\sem-08\\casepoint\\Master Project\\mvc\\wwwroot\\uploads\\b7d7f698-fc85-4858-aeb0-55e3b0086274_655293.jpg",
+      "PackagePath": "staticwebassets\\uploads\\b7d7f698-fc85-4858-aeb0-55e3b0086274_655293.jpg"
+    },
+    {
+      "Id": "F:\\PPSU\\sem-08\\casepoint\\Master Project\\mvc\\wwwroot\\uploads\\c99e32ad-307c-4ab2-bb68-9793235b16a9_1079546.png",
+      "PackagePath": "staticwebassets\\uploads\\c99e32ad-307c-4ab2-bb68-9793235b16a9_1079546.png"
+    },
+    {
       "Id": "F:\\PPSU\\sem-08\\casepoint\\Master Project\\mvc\\wwwroot\\uploads\\cabinet salon.png",
       "PackagePath": "staticwebassets\\uploads\\cabinet salon.png"
+    },
+    {
+      "Id": "F:\\PPSU\\sem-08\\casepoint\\Master Project\\mvc\\wwwroot\\uploads\\f46d173f-c7a4-439e-8741-a58eabf5dc5c_000.jpg",
+      "PackagePath": "staticwebassets\\uploads\\f46d173f-c7a4-439e-8741-a58eabf5dc5c_000.jpg"
     },
     {
       "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.build.mvc.props",
