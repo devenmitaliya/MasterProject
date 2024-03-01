@@ -117,7 +117,7 @@ namespace mvc.Repositories
                 cmd.Parameters.AddWithValue("@c_empdob", emp.c_empdob);
                 cmd.Parameters.AddWithValue("@c_empshift", shifts);
                 cmd.Parameters.AddWithValue("@c_empimg", emp.c_empimg);
-                cmd.Parameters.AddWithValue("@c_empdepartment", emp.c_empdepartment);
+                cmd.Parameters.AddWithValue("@c_empdepartment", deptId);
 
                 cmd.ExecuteNonQuery();
 
@@ -185,7 +185,7 @@ namespace mvc.Repositories
                 cmd.Parameters.AddWithValue("@c_empdob", emp.c_empdob);
                 cmd.Parameters.AddWithValue("@c_empshift", shifts);
                 cmd.Parameters.AddWithValue("@c_empimg", emp.c_empimg);
-                cmd.Parameters.AddWithValue("@c_empdepartment", emp.c_empdepartment);
+                cmd.Parameters.AddWithValue("@c_empdepartment", deptId);
 
                 cmd.ExecuteNonQuery();
 

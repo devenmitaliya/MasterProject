@@ -1,0 +1,85 @@
+@model tblUser
+
+@{
+    ViewBag.Title = "Register";
+}
+
+<h2>Register</h2>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
+    integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<div class="form-horizontal">
+    <div class="form-group">
+        <label asp-for="c_uname" class="col-md-2 control-label">Username</label>
+        <div class="col-md-10">
+            <input type="text" class="form-control" id="txtUserName" asp-for="c_uname">
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="c_uemail" class="col-md-2 control-label">Email</label>
+        <div class="col-md-10">
+            <input type="text" class="form-control" id="txtEmail" asp-for="c_uemail">
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="c_password" class="col-md-2 control-label">Password</label>
+        <div class="col-md-10">
+            <input type="password" class="form-control" id="txtPassword" asp-for="c_password">
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="c_role" class="col-md-2 control-label">Role</label>
+        <div class="col-md-10">
+            <input type="text" class="form-control" id="txtRole" asp-for="c_role">
+        </div>
+    </div> 
+
+ <div class="form-group">
+        <label asp-for="c_cpassword" class="col-md-2 control-label">Confirm Password</label>
+        <div class="col-md-10">
+            <input type="password" class="form-control" id="txtCPassword" asp-for="c_cpassword">
+        </div>
+    </div> 
+
+    <div class="form-group">
+        <div class="col-md-offset-2 col-md-10">
+            <input type="submit" value="Register" class="btn btn-primary" id="btnRegister" onclick="Register()" />
+        </div>
+    </div>
+</div>
+
+<script>
+   function Register() {
+    var user = {
+        c_uname: $("#txtUserName").val(),
+        c_uemail: $("#txtEmail").val(),
+        c_password: $("#txtPassword").val(),
+        c_role: $("#txtRole").val(),
+        c_cpassword: $("#txtCPassword").val()
+    };
+
+    var settings = {
+        "url": "https://localhost:7084/api/UserApi/register",
+        "method": "POST",
+        "timeout": 0,
+        "headers": {
+            "Content-Type": "application/json"
+        },
+        "data": JSON.stringify(user)
+    };
+
+    $.ajax(settings).done(function (response) {
+        console.log(response);
+        alert('Successfully Registered!');
+        window.location = "/ApiAjaxEmployee/Login";
+    }).fail(function (response) {
+        console.log(response.responseText);
+        alert(response.responseText);
+        window.location = "/ApiAjaxEmployee/Register";
+    });
+}
+</script>
