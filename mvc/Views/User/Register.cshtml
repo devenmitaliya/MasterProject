@@ -3,6 +3,7 @@
 @model tblUser;
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -57,6 +58,7 @@
         }
     </style>
 </head>
+
 <body>
 
     <div class="container mt-5">
@@ -64,30 +66,39 @@
             <div class="col-md-6">
                 <div class="card">
                     <div class="card-header">
-                        <h2 class="mb-4">Login</h2>
+                        <h2 class="mb-4">Register</h2>
                     </div>
                     <div class="card-body">
                         <form asp-action="Register" asp-controller="User">
                             <div class="form-group">
                                 <label for="email">User Name:</label>
-                                <input type="text" asp-for="c_uname" class="form-control" id="c_uname" name="c_uname" required>
+                                <input type="text" asp-for="c_uname" class="form-control" id="c_uname" name="c_uname"
+                                    required>
                             </div>
-                            
-                             <div class="form-group">
+
+                            <div class="form-group">
                                 <label for="email">Email:</label>
-                                <input type="email" asp-for="c_uemail" class="form-control" id="email" name="c_uemail" required>
+                                <input type="email" asp-for="c_uemail" class="form-control" id="email" name="c_uemail"
+                                    required>
                             </div>
                             <div class="form-group">
                                 <label for="password">Password:</label>
-                                <input asp-for="c_password" type="password" class="form-control" id="password" name="c_password" required>
+                                <input asp-for="c_password" type="password" class="form-control" id="password"
+                                    name="c_password" required>
                             </div>
-                             <div class="form-group">
+                            <div class="form-group">
                                 <label for="email">Confirm password:</label>
-                                <input type="password" asp-for="c_cpassword" class="form-control" id="c_cpassword" name="c_cpassword" required>
+                                <input type="password" asp-for="c_cpassword" class="form-control" id="c_cpassword"
+                                    name="c_cpassword" required>
                             </div>
                             <button type="submit" class="btn btn-primary btn-block">Register</button>
+                            <div class="container mt-5">
+                                Already have an account?
+                                <a asp-action="Login" asp-controller="User">Login</a>
+                            </div>
                         </form>
-                        @* <p class="mt-3 text-center">Don't have an account? <a href="~/User/Register">Register here</a></p> *@
+                        @* <p class="mt-3 text-center">Don't have an account? <a href="~/User/Register">Register
+                        here</a></p> *@
                     </div>
                 </div>
             </div>
@@ -99,4 +110,5 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 </body>
+
 </html>

@@ -61,6 +61,10 @@
       "PackagePath": "staticwebassets/images/3f667411-a221-4055-bcd0-4da6bf8a0816_i1.jpg"
     },
     {
+      "Id": "/Users/yashveekotadiya/Desktop/newmaster/MasterProject/mvc/wwwroot/images/3f9a8624-c24e-4597-990b-b43019a26bed_Clarent LOGO.png",
+      "PackagePath": "staticwebassets/images/3f9a8624-c24e-4597-990b-b43019a26bed_Clarent LOGO.png"
+    },
+    {
       "Id": "/Users/yashveekotadiya/Desktop/newmaster/MasterProject/mvc/wwwroot/images/42c4a9f2-4a9d-4f86-9dee-22f0d439356c_my project.jpg",
       "PackagePath": "staticwebassets/images/42c4a9f2-4a9d-4f86-9dee-22f0d439356c_my project.jpg"
     },
@@ -465,8 +469,16 @@
       "PackagePath": "staticwebassets/uploads/80896176-b375-4e5c-bab1-4cee6acffb73_1324947.jpeg"
     },
     {
+      "Id": "/Users/yashveekotadiya/Desktop/newmaster/MasterProject/mvc/wwwroot/uploads/88872fd0-f5dd-44f4-b4bd-f06297e5b16c_IMG_4483.jpg",
+      "PackagePath": "staticwebassets/uploads/88872fd0-f5dd-44f4-b4bd-f06297e5b16c_IMG_4483.jpg"
+    },
+    {
       "Id": "/Users/yashveekotadiya/Desktop/newmaster/MasterProject/mvc/wwwroot/uploads/89f3a7e5-28c7-4ffe-9f2c-72af1a0b9b9d_maths.png",
       "PackagePath": "staticwebassets/uploads/89f3a7e5-28c7-4ffe-9f2c-72af1a0b9b9d_maths.png"
+    },
+    {
+      "Id": "/Users/yashveekotadiya/Desktop/newmaster/MasterProject/mvc/wwwroot/uploads/8e4da10f-4c70-43d3-9a36-d448f316a9da_IMG_4341.jpg",
+      "PackagePath": "staticwebassets/uploads/8e4da10f-4c70-43d3-9a36-d448f316a9da_IMG_4341.jpg"
     },
     {
       "Id": "/Users/yashveekotadiya/Desktop/newmaster/MasterProject/mvc/wwwroot/uploads/Course.png",
@@ -539,6 +551,14 @@
     {
       "Id": "/Users/yashveekotadiya/Desktop/newmaster/MasterProject/mvc/wwwroot/uploads/cabinet salon.png",
       "PackagePath": "staticwebassets/uploads/cabinet salon.png"
+    },
+    {
+      "Id": "/Users/yashveekotadiya/Desktop/newmaster/MasterProject/mvc/wwwroot/uploads/db773808-a780-47f5-b31a-aac5d970550c_cabinet salon.png",
+      "PackagePath": "staticwebassets/uploads/db773808-a780-47f5-b31a-aac5d970550c_cabinet salon.png"
+    },
+    {
+      "Id": "/Users/yashveekotadiya/Desktop/newmaster/MasterProject/mvc/wwwroot/uploads/dc2d5cde-727d-4b2b-9bf0-0f8094613e84_IMG_4341.jpg",
+      "PackagePath": "staticwebassets/uploads/dc2d5cde-727d-4b2b-9bf0-0f8094613e84_IMG_4341.jpg"
     },
     {
       "Id": "/Users/yashveekotadiya/Desktop/newmaster/MasterProject/mvc/wwwroot/uploads/f46d173f-c7a4-439e-8741-a58eabf5dc5c_000.jpg",

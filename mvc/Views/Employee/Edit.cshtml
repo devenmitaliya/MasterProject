@@ -11,31 +11,35 @@
         </div>
     </div>
     <form asp-action="Edit" method="post" enctype="multipart/form-data">
-        <input asp-for="c_empid">
+        <input asp-for="c_empid" hidden=true>
 
-        <div class="form-group">
+        <div class="form-group mt-3">
             <label asp-for="c_empname" class="control-label">Employee Name</label>
-            <input asp-for="c_empname" class="form-control" />
+            <input asp-for="c_empname" class="form-control" readonly />
             <span asp-validation-for="c_empname" class="text-danger"></span>
         </div>
 
-        <div class="form-group">
-            <label asp-for="c_empgender" class="control-label">Gender</label><br>
-            <div>
-                <input type="radio" asp-for="c_empgender" value="Male" /> Male
-                <input type="radio" asp-for="c_empgender" value="Female" /> Female
-                <input type="radio" asp-for="c_empgender" value="Other" /> Other
-            </div>
-            <span asp-validation-for="c_empgender" class="text-danger"></span>
+        <div class="form-group mt-3">
+            <label asp-for="c_empgender" class="control-label">Gender</label>
+            <input asp-for="c_empgender" class="form-control" readonly />
         </div>
 
-        <div class="form-group">
+
+        <div class="form-group mt-3">
             <label asp-for="c_empdob" class="control-label">Employee DOB</label>
-            <input asp-for="c_empdob" type="date" class="form-control" />
+            <input asp-for="c_empdob" type="date" class="form-control" readonly />
             <span asp-validation-for="c_empdob" class="text-danger"></span>
         </div>
 
-        <div class="form-group">
+        <div class="form-group mt-3">
+            <label class="control-label">Photo</label><br>
+            <div class="custom-file">
+                <img src="@Url.Content("~/uploads/" + Model.c_empimg)" alt="Employee Photo"
+                    style="width: 100px; height: 100px;" />
+            </div>
+        </div>
+
+        <div class="form-group mt-3">
             <label asp-for="c_empshift" class="control-label">Shift</label><br>
             <input type="checkbox" name="c_empshift" value="Morning" checked='@Model.c_empshift.Contains("Morning")' />
             Morning
@@ -43,30 +47,14 @@
                 checked='@Model.c_empshift.Contains("Afternoon")' /> Afternoon
         </div>
 
-        @* <div class="form-group">
-            <label class="control-label">Department @Model.c_empdepartment</label>
-            <select class="form-control" id="c_empdepartment">
+        <div class="form-group mt-3">
+            <label class="control-label">Department</label>
+            <select class="form-control" id="c_empdepartment" name="c_empdepartment"> <!-- Add name attribute -->
                 <option value="">Select Department</option>
             </select>
             <span class="text-danger"></span>
-        </div> *@
-        <div class="form-group">
-    <label class="control-label">Department</label>
-    <select class="form-control" id="c_empdepartment" name="c_empdepartment"> <!-- Add name attribute -->
-        <option value="">Select Department</option>
-    </select>
-    <span class="text-danger"></span>
-</div>
-
-
-        <div class="form-group">
-            <label class="control-label">Photo</label><br>
-            <div class="custom-file">
-                <input type="file" asp-for="photo" class="custom-file-input" id="photo" />
-                @* <label class="custom-file-label" for="photo">Choose file</label> *@
-            </div>
-            @* <span asp-validation-for="photo" class="text-danger"></span> *@
         </div>
+
 
         <div class="form-group mt-3">
             <button type="submit" class="btn btn-primary">Update Employee</button>
@@ -74,7 +62,8 @@
         </div>
     </form>
 </div>
-<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 
 @section Scripts {
     <script>
@@ -105,16 +94,6 @@
             });
 
 
-        });
-@* 
-        document.getElementById('photo').addEventListener('change', function () {
-            var fileName = this.value.split('\\').pop();
-            var label = $(this).siblings('.custom-file-label');
-            label.text(fileName);
-        }); *@
-        $('#photo').on('change', function () {
-            var fileName = $(this).val().split('\\').pop();
-            $(this).next('.custom-file-label').html(fileName);
         });
     </script>
 }

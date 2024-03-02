@@ -8,6 +8,7 @@
 <h2>@ViewData["Title"]</h2>
 <p>
     <a href="@Url.Action("Add")" class="btn btn-primary">Add Employee</a>
+    <a href="@Url.Action("Logout")" class="btn btn-secondary">Logout</a>
 </p>
 
 <table class="table table-striped">
@@ -36,7 +37,7 @@
                    <img src="@Url.Content("~/uploads/" + employee.c_empimg)" alt="Employee Photo"  style="width: 100px; height: 100px;" />
 
                 </td>
-                <td>@employee.c_empdepartment</td>
+                <td>@employee.department</td>
                 <td>
                     <a href="@Url.Action("Details", new { id = employee.c_empid })" class="btn btn-primary">Details</a>
                     @if (role == "Admin")

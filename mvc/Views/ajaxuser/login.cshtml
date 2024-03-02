@@ -4,10 +4,8 @@
     body {
         font-family: Arial, sans-serif;
         background-color: #f4f4f4;
-        margin: 0;
-        padding: 0;
+        @* height: 200vh; *@
 
-        height: 100vh;
     }
 
     .container {
@@ -15,7 +13,7 @@
         padding: 20px;
         border-radius: 8px;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        width: 300px;
+        @* width: 450px; *@
     }
 
     h2 {
@@ -67,8 +65,13 @@
     <div>
         <button id="loginBtn">Login</button>
     </div>
-</div>
 
+    <div class="mt-5">
+        Don't have any account ?<a href="~/ajaxuser/Register">Register </a>
+    </div>
+</div>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 @section Scripts
 {
     <script>
@@ -85,6 +88,8 @@
                     contentType: 'application/json; charset=utf-8',
                     data: JSON.stringify(user),
                     success: function (result) {
+                        console.log(result);
+                        debugger;
                         if (result.success) {
                             window.location.href = result.redirectUrl;
                         } else {

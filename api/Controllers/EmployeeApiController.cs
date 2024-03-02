@@ -48,7 +48,7 @@ namespace api.Controllers
                 //  var uploadsFolder = Path.Combine(_hostEnvironment.WebRootPath, "images");
 
                 // var uploadsFolder = Path.Combine("/Users/yashveekotadiya/Desktop/newmaster/MasterProject/mvc/wwwroot/", "images");
-                var uploadsFolder = Path.Combine("/Users/yashveekotadiya/Desktop/newmaster/MasterProject/mvc/wwwroot/", "images");
+                var uploadsFolder = Path.Combine("/Users/yashveekotadiya/Desktop/newmaster/MasterProject/mvc/wwwroot/", "images");                
                 string uniqueFilename = Guid.NewGuid().ToString() + "_" + emp.photo.FileName;
                 string filepath = Path.Combine(uploadsFolder, uniqueFilename);
 
