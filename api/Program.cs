@@ -16,11 +16,13 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddSession(options =>
-{
-    options.IdleTimeout = TimeSpan.FromMinutes(30); 
-    options.Cookie.HttpOnly = true;
-    options.Cookie.IsEssential = true;
-});
+    {
+        // Configure session options here
+        options.IdleTimeout = TimeSpan.FromMinutes(30); // Session timeout duration
+        options.Cookie.HttpOnly = true; // HTTP only cookie
+        options.Cookie.IsEssential = true; // Cookie is essential for session
+    });
+    
 builder.Services.AddCors(p => p.AddPolicy("corsapp", builder =>
 {
     builder.WithOrigins("*").AllowAnyMethod().AllowAnyHeader();

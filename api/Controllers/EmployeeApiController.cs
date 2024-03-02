@@ -72,41 +72,58 @@ namespace api.Controllers
 
 
             Console.WriteLine(emp);
-            _employeeRepository.AddEmployee(emp);
+            _employeeRepository.AddEmployeeApi(emp);
             return Ok("Employee added successfully");
         }
 
-        [HttpPut]
-        public IActionResult Edit([FromForm] tblEmployee emp)
+        // [HttpPut]
+        // public IActionResult Edit([FromForm] tblEmployee emp)
+        // {
+        //     if (emp.photo != null)
+        //     {
+        //         //  var uploadsFolder = Path.Combine(_hostEnvironment.WebRootPath, "images");
+
+        //         // var uploadsFolder = Path.Combine("/Users/yashveekotadiya/Desktop/newmaster/MasterProject/mvc/wwwroot/", "images");
+        //         var uploadsFolder = Path.Combine("/Users/yashveekotadiya/Desktop/newmaster/MasterProject/mvc/wwwroot/", "images");
+        //         string uniqueFilename = Guid.NewGuid().ToString() + "_" + emp.photo.FileName;
+        //         string filepath = Path.Combine(uploadsFolder, uniqueFilename);
+
+
+        //         using (var stream = new FileStream(filepath, FileMode.Create))
+        //         {
+        //             emp.photo.CopyTo(stream);
+        //         }
+
+        //         Console.WriteLine("Upload PHOTO ::::    " + uniqueFilename);
+        //         emp.c_empimg = uniqueFilename;
+
+        //         Console.WriteLine("C IMAGE : : : : :      " + emp.c_empimg);
+        //     }
+        //     else
+        //     {
+        //         Console.WriteLine("NOT FOUND");
+        //     }
+
+
+
+        //     _employeeRepository.EditEmployee(emp);
+        //     return Ok("Data update successfully");
+        // }
+
+
+
+
+
+
+
+
+
+
+
+          [HttpPut]
+        public IActionResult Edit1([FromForm] tblUpdate emp)
         {
-            if (emp.photo != null)
-            {
-                //  var uploadsFolder = Path.Combine(_hostEnvironment.WebRootPath, "images");
-
-                // var uploadsFolder = Path.Combine("/Users/yashveekotadiya/Desktop/newmaster/MasterProject/mvc/wwwroot/", "images");
-                var uploadsFolder = Path.Combine("/Users/yashveekotadiya/Desktop/newmaster/MasterProject/mvc/wwwroot/", "images");
-                string uniqueFilename = Guid.NewGuid().ToString() + "_" + emp.photo.FileName;
-                string filepath = Path.Combine(uploadsFolder, uniqueFilename);
-
-
-                using (var stream = new FileStream(filepath, FileMode.Create))
-                {
-                    emp.photo.CopyTo(stream);
-                }
-
-                Console.WriteLine("Upload PHOTO ::::    " + uniqueFilename);
-                emp.c_empimg = uniqueFilename;
-
-                Console.WriteLine("C IMAGE : : : : :      " + emp.c_empimg);
-            }
-            else
-            {
-                Console.WriteLine("NOT FOUND");
-            }
-
-
-
-            _employeeRepository.EditEmployee(emp);
+            _employeeRepository.EditEmployeeApi(emp);
             return Ok("Data update successfully");
         }
 

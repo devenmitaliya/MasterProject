@@ -8,6 +8,7 @@
     ".NETCoreApp,Version=v6.0": {
       "api/1.0.0": {
         "dependencies": {
+          "Microsoft.AspNetCore.Session": "2.2.0",
           "Microsoft.Extensions.Caching.StackExchangeRedis": "8.0.2",
           "Swashbuckle.AspNetCore": "6.5.0",
           "mvc": "1.0.0"

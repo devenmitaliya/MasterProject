@@ -48,6 +48,8 @@
                             @* <td><img src="${emp.c_empimg}" alt="Employee Image" style="max-width: 100px; max-height: 100px;" /></td> *@
                             <td><button  class="btn btn-danger" onclick="DeleteEmployee(${emp.c_empid})">Delete</button></td>
                             <td><a href="/ApiAjaxEmployee/Update/?id=${emp.c_empid}" class="text text-primary"><button type="button" class="btn btn-primary">Edit</button></a></td>
+                            <td><a href="/ApiAjaxEmployee/Details/?id=${emp.c_empid}" class="text text-primary"><button type="button" class="btn btn-primary">Details</button></a></td>
+
                         </tr>
                     `);
                 });

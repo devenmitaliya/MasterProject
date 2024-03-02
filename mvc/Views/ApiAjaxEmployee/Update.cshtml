@@ -17,13 +17,19 @@
 
         <div class="mb-3">
             <label for="c_empname" class="form-label">Employee Name</label>
-            <input asp-for="c_empname" class="form-control" id="c_empname" required>
+            <input asp-for="c_empname" class="form-control" name="c_empname" id="c_empname" readonly>
             <div class="invalid-feedback">
                 Please enter employee name.
             </div>
         </div>
-
-        <div class="mb-3">
+  <div class="mb-3">
+            <label for="c_empgender" class="form-label">Employee Gender</label>
+            <input asp-for="c_empgender" class="form-control" name="c_empgender" id="c_empgender" readonly>
+            <div class="invalid-feedback">
+                Please enter employee name.
+            </div>
+        </div>
+        @* <div class="mb-3">
             <label class="form-label">Gender</label><br>
             <div class="form-check form-check-inline">
                 <input class="form-check-input" type="radio" name="c_empgender" value="Male" required>
@@ -37,11 +43,11 @@
                 <input class="form-check-input" type="radio" name="c_empgender" value="Other" required>
                 <label class="form-check-label" for="other">Other</label>
             </div>
-        </div>
+        </div> *@
 
         <div class="mb-3">
             <label for="c_empdob" class="form-label">Date of Birth</label>
-            <input asp-for="c_empdob" type="date" class="form-control" name="c_empdob" id="c_empdob" required>
+            <input asp-for="c_empdob" type="date" class="form-control" name="c_empdob" id="c_empdob" readonly>
             <div class="invalid-feedback">
                 Please enter date of birth.
             </div>
@@ -83,10 +89,22 @@
 
         <div class="mb-3">
             <label for="c_empimg" class="form-label">Photo</label>
-            <input type="file" class="form-control" name="imgFile" id="imgFile">
+            <input asp-for="c_empimg" class="form-control" name="imgFile" id="imgFile" readonly>
         </div>
 
-        <button type="submit" onclick="addEmployee()" class="btn btn-primary">Add Employee</button>
+@* 
+<div class="form-group mt-3">
+            <label class="control-label">Photo</label><br>
+            <div class="custom-file">
+                <img src="@Url.Content("~/uploads/" + Model.c_empimg)" alt="Employee Photo"
+                    style="width: 100px; height: 100px;" />
+            </div>
+        </div> *@
+
+
+<button type="submit" id="updateEmployeeBtn" class="btn btn-primary">Update Employee</button>
+
+        @* <button type="submit" onclick="addEmployee()" class="btn btn-primary">Update Employee</button> *@
         <a asp-action="Index" class="btn btn-secondary">Back to List</a>
     </form>
 </div>
@@ -98,7 +116,16 @@
     <script>
         $(document).ready(function () {
             fetchEmployeeData();
+            fetchEmployeeData();
             var department;
+
+
+             $('#updateEmployeeBtn').click(function(event) {
+        event.preventDefault(); // Prevent the default form submission
+
+        // Call the addEmployee function
+        addEmployee();
+    });
         });
 
         function fetchEmployeeData() {
@@ -109,9 +136,17 @@
                 success: function (response) {
                     $('#c_empid').val(response.c_empid);
                     $('#c_empname').val(response.c_empname);
-                    $('input[name=c_empgender][value=' + response.c_empgender + ']').prop('checked', true);
+                                        $('#c_empgender').val(response.c_empgender);
+
+                    @* $('input[name=c_empgender][value=' + response.c_empgender + ']').prop('checked', true); *@
                     $('#c_empdob').val(response.c_empdob.split('T')[0]);
-                    var empShiftValues = response.c_empshift.split(',');
+ $('#imgFile').val(response.c_empimg);
+                    var empShiftValues = [];
+                    if (typeof response.c_empshift === 'string') {
+                        empShiftValues = response.c_empshift.split(',');
+                    } else if (Array.isArray(response.c_empshift)) {
+                        empShiftValues = response.c_empshift;
+                    }
 
                     $('input[name="c_empshift"]').each(function () {
                         var checkboxValue = $(this).val();
@@ -124,8 +159,9 @@
                     console.log(response.c_empdepartment)
         @* department = response.c_empdepartment; *@
                         fetchDepartmentData(response);
+                    console.log(response)
+@* c_empimg *@
 
-                    // Once employee data is fetched, fetch department data
 
                 },
                 error: function (xhr, status, error) {
@@ -159,22 +195,28 @@
                 }
             });
         }
+        function populateDepartmentDropdown(data, response) {
+            var dropdown = $('#c_empdepartment');
+            dropdown.empty().append($('<option value="">Select Department</option>'));
 
-      function populateDepartmentDropdown(data, response) {
-    var dropdown = $('#c_empdepartment');
-    dropdown.empty().append($('<option value="">Select Department</option>'));
+            var selectedDepartmentName = ''; // Initialize selected department name
 
-    data.forEach(function (department) {
-        var option = $('<option>').val(department.c_departmentname).text(department.c_departmentname);
-        dropdown.append(option);
-        if (department.c_departmentname === response.c_empdepartment) {
-            option.prop('selected', true);
-        }
-    });
+            // Find the selected department name from the data
+            data.forEach(function (department) {
+                var option = $('<option>').val(department.c_departmentname).text(department.c_departmentname);
+                dropdown.append(option);
 
-    // Set the selected department based on the response
-    dropdown.val(response.c_empdepartment);
-}
+                if (department.c_departmentid == response.c_empdepartment) {
+        @* selectedDepartmentName = department.c_departmentname; // Set selected department name *@
+                        option.prop('selected', true);
+                }
+            });
+
+            // Set the selected department name based on the response
+            dropdown.val(department.c_department);
+        @* console.log(selectedDepartmentName); *@
+    }
+
 
 
 
@@ -183,5 +225,57 @@
             $('#departmentValidationError').text('Error fetching departments. Please try again.');
         }
 
-         </script>
+
+
+
+
+
+
+        function addEmployee() {
+            var formData = new FormData();
+
+            // Get the file object from the file input
+            debugger;
+            // Append other employee data to FormData
+            formData.append('c_empid', @ViewBag.id),
+                formData.append('c_empname', $('input[name="c_empname"]').val());
+            formData.append('c_empgender', $('input[name="c_empgender"]:checked').val());
+            formData.append('c_empdob', $('input[name="c_empdob"]').val());
+            formData.append('c_empshift', $('input[name="c_empshift"]:checked').map(function () { return $(this).val(); }).get().join());
+        @* formData.append('c_empdepartment', $('#c_empdepartment').val()); *@
+      debugger;
+            formData.append('c_empdepartment', $('#c_empdepartment').val());
+            formData.append('c_empimg', 'a');
+            @* var photoFile = $('#imgFile')[0].files[0];
+            console.log("IMAGE FILE:::    " + photoFile);
+            debugger;
+            formData.append("photo", photoFile); *@
+
+            console.log($('input[name="c_empname"]').val());
+            console.log($('input[name="c_empgender"]:checked').val());
+            console.log($('input[name="c_empdob"]').val());
+            console.log($('input[name="c_empshift"]:checked').map(function () { return $(this).val(); }).get().join());
+            console.log($('#c_empdepartment').val());
+        @* console.log(); *@
+                $.ajax({
+                    url: 'https://localhost:7084/api/EmployeeApi',
+                    method: 'PUT',
+                    timeout: 0,
+                    processData: false, // Important for FormData
+                    contentType: false, // Important for FormData
+                    data: formData,
+                    success: function (response) {
+                        // On success, show a success message and optionally redirect
+                        alert('Successfully Added Employee!');
+                        window.location.href = '/ApiAjaxEmployee/Index'; // Redirect to employee index page
+                    },
+                    error: function (xhr, status, error) {
+                        // On failure, log the error and show an error message
+                        alert('not Added Employee!');
+                        window.location.href = '/ApiAjaxEmployee/Index';
+                    }
+                });
+        }
+
+    </script>
 }

@@ -21,5 +21,8 @@ namespace mvc.Repositories
         List<tblDepartment> GetAllDepartment();
 
         List<tblEmployee> GetEmployeeFromUserName(string user);
+
+        void EditEmployeeApi(tblUpdate emp);
+        void AddEmployeeApi(tblEmployee emp);
     }
 }

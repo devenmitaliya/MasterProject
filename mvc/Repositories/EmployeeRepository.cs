@@ -115,10 +115,52 @@ namespace mvc.Repositories
                 int deptId = GetDepartmentId(emp.c_empdepartment, conn);
                 string shifts = string.Join(",", emp.c_empshift);
                 cmd.CommandType = CommandType.Text;
-                cmd.CommandText = "INSERT INTO t_employee(c_empname, c_empgender, c_empdob, c_empshift, c_empimg, c_empdepartment, c_username) VALUES ( @c_empname, @c_empgender, @c_empdob, @c_empshift, @c_empimg, @c_empdepartment, @user)";
+                cmd.CommandText = "INSERT INTO t_employee(c_empname, c_empgender, c_empdob, c_empshift, c_empimg, c_empdepartment,c_username) VALUES ( @c_empname, @c_empgender, @c_empdob, @c_empshift, @c_empimg, @c_empdepartment,@user)";
 
                 var session = _httpContextAccessor.HttpContext.Session;
                 var user = session.GetString("username");
+                // Console.WriteLine("OK USER DATA GET :    "+user);
+                // cmd.Parameters.AddWithValue("@id", emp.id);
+                cmd.Parameters.AddWithValue("@c_empname", emp.c_empname);
+                cmd.Parameters.AddWithValue("@c_empgender", emp.c_empgender);
+                cmd.Parameters.AddWithValue("@c_empdob", emp.c_empdob);
+                cmd.Parameters.AddWithValue("@c_empshift", shifts);
+                cmd.Parameters.AddWithValue("@c_empimg", emp.c_empimg);
+                cmd.Parameters.AddWithValue("@c_empdepartment", deptId);
+
+                cmd.ExecuteNonQuery();
+
+
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+                throw;
+            }
+            finally
+            {
+                conn.Close();
+            }
+
+        }
+
+
+
+
+          public void AddEmployeeApi(tblEmployee emp)
+        {
+            try
+            {
+                conn.Open();
+                var cmd = new NpgsqlCommand();
+                cmd.Connection = conn;
+                int deptId = GetDepartmentId(emp.c_empdepartment, conn);
+                string shifts = string.Join(",", emp.c_empshift);
+                cmd.CommandType = CommandType.Text;
+                cmd.CommandText = "INSERT INTO t_employee(c_empname, c_empgender, c_empdob, c_empshift, c_empimg, c_empdepartment) VALUES ( @c_empname, @c_empgender, @c_empdob, @c_empshift, @c_empimg, @c_empdepartment)";
+
+                // var session = _httpContextAccessor.HttpContext.Session;
+                // var user = session.GetString("username");
                 // Console.WriteLine("OK USER DATA GET :    "+user);
                 // cmd.Parameters.AddWithValue("@id", emp.id);
                 cmd.Parameters.AddWithValue("@c_empname", emp.c_empname);
@@ -194,7 +236,7 @@ namespace mvc.Repositories
                 // cmd.Parameters.AddWithValue("@c_empgender", emp.c_empgender);
                 // cmd.Parameters.AddWithValue("@c_empdob", emp.c_empdob);
                 cmd.Parameters.AddWithValue("@c_empshift", shifts);
-                cmd.Parameters.AddWithValue("@c_empimg", emp.c_empimg);
+                // cmd.Parameters.AddWithValue("@c_empimg", emp.c_empimg);
                 cmd.Parameters.AddWithValue("@c_empdepartment", deptId);
 
                 cmd.ExecuteNonQuery();
@@ -210,6 +252,55 @@ namespace mvc.Repositories
                 conn.Close();
             }
         }
+
+
+
+
+
+
+ public void EditEmployeeApi(tblUpdate emp)
+        {
+            try
+            {
+                conn.Open();
+                var cmd = new NpgsqlCommand();
+                cmd.Connection = conn;
+                Console.WriteLine(emp.c_empdepartment);
+                int deptId = GetDepartmentId(emp.c_empdepartment, conn);
+                cmd.CommandType = CommandType.Text;
+                string shifts = string.Join(",", emp.c_empshift);
+
+
+                // cmd.CommandText = "UPDATE t_employee SET c_empname=@c_empname , c_empgender=@c_empgender , c_empdob=@c_empdob , c_empshift=@c_empshift , c_empimg=@c_empimg , c_empdepartment=@c_empdepartment WHERE c_empid =@c_empid ";
+                cmd.CommandText = "UPDATE t_employee SET  c_empshift=@c_empshift , c_empdepartment=@c_empdepartment WHERE c_empid =@c_empid ";
+
+                cmd.Parameters.AddWithValue("@c_empid", emp.c_empid);
+                // cmd.Parameters.AddWithValue("@c_empname", emp.c_empname);
+                // cmd.Parameters.AddWithValue("@c_empgender", emp.c_empgender);
+                // cmd.Parameters.AddWithValue("@c_empdob", emp.c_empdob);
+                cmd.Parameters.AddWithValue("@c_empshift", shifts);
+                // cmd.Parameters.AddWithValue("@c_empimg", emp.c_empimg);
+                cmd.Parameters.AddWithValue("@c_empdepartment", deptId);
+
+                cmd.ExecuteNonQuery();
+
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+                throw;
+            }
+            finally
+            {
+                conn.Close();
+            }
+        }
+
+
+
+
+
+
 
 
         public void DeleteEmployee(tblEmployee emp)

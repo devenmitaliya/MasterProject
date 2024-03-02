@@ -70,6 +70,7 @@
     </form>
 </div>
 <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
 @*
 @section Scripts {
 <script>
@@ -187,19 +188,11 @@ alert('Error adding employee. Please try again.');
     formData.append('c_empshift', $('input[name="c_empshift"]:checked').map(function () { return $(this).val(); }).get().join());
     formData.append('c_empdepartment', $('#c_empdepartment').val());
     formData.append('c_empimg', 'a');
+    formData.append('c_username','as');
   var photoFile = $('#imgFile')[0].files[0];
   console.log("IMAGE FILE:::    " +photoFile);
   debugger;
     formData.append("photo", photoFile);
-
-    console.log($('input[name="c_empname"]').val());
-    console.log($('input[name="c_empgender"]:checked').val());
-    console.log($('input[name="c_empdob"]').val());
-    console.log($('input[name="c_empshift"]:checked').map(function () { return $(this).val(); }).get().join());
-    console.log($('#c_empdepartment').val());
-    @* console.log(); *@
-    @* console.log(); *@
-debugger;
     @* formData.append('c_empimg','a'); *@
 
     // Make AJAX request with FormData
@@ -229,3 +222,6 @@ debugger;
 
     </script>
 }
+
+
+
