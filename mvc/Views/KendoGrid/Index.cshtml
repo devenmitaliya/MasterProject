@@ -30,13 +30,22 @@
                 update: {
                     url: "http://localhost:5110/KendoGrid/EditEmployee",
                     dataType: "json",
-                    type: "POST",  // Change "PUT" to "POST"    
+                    type: "POST",
                     data: function (data) {
+                        // Your existing update logic...
+
+                        // Format date before sending
                         data.c_empdob = kendo.toString(data.c_empdob, "yyyy-MM-dd");
                         console.log("Update Data:", data);
                         return JSON.stringify(data);
+                    },
+                    success: function (e) {
+                        // Reload the image after a successful update
+                        var existingImage = $("#existingImage");
+                        existingImage.attr("src", existingImage.attr("src") + "?" + new Date().getTime());
                     }
                 },
+
 
                 destroy: {
                     url: function (data) {
@@ -57,8 +66,7 @@
                         c_empdob: { type: "date", validation: { required: true } },
                         c_empshift: { type: "string", validation: { required: true } },
                         c_empimg: { type: "string", validation: { required: true } },
-                        c_empdepartment: { type: "string", validation: { required: true } },
-                        //photo:{type : "file" , validation:{required:true}}
+                        c_empdepartment: { type: "string", validation: { required: false } },
                     }
                 }
             }
@@ -68,17 +76,79 @@
             dataSource: dataSource,
             columns: [
                 { field: "c_empid", title: "emp ID" },
-                { field: "c_empname", title: "emp Name" },
-                { field: "c_empgender", title: "c_empgender" , editor: genderTypeRadioEditor },
-                { field: "c_empdob", title: "c_empdob", format: "{0:yyyy-MM-dd}", editor: dateEditor },
-                { field: "c_empshift", title: "c_shift" , editor : shiftCheckboxEditor },
-             //   { field: "c_empimg", title: "c_img" , editor : imageUploadEditor , template : "<img src='#: c_empimg #' alt='Employee Photo' style='width: 50px; height: 50px;' />" },
                 {
-                        field: "c_empimg", title: "emp Photo",
-                        editor: imageupload,
-                        template: "<img src='/images/#= c_empimg #' alt='emp Photo' style='max-width: 100px; max-height: 100px;'/>"
+                    field: "c_empname",
+                    title: "emp Name",
+                    editor: function (container, options) {
+                        if (options.model.isNew()) {
+
+                            $('<input class="k-input k-textbox" name="' + options.field + '" />').appendTo(container);
+                        } else {
+
+                            $('<input class="k-input k-textbox" name="' + options.field + '" readonly="readonly" />').appendTo(container);
+                        }
+                    },
+                    validation: { required: true }
                 },
-                { field: "c_empdepartment", title: "c_depart" , editor : deptDropDownEditor },
+                {
+                    field: "c_empgender",
+                    title: "emp Gender",
+                    editor: function (container, options) {
+                        if (options.model.isNew()) {
+                            // Add radio buttons for gender selection during add
+                            $('<input type="radio" name="' + options.field + '" value="Male" required/> Male' +
+                                '<input type="radio" name="' + options.field + '" value="Female" required/> Female')
+                                .appendTo(container);
+                        } else {
+                            // Display the existing value in a non-editable input during edit
+                            $('<input class="k-input k-textbox" name="' + options.field + '" readonly="readonly" value="' + options.model.c_empgender + '" />').appendTo(container);
+                        }
+                    },
+                    template: function (dataItem) {
+                        // Display the existing value for gender in the grid
+                        return dataItem.c_empgender;
+                    },
+                    validation: { required: true }
+                },
+                {
+                    field: "c_empdob",
+                    title: "c_empdob",
+                    format: "{0:yyyy-MM-dd}",
+                    editor: function (container, options) {
+                        // Check if it's a new record (add operation)
+                        if (options.model.isNew()) {
+                            // Use datepicker for adding a new record
+                            $('<input class="k-textbox" name="' + options.field + '" />')
+                                .appendTo(container)
+                                .kendoDatePicker({
+                                    format: "yyyy-MM-dd",
+                                    value: options.model.c_empdob ? new Date(options.model.c_empdob) : null
+                                });
+                        } else {
+                            // Display the date only for editing an existing record
+                            $('<input class="k-textbox" name="' + options.field + '" readonly="readonly" />')
+                                .appendTo(container)
+                                .kendoDatePicker({
+                                    format: "yyyy-MM-dd",
+                                    value: options.model.c_empdob ? new Date(options.model.c_empdob) : null
+                                });
+                        }
+                    },
+                    template: "#= kendo.toString(c_empdob, 'yyyy-MM-dd') #",
+                    validation: { required: true }
+                },
+                { field: "c_empshift", title: "c_shift", editor: shiftCheckboxEditor },
+                {
+                    field: "c_empimg", title: "emp Photo",
+                    editor: imageupload,
+                    template: "<img src='/images/#= c_empimg #' alt='emp Photo' style='max-width: 100px; max-height: 100px;'/>"
+                },
+                {
+                    field: "c_empdepartment", title: "c_depart", editor: deptDropDownEditor,
+                    editable: function (dataItem) {
+                        return dataItem.isNew;
+                    }
+                },
                 { command: ["edit", "destroy"], title: "&nbsp;", width: "200px" }
             ],
             editable: "popup",
@@ -89,8 +159,21 @@
         });
 
         function imageupload(container, options) {
-            $('<input name="photo" type="file" id="photo" data-role="upload" data-async=\'{ "saveUrl": "http://localhost:5110/KendoGrid/UploadPhoto", "autoUpload": true }\' class="k-input k-textbox">').appendTo(container);
+            if (options.model.isNew()) {
+                // Render the file input for adding a new record
+                $('<input name="photo" type="file" id="photo" data-role="upload" data-async=\'{ "saveUrl": "http://localhost:5110/KendoGrid/UploadPhoto", "autoUpload": true }\' class="k-input k-textbox">').appendTo(container);
+            } else {
+                // Render the existing image
+                var imgElement = $('<img id="existingImage" src="/images/' + options.model.c_empimg + '" alt="emp Photo" style="max-width: 100px; max-height: 100px;"/>');
+                imgElement.appendTo(container);
+
+                // Bind a click event to the image to trigger the file input click
+                imgElement.click(function () {
+                    $("#photo").click();
+                });
+            }
         }
+
 
         function genderTypeRadioEditor(container, options) {
             $('<input type="radio" name="' + options.field + '" value="Male" required/> Male' +
@@ -147,44 +230,42 @@
         }
 
 
-        
+
         function imageNameChange(e) {
-                $.each(e.files, function (index, value) {
-                    var fileNameWithPath = "/images/" + value.name;
-                    $("#c_empimg").val(fileNameWithPath).change();
+            $.each(e.files, function (index, value) {
+                var fileNameWithPath = "/images/" + value.name;
+                $("#c_empimg").val(fileNameWithPath).change();
+            });
+        }
+
+        function deptDropDownEditor(container, options) {
+            // Create the dropdown without autoBind
+            var dropdown = $('<input required data-text-field="c_departmentname" data-value-field="c_departmentname" data-bind="value:' + options.field + '"/>')
+                .appendTo(container)
+                .kendoDropDownList({
+                    autoBind: false, // Set autoBind to false
+                    dataSource: {
+                        transport: {
+                            read: {
+                                url: "http://localhost:5110/KendoGrid/Viewdept",
+                                dataType: "json"
+                            }
+                        }
+                    },
+                    change: function () {
+                        dropdown.trigger("change");
+                    }
+                })
+                .data("kendoDropDownList");
+
+            dropdown.dataSource.read();
+
+            if (!options.model.isNew()) {
+                dropdown.one("dataBound", function () {
+                    dropdown.value(options.model[options.field]);
                 });
             }
-
-    function deptDropDownEditor(container, options) {
-    // Create the dropdown without autoBind
-    var dropdown = $('<input required data-text-field="c_departmentname" data-value-field="c_departmentname" data-bind="value:' + options.field + '"/>')
-        .appendTo(container)
-        .kendoDropDownList({
-            autoBind: false, // Set autoBind to false
-            dataSource: {
-                transport: {
-                    read: {
-                        url: "http://localhost:5110/KendoGrid/Viewdept",
-                        dataType: "json"
-                    }
-                }
-            },
-            change: function() {
-                dropdown.trigger("change");
-            }
-        })
-        .data("kendoDropDownList");
-    
-    // Manually trigger the data source read after the dropdown is created
-    dropdown.dataSource.read();
-
-    // Set the initial value during edit
-    if (!options.model.isNew()) {
-        dropdown.one("dataBound", function() {
-            dropdown.value(options.model[options.field]);
-        });
-    }
-}
+        }
 
 
         dataSource.bind("requestEnd", function (e) {

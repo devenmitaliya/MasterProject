@@ -77,6 +77,18 @@
       "PackagePath": "staticwebassets\\images\\8892b59d-27a1-4c56-ba41-24687c236e01_my project.jpg"
     },
     {
+      "Id": "D:\\Internship\\Dotnet core\\MasterProject\\mvc\\wwwroot\\images\\Screenshot (10).png",
+      "PackagePath": "staticwebassets\\images\\Screenshot (10).png"
+    },
+    {
+      "Id": "D:\\Internship\\Dotnet core\\MasterProject\\mvc\\wwwroot\\images\\Screenshot (104).png",
+      "PackagePath": "staticwebassets\\images\\Screenshot (104).png"
+    },
+    {
+      "Id": "D:\\Internship\\Dotnet core\\MasterProject\\mvc\\wwwroot\\images\\Screenshot (112).png",
+      "PackagePath": "staticwebassets\\images\\Screenshot (112).png"
+    },
+    {
       "Id": "D:\\Internship\\Dotnet core\\MasterProject\\mvc\\wwwroot\\images\\Screenshot (113).png",
       "PackagePath": "staticwebassets\\images\\Screenshot (113).png"
     },
@@ -89,12 +101,20 @@
       "PackagePath": "staticwebassets\\images\\Screenshot (13).png"
     },
     {
+      "Id": "D:\\Internship\\Dotnet core\\MasterProject\\mvc\\wwwroot\\images\\Screenshot (17).png",
+      "PackagePath": "staticwebassets\\images\\Screenshot (17).png"
+    },
+    {
       "Id": "D:\\Internship\\Dotnet core\\MasterProject\\mvc\\wwwroot\\images\\Screenshot (21).png",
       "PackagePath": "staticwebassets\\images\\Screenshot (21).png"
     },
     {
       "Id": "D:\\Internship\\Dotnet core\\MasterProject\\mvc\\wwwroot\\images\\Screenshot (4).png",
       "PackagePath": "staticwebassets\\images\\Screenshot (4).png"
+    },
+    {
+      "Id": "D:\\Internship\\Dotnet core\\MasterProject\\mvc\\wwwroot\\images\\Screenshot (69).png",
+      "PackagePath": "staticwebassets\\images\\Screenshot (69).png"
     },
     {
       "Id": "D:\\Internship\\Dotnet core\\MasterProject\\mvc\\wwwroot\\images\\Screenshot (77).png",
