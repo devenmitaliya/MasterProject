@@ -62,14 +62,15 @@
 
         <div class="mb-3">
             <label for="c_empimg" class="form-label">Photo</label>
-            <input  type="file" class="form-control" name="imgFile" id="imgFile">
+            <input type="file" class="form-control" name="imgFile" id="imgFile">
         </div>
 
         <button type="submit" class="btn btn-primary" onclick="addEmployee()">Add Employee</button>
         <a asp-action="Index" class="btn btn-secondary">Back to List</a>
     </form>
 </div>
-<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 
 @*
 @section Scripts {
@@ -175,46 +176,46 @@ alert('Error adding employee. Please try again.');
             });
         });
         // Function to add employee via AJAX
-       function addEmployee() {
-    // Create a FormData object to handle file uploads
-    var formData = new FormData();
-    
-    // Get the file object from the file input
-  
-    // Append other employee data to FormData
-    formData.append('c_empname', $('input[name="c_empname"]').val());
-    formData.append('c_empgender', $('input[name="c_empgender"]:checked').val());
-    formData.append('c_empdob', $('input[name="c_empdob"]').val());
-    formData.append('c_empshift', $('input[name="c_empshift"]:checked').map(function () { return $(this).val(); }).get().join());
-    formData.append('c_empdepartment', $('#c_empdepartment').val());
-    formData.append('c_empimg', 'a');
-    formData.append('c_username','as');
-  var photoFile = $('#imgFile')[0].files[0];
-  console.log("IMAGE FILE:::    " +photoFile);
-  debugger;
-    formData.append("photo", photoFile);
-    @* formData.append('c_empimg','a'); *@
+        function addEmployee() {
+            // Create a FormData object to handle file uploads
+            var formData = new FormData();
 
-    // Make AJAX request with FormData
-    $.ajax({
-        url: 'https://localhost:7084/api/EmployeeApi',
-        method: 'POST',
-        timeout: 0,
-        processData: false, // Important for FormData
-        contentType: false, // Important for FormData
-        data: formData,
-        success: function (response) {
-            // On success, show a success message and optionally redirect
-            alert('Successfully Added Employee!');
-            window.location.href = '/ApiAjaxEmployee/Index'; // Redirect to employee index page
-        },
-        error: function (xhr, status, error) {
-            // On failure, log the error and show an error message
-           alert('Error');
-          window.location.href = '/ApiAjaxEmployee/Index';
+            // Get the file object from the file input
+
+            // Append other employee data to FormData
+            formData.append('c_empname', $('input[name="c_empname"]').val());
+            formData.append('c_empgender', $('input[name="c_empgender"]:checked').val());
+            formData.append('c_empdob', $('input[name="c_empdob"]').val());
+            formData.append('c_empshift', $('input[name="c_empshift"]:checked').map(function () { return $(this).val(); }).get().join());
+            formData.append('c_empdepartment', $('#c_empdepartment').val());
+            formData.append('c_empimg', 'a');
+            formData.append('c_username', 'as');
+            var photoFile = $('#imgFile')[0].files[0];
+            console.log("IMAGE FILE:::    " + photoFile);
+            debugger;
+            formData.append("photo", photoFile);
+        @* formData.append('c_empimg','a'); *@
+
+                // Make AJAX request with FormData
+                $.ajax({
+                    url: 'https://localhost:7084/api/EmployeeApi',
+                    method: 'POST',
+                    timeout: 0,
+                    processData: false, // Important for FormData
+                    contentType: false, // Important for FormData
+                    data: formData,
+                    success: function (response) {
+                        // On success, show a success message and optionally redirect
+                        alert('Successfully Added Employee!');
+                        window.location.href = '/ApiAjaxEmployee/Index'; // Redirect to employee index page
+                    },
+                    error: function (xhr, status, error) {
+                        // On failure, log the error and show an error message
+                        alert('Error');
+                        window.location.href = '/ApiAjaxEmployee/Index';
+                    }
+                });
         }
-    });
-}
 
 
 
@@ -222,6 +223,3 @@ alert('Error adding employee. Please try again.');
 
     </script>
 }
-
-
-

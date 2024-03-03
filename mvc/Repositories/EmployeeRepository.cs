@@ -121,6 +121,7 @@ namespace mvc.Repositories
 
                 var session = _httpContextAccessor.HttpContext.Session;
                 var user = session.GetString("username");
+                Console.WriteLine("Final ADDED User " + user);
 
                 cmd.Parameters.AddWithValue("@c_empname", emp.c_empname);
                 cmd.Parameters.AddWithValue("@c_empgender", emp.c_empgender);
@@ -341,7 +342,7 @@ namespace mvc.Repositories
 
         public void EditEmployeeApi(tblUpdate emp)
         {
-           try
+            try
             {
                 conn.Open();
                 var cmd = new NpgsqlCommand();
@@ -379,7 +380,7 @@ namespace mvc.Repositories
 
         public void AddEmployeeApi(tblEmployee emp)
         {
-           try
+            try
             {
                 conn.Open();
                 var cmd = new NpgsqlCommand();

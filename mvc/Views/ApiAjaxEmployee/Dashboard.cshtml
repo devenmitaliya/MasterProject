@@ -1,12 +1,16 @@
 @model List<tblEmployee>
 
-
 @{
-    <h2>Welcome @ViewBag.username 🧑🏻‍💻</h2>
+    var name = ViewBag.username;
+    @* Context.Session.SetString("username", @ViewBag.username); *@
+
+    @* <h2>Welcome @ViewBag.username 🧑🏻‍💻</h2> *@
 }
+
 @* <h2>ROLE: @Context.Session.GetString("role")</h2> *@
-<h2>All Employees</h2>
-<a href="/ApiAjaxEmployee/Add" class="text text-primary"><button type="button" class="btn btn-primary">Add Employee</button></a>
+<h2>All Employees: @name</h2>
+<a href="/ApiAjaxEmployee/Add" class="text text-primary"><button type="button" class="btn btn-primary">Add
+        Employee</button></a>
 <table id="employeeTable" class="table">
     <thead>
         <tr>
@@ -27,11 +31,15 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
 <script>
     $(document).ready(function () {
+        var name = '@ViewBag.username';
         $.ajax({
-            url: 'https://localhost:7084/api/EmployeeApi',
+            url: 'https://localhost:7084/api/EmployeeApi/current/' + name,
             method: 'GET',
+
             success: function (data) {
                 // Clear the table body
+                var username = data.username;
+                console.log(username);
                 $('#employeeTable tbody').empty();
 
                 // Populate the table with received data
@@ -45,10 +53,11 @@
                             <td>${emp.c_empshift}</td>
                             <td>${emp.c_empdepartment}</td>
                             <td><img src="/images/${emp.c_empimg}" width = "100" alt="${emp.c_empimg}"></td>
-                            @* <td><img src="${emp.c_empimg}" alt="Employee Image" style="max-width: 100px; max-height: 100px;" /></td> *@
-                            <td><button  class="btn btn-danger" onclick="DeleteEmployee(${emp.c_empid})">Delete</button></td>
-                            <td><a href="/ApiAjaxEmployee/Update/?id=${emp.c_empid}" class="text text-primary"><button type="button" class="btn btn-primary">Edit</button></a></td>
-                            <td><a href="/ApiAjaxEmployee/Details/?id=${emp.c_empid}" class="text text-primary"><button type="button" class="btn btn-primary">Details</button></a></td>
+    @* <td><img src="${emp.c_empimg}" alt="Employee Image" style="max-width: 100px; max-height: 100px;" /></td> *@
+    @* <td><button  class="btn btn-danger" onclick="DeleteEmployee(${emp.c_empid})">Delete</button></td> *@
+                                                        <td><a href="/ApiAjaxEmployee/Details/?id=${emp.c_empid}" class="text text-primary"><button type="button" class="btn btn-primary">Details</button></a></td>
+
+    @* <td><a href="/Employee/Update/?id=${emp.c_empid}" class="text text-primary"><button type="button" class="btn btn-primary">Edit</button></a></td> *@
 
                         </tr>
                     `);
@@ -60,19 +69,7 @@
             }
         });
 
-       
+
     });
-     function DeleteEmployee(id) {
-            console.log(id);
-            if (confirm("Do you want to delete")) {
-                var settings = {
-                    "url": "https://localhost:7084/api/EmployeeApi/" + id,
-                    "method": "DELETE",
-                    "timeout": 0
-                };
-                $.ajax(settings).done(function (response) {
-                    window.location = "/ApiAjaxEmployee/Index";
-                });
-            }
-        }
+
 </script>

@@ -31,6 +31,7 @@
                 <label for="c_empshift">Shift</label><br>
                 @foreach (var shift in shifts)
                 {
+                    
                     <input type="checkbox" id="@shift" name="c_empshift" value="@shift" @(Model.c_empshift.Contains(shift) ?
                     "checked" : "") />
                     <label for="@shift">@shift</label>

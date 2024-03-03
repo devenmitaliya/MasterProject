@@ -48,12 +48,29 @@
             "data": JSON.stringify(user)
         };
 
-        $.ajax(settings).done(function (response) {
-            alert('Successfully Logged In!');
+       $.ajax(settings)
+    .done(function (response) {
+        alert('Successfully Logged In!');
+        var role = response.role;
+        var name = response.name;
+        console.log(name);
+        console.log('Response:', response);
+
+        @* @ViewBag.name = name; *@
+        
+        if (role === "Admin") {
             window.location = "/ApiAjaxEmployee/Index";
-        }).fail(function (response) {
-            console.log(response.statusText);
-            alert('Invalid credentials. Please try again.');
-        });
+        } else {
+            if (name) {
+                window.location = "/ApiAjaxEmployee/Dashboard?username=" + name;
+            } else {
+                console.error('Username is undefined in the response.');
+            }
+        }
+    })
+    .fail(function (xhr, status, error) {
+        console.error('AJAX request failed:', status, error);
+        alert('Invalid credentials. Please try again.');
+    });
     }
 </script>

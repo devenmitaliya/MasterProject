@@ -5,11 +5,11 @@ using Microsoft.Extensions.Caching.StackExchangeRedis;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-builder.Services.AddSingleton<IEmployeeRepository,EmployeeRepository>();
-builder.Services.AddSingleton<IUserRepositories,UserRepositories>();
+builder.Services.AddSingleton<IEmployeeRepository, EmployeeRepository>();
+builder.Services.AddSingleton<IUserRepositories, UserRepositories>();
 builder.Services.AddHttpContextAccessor(); // Add this line to register HttpContextAccessor
 
-builder.Services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>(); 
+builder.Services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
 // builder.Services.AddSession(options =>
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
@@ -22,7 +22,7 @@ builder.Services.AddSession(options =>
         options.Cookie.HttpOnly = true; // HTTP only cookie
         options.Cookie.IsEssential = true; // Cookie is essential for session
     });
-    
+
 builder.Services.AddCors(p => p.AddPolicy("corsapp", builder =>
 {
     builder.WithOrigins("*").AllowAnyMethod().AllowAnyHeader();
@@ -43,7 +43,7 @@ builder.Services.AddSession(options =>
 
 
 var app = builder.Build();
-app.UseCors("corsapp"); 
+app.UseCors("corsapp");
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
@@ -54,6 +54,7 @@ if (app.Environment.IsDevelopment())
 app.UseHttpsRedirection();
 
 app.UseAuthorization();
+app.UseSession();
 
 app.MapControllers();
 

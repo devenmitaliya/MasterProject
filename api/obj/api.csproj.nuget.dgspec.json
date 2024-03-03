@@ -1,33 +1,39 @@
 {
   "format": 1,
   "restore": {
-    "/Users/yashveekotadiya/Desktop/newmaster/MasterProject/api/api.csproj": {}
+    "F:\\MasterProject\\api\\api.csproj": {}
   },
   "projects": {
-    "/Users/yashveekotadiya/Desktop/newmaster/MasterProject/api/api.csproj": {
+    "F:\\MasterProject\\api\\api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/yashveekotadiya/Desktop/newmaster/MasterProject/api/api.csproj",
+        "projectUniqueName": "F:\\MasterProject\\api\\api.csproj",
         "projectName": "api",
-        "projectPath": "/Users/yashveekotadiya/Desktop/newmaster/MasterProject/api/api.csproj",
-        "packagesPath": "/Users/yashveekotadiya/.nuget/packages/",
-        "outputPath": "/Users/yashveekotadiya/Desktop/newmaster/MasterProject/api/obj/",
+        "projectPath": "F:\\MasterProject\\api\\api.csproj",
+        "packagesPath": "C:\\Users\\DELL\\.nuget\\packages\\",
+        "outputPath": "F:\\MasterProject\\api\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "/Users/yashveekotadiya/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\DELL\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "/Users/yashveekotadiya/Desktop/newmaster/MasterProject/mvc/mvc.csproj": {
-                "projectPath": "/Users/yashveekotadiya/Desktop/newmaster/MasterProject/mvc/mvc.csproj"
+              "F:\\MasterProject\\mvc\\mvc.csproj": {
+                "projectPath": "F:\\MasterProject\\mvc\\mvc.csproj"
               }
             }
           }
@@ -36,6 +42,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -74,26 +85,32 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.100/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200-preview.23624.5\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "/Users/yashveekotadiya/Desktop/newmaster/MasterProject/mvc/mvc.csproj": {
+    "F:\\MasterProject\\mvc\\mvc.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/yashveekotadiya/Desktop/newmaster/MasterProject/mvc/mvc.csproj",
+        "projectUniqueName": "F:\\MasterProject\\mvc\\mvc.csproj",
         "projectName": "mvc",
-        "projectPath": "/Users/yashveekotadiya/Desktop/newmaster/MasterProject/mvc/mvc.csproj",
-        "packagesPath": "/Users/yashveekotadiya/.nuget/packages/",
-        "outputPath": "/Users/yashveekotadiya/Desktop/newmaster/MasterProject/mvc/obj/",
+        "projectPath": "F:\\MasterProject\\mvc\\mvc.csproj",
+        "packagesPath": "C:\\Users\\DELL\\.nuget\\packages\\",
+        "outputPath": "F:\\MasterProject\\mvc\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "/Users/yashveekotadiya/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\DELL\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -106,6 +123,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -140,7 +162,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.100/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200-preview.23624.5\\RuntimeIdentifierGraph.json"
         }
       }
     }

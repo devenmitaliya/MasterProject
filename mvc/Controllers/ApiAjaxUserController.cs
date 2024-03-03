@@ -24,8 +24,9 @@ namespace mvc.Controllers
         }
 
 //  [Route("Login")]
-        public IActionResult Login()
+        public IActionResult Login(string username)
         {
+             ViewBag.username = username;
             return View();
         }
 
