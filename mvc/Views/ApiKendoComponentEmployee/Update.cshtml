@@ -1,0 +1,165 @@
+@model mvc.Models.tblEmployee
+@{
+    var genders = new List<string> { "Male", "Female", "Other" };
+    var shifts = new List<string> { "Morning", "Afternoon" };
+}
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Edit Employee</title>
+    <link rel="stylesheet" href="https://kendo.cdn.telerik.com/2022.1.119/styles/kendo.default-v2.min.css" />
+</head>
+
+<body>
+    <div id="example">
+        <form method="post" >
+            <div class="k-content">
+                <!-- Hidden input for employee ID -->
+                <input type="hidden" id="c_empid" name="c_empid" value="@Model.c_empid" />
+
+                <label for="c_empname">Name</label>
+                <input id="c_empname" name="c_empname" value="@Model.c_empname" />
+
+                <label for="c_empgender">Gender</label><br>
+                @foreach (var gender in genders)
+                {
+                    <input type="radio" id="@gender" name="c_empgender" value="@gender" @(gender == Model.c_empgender ?
+                    "checked" : "") />
+                    <label for="@gender">@gender</label>
+                }
+                <br>
+
+                <label for="c_empdob">Date of Birth</label>
+                <input id="c_empdob" name="c_empdob" value="@Model.c_empdob.ToString("yyyy-MM-dd")" />
+
+                <label for="c_empshift">Shift</label><br>
+                @foreach (var shift in shifts)
+                {
+                    <input type="checkbox" id="@shift" name="c_empshift" value="@shift" @(Model.c_empshift.Contains(shift) ?
+                    "checked" : "") />
+                    <label for="@shift">@shift</label>
+                }<br>
+
+                <label for="c_empimg">Image</label>
+                <input type="file" id="c_empimg" name="c_empimg" />
+
+                <label for="c_empdepartment">Department</label>
+                <select id="c_empdepartment" name="c_empdepartment">
+                    @{
+                        foreach (var department in ViewBag.Departments)
+                        {
+                            var isSelected = department.c_departmentname == Model.c_empdepartment ? "selected" : "";
+                            <option value="@department.c_departmentname" selected="@isSelected">@department.c_departmentname
+                            </option>
+                        }
+                    }
+                </select><br><br>
+
+                <button type="submit" onclick="addEmployee()" class="btn btn-primary">Add Employee</button>
+        <a asp-action="Index" class="btn btn-secondary">Back to List</a>
+                @* <input type="submit" value="Update Employee" class="k-button k-primary" /> *@
+            </div>
+        </form>
+    </div>
+
+    @section Scripts {
+        <script src="https://kendo.cdn.telerik.com/2022.1.119/js/jquery.min.js"></script>
+        <script src="https://kendo.cdn.telerik.com/2022.1.119/js/kendo.all.min.js"></script>
+        <script>
+            $(document).ready(function () {
+                $("#c_empname").kendoTextBox();
+                $("#c_empdob").kendoDatePicker({
+                    format: "yyyy-MM-dd"
+                });
+                $("#c_empimg").kendoUpload();
+                $("#c_empdepartment").kendoDropDownList();
+            });
+
+
+            $(document).ready(function () {
+            fetchEmployeeData();
+            var department;
+        });
+
+        function fetchEmployeeData() {
+            $.ajax({
+                url: 'https://localhost:7044/api/EmployeeApi/' + @ViewBag.id,
+                method: 'GET',
+                timeout: 0,
+                success: function (response) {
+                    $('#c_empid').val(response.c_empid);
+                    $('#c_empname').val(response.c_empname);
+                    $('input[name=c_empgender][value=' + response.c_empgender + ']').prop('checked', true);
+                    $('#c_empdob').val(response.c_empdob.split('T')[0]);
+                    var empShiftValues = response.c_empshift.split(',');
+
+                    $('input[name="c_empshift"]').each(function () {
+                        var checkboxValue = $(this).val();
+                        if (empShiftValues.includes(checkboxValue)) {
+                            $(this).prop('checked', true);
+                        }
+                    });
+
+                    $('#c_empdepartment').val(response.c_empdepartment);
+                    console.log(response.c_empdepartment)
+        @* department = response.c_empdepartment; *@
+                        fetchDepartmentData(response);
+
+                    // Once employee data is fetched, fetch department data
+
+                },
+                error: function (xhr, status, error) {
+                    console.error('Error fetching employee data:', status, error);
+                    // Handle error as needed
+                }
+            });
+
+        }
+
+        function fetchDepartmentData(response) {
+            $.ajax({
+                url: 'https://localhost:7044/api/EmployeeApi/api/Department',
+                type: 'GET',
+                dataType: 'json',
+                success: function (data) {
+                    console.log(data);
+
+                    populateDepartmentDropdown(data, response);
+                },
+                error: function (xhr, status, error) {
+                    handleDepartmentFetchError(xhr, status, error);
+                }
+            });
+        }
+
+      function populateDepartmentDropdown(data, response) {
+    var dropdown = $('#c_empdepartment');
+    dropdown.empty().append($('<option value="">Select Department</option>'));
+
+    data.forEach(function (department) {
+        var option = $('<option>').val(department.c_departmentname).text(department.c_departmentname);
+        dropdown.append(option);
+        if (department.c_departmentname === response.c_empdepartment) {
+            option.prop('selected', true);
+        }
+    });
+
+    // Set the selected department based on the response
+    dropdown.val(response.c_empdepartment);
+}
+
+
+        function handleDepartmentFetchError(xhr, status, error) {
+            console.error('Error fetching departments:', status, error);
+            $('#departmentValidationError').text('Error fetching departments. Please try again.');
+        }
+        </script>
+    }
+</body>
+
+</html>

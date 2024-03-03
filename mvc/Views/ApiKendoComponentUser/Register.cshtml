@@ -1,0 +1,105 @@
+@model mvc.Models.tblUser
+
+<style>
+    .container {
+        width: 50%;
+        margin: 0 left;
+        padding: 20px;
+    }
+
+    .k-form-group {
+        margin-bottom: 20px;
+    }
+</style>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
+    integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://kendo.cdn.telerik.com/2022.1.119/styles/kendo.common.min.css">
+<link rel="stylesheet" href="https://kendo.cdn.telerik.com/2022.1.119/styles/kendo.default.min.css">
+<script src="https://kendo.cdn.telerik.com/2022.1.119/js/jquery.min.js"></script>
+<script src="https://kendo.cdn.telerik.com/2022.1.119/js/kendo.all.min.js"></script>
+
+
+<div class="container">
+    @if (!string.IsNullOrEmpty(ViewBag.Message))
+    {
+        <div class="alert alert-danger" role="alert">
+            @ViewBag.Message
+        </div>
+    }
+    <h2>Registration Form</h2>
+    <form >
+        <div class="k-form-group">
+            <input name="c_uname" id="c_uname" class="k-textbox" style="width: 100%" placeholder="User Name">
+        </div>
+        <div class="k-form-group">
+            <input type="hidden" name="c_role" id="c_role" value="User">
+        </div>
+        <div class="k-form-group">
+            <input type="email" name="c_uemail" id="c_uemail" class="k-textbox" style="width: 100%"
+                placeholder="Email">
+        </div>
+        <div class="k-form-group">
+            <input type="password" name="c_password" id="c_password" class="k-textbox" style="width: 100%"
+                placeholder="Password">
+        </div>
+        <div class="k-form-group">
+            <input type="password" name="c_cpassword" id="c_cpassword" class="k-textbox" style="width: 100%"
+                placeholder="Confirm Password">
+        </div>
+        <button id="sub" type="submit" class="k-button k-primary" onclick="Register()">Submit</button>
+        <p class="mt-3 text-center">Already Registered? <a href="~/ApiKendoComponentUser/Login">Login here</a></p>
+    </form>
+</div>
+
+
+@section Scripts {
+    <script>
+       $(document).ready(function() {
+    $("#c_uname").kendoTextBox({});
+    $("#c_uemail").kendoTextBox({ type: "email" });
+    $("#c_password").kendoTextBox({ type: "password" });
+
+    $("#sub").click(function(e) {
+        var password = $("#c_password").val();
+        var c_cpassword = $("#c_cpassword").val();
+
+        if (password != c_cpassword) {
+            e.preventDefault();
+            alert("Passwords do not match.");
+        }
+    });
+});
+
+        function Register() {
+            var user = {
+                c_uname: $("#c_uname").val(),
+                c_uemail: $("#c_uemail").val(),
+                c_password: $("#c_password").val(),
+                c_role: $("#c_role").val(),
+                c_cpassword: $("#c_cpassword").val()
+            };
+
+            var settings = {
+                url: "https://localhost:7044/api/UserApi/register",
+                method: "POST",
+                timeout: 0,
+                headers: {
+                    "Content-Type": "application/json"
+                },
+                data: JSON.stringify(user)
+            };
+            debugger;
+            $.ajax(settings).done(function (response) {
+                console.log(response);
+                alert('Successfully Registered!');
+                window.location = "/ApiKendoComponentUser/Login";
+                });
+            @* }).fail(function (response) {
+                console.log(response.responseText);
+                alert(response.responseText);
+                window.location = "/ApiKendoComponentUser/Register";
+            }); *@
+        }
+    </script>
+}

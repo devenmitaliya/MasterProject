@@ -1,0 +1,70 @@
+@model mvc.Models.tblUser
+
+<style>
+    .container {
+        width: 50%;
+        margin: 0 auto; /* Fix margin value */
+        padding: 20px;
+    }
+
+    .k-form-group {
+        margin-bottom: 20px;
+    }
+</style>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
+    integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+<div class="container">
+    <h2>Login Form</h2>
+    <form id="loginForm"> <!-- Added id to form for easier access -->
+        <div class="k-form-group">
+            <input type="email" name="c_uemail" id="c_uemail" class="k-textbox" style="width: 100%" placeholder="Email">
+        </div>
+        <div class="k-form-group">
+            <input type="password" name="c_password" id="c_password" class="k-textbox" style="width: 100%" placeholder="Password">
+        </div>
+        <button type="button" class="k-button k-primary" onclick="Login()">Login</button> <!-- Removed type="submit" -->
+        <p class="mt-3 text-center">Don't have an account? <a href="~/ApiKendoComponentUser/Register">Register here</a></p>
+    </form>
+</div>
+
+@section Scripts {
+    <script>
+        $(document).ready(function() {
+            $("#c_uemail").kendoTextBox({ type: "email" });
+            $("#c_password").kendoTextBox({ type: "password" });
+
+            $('#loginForm').submit(function(e) {
+                e.preventDefault(); // Prevent default form submission
+                Login(); // Call your custom login function
+            });
+        });
+
+        function Login() {
+            var user = {
+                c_uemail: $('#c_uemail').val(),
+                c_password: $('#c_password').val()
+            };
+
+            var settings = {
+                url: "https://localhost:7044/api/UserApi/Login",
+                method: "POST",
+                timeout: 0,
+                headers: {
+                    "Content-Type": "application/json"
+                },
+                data: JSON.stringify(user)
+            };
+
+            $.ajax(settings).done(function(response) {
+                alert('Successfully Logged In!');
+                window.location.href = "/ApiKendoComponentEmployee/Index"; // Correct redirection syntax
+            }).fail(function(response) {
+                console.log(response.statusText);
+                alert('Invalid credentials. Please try again.');
+            });
+        }
+    </script>
+}
