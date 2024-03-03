@@ -1,6 +1,4 @@
-@model List<tblEmployee>
-@using Microsoft.AspNetCore.Http
-
+@model List<mvc.Models.tblEmployee>
 
 @{
     ViewData["Title"] = "List of Employees";
@@ -10,9 +8,9 @@
 <h2>@ViewData["Title"]</h2>
 <p>
     <a href="@Url.Action("Add")" class="btn btn-primary">Add Employee</a>
+    <a href="@Url.Action("Logout")" class="btn btn-secondary">Logout</a>
 </p>
 
-@* <h2>ROLE: @role</h2> *@
 <table class="table table-striped">
     <thead>
         <tr>
@@ -32,19 +30,21 @@
             <tr>
                 <td>@employee.c_empid</td>
                 <td>@employee.c_empname</td>
-                <td>@employee.c_empgender</td>
+                <td>@employee.c_empgender </td>
                 <td>@employee.c_empdob.ToString("dd-MM-yyyy")</td>
-                <td>@employee.c_empshift</td>
+                <td>@string.Join(", ", employee.c_empshift)</td>
                 <td>
-                    <img src="@Url.Content(employee.c_empimg)" alt="Employee Photo" />
+                   <img src="@Url.Content("~/uploads/" + employee.c_empimg)" alt="Employee Photo"  style="width: 100px; height: 100px;" />
+
                 </td>
-                <td>@employee.c_empdepartment</td>
+                <td>@employee.department</td>
                 <td>
                     <a href="@Url.Action("Details", new { id = employee.c_empid })" class="btn btn-primary">Details</a>
-                    @if(role == "Admin"){
+                    @if (role == "Admin")
+                    {
                         <a href="@Url.Action("Edit", new { id = employee.c_empid })" class="btn btn-secondary">Edit</a>
-                    <a href="@Url.Action("Delete", new { id = employee.c_empid })" class="btn btn-danger"
-                        onclick="return confirm('Are you sure you want to delete this Employee?')">Delete</a>
+                        <a href="@Url.Action("Delete", new { id = employee.c_empid })" class="btn btn-danger"
+                            onclick="return confirm('Are you sure you want to delete this Employee?')">Delete</a>
                     }
                 </td>
             </tr>

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "F:\\PPSU\\sem-08\\casepoint\\Master Project\\mvc\\mvc.csproj": {}
+    "F:\\MasterProject\\mvc\\mvc.csproj": {}
   },
   "projects": {
-    "F:\\PPSU\\sem-08\\casepoint\\Master Project\\mvc\\mvc.csproj": {
+    "F:\\MasterProject\\mvc\\mvc.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\PPSU\\sem-08\\casepoint\\Master Project\\mvc\\mvc.csproj",
+        "projectUniqueName": "F:\\MasterProject\\mvc\\mvc.csproj",
         "projectName": "mvc",
-        "projectPath": "F:\\PPSU\\sem-08\\casepoint\\Master Project\\mvc\\mvc.csproj",
+        "projectPath": "F:\\MasterProject\\mvc\\mvc.csproj",
         "packagesPath": "C:\\Users\\DELL\\.nuget\\packages\\",
-        "outputPath": "F:\\PPSU\\sem-08\\casepoint\\Master Project\\mvc\\obj\\",
+        "outputPath": "F:\\MasterProject\\mvc\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

@@ -5,6 +5,8 @@ using System.Threading.Tasks;
 using mvc.Models;
 using Npgsql;
 using NpgsqlTypes;
+using System.Data;
+
 
 
 namespace mvc.Repositories
@@ -22,33 +24,46 @@ namespace mvc.Repositories
         public int Login(tblUser user)
         {
             int rowCount = 0;
-            string role = "";
+            string role = "" , uname = "";
 
-
-            conn.Open();
-
-            using (var command = new NpgsqlCommand("SELECT c_uid, c_uname, c_uemail, c_role, COUNT(*) FROM t_employeeusers WHERE c_uemail=@email AND c_password= @password GROUP BY c_uid, c_uname, c_uemail, c_role ", conn))
+            try
             {
-                command.Parameters.Add("@email", NpgsqlDbType.Varchar).Value = user.c_uemail;
-                command.Parameters.Add("@password", NpgsqlDbType.Varchar).Value = user.c_password;
 
-                using (var reader = command.ExecuteReader())
+                conn.Open();
+
+                using (var command = new NpgsqlCommand("SELECT c_uid, c_uname, c_uemail, c_role, COUNT(*) FROM t_employeeusers WHERE c_uemail=@email AND c_password= @password GROUP BY c_uid, c_uname, c_uemail, c_role ", conn))
                 {
-                    while (reader.Read())
+                    command.Parameters.Add("@email", NpgsqlDbType.Varchar).Value = user.c_uemail;
+                    command.Parameters.Add("@password", NpgsqlDbType.Varchar).Value = user.c_password;
+
+                    using (var reader = command.ExecuteReader())
                     {
+                        while (reader.Read())
+                        {
 
-                        role = reader.GetString(3);
-                        rowCount = reader.GetInt32(4);
+                            role = reader.GetString(3);
+                            rowCount = reader.GetInt32(4);
+                            uname = reader.GetString(1);
 
-                        var session = _httpContextAccessor.HttpContext.Session;
-                        session.SetString("role", role);
+                            var session = _httpContextAccessor.HttpContext.Session;
+                            session.SetString("role", role);
+                            session.SetString("username", uname);
+                        }
                     }
+
+                    // Console.WriteLine(HttpContext.Session.GetString("role"));
                 }
-
-                // Console.WriteLine(HttpContext.Session.GetString("role"));
             }
-            conn.Close();
+            catch (System.Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+                throw;
+            }
+            finally
+            {
+                conn.Close();
 
+            }
             return rowCount;
         }
 
@@ -75,8 +90,6 @@ namespace mvc.Repositories
 
                     cmd.ExecuteNonQuery();
 
-
-
                 }
             }
             catch (System.Exception ex)
@@ -90,5 +103,60 @@ namespace mvc.Repositories
             }
 
         }
+
+       public int LoginWithApi(tblLogin user)
+        {
+            int rowCount = 0;
+            string role = "";
+            string email = "";
+            string username = "";
+
+            try
+            {
+                conn.Open();
+
+                using (var command = new NpgsqlCommand("SELECT c_uid, c_uname, c_uemail, c_role, COUNT(*) FROM t_employeeusers WHERE c_uemail=@email AND c_password= @password GROUP BY c_uid, c_uname, c_uemail, c_role ", conn))
+                {
+                    command.Parameters.Add("@email", NpgsqlDbType.Varchar).Value = user.c_uemail;
+                    command.Parameters.Add("@password", NpgsqlDbType.Varchar).Value = user.c_password;
+                    DataTable data = new DataTable();
+                    data.Load(command.ExecuteReader());
+
+                    using (var reader = command.ExecuteReader())
+                    {
+                        while (reader.Read())
+                        {
+                            username = reader.GetString(1);
+                            role = reader.GetString(3);
+                            rowCount = reader.GetInt32(4);
+                            email = reader.GetString(2);
+                        }
+                    }
+
+                }
+
+                var session = _httpContextAccessor?.HttpContext?.Session;
+
+                if (session != null && !string.IsNullOrEmpty(username))
+                {
+                    session.SetString("username", username);
+                    session.SetString("role", role);
+                    session.SetString("email", email);
+                    session.SetInt32("IsAuthenticated", 1);
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+                throw;
+            }
+            finally
+            {
+                conn.Close();
+            }
+
+            return rowCount;
+        }
+
     }
 }

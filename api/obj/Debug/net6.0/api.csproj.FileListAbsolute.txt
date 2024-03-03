@@ -1,0 +1,216 @@
+/Users/yashveekotadiya/Desktop/new master/MasterProject/api/obj/Debug/net6.0/api.csproj.AssemblyReference.cache
+/Users/yashveekotadiya/Desktop/new master/MasterProject/api/obj/Debug/net6.0/api.GeneratedMSBuildEditorConfig.editorconfig
+/Users/yashveekotadiya/Desktop/new master/MasterProject/api/obj/Debug/net6.0/api.AssemblyInfoInputs.cache
+/Users/yashveekotadiya/Desktop/new master/MasterProject/api/obj/Debug/net6.0/api.AssemblyInfo.cs
+/Users/yashveekotadiya/Desktop/new master/MasterProject/api/obj/Debug/net6.0/api.csproj.CoreCompileInputs.cache
+/Users/yashveekotadiya/Desktop/new master/MasterProject/api/obj/Debug/net6.0/api.MvcApplicationPartsAssemblyInfo.cs
+/Users/yashveekotadiya/Desktop/new master/MasterProject/api/obj/Debug/net6.0/api.MvcApplicationPartsAssemblyInfo.cache
+/Users/yashveekotadiya/Desktop/new master/MasterProject/api/obj/Debug/net6.0/api.sourcelink.json
+/Users/yashveekotadiya/Desktop/new master/MasterProject/api/bin/Debug/net6.0/mvc.deps.json
+/Users/yashveekotadiya/Desktop/new master/MasterProject/api/bin/Debug/net6.0/mvc.runtimeconfig.json
+/Users/yashveekotadiya/Desktop/new master/MasterProject/api/bin/Debug/net6.0/mvc.staticwebassets.runtime.json
+/Users/yashveekotadiya/Desktop/new master/MasterProject/api/bin/Debug/net6.0/mvc
+/Users/yashveekotadiya/Desktop/new master/MasterProject/api/bin/Debug/net6.0/appsettings.Development.json
+/Users/yashveekotadiya/Desktop/new master/MasterProject/api/bin/Debug/net6.0/appsettings.json
+/Users/yashveekotadiya/Desktop/new master/MasterProject/api/bin/Debug/net6.0/api.staticwebassets.runtime.json
+/Users/yashveekotadiya/Desktop/new master/MasterProject/api/bin/Debug/net6.0/api
+/Users/yashveekotadiya/Desktop/new master/MasterProject/api/bin/Debug/net6.0/api.deps.json
+/Users/yashveekotadiya/Desktop/new master/MasterProject/api/bin/Debug/net6.0/api.runtimeconfig.json
+/Users/yashveekotadiya/Desktop/new master/MasterProject/api/bin/Debug/net6.0/api.dll
+/Users/yashveekotadiya/Desktop/new master/MasterProject/api/bin/Debug/net6.0/api.pdb
+/Users/yashveekotadiya/Desktop/new master/MasterProject/api/bin/Debug/net6.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll
+/Users/yashveekotadiya/Desktop/new master/MasterProject/api/bin/Debug/net6.0/Microsoft.Extensions.Logging.Abstractions.dll
+/Users/yashveekotadiya/Desktop/new master/MasterProject/api/bin/Debug/net6.0/Microsoft.OpenApi.dll
+/Users/yashveekotadiya/Desktop/new master/MasterProject/api/bin/Debug/net6.0/Npgsql.dll
+/Users/yashveekotadiya/Desktop/new master/MasterProject/api/bin/Debug/net6.0/Swashbuckle.AspNetCore.Swagger.dll
+/Users/yashveekotadiya/Desktop/new master/MasterProject/api/bin/Debug/net6.0/Swashbuckle.AspNetCore.SwaggerGen.dll
+/Users/yashveekotadiya/Desktop/new master/MasterProject/api/bin/Debug/net6.0/Swashbuckle.AspNetCore.SwaggerUI.dll
+/Users/yashveekotadiya/Desktop/new master/MasterProject/api/bin/Debug/net6.0/System.Diagnostics.DiagnosticSource.dll
+/Users/yashveekotadiya/Desktop/new master/MasterProject/api/bin/Debug/net6.0/System.Security.Permissions.dll
+/Users/yashveekotadiya/Desktop/new master/MasterProject/api/bin/Debug/net6.0/System.Text.Encodings.Web.dll
+/Users/yashveekotadiya/Desktop/new master/MasterProject/api/bin/Debug/net6.0/System.Text.Json.dll
+/Users/yashveekotadiya/Desktop/new master/MasterProject/api/bin/Debug/net6.0/runtimes/browser/lib/net6.0/System.Text.Encodings.Web.dll
+/Users/yashveekotadiya/Desktop/new master/MasterProject/api/bin/Debug/net6.0/mvc.dll
+/Users/yashveekotadiya/Desktop/new master/MasterProject/api/bin/Debug/net6.0/mvc.pdb
+/Users/yashveekotadiya/Desktop/new master/MasterProject/api/obj/Debug/net6.0/staticwebassets.build.json
+/Users/yashveekotadiya/Desktop/new master/MasterProject/api/obj/Debug/net6.0/staticwebassets.development.json
+/Users/yashveekotadiya/Desktop/new master/MasterProject/api/obj/Debug/net6.0/staticwebassets/msbuild.api.Microsoft.AspNetCore.StaticWebAssets.props
+/Users/yashveekotadiya/Desktop/new master/MasterProject/api/obj/Debug/net6.0/staticwebassets/msbuild.build.api.props
+/Users/yashveekotadiya/Desktop/new master/MasterProject/api/obj/Debug/net6.0/staticwebassets/msbuild.buildMultiTargeting.api.props
+/Users/yashveekotadiya/Desktop/new master/MasterProject/api/obj/Debug/net6.0/staticwebassets/msbuild.buildTransitive.api.props
+/Users/yashveekotadiya/Desktop/new master/MasterProject/api/obj/Debug/net6.0/staticwebassets.pack.json
+/Users/yashveekotadiya/Desktop/new master/MasterProject/api/obj/Debug/net6.0/scopedcss/bundle/api.styles.css
+/Users/yashveekotadiya/Desktop/new master/MasterProject/api/obj/Debug/net6.0/api.csproj.CopyComplete
+/Users/yashveekotadiya/Desktop/new master/MasterProject/api/obj/Debug/net6.0/api.dll
+/Users/yashveekotadiya/Desktop/new master/MasterProject/api/obj/Debug/net6.0/refint/api.dll
+/Users/yashveekotadiya/Desktop/new master/MasterProject/api/obj/Debug/net6.0/api.pdb
+/Users/yashveekotadiya/Desktop/new master/MasterProject/api/obj/Debug/net6.0/api.genruntimeconfig.cache
+/Users/yashveekotadiya/Desktop/new master/MasterProject/api/obj/Debug/net6.0/ref/api.dll
+/Users/yashveekotadiya/Desktop/new master/MasterProject/api/bin/Debug/net6.0/Microsoft.Extensions.Caching.Abstractions.dll
+/Users/yashveekotadiya/Desktop/new master/MasterProject/api/bin/Debug/net6.0/Microsoft.Extensions.Caching.StackExchangeRedis.dll
+/Users/yashveekotadiya/Desktop/new master/MasterProject/api/bin/Debug/net6.0/Microsoft.Extensions.Options.dll
+/Users/yashveekotadiya/Desktop/new master/MasterProject/api/bin/Debug/net6.0/Microsoft.Extensions.Primitives.dll
+/Users/yashveekotadiya/Desktop/new master/MasterProject/api/bin/Debug/net6.0/Pipelines.Sockets.Unofficial.dll
+/Users/yashveekotadiya/Desktop/new master/MasterProject/api/bin/Debug/net6.0/StackExchange.Redis.dll
+F:/PPSU/sem-08/casepoint/Master Project/api/obj/Debug/net6.0/api.dll
+F:/PPSU/sem-08/casepoint/Master Project/api/obj/Debug/net6.0/refint/api.dll
+F:/PPSU/sem-08/casepoint/Master Project/api/obj/Debug/net6.0/api.pdb
+F:/PPSU/sem-08/casepoint/Master Project/api/obj/Debug/net6.0/api.csproj.AssemblyReference.cache
+F:/PPSU/sem-08/casepoint/Master Project/api/obj/Debug/net6.0/api.GeneratedMSBuildEditorConfig.editorconfig
+F:/PPSU/sem-08/casepoint/Master Project/api/obj/Debug/net6.0/api.AssemblyInfoInputs.cache
+F:/PPSU/sem-08/casepoint/Master Project/api/obj/Debug/net6.0/api.AssemblyInfo.cs
+F:/PPSU/sem-08/casepoint/Master Project/api/obj/Debug/net6.0/api.csproj.CoreCompileInputs.cache
+F:/PPSU/sem-08/casepoint/Master Project/api/obj/Debug/net6.0/api.MvcApplicationPartsAssemblyInfo.cs
+F:/PPSU/sem-08/casepoint/Master Project/api/obj/Debug/net6.0/api.MvcApplicationPartsAssemblyInfo.cache
+F:/PPSU/sem-08/casepoint/Master Project/api/obj/Debug/net6.0/api.sourcelink.json
+F:/PPSU/sem-08/casepoint/Master Project/api/bin/Debug/net6.0/mvc.deps.json
+F:/PPSU/sem-08/casepoint/Master Project/api/bin/Debug/net6.0/appsettings.Development.json
+F:/PPSU/sem-08/casepoint/Master Project/api/bin/Debug/net6.0/appsettings.json
+F:/PPSU/sem-08/casepoint/Master Project/api/bin/Debug/net6.0/mvc.runtimeconfig.json
+F:/PPSU/sem-08/casepoint/Master Project/api/bin/Debug/net6.0/mvc.staticwebassets.runtime.json
+F:/PPSU/sem-08/casepoint/Master Project/api/bin/Debug/net6.0/mvc.exe
+F:/PPSU/sem-08/casepoint/Master Project/api/bin/Debug/net6.0/api.staticwebassets.runtime.json
+F:/PPSU/sem-08/casepoint/Master Project/api/bin/Debug/net6.0/api.exe
+F:/PPSU/sem-08/casepoint/Master Project/api/bin/Debug/net6.0/api.deps.json
+F:/PPSU/sem-08/casepoint/Master Project/api/bin/Debug/net6.0/api.runtimeconfig.json
+F:/PPSU/sem-08/casepoint/Master Project/api/bin/Debug/net6.0/api.dll
+F:/PPSU/sem-08/casepoint/Master Project/api/bin/Debug/net6.0/api.pdb
+F:/PPSU/sem-08/casepoint/Master Project/api/bin/Debug/net6.0/Microsoft.Extensions.Caching.Abstractions.dll
+F:/PPSU/sem-08/casepoint/Master Project/api/bin/Debug/net6.0/Microsoft.Extensions.Caching.StackExchangeRedis.dll
+F:/PPSU/sem-08/casepoint/Master Project/api/bin/Debug/net6.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll
+F:/PPSU/sem-08/casepoint/Master Project/api/bin/Debug/net6.0/Microsoft.Extensions.Logging.Abstractions.dll
+F:/PPSU/sem-08/casepoint/Master Project/api/bin/Debug/net6.0/Microsoft.Extensions.Options.dll
+F:/PPSU/sem-08/casepoint/Master Project/api/bin/Debug/net6.0/Microsoft.Extensions.Primitives.dll
+F:/PPSU/sem-08/casepoint/Master Project/api/bin/Debug/net6.0/Microsoft.OpenApi.dll
+F:/PPSU/sem-08/casepoint/Master Project/api/bin/Debug/net6.0/Npgsql.dll
+F:/PPSU/sem-08/casepoint/Master Project/api/bin/Debug/net6.0/Pipelines.Sockets.Unofficial.dll
+F:/PPSU/sem-08/casepoint/Master Project/api/bin/Debug/net6.0/StackExchange.Redis.dll
+F:/PPSU/sem-08/casepoint/Master Project/api/bin/Debug/net6.0/Swashbuckle.AspNetCore.Swagger.dll
+F:/PPSU/sem-08/casepoint/Master Project/api/bin/Debug/net6.0/Swashbuckle.AspNetCore.SwaggerGen.dll
+F:/PPSU/sem-08/casepoint/Master Project/api/bin/Debug/net6.0/Swashbuckle.AspNetCore.SwaggerUI.dll
+F:/PPSU/sem-08/casepoint/Master Project/api/bin/Debug/net6.0/System.Diagnostics.DiagnosticSource.dll
+F:/PPSU/sem-08/casepoint/Master Project/api/bin/Debug/net6.0/System.Security.Permissions.dll
+F:/PPSU/sem-08/casepoint/Master Project/api/bin/Debug/net6.0/System.Text.Encodings.Web.dll
+F:/PPSU/sem-08/casepoint/Master Project/api/bin/Debug/net6.0/System.Text.Json.dll
+F:/PPSU/sem-08/casepoint/Master Project/api/bin/Debug/net6.0/runtimes/browser/lib/net6.0/System.Text.Encodings.Web.dll
+F:/PPSU/sem-08/casepoint/Master Project/api/bin/Debug/net6.0/mvc.dll
+F:/PPSU/sem-08/casepoint/Master Project/api/bin/Debug/net6.0/mvc.pdb
+F:/PPSU/sem-08/casepoint/Master Project/api/obj/Debug/net6.0/staticwebassets.build.json
+F:/PPSU/sem-08/casepoint/Master Project/api/obj/Debug/net6.0/staticwebassets.development.json
+F:/PPSU/sem-08/casepoint/Master Project/api/obj/Debug/net6.0/staticwebassets/msbuild.api.Microsoft.AspNetCore.StaticWebAssets.props
+F:/PPSU/sem-08/casepoint/Master Project/api/obj/Debug/net6.0/staticwebassets/msbuild.build.api.props
+F:/PPSU/sem-08/casepoint/Master Project/api/obj/Debug/net6.0/staticwebassets/msbuild.buildMultiTargeting.api.props
+F:/PPSU/sem-08/casepoint/Master Project/api/obj/Debug/net6.0/staticwebassets/msbuild.buildTransitive.api.props
+F:/PPSU/sem-08/casepoint/Master Project/api/obj/Debug/net6.0/staticwebassets.pack.json
+F:/PPSU/sem-08/casepoint/Master Project/api/obj/Debug/net6.0/scopedcss/bundle/api.styles.css
+F:/PPSU/sem-08/casepoint/Master Project/api/obj/Debug/net6.0/api.csproj.Up2Date
+F:/PPSU/sem-08/casepoint/Master Project/api/obj/Debug/net6.0/api.genruntimeconfig.cache
+F:/PPSU/sem-08/casepoint/Master Project/api/obj/Debug/net6.0/ref/api.dll
+/Users/yashveekotadiya/Desktop/newmaster/MasterProject/api/bin/Debug/net6.0/appsettings.Development.json
+/Users/yashveekotadiya/Desktop/newmaster/MasterProject/api/bin/Debug/net6.0/appsettings.json
+/Users/yashveekotadiya/Desktop/newmaster/MasterProject/api/bin/Debug/net6.0/mvc.deps.json
+/Users/yashveekotadiya/Desktop/newmaster/MasterProject/api/bin/Debug/net6.0/mvc.runtimeconfig.json
+/Users/yashveekotadiya/Desktop/newmaster/MasterProject/api/bin/Debug/net6.0/mvc.staticwebassets.runtime.json
+/Users/yashveekotadiya/Desktop/newmaster/MasterProject/api/bin/Debug/net6.0/mvc
+/Users/yashveekotadiya/Desktop/newmaster/MasterProject/api/bin/Debug/net6.0/api.staticwebassets.runtime.json
+/Users/yashveekotadiya/Desktop/newmaster/MasterProject/api/bin/Debug/net6.0/api
+/Users/yashveekotadiya/Desktop/newmaster/MasterProject/api/bin/Debug/net6.0/api.deps.json
+/Users/yashveekotadiya/Desktop/newmaster/MasterProject/api/bin/Debug/net6.0/api.runtimeconfig.json
+/Users/yashveekotadiya/Desktop/newmaster/MasterProject/api/bin/Debug/net6.0/api.dll
+/Users/yashveekotadiya/Desktop/newmaster/MasterProject/api/bin/Debug/net6.0/api.pdb
+/Users/yashveekotadiya/Desktop/newmaster/MasterProject/api/bin/Debug/net6.0/Microsoft.Extensions.Caching.Abstractions.dll
+/Users/yashveekotadiya/Desktop/newmaster/MasterProject/api/bin/Debug/net6.0/Microsoft.Extensions.Caching.StackExchangeRedis.dll
+/Users/yashveekotadiya/Desktop/newmaster/MasterProject/api/bin/Debug/net6.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll
+/Users/yashveekotadiya/Desktop/newmaster/MasterProject/api/bin/Debug/net6.0/Microsoft.Extensions.Logging.Abstractions.dll
+/Users/yashveekotadiya/Desktop/newmaster/MasterProject/api/bin/Debug/net6.0/Microsoft.Extensions.Options.dll
+/Users/yashveekotadiya/Desktop/newmaster/MasterProject/api/bin/Debug/net6.0/Microsoft.Extensions.Primitives.dll
+/Users/yashveekotadiya/Desktop/newmaster/MasterProject/api/bin/Debug/net6.0/Microsoft.OpenApi.dll
+/Users/yashveekotadiya/Desktop/newmaster/MasterProject/api/bin/Debug/net6.0/Npgsql.dll
+/Users/yashveekotadiya/Desktop/newmaster/MasterProject/api/bin/Debug/net6.0/Pipelines.Sockets.Unofficial.dll
+/Users/yashveekotadiya/Desktop/newmaster/MasterProject/api/bin/Debug/net6.0/StackExchange.Redis.dll
+/Users/yashveekotadiya/Desktop/newmaster/MasterProject/api/bin/Debug/net6.0/Swashbuckle.AspNetCore.Swagger.dll
+/Users/yashveekotadiya/Desktop/newmaster/MasterProject/api/bin/Debug/net6.0/Swashbuckle.AspNetCore.SwaggerGen.dll
+/Users/yashveekotadiya/Desktop/newmaster/MasterProject/api/bin/Debug/net6.0/Swashbuckle.AspNetCore.SwaggerUI.dll
+/Users/yashveekotadiya/Desktop/newmaster/MasterProject/api/bin/Debug/net6.0/System.Diagnostics.DiagnosticSource.dll
+/Users/yashveekotadiya/Desktop/newmaster/MasterProject/api/bin/Debug/net6.0/System.Security.Permissions.dll
+/Users/yashveekotadiya/Desktop/newmaster/MasterProject/api/bin/Debug/net6.0/System.Text.Encodings.Web.dll
+/Users/yashveekotadiya/Desktop/newmaster/MasterProject/api/bin/Debug/net6.0/System.Text.Json.dll
+/Users/yashveekotadiya/Desktop/newmaster/MasterProject/api/bin/Debug/net6.0/runtimes/browser/lib/net6.0/System.Text.Encodings.Web.dll
+/Users/yashveekotadiya/Desktop/newmaster/MasterProject/api/bin/Debug/net6.0/mvc.dll
+/Users/yashveekotadiya/Desktop/newmaster/MasterProject/api/bin/Debug/net6.0/mvc.pdb
+/Users/yashveekotadiya/Desktop/newmaster/MasterProject/api/obj/Debug/net6.0/api.csproj.AssemblyReference.cache
+/Users/yashveekotadiya/Desktop/newmaster/MasterProject/api/obj/Debug/net6.0/api.GeneratedMSBuildEditorConfig.editorconfig
+/Users/yashveekotadiya/Desktop/newmaster/MasterProject/api/obj/Debug/net6.0/api.AssemblyInfoInputs.cache
+/Users/yashveekotadiya/Desktop/newmaster/MasterProject/api/obj/Debug/net6.0/api.AssemblyInfo.cs
+/Users/yashveekotadiya/Desktop/newmaster/MasterProject/api/obj/Debug/net6.0/api.csproj.CoreCompileInputs.cache
+/Users/yashveekotadiya/Desktop/newmaster/MasterProject/api/obj/Debug/net6.0/api.MvcApplicationPartsAssemblyInfo.cs
+/Users/yashveekotadiya/Desktop/newmaster/MasterProject/api/obj/Debug/net6.0/api.MvcApplicationPartsAssemblyInfo.cache
+/Users/yashveekotadiya/Desktop/newmaster/MasterProject/api/obj/Debug/net6.0/api.sourcelink.json
+/Users/yashveekotadiya/Desktop/newmaster/MasterProject/api/obj/Debug/net6.0/staticwebassets.build.json
+/Users/yashveekotadiya/Desktop/newmaster/MasterProject/api/obj/Debug/net6.0/staticwebassets.development.json
+/Users/yashveekotadiya/Desktop/newmaster/MasterProject/api/obj/Debug/net6.0/staticwebassets/msbuild.api.Microsoft.AspNetCore.StaticWebAssets.props
+/Users/yashveekotadiya/Desktop/newmaster/MasterProject/api/obj/Debug/net6.0/staticwebassets/msbuild.build.api.props
+/Users/yashveekotadiya/Desktop/newmaster/MasterProject/api/obj/Debug/net6.0/staticwebassets/msbuild.buildMultiTargeting.api.props
+/Users/yashveekotadiya/Desktop/newmaster/MasterProject/api/obj/Debug/net6.0/staticwebassets/msbuild.buildTransitive.api.props
+/Users/yashveekotadiya/Desktop/newmaster/MasterProject/api/obj/Debug/net6.0/staticwebassets.pack.json
+/Users/yashveekotadiya/Desktop/newmaster/MasterProject/api/obj/Debug/net6.0/scopedcss/bundle/api.styles.css
+/Users/yashveekotadiya/Desktop/newmaster/MasterProject/api/obj/Debug/net6.0/api.csproj.CopyComplete
+/Users/yashveekotadiya/Desktop/newmaster/MasterProject/api/obj/Debug/net6.0/api.dll
+/Users/yashveekotadiya/Desktop/newmaster/MasterProject/api/obj/Debug/net6.0/refint/api.dll
+/Users/yashveekotadiya/Desktop/newmaster/MasterProject/api/obj/Debug/net6.0/api.pdb
+/Users/yashveekotadiya/Desktop/newmaster/MasterProject/api/obj/Debug/net6.0/api.genruntimeconfig.cache
+/Users/yashveekotadiya/Desktop/newmaster/MasterProject/api/obj/Debug/net6.0/ref/api.dll
+F:\MasterProject\api\obj\Debug\net6.0\api.csproj.AssemblyReference.cache
+F:\MasterProject\api\obj\Debug\net6.0\api.GeneratedMSBuildEditorConfig.editorconfig
+F:\MasterProject\api\obj\Debug\net6.0\api.AssemblyInfoInputs.cache
+F:\MasterProject\api\obj\Debug\net6.0\api.AssemblyInfo.cs
+F:\MasterProject\api\obj\Debug\net6.0\api.csproj.CoreCompileInputs.cache
+F:\MasterProject\api\obj\Debug\net6.0\api.MvcApplicationPartsAssemblyInfo.cs
+F:\MasterProject\api\obj\Debug\net6.0\api.MvcApplicationPartsAssemblyInfo.cache
+F:\MasterProject\api\obj\Debug\net6.0\api.sourcelink.json
+F:\MasterProject\api\obj\Debug\net6.0\api.dll
+F:\MasterProject\api\obj\Debug\net6.0\refint\api.dll
+F:\MasterProject\api\obj\Debug\net6.0\api.pdb
+F:\MasterProject\api\bin\Debug\net6.0\mvc.deps.json
+F:\MasterProject\api\bin\Debug\net6.0\mvc.runtimeconfig.json
+F:\MasterProject\api\bin\Debug\net6.0\appsettings.Development.json
+F:\MasterProject\api\bin\Debug\net6.0\appsettings.json
+F:\MasterProject\api\bin\Debug\net6.0\mvc.staticwebassets.runtime.json
+F:\MasterProject\api\bin\Debug\net6.0\mvc.exe
+F:\MasterProject\api\bin\Debug\net6.0\api.staticwebassets.runtime.json
+F:\MasterProject\api\bin\Debug\net6.0\api.exe
+F:\MasterProject\api\bin\Debug\net6.0\api.deps.json
+F:\MasterProject\api\bin\Debug\net6.0\api.runtimeconfig.json
+F:\MasterProject\api\bin\Debug\net6.0\api.dll
+F:\MasterProject\api\bin\Debug\net6.0\api.pdb
+F:\MasterProject\api\bin\Debug\net6.0\Microsoft.Extensions.Caching.Abstractions.dll
+F:\MasterProject\api\bin\Debug\net6.0\Microsoft.Extensions.Caching.StackExchangeRedis.dll
+F:\MasterProject\api\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+F:\MasterProject\api\bin\Debug\net6.0\Microsoft.Extensions.Logging.Abstractions.dll
+F:\MasterProject\api\bin\Debug\net6.0\Microsoft.Extensions.Options.dll
+F:\MasterProject\api\bin\Debug\net6.0\Microsoft.Extensions.Primitives.dll
+F:\MasterProject\api\bin\Debug\net6.0\Microsoft.OpenApi.dll
+F:\MasterProject\api\bin\Debug\net6.0\Npgsql.dll
+F:\MasterProject\api\bin\Debug\net6.0\Pipelines.Sockets.Unofficial.dll
+F:\MasterProject\api\bin\Debug\net6.0\StackExchange.Redis.dll
+F:\MasterProject\api\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
+F:\MasterProject\api\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+F:\MasterProject\api\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+F:\MasterProject\api\bin\Debug\net6.0\System.Diagnostics.DiagnosticSource.dll
+F:\MasterProject\api\bin\Debug\net6.0\System.Security.Permissions.dll
+F:\MasterProject\api\bin\Debug\net6.0\System.Text.Encodings.Web.dll
+F:\MasterProject\api\bin\Debug\net6.0\System.Text.Json.dll
+F:\MasterProject\api\bin\Debug\net6.0\runtimes\browser\lib\net6.0\System.Text.Encodings.Web.dll
+F:\MasterProject\api\bin\Debug\net6.0\mvc.dll
+F:\MasterProject\api\bin\Debug\net6.0\mvc.pdb
+F:\MasterProject\api\obj\Debug\net6.0\staticwebassets.build.json
+F:\MasterProject\api\obj\Debug\net6.0\staticwebassets.development.json
+F:\MasterProject\api\obj\Debug\net6.0\staticwebassets\msbuild.api.Microsoft.AspNetCore.StaticWebAssets.props
+F:\MasterProject\api\obj\Debug\net6.0\staticwebassets\msbuild.build.api.props
+F:\MasterProject\api\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.api.props
+F:\MasterProject\api\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.api.props
+F:\MasterProject\api\obj\Debug\net6.0\staticwebassets.pack.json
+F:\MasterProject\api\obj\Debug\net6.0\scopedcss\bundle\api.styles.css
+F:\MasterProject\api\obj\Debug\net6.0\api.csproj.Up2Date
+F:\MasterProject\api\obj\Debug\net6.0\api.genruntimeconfig.cache
+F:\MasterProject\api\obj\Debug\net6.0\ref\api.dll

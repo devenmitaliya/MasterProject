@@ -1,0 +1,67 @@
+@model tblEmployee
+@{
+    ViewData["Title"] = "UpdateEmployeeData";
+}
+
+<h2>@ViewBag.id</h2>
+
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <h2>Update Employee Data</h2>
+        </div>
+    </div>
+
+    <div id="employeeData">
+        <!-- Employee data will be displayed here -->
+    </div>
+
+    <a asp-action="Index" class="btn btn-secondary">Back to List</a>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+<script>
+    $(document).ready(function () {
+        // Extract employee ID from URL parameters
+        var employeeId = getUrlParameter('id');
+        if (employeeId) {
+            fetchEmployeeData(employeeId);
+        }
+    });
+
+    function fetchEmployeeData(employeeId) {
+        $.ajax({
+            url: 'https://localhost:7084/api/EmployeeApi/' + employeeId,
+            method: 'GET',
+            dataType: 'json',
+            success: function (response) {
+                var employeeDataHtml = '';
+
+                employeeDataHtml += '<p><strong>Employee ID:</strong> ' + response.c_empid + '</p>';
+                employeeDataHtml += '<p><strong>Employee Name:</strong> ' + response.c_empname + '</p>';
+                employeeDataHtml += '<p><strong>Gender:</strong> ' + response.c_empgender + '</p>';
+                employeeDataHtml += '<p><strong>Date of Birth:</strong> ' + response.c_empdob + '</p>';
+                employeeDataHtml += '<p><strong>Shift:</strong> ' + response.c_empshift.join(', ') + '</p>';
+                employeeDataHtml += '<p><strong>Department:</strong> ' + response.c_empdepartment + '</p>';
+                employeeDataHtml += '<p><strong>Image:</strong> <img src="/images/' + response.c_empimg + '" width="100" alt="' + response.c_empimg + '"></p>';
+
+
+                $('#employeeData').html(employeeDataHtml);
+            },
+            error: function (xhr, status, error) {
+                console.error('Error fetching employee data:', status, error);
+                // Handle error as needed
+            }
+        });
+    }
+
+    // Function to extract URL parameters
+    function getUrlParameter(name) {
+        name = name.replace(/[\[]/, '\\[').replace(/[\]]/, '\\]');
+        var regex = new RegExp('[\\?&]' + name + '=([^&#]*)');
+        var results = regex.exec(location.search);
+        return results === null ? '' : decodeURIComponent(results[1].replace(/\+/g, ' '));
+    }
+</script>

@@ -1,0 +1,454 @@
+@model tblEmployee
+
+@{
+    @* ViewBag.Title = "Index"; *@
+    var role = Context.Session.GetString("role");
+    var uname = Context.Session.GetString("username");
+}
+
+
+<div>
+    <h2>Employees </h2>
+    <a class="btn btn-primary mt-2" onclick="Logout()">Logout</a>
+    <table id="empTable" class="table mt-2">
+        <thead class="thead-dark">
+            <tr>
+                <th>Id</th>
+                <th>Employee Name</th>
+                <th>Gender</th>
+                <th>Date of Birth</th>
+                <th>Shift</th>
+                <th>Image</th>
+                <th>Department</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+
+        </tbody>
+    </table>
+</div>
+
+<!-- Add Employee -->
+
+<div>
+    <h2>Add Employee</h2>
+    <form id="addEmpForm">
+        <div class="form-group">
+            <label for="c_empname">Employee Name :</label>
+            <input type="text" id="c_empname" name="c_empname" class="form-control">
+        </div>
+        <div class="form-group">
+            <label>Gender :</label><br>
+            <div class="form-check form-check-inline">
+                <input type="radio" id="male" value="Male" name="c_empgender" class="form-check-input">
+                <label for="male" class="form-check-label">Male</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input type="radio" id="female" value="Female" name="c_empgender" class="form-check-input">
+                <label for="female" class="form-check-label">Female</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input type="radio" id="other" value="Other" name="c_empgender" class="form-check-input">
+                <label for="other" class="form-check-label">Other</label>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="c_empdob">Date of Birth</label>
+            <input for="c_empdob" type="date" id="c_empdob" name="c_empdob" class="form-control">
+        </div>
+        <div class="form-group">
+            <label>Shift</label><br>
+            <div class="form-check form-check-inline">
+                <input type="checkbox" id="morning" value="Morning" name="c_empshift" class="form-check-input">
+                <label for="morning" class="form-check-label">Morning</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input type="checkbox" id="afternoon" value="Afternoon" name="c_empshift" class="form-check-input">
+                <label for="afternoon" class="form-check-label">Afternoon</label>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="fileInput">Photo</label><br>
+            <input type="file" id="imgFile" class="form-control" />
+            @* <label class="custom-file-label" for="imgFile"></label> *@
+            <span class="text-danger"></span>
+        </div>
+
+        <div class="form-group">
+            <label>Department</label>
+            <select class="form-control" id="c_empdepartment" name="c_empdepartment" for="c_empdepartment">
+                <option value="">Select Department</option>
+            </select>
+            <span asp-validation-for="c_empdepartment" class="text-danger"></span>
+        </div>
+
+        <button type="button" id="addEmpButton" class="btn btn-primary">Add</button>
+        <input type="button" name="reset" id="reset" onclick="ResetEmp()" value="Reset" class="btn btn-secondary">
+    </form>
+</div>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+@section Scripts
+{
+    <script>
+
+        $(document).ready(function () {
+
+            loadEmployee();
+
+        });
+
+        function loadEmployee() {
+            $.ajax({
+                url: "/mvcajax/GetDataFromUsername/@uname",
+                type: 'GET',
+                dataType: 'json',
+                success: function (data) {
+                    var empTable = $('#empTable tbody');
+                    empTable.empty();
+                    data.forEach((emp) => {
+                        const row = `<tr>
+                                                            <td>${emp.c_empid}</td>
+                                                            <td>${emp.c_empname}</td>
+                                                            <td>${emp.c_empgender}</td>
+                                                            <td>${emp.c_empdob}</td>
+                                                            <td>${emp.c_empshift}</td>
+        @* <img src="@Url.Content("~/uploads/" + emp.c_empimg)" alt="Employee Photo"  style="width: 100px; height: 100px;" /> *@
+                                                            <td>
+                                                                 <img src='/uploads/${emp.c_empimg}' alt="Employee Photo" style="width: 100px; height: 100px;" />
+                                                            </td>
+                                                            <td>${emp.department}</td>
+                                                            <td>
+                                                                <button data-id="${emp.c_empid}" class="btn btn-primary details">Details</button>
+        @* @if (role == "Admin") *@
+        @* { *@
+        @* <button data-id="${emp.c_empid}" class="btn btn-secondary edit">Edit</button> *@
+        @* <button data-id="${emp.c_empid}" class="btn btn-danger delete">Delete</button> *@
+        @* } *@
+                                                            </td>
+                                                        </tr>`;
+                        empTable.append(row);
+                    });
+                }
+            });
+            setTimeout(function () {
+                console.log('Employee data loaded successfully');
+                loadDepartments();
+            }, 2000);
+
+        }
+
+
+        function loadDepartments() {
+            $.ajax({
+                url: '/mvcajax/department',
+                type: 'GET',
+                dataType: 'json',
+                success: function (data) {
+                    if (Array.isArray(data)) {
+                        var dropdown = $('#c_empdepartment');
+                        dropdown.empty().append($('<option value="">Select Department</option>'));
+                        data.forEach(function (item) {
+                            dropdown.append($('<option>').val(item.c_departmentname).text(item.c_departmentname));
+                        });
+                    } else {
+                        console.error('Invalid data format:', data);
+                    }
+                }
+            });
+        }
+
+
+
+
+
+
+
+        function fetchDepartmentData(response) {
+            $.ajax({
+                url: '/mvcajax/department',
+                type: 'GET',
+                dataType: 'json',
+                success: function (data) {
+                    console.log(data);
+
+                    populateDepartmentDropdown(data, response);
+                },
+                error: function (xhr, status, error) {
+                    handleDepartmentFetchError(xhr, status, error);
+                }
+            });
+        }
+
+        function populateDepartmentDropdown(data, response) {
+            var dropdown = $('#c_edit_empdepartment');
+            dropdown.empty().append($('<option value="">Select Department</option>'));
+
+            data.forEach(function (department) {
+                var option = $('<option>').val(department.c_departmentname).text(department.c_departmentname);
+                dropdown.append(option);
+                if (department.c_departmentid == response.c_empdepartment) {
+                    option.prop('selected', true);
+                }
+            });
+            var departmentIdFromBackend = response.c_empdepartment;
+            if (departmentIdFromBackend) {
+                dropdown.val(department.c_departmentname);
+            }
+        }
+
+
+        function handleDepartmentFetchError(xhr, status, error) {
+            console.error('Error fetching departments:', status, error);
+            $('#departmentValidationError').text('Error fetching departments. Please try again.');
+        }
+
+        @* $('#addEmpButton').on('click', function () {
+
+        var formData = new FormData();
+        formData.append("c_empname", $('#c_empname').val());
+        formData.append("c_empdob", $('#c_empdob').val());
+        formData.append("c_empgender", $("input[name='c_empgender']:checked").val());
+        formData.append("c_empshift",$("input[name='c_empshift']:checked").map(function () { return $(this).val(); }).get());
+        var photoFile = $('#imgFile')[0].files[0];
+        console.log("IMAGE FILE:::    " +photoFile);
+        debugger;
+        formData.append("photo", photoFile);
+        formData.append("c_empdepartment", $('#c_empdepartment').val());
+
+        console.log(formData);
+        debugger;
+        console.log('Selected department:', emp.c_empimg);
+        debugger;
+
+        $.ajax({
+        url: '/mvcajax/Add/',
+        type: 'POST',
+        data: formData,
+        processData: false,
+        contentType: false,
+        success: function (data) {
+        console.log(data);
+        debugger;
+        loadEmployee();
+        ResetEmp();
+        },
+        error: function (xhr, status, error) {
+        console.log(emp);
+        console.error('Error fetching employee details:', status, error);
+        }
+        });
+        }); *@
+
+            $('#addEmpButton').on('click', function () {
+                var formData = new FormData();
+                formData.append("c_empname", $('#c_empname').val());
+                formData.append("c_empdob", $('#c_empdob').val());
+                formData.append("c_empgender", $("input[name='c_empgender']:checked").val());
+
+                // Check if at least one checkbox is checked for shift
+                var shiftValues = $("input[name='c_empshift']:checked").map(function () { return $(this).val(); }).get();
+                if (shiftValues.length > 0) {
+                    formData.append("c_empshift", shiftValues);
+                } else {
+                    // Handle the case when no shift is selected
+                    alert("Please select at least one shift.");
+                    return;
+                }
+
+                // Retrieve the photo file
+                var photoFile = $('#imgFile')[0].files[0];
+                if (photoFile) {
+                    formData.append("photo", photoFile);
+                } else {
+                    // Handle the case when no photo is selected
+                    alert("Please select a photo.");
+                    return;
+                }
+
+                formData.append("c_empdepartment", $('#c_empdepartment').val());
+
+                $.ajax({
+                    url: '/mvcajax/Add/',
+                    type: 'POST',
+                    data: formData,
+                    processData: false,
+                    contentType: false,
+                    success: function (data) {
+                        console.log(data);
+                        loadEmployee();
+                        ResetEmp();
+                    },
+                    error: function (xhr, status, error) {
+                        console.error('Error adding employee:', status, error);
+                    }
+                });
+            });
+
+
+
+
+
+        $('#empTable').on('click', '.edit', editEmployee);
+
+        function editEmployee() {
+            var empId = $(this).data('id');
+            $('#c_empid').val(empId);
+            $.ajax({
+                url: '/mvcajax/Details/',
+                type: 'GET',
+                data: { id: empId },
+                dataType: 'json',
+                success: function (data) {
+                    $('#c_edit_empname').val(data.c_empname);
+                    $('input[name=c_edit_empgender]').prop('checked', false);
+                    $('input[name=c_edit_empgender][value=' + data.c_empgender + ']').prop('checked', true);
+                    console.log(data.c_empdob);
+                    var date = new Date(data.c_empdob);
+                    var year = date.getFullYear();
+                    var month = ("0" + (date.getMonth() + 1)).slice(-2);
+                    var day = ("0" + date.getDate()).slice(-2);
+
+                    var formattedDate = year + "-" + month + "-" + day;
+                    $('#c_edit_empdob').val(formattedDate);
+
+                    $('input[name=c_edit_empshift]').prop('checked', false);
+                    if (data.c_empshift.includes('Morning')) {
+                        $('#edit_morning').prop('checked', true);
+                    }
+                    if (data.c_empshift.includes('Afternoon')) {
+                        $('#edit_afternoon').prop('checked', true);
+                    }
+                    debugger;
+                    if (data.c_empimg) {
+                        $('#editimgFile').text(data.c_empimg);
+                        console.log(data.c_empimg);
+                    } else {
+                        $('#editimgFile').text('No file selected');
+                    }
+
+                    $('#c_edit_empdepartment').val(data.c_empdepartment);
+                    console.log(data.c_empdepartment);
+
+                    fetchDepartmentData(data);
+
+                },
+            });
+            $('#editEmployeeModal').modal('show');
+        }
+
+        $('#updateEmployeeButton').on('click', updateEmployee);
+        function updateEmployee() {
+
+            var formData = new FormData();
+            formData.append("c_empname", $('#c_edit_empname').val());
+            formData.append("c_empdob", $('#c_edit_empdob').val());
+            formData.append("c_empgender", $("input[name='c_edit_empgender']:checked").val());
+            formData.append("c_empshift", $("input[name='c_edit_empshift']:checked").map(function () { return $(this).val(); }).get());
+            var photoFile = $('#editimgFile')[0].files[0];
+            console.log("IMAGE FILE:::    " + photoFile);
+            debugger;
+            formData.append("photo", photoFile);
+            formData.append("c_empdepartment", $('#c_edit_empdepartment').val());
+
+            console.log(formData);
+            debugger;
+            console.log('Selected department:', employee.c_empdepartment);
+            var empId = $('#c_empid').val();
+            $.ajax({
+                url: '/mvcajax/Edit/' + empId,
+                type: 'PUT',
+                data: formData,
+                processData: false,
+                contentType: false,
+                success: function (data) {
+                    console.log(data);
+                    loadEmployee();
+                    ResetEmp();
+                },
+                error: function (xhr, status, error) {
+                    console.log(formData);
+                    console.error('Error fetching employee details:', status, error);
+                }
+            });
+        }
+
+        $('#closeModalButton').on('click', closeEditEmployeeModal);
+        function closeEditEmployeeModal() {
+            $('#editEmployeeModal').modal('hide');
+        }
+
+        $('#empTable').on('click', '.delete', deleteEmployee);
+        function deleteEmployee() {
+            var empId = $(this).data('id');
+
+            var result = confirm("Are you sure for delete !");
+            if (result) {
+                $.ajax({
+                    url: '/mvcajax/Delete/?id=' + empId,
+                    type: 'DELETE',
+                    data: { id: empId },
+                    dataType: 'json',
+                    success: function (data) {
+                        loadEmployee();
+                    },
+                });
+            }
+        }
+
+
+        $('#empTable').on('click', '.details', function () {
+            var empId = $(this).data('id');
+
+            $.ajax({
+                url: '/mvcajax/Details/' + empId,
+                type: 'GET',
+                dataType: 'json',
+                success: function (data) {
+
+                    console.log(data);
+
+                    alert('Employee Details:\n' +
+                        'Name: ' + data.c_empname + '\n' +
+                        'Gender: ' + data.c_empgender + '\n' +
+                        'Date of Birth: ' + data.c_empdob + '\n' +
+                        'Image: ' + data.c_empimg + '\n' +
+                        'Shift: ' + data.c_empshift + '\n' +
+                        'Department: ' + data.c_empdepartment);
+                },
+                error: function (xhr, status, error) {
+                    console.error('Error fetching employee details:', status, error);
+                }
+            });
+        });
+
+
+        function Logout() {
+            $.ajax({
+                url: '/mvcajax/SetSessionValue', 
+                type: 'POST',
+                @* data: { key: 'role', value: '' },  *@
+                success: function (response) {
+                    window.location.href = '@Url.Action("Login", "ajaxuser")';
+                },
+                error: function (xhr, status, error) {
+                    // Handle errors if any
+                    console.error('Error:', error);
+                }
+            });
+        }
+        function ResetEmp() {
+            $('#c_empid').val(0);
+            $('#c_empname').val("");
+            $("input[name='c_empgender']").prop('checked', false);
+            $('#c_empdob').val("");
+            $("input[name='c_empshift']").prop('checked', false);
+            $('#c_empimg').val("");
+            $('#c_empdepartment').val(0);
+        }
+
+
+    </script>
+}

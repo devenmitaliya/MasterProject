@@ -1,0 +1,134 @@
+@model List<tblEmployee>
+
+@{
+    var role = Context.Session.GetString("role");
+    var uname = Context.Session.GetString("username");
+}
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://kendo.cdn.telerik.com/2021.2.616/js/kendo.all.min.js"></script>
+<link rel="stylesheet" href="https://kendo.cdn.telerik.com/2021.2.616/styles/kendo.common.min.css" />
+<link rel="stylesheet" href="https://kendo.cdn.telerik.com/2021.2.616/styles/kendo.default.min.css" />
+
+<div id="grid"></div>
+
+<script>
+    $(document).ready(function () {
+        var dataSource = new kendo.data.DataSource({
+            transport: {
+                read: {
+                    url: "http://localhost:5110/KendoGrid/GetDataFromUser",
+                    dataType: "json",
+                },
+                create: {
+                    url: "http://localhost:5110/KendoGrid/Add",
+                    type: "POST",
+                    dataType: "json",
+                    data: function (data) {
+                        data.c_empdob = kendo.toString(data.c_empdob, "yyyy-MM-dd");
+                        console.log("Data to be sent:", data);
+                        return JSON.stringify(data);
+                    },
+                }
+            },
+            pageSize: 10,
+            schema: {
+                model: {
+                    id: "c_empid",
+                    fields: {
+                        c_empid: { type: "number", editable: false, nullable: false },
+                        c_empname: { type: "string", validation: { required: true } },
+                        c_empgender: { type: "string", validation: { required: true } },
+                        c_empdob: { type: "date", validation: { required: true } },
+                        c_empshift: { type: "string", validation: { required: true } },
+                        c_empimg: { type: "string", validation: { required: true } },
+                        c_empdepartment: { type: "string", validation: { required: true } }
+                    }
+                }
+            }
+        });
+
+        $("#grid").kendoGrid({
+            dataSource: dataSource,
+            columns: [
+                { field: "c_empid", title: "ID" },
+                { field: "c_empname", title: "Name" },
+                { field: "c_empgender", title: "Gender", editor: genderTypeRadioEditor },
+                { field: "c_empdob", title: "DOB", format: "{0:yyyy-MM-dd}", editor: dateEditor },
+                { field: "c_empshift", title: "Shift", editor: shiftCheckboxEditor },
+                {
+                    field: "c_empimg", title: "Photo",
+                    editor: imageupload,
+                    template: "<img src='/images/#= c_empimg #' alt='emp Photo' style='max-width: 100px; max-height: 100px;'/>"
+                },
+                { field: "c_empdepartment", title: "Department", editor: deptDropDownEditor }
+            ],
+            editable: "popup",
+            toolbar: ["create"],
+            pageable: true,
+            sortable: true,
+            filterable: true
+        });
+
+        function imageupload(container, options) {
+            $('<input name="photo" type="file" id="photo" data-role="upload" data-async=\'{ "saveUrl": "http://localhost:5110/KendoGrid/UploadPhoto", "autoUpload": true }\' class="k-input k-textbox">').appendTo(container);
+        }
+
+        function genderTypeRadioEditor(container, options) {
+            $('<input type="radio" name="' + options.field + '" value="Male" required/> Male' +
+                '<input type="radio" name="' + options.field + '" value="Female" required/> Female' +
+                '<label  name=" value="Female" required/>')
+                .appendTo(container);
+        }
+        function dateEditor(container, options) {
+            $('<input name="' + options.field + '" data-bind="value:' + options.field + '" />')
+                .appendTo(container)
+                .kendoDatePicker({
+                    format: "yyyy-MM-dd",
+                    value: new Date()
+                });
+        }
+        function shiftCheckboxEditor(container, options) {
+
+            var checkboxWrapper = $('<div>').appendTo(container);
+
+            checkboxWrapper.kendoCheckBoxGroup({
+                items: [
+                    { label: "Morning", value: "Morning" },
+                    { label: "Afternoon", value: "Afternoon" }
+                ]
+            });
+            var checkboxGroup = checkboxWrapper.data("kendoCheckBoxGroup");
+            checkboxGroup.value(options.model.c_empshift ? options.model.c_empshift.split(",") : []);
+            checkboxGroup.bind("change", function (e) {
+                options.model.set("c_empshift", e.sender.value().join(","));
+            });
+        }
+
+        function deptDropDownEditor(container, options) {
+            $('<input required data-text-field="c_departmentname" data-value-field="c_departmentname" data-bind="value:' + options.field + '"/>')
+                .appendTo(container)
+                .kendoDropDownList({
+                    autoBind: false,
+                    dataSource: {
+                        transport: {
+                            read: {
+                                url: "http://localhost:5110/KendoGrid/Viewdept",
+                                dataType: "json"
+                            }
+                        }
+                    }
+                });
+        }
+
+        dataSource.bind("requestEnd", function (e) {
+            if (e.type === "create" || e.type === "update" || e.type === "destroy") {
+                dataSource.read();
+            }
+        });
+
+        $("#grid").on("click", ".k-grid-cancel-changes", function () {
+            dataSource.cancelChanges();
+        });
+    });
+</script>

@@ -1,0 +1,78 @@
+@model List<tblEmployee>
+
+
+@{
+    <h2>Welcome @ViewBag.username 🧑🏻‍💻</h2>
+}
+@* <h2>ROLE: @Context.Session.GetString("role")</h2> *@
+<h2>All Employees</h2>
+<a href="/ApiAjaxEmployee/Add" class="text text-primary"><button type="button" class="btn btn-primary">Add Employee</button></a>
+<table id="employeeTable" class="table">
+    <thead>
+        <tr>
+            <th>Employee ID</th>
+            <th>Name</th>
+            <th>Gender</th>
+            <th>Date of Birth</th>
+            <th>Shift</th>
+            <th>Department</th>
+            <th>Image</th>
+        </tr>
+    </thead>
+    <tbody>
+        <!-- Table body will be populated dynamically -->
+    </tbody>
+</table>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $.ajax({
+            url: 'https://localhost:7084/api/EmployeeApi',
+            method: 'GET',
+            success: function (data) {
+                // Clear the table body
+                $('#employeeTable tbody').empty();
+
+                // Populate the table with received data
+                $.each(data, function (index, emp) {
+                    $('#employeeTable tbody').append(`
+                        <tr>
+                            <td>${emp.c_empid}</td>
+                            <td>${emp.c_empname}</td>
+                            <td>${emp.c_empgender}</td>
+                            <td>${emp.c_empdob}</td>
+                            <td>${emp.c_empshift}</td>
+                            <td>${emp.c_empdepartment}</td>
+                            <td><img src="/images/${emp.c_empimg}" width = "100" alt="${emp.c_empimg}"></td>
+                            @* <td><img src="${emp.c_empimg}" alt="Employee Image" style="max-width: 100px; max-height: 100px;" /></td> *@
+                            <td><button  class="btn btn-danger" onclick="DeleteEmployee(${emp.c_empid})">Delete</button></td>
+                            <td><a href="/ApiAjaxEmployee/Update/?id=${emp.c_empid}" class="text text-primary"><button type="button" class="btn btn-primary">Edit</button></a></td>
+                            <td><a href="/ApiAjaxEmployee/Details/?id=${emp.c_empid}" class="text text-primary"><button type="button" class="btn btn-primary">Details</button></a></td>
+
+                        </tr>
+                    `);
+                });
+            },
+            error: function (xhr, status, error) {
+                // Handle error
+                console.error(error);
+            }
+        });
+
+       
+    });
+     function DeleteEmployee(id) {
+            console.log(id);
+            if (confirm("Do you want to delete")) {
+                var settings = {
+                    "url": "https://localhost:7084/api/EmployeeApi/" + id,
+                    "method": "DELETE",
+                    "timeout": 0
+                };
+                $.ajax(settings).done(function (response) {
+                    window.location = "/ApiAjaxEmployee/Index";
+                });
+            }
+        }
+</script>
