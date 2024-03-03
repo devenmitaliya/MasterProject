@@ -22,7 +22,7 @@ namespace mvc.Controllers
         private readonly IWebHostEnvironment _hostingEnvironment;
 
 
-        public KendoGridController(ILogger<KendoGridController> logger, IEmployeeRepository employeeRepository,IWebHostEnvironment hostingEnvironment )
+        public KendoGridController(ILogger<KendoGridController> logger, IEmployeeRepository employeeRepository, IWebHostEnvironment hostingEnvironment)
         {
             _logger = logger;
             _employeeRepository = employeeRepository;
@@ -35,16 +35,20 @@ namespace mvc.Controllers
         {
             return View();
         }
+        public IActionResult Admin()
+        {
+            return View();
+        }
 
 
         [HttpPost]
 
-        public IActionResult UploadPhoto(tblEmployee emp , IFormFile photo)
+        public IActionResult UploadPhoto(tblEmployee emp, IFormFile photo)
         {
             if (photo != null)
             {
                 string filename = photo.FileName;
-                string filepath = Path.Combine(_hostingEnvironment.WebRootPath, "images", filename);
+                string filepath = Path.Combine(_hostingEnvironment.WebRootPath, "uploads", filename);
 
                 using (var stream = new FileStream(filepath, FileMode.Create))
                 {
@@ -65,6 +69,21 @@ namespace mvc.Controllers
         {
             List<tblEmployee> employees = _employeeRepository.GetAllEmployee();
             return Json(employees);
+        }
+
+        [HttpGet]
+        public IActionResult GetDataFromUser()
+        {
+            try
+            {
+                var username = HttpContext.Session.GetString("username");
+                List<tblEmployee> employees = _employeeRepository.GetEmployeeFromUserName(username);
+                return Json(employees);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, new { error = "An error occurred while retrieving data." });
+            }
         }
 
         [HttpGet]
@@ -91,19 +110,19 @@ namespace mvc.Controllers
         {
             // try
             // {
-                // string filename = Path.GetFileName(emp.c_empimg.FileName);
-                // string filepath = Path.Combine(_hostingEnvironment.WebRootPath, "images", filename);
+            // string filename = Path.GetFileName(emp.c_empimg.FileName);
+            // string filepath = Path.Combine(_hostingEnvironment.WebRootPath, "images", filename);
 
-                // using (var stream = new FileStream(filepath, FileMode.Create))
-                // {
-                //     emp.c_empimg.CopyTo(stream);
-                // }
+            // using (var stream = new FileStream(filepath, FileMode.Create))
+            // {
+            //     emp.c_empimg.CopyTo(stream);
+            // }
 
-                // Console.WriteLine("Photo Add" + filename);
-                // file = filename;
-                emp.c_empimg = file;
-                _employeeRepository.AddEmployee(emp);
-                return Json(new { success = true, message = "Employee added successfully", data = emp });
+            // Console.WriteLine("Photo Add" + filename);
+            // file = filename;
+            emp.c_empimg = file;
+            _employeeRepository.AddEmployee(emp);
+            return Json(new { success = true, message = "Employee added successfully", data = emp });
             // }
             // catch (Exception ex)
             // {
@@ -121,10 +140,10 @@ namespace mvc.Controllers
             //     _logger.LogInformation($"Received emp: {emp}");
             //     _logger.LogInformation("Employee edited successfully");
 
-                // Log or debug statements to inspect emp and ensure it has the correct values
-                emp.c_empimg = file;
-                _employeeRepository.EditEmployee(emp);
-                return Json(new { success = true, message = "Employee edited successfully", data = emp });
+            // Log or debug statements to inspect emp and ensure it has the correct values
+            emp.c_empimg = file;
+            _employeeRepository.EditEmployee(emp);
+            return Json(new { success = true, message = "Employee edited successfully", data = emp });
             // }
             // catch (Exception ex)
             // {

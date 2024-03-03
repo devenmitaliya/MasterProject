@@ -9,135 +9,143 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = mvc
 build_property.RootNamespace = mvc
-build_property.ProjectDir = /Users/yashveekotadiya/Desktop/newmaster/MasterProject/mvc/
+build_property.ProjectDir = F:\MasterProject\mvc\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = /Users/yashveekotadiya/Desktop/newmaster/MasterProject/mvc
+build_property.MSBuildProjectDirectory = F:\MasterProject\mvc
 build_property._RazorSourceGeneratorDebug = 
 
-[/Users/yashveekotadiya/Desktop/newmaster/MasterProject/mvc/Views/ajaxuser/login.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvYWpheHVzZXIvbG9naW4uY3NodG1s
+[F:/MasterProject/mvc/Views/ajaxuser/login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcYWpheHVzZXJcbG9naW4uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/yashveekotadiya/Desktop/newmaster/MasterProject/mvc/Views/ajaxuser/Register.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvYWpheHVzZXIvUmVnaXN0ZXIuY3NodG1s
+[F:/MasterProject/mvc/Views/ajaxuser/Register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcYWpheHVzZXJcUmVnaXN0ZXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/yashveekotadiya/Desktop/newmaster/MasterProject/mvc/Views/ApiAjaxEmployee/Add.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQXBpQWpheEVtcGxveWVlL0FkZC5jc2h0bWw=
+[F:/MasterProject/mvc/Views/ApiAjaxEmployee/Add.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXBpQWpheEVtcGxveWVlXEFkZC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/yashveekotadiya/Desktop/newmaster/MasterProject/mvc/Views/ApiAjaxEmployee/Details.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQXBpQWpheEVtcGxveWVlL0RldGFpbHMuY3NodG1s
+[F:/MasterProject/mvc/Views/ApiAjaxEmployee/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXBpQWpheEVtcGxveWVlXERldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/yashveekotadiya/Desktop/newmaster/MasterProject/mvc/Views/ApiAjaxEmployee/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQXBpQWpheEVtcGxveWVlL0luZGV4LmNzaHRtbA==
+[F:/MasterProject/mvc/Views/ApiAjaxEmployee/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXBpQWpheEVtcGxveWVlXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/yashveekotadiya/Desktop/newmaster/MasterProject/mvc/Views/ApiAjaxEmployee/Update.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQXBpQWpheEVtcGxveWVlL1VwZGF0ZS5jc2h0bWw=
+[F:/MasterProject/mvc/Views/ApiAjaxEmployee/Update.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXBpQWpheEVtcGxveWVlXFVwZGF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/yashveekotadiya/Desktop/newmaster/MasterProject/mvc/Views/ApiAjaxUser/Login.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQXBpQWpheFVzZXIvTG9naW4uY3NodG1s
+[F:/MasterProject/mvc/Views/ApiAjaxUser/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXBpQWpheFVzZXJcTG9naW4uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/yashveekotadiya/Desktop/newmaster/MasterProject/mvc/Views/ApiAjaxUser/Register.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQXBpQWpheFVzZXIvUmVnaXN0ZXIuY3NodG1s
+[F:/MasterProject/mvc/Views/ApiAjaxUser/Register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXBpQWpheFVzZXJcUmVnaXN0ZXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/yashveekotadiya/Desktop/newmaster/MasterProject/mvc/Views/Employee/Add.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRW1wbG95ZWUvQWRkLmNzaHRtbA==
+[F:/MasterProject/mvc/Views/Employee/Add.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbG95ZWVcQWRkLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/yashveekotadiya/Desktop/newmaster/MasterProject/mvc/Views/Employee/Details.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRW1wbG95ZWUvRGV0YWlscy5jc2h0bWw=
+[F:/MasterProject/mvc/Views/Employee/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbG95ZWVcRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/yashveekotadiya/Desktop/newmaster/MasterProject/mvc/Views/Employee/Edit.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRW1wbG95ZWUvRWRpdC5jc2h0bWw=
+[F:/MasterProject/mvc/Views/Employee/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbG95ZWVcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/yashveekotadiya/Desktop/newmaster/MasterProject/mvc/Views/Employee/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRW1wbG95ZWUvSW5kZXguY3NodG1s
+[F:/MasterProject/mvc/Views/Employee/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbG95ZWVcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/yashveekotadiya/Desktop/newmaster/MasterProject/mvc/Views/Home/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9JbmRleC5jc2h0bWw=
+[F:/MasterProject/mvc/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/yashveekotadiya/Desktop/newmaster/MasterProject/mvc/Views/Home/Privacy.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9Qcml2YWN5LmNzaHRtbA==
+[F:/MasterProject/mvc/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/yashveekotadiya/Desktop/newmaster/MasterProject/mvc/Views/KendoComponentEmployee/Add.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvS2VuZG9Db21wb25lbnRFbXBsb3llZS9BZGQuY3NodG1s
+[F:/MasterProject/mvc/Views/KendoComponentEmployee/Add.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS2VuZG9Db21wb25lbnRFbXBsb3llZVxBZGQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/yashveekotadiya/Desktop/newmaster/MasterProject/mvc/Views/KendoComponentEmployee/Delete.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvS2VuZG9Db21wb25lbnRFbXBsb3llZS9EZWxldGUuY3NodG1s
+[F:/MasterProject/mvc/Views/KendoComponentEmployee/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS2VuZG9Db21wb25lbnRFbXBsb3llZVxEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/yashveekotadiya/Desktop/newmaster/MasterProject/mvc/Views/KendoComponentEmployee/Details.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvS2VuZG9Db21wb25lbnRFbXBsb3llZS9EZXRhaWxzLmNzaHRtbA==
+[F:/MasterProject/mvc/Views/KendoComponentEmployee/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS2VuZG9Db21wb25lbnRFbXBsb3llZVxEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/yashveekotadiya/Desktop/newmaster/MasterProject/mvc/Views/KendoComponentEmployee/Edit.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvS2VuZG9Db21wb25lbnRFbXBsb3llZS9FZGl0LmNzaHRtbA==
+[F:/MasterProject/mvc/Views/KendoComponentEmployee/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS2VuZG9Db21wb25lbnRFbXBsb3llZVxFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/yashveekotadiya/Desktop/newmaster/MasterProject/mvc/Views/KendoComponentEmployee/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvS2VuZG9Db21wb25lbnRFbXBsb3llZS9JbmRleC5jc2h0bWw=
+[F:/MasterProject/mvc/Views/KendoComponentEmployee/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS2VuZG9Db21wb25lbnRFbXBsb3llZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/yashveekotadiya/Desktop/newmaster/MasterProject/mvc/Views/KendoComponentUser/Login.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvS2VuZG9Db21wb25lbnRVc2VyL0xvZ2luLmNzaHRtbA==
+[F:/MasterProject/mvc/Views/KendoComponentUser/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS2VuZG9Db21wb25lbnRVc2VyXExvZ2luLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/yashveekotadiya/Desktop/newmaster/MasterProject/mvc/Views/KendoComponentUser/Register.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvS2VuZG9Db21wb25lbnRVc2VyL1JlZ2lzdGVyLmNzaHRtbA==
+[F:/MasterProject/mvc/Views/KendoComponentUser/Register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS2VuZG9Db21wb25lbnRVc2VyXFJlZ2lzdGVyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/yashveekotadiya/Desktop/newmaster/MasterProject/mvc/Views/KendoGrid/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvS2VuZG9HcmlkL0luZGV4LmNzaHRtbA==
+[F:/MasterProject/mvc/Views/Kendogridlogin/Index1.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS2VuZG9ncmlkbG9naW5cSW5kZXgxLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/yashveekotadiya/Desktop/newmaster/MasterProject/mvc/Views/mvcajax/Admin.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvbXZjYWpheC9BZG1pbi5jc2h0bWw=
+[F:/MasterProject/mvc/Views/KendoGrid/Admin.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS2VuZG9HcmlkXEFkbWluLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/yashveekotadiya/Desktop/newmaster/MasterProject/mvc/Views/mvcajax/User.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvbXZjYWpheC9Vc2VyLmNzaHRtbA==
+[F:/MasterProject/mvc/Views/KendoGrid/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS2VuZG9HcmlkXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/yashveekotadiya/Desktop/newmaster/MasterProject/mvc/Views/Shared/Error.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL0Vycm9yLmNzaHRtbA==
+[F:/MasterProject/mvc/Views/mvcajax/Admin.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcbXZjYWpheFxBZG1pbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/yashveekotadiya/Desktop/newmaster/MasterProject/mvc/Views/Shared/_ValidationScriptsPartial.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+[F:/MasterProject/mvc/Views/mvcajax/User.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcbXZjYWpheFxVc2VyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/yashveekotadiya/Desktop/newmaster/MasterProject/mvc/Views/User/Login.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVXNlci9Mb2dpbi5jc2h0bWw=
+[F:/MasterProject/mvc/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/yashveekotadiya/Desktop/newmaster/MasterProject/mvc/Views/User/Register.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVXNlci9SZWdpc3Rlci5jc2h0bWw=
+[F:/MasterProject/mvc/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/yashveekotadiya/Desktop/newmaster/MasterProject/mvc/Views/_ViewImports.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+[F:/MasterProject/mvc/Views/User/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/yashveekotadiya/Desktop/newmaster/MasterProject/mvc/Views/_ViewStart.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdTdGFydC5jc2h0bWw=
+[F:/MasterProject/mvc/Views/User/Register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxSZWdpc3Rlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/yashveekotadiya/Desktop/newmaster/MasterProject/mvc/Views/Shared/_Layout.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19MYXlvdXQuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = b-bq85iswkz2
+[F:/MasterProject/mvc/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/MasterProject/mvc/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/MasterProject/mvc/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-x8p8g49oo3

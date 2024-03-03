@@ -20,19 +20,13 @@
                 <input type="hidden" id="c_empid" name="c_empid" value="@Model.c_empid" />
 
                 <label for="c_empname">Name</label>
-                <input id="c_empname" name="c_empname" value="@Model.c_empname" />
+                <input id="c_empname" name="c_empname" value="@Model.c_empname" readonly />
 
                 <label for="c_empgender">Gender</label><br>
-                @foreach (var gender in genders)
-                {
-                    <input type="radio" id="@gender" name="c_empgender" value="@gender" @(gender == Model.c_empgender ?
-                    "checked" : "") />
-                    <label for="@gender">@gender</label>
-                }
-                <br>
+                <input type="text" name="c_empgender" id="c_empgender" value="@Model.c_empgender" readonly>
 
                 <label for="c_empdob">Date of Birth</label>
-                <input id="c_empdob" name="c_empdob" value="@Model.c_empdob.ToString("yyyy-MM-dd")" />
+                <input id="c_empdob" name="c_empdob" value="@Model.c_empdob.ToString("yyyy-MM-dd")" readonly/>
 
                 <label for="c_empshift">Shift</label><br>
                 @foreach (var shift in shifts)
@@ -69,6 +63,8 @@
         <script>
             $(document).ready(function () {
                 $("#c_empname").kendoTextBox();
+                $("#c_empgender").kendoTextBox();
+
                 $("#c_empdob").kendoDatePicker({
                     format: "yyyy-MM-dd"
                 });
