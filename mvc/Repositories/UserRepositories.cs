@@ -70,8 +70,6 @@ namespace mvc.Repositories
             int rowCount = 0;
             string username = "";
             int studentID = 0;
-
-
             try
             {
                 conn.Open();
@@ -85,8 +83,6 @@ namespace mvc.Repositories
                     cmd.Parameters.AddWithValue("@c_role", user.c_role);
 
                     cmd.ExecuteNonQuery();
-
-
 
                 }
             }

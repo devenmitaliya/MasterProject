@@ -1,0 +1,139 @@
+@model IEnumerable<mvc.Models.tblUser>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Kendo UI Grid Login and Registration</title>
+    <link rel="stylesheet" href="https://kendo.cdn.telerik.com/2022.1.119/styles/kendo.common.min.css" />
+    <link rel="stylesheet" href="https://kendo.cdn.telerik.com/2022.1.119/styles/kendo.default.min.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://kendo.cdn.telerik.com/2022.1.119/js/kendo.all.min.js"></script>
+</head>
+<body>
+    <div id="loginContainer">
+        <!-- Login Form with Kendo Grid -->
+        <h2>User Login</h2>
+        <form id="loginForm">
+            <label for="loginUserEmail">User Email:</label>         
+            <input type="text" id="loginUserEmail" name="loginUserEmail" required />                <br> <br>         
+
+            <label for="loginPassword">Password:</label>
+            <input type="password" id="loginPassword" name="loginPassword" required />              <br> <br>  
+
+            <button type="button" onclick="loginUser()">Login</button>                          <br> <br>  
+
+            <p>Not registered? <a href="javascript:void(0);" onclick="showRegistrationForm()">Register here</a></p>
+        </form>
+    </div>
+
+    <div id="registrationContainer" style="display: none;">
+        <!-- Registration Form with Kendo Grid -->
+        <h2>User Registration</h2>
+        <form id="registrationForm">
+            <label for="c_uname">Username:</label>
+            <input type="text" id="c_uname" name="c_uname" required />                          <br> <br>  
+
+            <label for="registrationUserEmail">Email:</label>
+            <input type="text" id="registrationUserEmail" name="registrationUserEmail" required />          <br> <br> 
+
+            <label for="c_password">Password:</label>
+            <input type="password" id="c_password" name="c_password" required />                <br> <br> 
+
+            <label for="c_role">Role:</label>
+            <input type="text" id="c_role" name="c_role" required />                            <br> <br> 
+
+            <button type="button" onclick="registerUser()">Register</button>                <br> <br> 
+
+            @* <p>Already registered? <a href="javascript:void(0);" onclick="showLoginForm()">Login here</a></p> *@
+        </form>
+    </div>
+
+    <div>
+        <!-- Kendo Grid for User Data -->
+        <div id="grid"></div>
+    </div>
+
+    <script>
+        function initGrid() {
+            $("#grid").kendoGrid({
+                dataSource: {
+                    // Define your data source configuration here
+                },
+            });
+        }
+
+        function refreshGrid() {
+            var grid = $("#grid").data("kendoGrid");
+            grid.dataSource.read();
+        }
+
+        function showLoginForm() {
+            $("#loginContainer").show();
+            $("#registrationContainer").hide();
+        }
+
+        function showRegistrationForm() {
+            $("#loginContainer").hide();
+            $("#registrationContainer").show();
+        }
+
+        function registerUser() {
+            var c_uname = $("#c_uname").val();
+            var c_uemail = $("#registrationUserEmail").val();
+            var c_password = $("#c_password").val();
+            var c_role = $("#c_role").val();
+
+            $.ajax({
+                url: '/Kendogridlogin/RegisterUser',
+                type: 'POST',
+                contentType: 'application/json',
+                data: JSON.stringify({
+                    c_uname: c_uname,
+                    c_uemail: c_uemail,
+                    c_password: c_password,
+                    c_role: c_role
+                }),
+                success: function () {
+                    alert("Registration successful!");
+                    // Switch to the login form after successful registration
+                    showLoginForm();
+                },
+                error: function () {
+                    alert("Registration failed. Please try again.");
+                }
+            });
+        }
+
+        function loginUser() {
+            var c_uemail = $("#loginUserEmail").val();
+            var c_password = $("#loginPassword").val();
+
+            $.ajax({
+                url: '/Kendogridlogin/Login',
+                type: 'POST',
+                contentType: 'application/json',
+                data: JSON.stringify({
+                    c_uemail : c_uemail,
+                    c_password: c_password
+                }),
+                success: function (response) {
+                    if (response.success) {
+                        alert("Login successful!");
+                        // Redirect to kendogrid/index.cshtml upon successful login
+                        window.location.href = '/kendogrid/index';
+                    } else {
+                        alert("Login failed. Please check your credentials.");
+                    }
+                },
+                error: function () {
+                    alert("Login failed. Please try again.");
+                }
+            });
+        }
+
+        $(document).ready(function () {
+            initGrid();
+        });
+    </script>
+</body>
+</html>
