@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "d1q51wdSDNn/hjixGwxKe91sNXCQqnyOqSLDk7/DRrxcAgclTn88nE+ZJjzmvYq04TEyq9nNs4mOO+qNDc+oTA==",
+  "dgSpecHash": "COTwyFcpP86Dui7LfGpjHJ8kiRb28yWnSdNsFtbD4f3teUFHd9xJSVVlW9/Pnz+XnwILpYgW7XJAj4/egxHEgw==",
   "success": true,
-  "projectFilePath": "F:\\MasterProject\\mvc\\mvc.csproj",
+  "projectFilePath": "G:\\MasterProject\\mvc\\mvc.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\DELL\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\2.2.0\\microsoft.aspnetcore.cryptography.internal.2.2.0.nupkg.sha512",
     "C:\\Users\\DELL\\.nuget\\packages\\microsoft.aspnetcore.dataprotection\\2.2.0\\microsoft.aspnetcore.dataprotection.2.2.0.nupkg.sha512",

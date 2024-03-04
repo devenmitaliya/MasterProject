@@ -55,7 +55,9 @@ namespace mvc.Controllers
         {
             ViewBag.id = id;
             Console.WriteLine("IDDDDD::::::::::::::: " + ViewBag.id);
+
             return View();
+
         }
         [HttpGet]
         public IActionResult Add()

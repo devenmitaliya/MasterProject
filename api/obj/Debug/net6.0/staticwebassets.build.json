@@ -1,13 +1,13 @@
 {
   "Version": 1,
-  "Hash": "RiPNItiMjKNKXouPD7jtE+c6bL8YbdtouYSA1UG5xn8=",
+  "Hash": "5CmkPMVid1z07/vTDQn4tnycDpCzQcjSNR00Ghwk5zs=",
   "Source": "api",
   "BasePath": "_content/api",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [
     {
-      "Identity": "F:\\MasterProject\\mvc\\mvc.csproj",
+      "Identity": "G:\\MasterProject\\mvc\\mvc.csproj",
       "Version": 2,
       "Source": "mvc",
       "GetPublishAssetsTargets": "ComputeReferencedStaticWebAssetsPublishManifest;GetCurrentProjectPublishStaticWebAssetItems",
@@ -22,17 +22,17 @@
     {
       "Name": "mvc\\wwwroot",
       "Source": "mvc",
-      "ContentRoot": "F:\\MasterProject\\mvc\\wwwroot\\",
+      "ContentRoot": "G:\\MasterProject\\mvc\\wwwroot\\",
       "BasePath": "_content/mvc",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "F:\\MasterProject\\api\\obj\\Debug\\net6.0\\scopedcss\\bundle\\api.styles.css",
+      "Identity": "G:\\MasterProject\\api\\obj\\Debug\\net6.0\\scopedcss\\bundle\\api.styles.css",
       "SourceId": "api",
       "SourceType": "Computed",
-      "ContentRoot": "F:\\MasterProject\\api\\obj\\Debug\\net6.0\\scopedcss\\bundle\\",
+      "ContentRoot": "G:\\MasterProject\\api\\obj\\Debug\\net6.0\\scopedcss\\bundle\\",
       "BasePath": "_content/api",
       "RelativePath": "api.styles.css",
       "AssetKind": "All",
@@ -45,13 +45,13 @@
       "AssetTraitValue": "ApplicationBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "F:\\MasterProject\\api\\obj\\Debug\\net6.0\\scopedcss\\bundle\\api.styles.css"
+      "OriginalItemSpec": "G:\\MasterProject\\api\\obj\\Debug\\net6.0\\scopedcss\\bundle\\api.styles.css"
     },
     {
-      "Identity": "F:\\MasterProject\\mvc\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\mvc.bundle.scp.css",
+      "Identity": "G:\\MasterProject\\mvc\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\mvc.bundle.scp.css",
       "SourceId": "mvc",
       "SourceType": "Project",
-      "ContentRoot": "F:\\MasterProject\\mvc\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\",
+      "ContentRoot": "G:\\MasterProject\\mvc\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\",
       "BasePath": "_content/mvc",
       "RelativePath": "mvc.bundle.scp.css",
       "AssetKind": "All",
@@ -64,13 +64,13 @@
       "AssetTraitValue": "ProjectBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "F:\\MasterProject\\mvc\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\mvc.bundle.scp.css"
+      "OriginalItemSpec": "G:\\MasterProject\\mvc\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\mvc.bundle.scp.css"
     },
     {
-      "Identity": "F:\\MasterProject\\mvc\\wwwroot\\css\\site.css",
+      "Identity": "G:\\MasterProject\\mvc\\wwwroot\\css\\site.css",
       "SourceId": "mvc",
       "SourceType": "Project",
-      "ContentRoot": "F:\\MasterProject\\mvc\\wwwroot\\",
+      "ContentRoot": "G:\\MasterProject\\mvc\\wwwroot\\",
       "BasePath": "_content/mvc",
       "RelativePath": "css/site.css",
       "AssetKind": "All",
@@ -86,10 +86,10 @@
       "OriginalItemSpec": "wwwroot\\css\\site.css"
     },
     {
-      "Identity": "F:\\MasterProject\\mvc\\wwwroot\\favicon.ico",
+      "Identity": "G:\\MasterProject\\mvc\\wwwroot\\favicon.ico",
       "SourceId": "mvc",
       "SourceType": "Project",
-      "ContentRoot": "F:\\MasterProject\\mvc\\wwwroot\\",
+      "ContentRoot": "G:\\MasterProject\\mvc\\wwwroot\\",
       "BasePath": "_content/mvc",
       "RelativePath": "favicon.ico",
       "AssetKind": "All",
@@ -105,10 +105,10 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
-      "Identity": "F:\\MasterProject\\mvc\\wwwroot\\images\\0318034d-68c6-4ecf-b2a9-c82d0ba9a512_Internship Plan.png",
+      "Identity": "G:\\MasterProject\\mvc\\wwwroot\\images\\0318034d-68c6-4ecf-b2a9-c82d0ba9a512_Internship Plan.png",
       "SourceId": "mvc",
       "SourceType": "Project",
-      "ContentRoot": "F:\\MasterProject\\mvc\\wwwroot\\",
+      "ContentRoot": "G:\\MasterProject\\mvc\\wwwroot\\",
       "BasePath": "_content/mvc",
       "RelativePath": "images/0318034d-68c6-4ecf-b2a9-c82d0ba9a512_Internship Plan.png",
       "AssetKind": "All",
@@ -124,10 +124,10 @@
       "OriginalItemSpec": "wwwroot\\images\\0318034d-68c6-4ecf-b2a9-c82d0ba9a512_Internship Plan.png"
     },
     {
-      "Identity": "F:\\MasterProject\\mvc\\wwwroot\\images\\09413437-395d-472a-b5cd-51b04e050b3c_i1.jpg",
+      "Identity": "G:\\MasterProject\\mvc\\wwwroot\\images\\09413437-395d-472a-b5cd-51b04e050b3c_i1.jpg",
       "SourceId": "mvc",
       "SourceType": "Project",
-      "ContentRoot": "F:\\MasterProject\\mvc\\wwwroot\\",
+      "ContentRoot": "G:\\MasterProject\\mvc\\wwwroot\\",
       "BasePath": "_content/mvc",
       "RelativePath": "images/09413437-395d-472a-b5cd-51b04e050b3c_i1.jpg",
       "AssetKind": "All",
@@ -143,10 +143,10 @@
       "OriginalItemSpec": "wwwroot\\images\\09413437-395d-472a-b5cd-51b04e050b3c_i1.jpg"
     },
     {
-      "Identity": "F:\\MasterProject\\mvc\\wwwroot\\images\\0c3efcd0-24ed-4aa9-bb1f-f4dcea3462c9_Clarent LOGO.png",
+      "Identity": "G:\\MasterProject\\mvc\\wwwroot\\images\\0c3efcd0-24ed-4aa9-bb1f-f4dcea3462c9_Clarent LOGO.png",
       "SourceId": "mvc",
       "SourceType": "Project",
-      "ContentRoot": "F:\\MasterProject\\mvc\\wwwroot\\",
+      "ContentRoot": "G:\\MasterProject\\mvc\\wwwroot\\",
       "BasePath": "_content/mvc",
       "RelativePath": "images/0c3efcd0-24ed-4aa9-bb1f-f4dcea3462c9_Clarent LOGO.png",
       "AssetKind": "All",
@@ -162,10 +162,10 @@
       "OriginalItemSpec": "wwwroot\\images\\0c3efcd0-24ed-4aa9-bb1f-f4dcea3462c9_Clarent LOGO.png"
     },
     {
-      "Identity": "F:\\MasterProject\\mvc\\wwwroot\\images\\0dbdc6ae-6a5e-4fb3-a9ac-3c1735a2aca0_radha-and-the-bee-hinduism-women-wallpaper-preview.jpg",
+      "Identity": "G:\\MasterProject\\mvc\\wwwroot\\images\\0dbdc6ae-6a5e-4fb3-a9ac-3c1735a2aca0_radha-and-the-bee-hinduism-women-wallpaper-preview.jpg",
       "SourceId": "mvc",
       "SourceType": "Project",
-      "ContentRoot": "F:\\MasterProject\\mvc\\wwwroot\\",
+      "ContentRoot": "G:\\MasterProject\\mvc\\wwwroot\\",
       "BasePath": "_content/mvc",
       "RelativePath": "images/0dbdc6ae-6a5e-4fb3-a9ac-3c1735a2aca0_radha-and-the-bee-hinduism-women-wallpaper-preview.jpg",
       "AssetKind": "All",
@@ -181,10 +181,10 @@
       "OriginalItemSpec": "wwwroot\\images\\0dbdc6ae-6a5e-4fb3-a9ac-3c1735a2aca0_radha-and-the-bee-hinduism-women-wallpaper-preview.jpg"
     },
     {
-      "Identity": "F:\\MasterProject\\mvc\\wwwroot\\images\\0f34754d-146d-48a2-8f02-d0e50dd756e9_i1.jpg",
+      "Identity": "G:\\MasterProject\\mvc\\wwwroot\\images\\0f34754d-146d-48a2-8f02-d0e50dd756e9_i1.jpg",
       "SourceId": "mvc",
       "SourceType": "Project",
-      "ContentRoot": "F:\\MasterProject\\mvc\\wwwroot\\",
+      "ContentRoot": "G:\\MasterProject\\mvc\\wwwroot\\",
       "BasePath": "_content/mvc",
       "RelativePath": "images/0f34754d-146d-48a2-8f02-d0e50dd756e9_i1.jpg",
       "AssetKind": "All",
@@ -200,10 +200,10 @@
       "OriginalItemSpec": "wwwroot\\images\\0f34754d-146d-48a2-8f02-d0e50dd756e9_i1.jpg"
     },
     {
-      "Identity": "F:\\MasterProject\\mvc\\wwwroot\\images\\13d960d3-758e-4605-920a-af0288fa8027_my project.jpg",
+      "Identity": "G:\\MasterProject\\mvc\\wwwroot\\images\\13d960d3-758e-4605-920a-af0288fa8027_my project.jpg",
       "SourceId": "mvc",
       "SourceType": "Project",
-      "ContentRoot": "F:\\MasterProject\\mvc\\wwwroot\\",
+      "ContentRoot": "G:\\MasterProject\\mvc\\wwwroot\\",
       "BasePath": "_content/mvc",
       "RelativePath": "images/13d960d3-758e-4605-920a-af0288fa8027_my project.jpg",
       "AssetKind": "All",
@@ -219,10 +219,10 @@
       "OriginalItemSpec": "wwwroot\\images\\13d960d3-758e-4605-920a-af0288fa8027_my project.jpg"
     },
     {
-      "Identity": "F:\\MasterProject\\mvc\\wwwroot\\images\\184f54a3-0097-4f43-a09a-671ad0e7a25d_my project.jpg",
+      "Identity": "G:\\MasterProject\\mvc\\wwwroot\\images\\184f54a3-0097-4f43-a09a-671ad0e7a25d_my project.jpg",
       "SourceId": "mvc",
       "SourceType": "Project",
-      "ContentRoot": "F:\\MasterProject\\mvc\\wwwroot\\",
+      "ContentRoot": "G:\\MasterProject\\mvc\\wwwroot\\",
       "BasePath": "_content/mvc",
       "RelativePath": "images/184f54a3-0097-4f43-a09a-671ad0e7a25d_my project.jpg",
       "AssetKind": "All",
@@ -238,10 +238,10 @@
       "OriginalItemSpec": "wwwroot\\images\\184f54a3-0097-4f43-a09a-671ad0e7a25d_my project.jpg"
     },
     {
-      "Identity": "F:\\MasterProject\\mvc\\wwwroot\\images\\2021-12-12.png",
+      "Identity": "G:\\MasterProject\\mvc\\wwwroot\\images\\2021-12-12.png",
       "SourceId": "mvc",
       "SourceType": "Project",
-      "ContentRoot": "F:\\MasterProject\\mvc\\wwwroot\\",
+      "ContentRoot": "G:\\MasterProject\\mvc\\wwwroot\\",
       "BasePath": "_content/mvc",
       "RelativePath": "images/2021-12-12.png",
       "AssetKind": "All",
@@ -257,10 +257,10 @@
       "OriginalItemSpec": "wwwroot\\images\\2021-12-12.png"
     },
     {
-      "Identity": "F:\\MasterProject\\mvc\\wwwroot\\images\\2a215ecc-93c1-4a78-a65c-02a6f600e6f6_Clarent LOGO.png",
+      "Identity": "G:\\MasterProject\\mvc\\wwwroot\\images\\2a215ecc-93c1-4a78-a65c-02a6f600e6f6_Clarent LOGO.png",
       "SourceId": "mvc",
       "SourceType": "Project",
-      "ContentRoot": "F:\\MasterProject\\mvc\\wwwroot\\",
+      "ContentRoot": "G:\\MasterProject\\mvc\\wwwroot\\",
       "BasePath": "_content/mvc",
       "RelativePath": "images/2a215ecc-93c1-4a78-a65c-02a6f600e6f6_Clarent LOGO.png",
       "AssetKind": "All",
@@ -276,10 +276,10 @@
       "OriginalItemSpec": "wwwroot\\images\\2a215ecc-93c1-4a78-a65c-02a6f600e6f6_Clarent LOGO.png"
     },
     {
-      "Identity": "F:\\MasterProject\\mvc\\wwwroot\\images\\2be97884-dcde-4136-9792-7a3542d448d0_Clarent LOGO.png",
+      "Identity": "G:\\MasterProject\\mvc\\wwwroot\\images\\2be97884-dcde-4136-9792-7a3542d448d0_Clarent LOGO.png",
       "SourceId": "mvc",
       "SourceType": "Project",
-      "ContentRoot": "F:\\MasterProject\\mvc\\wwwroot\\",
+      "ContentRoot": "G:\\MasterProject\\mvc\\wwwroot\\",
       "BasePath": "_content/mvc",
       "RelativePath": "images/2be97884-dcde-4136-9792-7a3542d448d0_Clarent LOGO.png",
       "AssetKind": "All",
@@ -295,10 +295,10 @@
       "OriginalItemSpec": "wwwroot\\images\\2be97884-dcde-4136-9792-7a3542d448d0_Clarent LOGO.png"
     },
     {
-      "Identity": "F:\\MasterProject\\mvc\\wwwroot\\images\\370e6710-227f-4701-a97e-364992b4f4b7_i1.jpg",
+      "Identity": "G:\\MasterProject\\mvc\\wwwroot\\images\\370e6710-227f-4701-a97e-364992b4f4b7_i1.jpg",
       "SourceId": "mvc",
       "SourceType": "Project",
-      "ContentRoot": "F:\\MasterProject\\mvc\\wwwroot\\",
+      "ContentRoot": "G:\\MasterProject\\mvc\\wwwroot\\",
       "BasePath": "_content/mvc",
       "RelativePath": "images/370e6710-227f-4701-a97e-364992b4f4b7_i1.jpg",
       "AssetKind": "All",
@@ -314,10 +314,10 @@
       "OriginalItemSpec": "wwwroot\\images\\370e6710-227f-4701-a97e-364992b4f4b7_i1.jpg"
     },
     {
-      "Identity": "F:\\MasterProject\\mvc\\wwwroot\\images\\3e733096-c105-4b88-b855-c5fe1be2a693_i1.jpg",
+      "Identity": "G:\\MasterProject\\mvc\\wwwroot\\images\\3e733096-c105-4b88-b855-c5fe1be2a693_i1.jpg",
       "SourceId": "mvc",
       "SourceType": "Project",
-      "ContentRoot": "F:\\MasterProject\\mvc\\wwwroot\\",
+      "ContentRoot": "G:\\MasterProject\\mvc\\wwwroot\\",
       "BasePath": "_content/mvc",
       "RelativePath": "images/3e733096-c105-4b88-b855-c5fe1be2a693_i1.jpg",
       "AssetKind": "All",
@@ -333,10 +333,10 @@
       "OriginalItemSpec": "wwwroot\\images\\3e733096-c105-4b88-b855-c5fe1be2a693_i1.jpg"
     },
     {
-      "Identity": "F:\\MasterProject\\mvc\\wwwroot\\images\\3f667411-a221-4055-bcd0-4da6bf8a0816_i1.jpg",
+      "Identity": "G:\\MasterProject\\mvc\\wwwroot\\images\\3f667411-a221-4055-bcd0-4da6bf8a0816_i1.jpg",
       "SourceId": "mvc",
       "SourceType": "Project",
-      "ContentRoot": "F:\\MasterProject\\mvc\\wwwroot\\",
+      "ContentRoot": "G:\\MasterProject\\mvc\\wwwroot\\",
       "BasePath": "_content/mvc",
       "RelativePath": "images/3f667411-a221-4055-bcd0-4da6bf8a0816_i1.jpg",
       "AssetKind": "All",
@@ -352,10 +352,10 @@
       "OriginalItemSpec": "wwwroot\\images\\3f667411-a221-4055-bcd0-4da6bf8a0816_i1.jpg"
     },
     {
-      "Identity": "F:\\MasterProject\\mvc\\wwwroot\\images\\3f9a8624-c24e-4597-990b-b43019a26bed_Clarent LOGO.png",
+      "Identity": "G:\\MasterProject\\mvc\\wwwroot\\images\\3f9a8624-c24e-4597-990b-b43019a26bed_Clarent LOGO.png",
       "SourceId": "mvc",
       "SourceType": "Project",
-      "ContentRoot": "F:\\MasterProject\\mvc\\wwwroot\\",
+      "ContentRoot": "G:\\MasterProject\\mvc\\wwwroot\\",
       "BasePath": "_content/mvc",
       "RelativePath": "images/3f9a8624-c24e-4597-990b-b43019a26bed_Clarent LOGO.png",
       "AssetKind": "All",
@@ -371,10 +371,10 @@
       "OriginalItemSpec": "wwwroot\\images\\3f9a8624-c24e-4597-990b-b43019a26bed_Clarent LOGO.png"
     },
     {
-      "Identity": "F:\\MasterProject\\mvc\\wwwroot\\images\\42c4a9f2-4a9d-4f86-9dee-22f0d439356c_my project.jpg",
+      "Identity": "G:\\MasterProject\\mvc\\wwwroot\\images\\42c4a9f2-4a9d-4f86-9dee-22f0d439356c_my project.jpg",
       "SourceId": "mvc",
       "SourceType": "Project",
-      "ContentRoot": "F:\\MasterProject\\mvc\\wwwroot\\",
+      "ContentRoot": "G:\\MasterProject\\mvc\\wwwroot\\",
       "BasePath": "_content/mvc",
       "RelativePath": "images/42c4a9f2-4a9d-4f86-9dee-22f0d439356c_my project.jpg",
       "AssetKind": "All",
@@ -390,10 +390,10 @@
       "OriginalItemSpec": "wwwroot\\images\\42c4a9f2-4a9d-4f86-9dee-22f0d439356c_my project.jpg"
     },
     {
-      "Identity": "F:\\MasterProject\\mvc\\wwwroot\\images\\4520b924-5d9e-4d21-a1d0-9504edb54ac2_Clarent LOGO.png",
+      "Identity": "G:\\MasterProject\\mvc\\wwwroot\\images\\4520b924-5d9e-4d21-a1d0-9504edb54ac2_Clarent LOGO.png",
       "SourceId": "mvc",
       "SourceType": "Project",
-      "ContentRoot": "F:\\MasterProject\\mvc\\wwwroot\\",
+      "ContentRoot": "G:\\MasterProject\\mvc\\wwwroot\\",
       "BasePath": "_content/mvc",
       "RelativePath": "images/4520b924-5d9e-4d21-a1d0-9504edb54ac2_Clarent LOGO.png",
       "AssetKind": "All",
@@ -409,10 +409,10 @@
       "OriginalItemSpec": "wwwroot\\images\\4520b924-5d9e-4d21-a1d0-9504edb54ac2_Clarent LOGO.png"
     },
     {
-      "Identity": "F:\\MasterProject\\mvc\\wwwroot\\images\\483b64b6-5d43-4832-bfcd-3cc3c17b1384_Internship Plan.png",
+      "Identity": "G:\\MasterProject\\mvc\\wwwroot\\images\\483b64b6-5d43-4832-bfcd-3cc3c17b1384_Internship Plan.png",
       "SourceId": "mvc",
       "SourceType": "Project",
-      "ContentRoot": "F:\\MasterProject\\mvc\\wwwroot\\",
+      "ContentRoot": "G:\\MasterProject\\mvc\\wwwroot\\",
       "BasePath": "_content/mvc",
       "RelativePath": "images/483b64b6-5d43-4832-bfcd-3cc3c17b1384_Internship Plan.png",
       "AssetKind": "All",
@@ -428,10 +428,10 @@
       "OriginalItemSpec": "wwwroot\\images\\483b64b6-5d43-4832-bfcd-3cc3c17b1384_Internship Plan.png"
     },
     {
-      "Identity": "F:\\MasterProject\\mvc\\wwwroot\\images\\50272cb9-5de1-467d-b9a6-ecec4667c117_i1.jpg",
+      "Identity": "G:\\MasterProject\\mvc\\wwwroot\\images\\50272cb9-5de1-467d-b9a6-ecec4667c117_i1.jpg",
       "SourceId": "mvc",
       "SourceType": "Project",
-      "ContentRoot": "F:\\MasterProject\\mvc\\wwwroot\\",
+      "ContentRoot": "G:\\MasterProject\\mvc\\wwwroot\\",
       "BasePath": "_content/mvc",
       "RelativePath": "images/50272cb9-5de1-467d-b9a6-ecec4667c117_i1.jpg",
       "AssetKind": "All",
@@ -447,10 +447,10 @@
       "OriginalItemSpec": "wwwroot\\images\\50272cb9-5de1-467d-b9a6-ecec4667c117_i1.jpg"
     },
     {
-      "Identity": "F:\\MasterProject\\mvc\\wwwroot\\images\\5034f1dd-c6ed-4e74-8c28-0c6326a6a119_Clarent LOGO.png",
+      "Identity": "G:\\MasterProject\\mvc\\wwwroot\\images\\5034f1dd-c6ed-4e74-8c28-0c6326a6a119_Clarent LOGO.png",
       "SourceId": "mvc",
       "SourceType": "Project",
-      "ContentRoot": "F:\\MasterProject\\mvc\\wwwroot\\",
+      "ContentRoot": "G:\\MasterProject\\mvc\\wwwroot\\",
       "BasePath": "_content/mvc",
       "RelativePath": "images/5034f1dd-c6ed-4e74-8c28-0c6326a6a119_Clarent LOGO.png",
       "AssetKind": "All",
@@ -466,10 +466,10 @@
       "OriginalItemSpec": "wwwroot\\images\\5034f1dd-c6ed-4e74-8c28-0c6326a6a119_Clarent LOGO.png"
     },
     {
-      "Identity": "F:\\MasterProject\\mvc\\wwwroot\\images\\53f1887d-8dec-478d-b9e5-f611bd9b11a3_i1.jpg",
+      "Identity": "G:\\MasterProject\\mvc\\wwwroot\\images\\53f1887d-8dec-478d-b9e5-f611bd9b11a3_i1.jpg",
       "SourceId": "mvc",
       "SourceType": "Project",
-      "ContentRoot": "F:\\MasterProject\\mvc\\wwwroot\\",
+      "ContentRoot": "G:\\MasterProject\\mvc\\wwwroot\\",
       "BasePath": "_content/mvc",
       "RelativePath": "images/53f1887d-8dec-478d-b9e5-f611bd9b11a3_i1.jpg",
       "AssetKind": "All",
@@ -485,10 +485,10 @@
       "OriginalItemSpec": "wwwroot\\images\\53f1887d-8dec-478d-b9e5-f611bd9b11a3_i1.jpg"
     },
     {
-      "Identity": "F:\\MasterProject\\mvc\\wwwroot\\images\\57b5754a-88c9-424e-9576-6c50a36c0419_Clarent LOGO.png",
+      "Identity": "G:\\MasterProject\\mvc\\wwwroot\\images\\57b5754a-88c9-424e-9576-6c50a36c0419_Clarent LOGO.png",
       "SourceId": "mvc",
       "SourceType": "Project",
-      "ContentRoot": "F:\\MasterProject\\mvc\\wwwroot\\",
+      "ContentRoot": "G:\\MasterProject\\mvc\\wwwroot\\",
       "BasePath": "_content/mvc",
       "RelativePath": "images/57b5754a-88c9-424e-9576-6c50a36c0419_Clarent LOGO.png",
       "AssetKind": "All",
@@ -504,10 +504,10 @@
       "OriginalItemSpec": "wwwroot\\images\\57b5754a-88c9-424e-9576-6c50a36c0419_Clarent LOGO.png"
     },
     {
-      "Identity": "F:\\MasterProject\\mvc\\wwwroot\\images\\628f5b8e-288e-4bff-9507-11aaff15352b_Clarent LOGO.png",
+      "Identity": "G:\\MasterProject\\mvc\\wwwroot\\images\\628f5b8e-288e-4bff-9507-11aaff15352b_Clarent LOGO.png",
       "SourceId": "mvc",
       "SourceType": "Project",
-      "ContentRoot": "F:\\MasterProject\\mvc\\wwwroot\\",
+      "ContentRoot": "G:\\MasterProject\\mvc\\wwwroot\\",
       "BasePath": "_content/mvc",
       "RelativePath": "images/628f5b8e-288e-4bff-9507-11aaff15352b_Clarent LOGO.png",
       "AssetKind": "All",
@@ -523,10 +523,10 @@
       "OriginalItemSpec": "wwwroot\\images\\628f5b8e-288e-4bff-9507-11aaff15352b_Clarent LOGO.png"
     },
     {
-      "Identity": "F:\\MasterProject\\mvc\\wwwroot\\images\\6b1d1f7a-ba39-4fae-9bd3-15a937be337e_Clarent LOGO.png",
+      "Identity": "G:\\MasterProject\\mvc\\wwwroot\\images\\6b1d1f7a-ba39-4fae-9bd3-15a937be337e_Clarent LOGO.png",
       "SourceId": "mvc",
       "SourceType": "Project",
-      "ContentRoot": "F:\\MasterProject\\mvc\\wwwroot\\",
+      "ContentRoot": "G:\\MasterProject\\mvc\\wwwroot\\",
       "BasePath": "_content/mvc",
       "RelativePath": "images/6b1d1f7a-ba39-4fae-9bd3-15a937be337e_Clarent LOGO.png",
       "AssetKind": "All",
@@ -542,10 +542,10 @@
       "OriginalItemSpec": "wwwroot\\images\\6b1d1f7a-ba39-4fae-9bd3-15a937be337e_Clarent LOGO.png"
     },
     {
-      "Identity": "F:\\MasterProject\\mvc\\wwwroot\\images\\6d5f7f4b-0cd5-4420-aa06-82f1b8de3a37_i1.jpg",
+      "Identity": "G:\\MasterProject\\mvc\\wwwroot\\images\\6d5f7f4b-0cd5-4420-aa06-82f1b8de3a37_i1.jpg",
       "SourceId": "mvc",
       "SourceType": "Project",
-      "ContentRoot": "F:\\MasterProject\\mvc\\wwwroot\\",
+      "ContentRoot": "G:\\MasterProject\\mvc\\wwwroot\\",
       "BasePath": "_content/mvc",
       "RelativePath": "images/6d5f7f4b-0cd5-4420-aa06-82f1b8de3a37_i1.jpg",
       "AssetKind": "All",
@@ -561,10 +561,10 @@
       "OriginalItemSpec": "wwwroot\\images\\6d5f7f4b-0cd5-4420-aa06-82f1b8de3a37_i1.jpg"
     },
     {
-      "Identity": "F:\\MasterProject\\mvc\\wwwroot\\images\\6f75b4ec-c257-4387-bc8a-2cdb3262663e_Clarent LOGO.png",
+      "Identity": "G:\\MasterProject\\mvc\\wwwroot\\images\\6f75b4ec-c257-4387-bc8a-2cdb3262663e_Clarent LOGO.png",
       "SourceId": "mvc",
       "SourceType": "Project",
-      "ContentRoot": "F:\\MasterProject\\mvc\\wwwroot\\",
+      "ContentRoot": "G:\\MasterProject\\mvc\\wwwroot\\",
       "BasePath": "_content/mvc",
       "RelativePath": "images/6f75b4ec-c257-4387-bc8a-2cdb3262663e_Clarent LOGO.png",
       "AssetKind": "All",
@@ -580,10 +580,10 @@
       "OriginalItemSpec": "wwwroot\\images\\6f75b4ec-c257-4387-bc8a-2cdb3262663e_Clarent LOGO.png"
     },
     {
-      "Identity": "F:\\MasterProject\\mvc\\wwwroot\\images\\75fb7a42-c252-4809-b857-eee49345758f_i1.jpg",
+      "Identity": "G:\\MasterProject\\mvc\\wwwroot\\images\\75fb7a42-c252-4809-b857-eee49345758f_i1.jpg",
       "SourceId": "mvc",
       "SourceType": "Project",
-      "ContentRoot": "F:\\MasterProject\\mvc\\wwwroot\\",
+      "ContentRoot": "G:\\MasterProject\\mvc\\wwwroot\\",
       "BasePath": "_content/mvc",
       "RelativePath": "images/75fb7a42-c252-4809-b857-eee49345758f_i1.jpg",
       "AssetKind": "All",
@@ -599,10 +599,10 @@
       "OriginalItemSpec": "wwwroot\\images\\75fb7a42-c252-4809-b857-eee49345758f_i1.jpg"
     },
     {
-      "Identity": "F:\\MasterProject\\mvc\\wwwroot\\images\\7708790d-fabf-4002-839e-cd06870965c0_Clarent LOGO.png",
+      "Identity": "G:\\MasterProject\\mvc\\wwwroot\\images\\7708790d-fabf-4002-839e-cd06870965c0_Clarent LOGO.png",
       "SourceId": "mvc",
       "SourceType": "Project",
-      "ContentRoot": "F:\\MasterProject\\mvc\\wwwroot\\",
+      "ContentRoot": "G:\\MasterProject\\mvc\\wwwroot\\",
       "BasePath": "_content/mvc",
       "RelativePath": "images/7708790d-fabf-4002-839e-cd06870965c0_Clarent LOGO.png",
       "AssetKind": "All",
@@ -618,10 +618,10 @@
       "OriginalItemSpec": "wwwroot\\images\\7708790d-fabf-4002-839e-cd06870965c0_Clarent LOGO.png"
     },
     {
-      "Identity": "F:\\MasterProject\\mvc\\wwwroot\\images\\7bd34057-b2a6-49e3-be31-c125d743dcbf_Clarent LOGO.png",
+      "Identity": "G:\\MasterProject\\mvc\\wwwroot\\images\\7bd34057-b2a6-49e3-be31-c125d743dcbf_Clarent LOGO.png",
       "SourceId": "mvc",
       "SourceType": "Project",
-      "ContentRoot": "F:\\MasterProject\\mvc\\wwwroot\\",
+      "ContentRoot": "G:\\MasterProject\\mvc\\wwwroot\\",
       "BasePath": "_content/mvc",
       "RelativePath": "images/7bd34057-b2a6-49e3-be31-c125d743dcbf_Clarent LOGO.png",
       "AssetKind": "All",
@@ -637,10 +637,10 @@
       "OriginalItemSpec": "wwwroot\\images\\7bd34057-b2a6-49e3-be31-c125d743dcbf_Clarent LOGO.png"
     },
     {
-      "Identity": "F:\\MasterProject\\mvc\\wwwroot\\images\\7e217272-c006-4583-9c29-6842ec6f15a1_Clarent LOGO.png",
+      "Identity": "G:\\MasterProject\\mvc\\wwwroot\\images\\7e217272-c006-4583-9c29-6842ec6f15a1_Clarent LOGO.png",
       "SourceId": "mvc",
       "SourceType": "Project",
-      "ContentRoot": "F:\\MasterProject\\mvc\\wwwroot\\",
+      "ContentRoot": "G:\\MasterProject\\mvc\\wwwroot\\",
       "BasePath": "_content/mvc",
       "RelativePath": "images/7e217272-c006-4583-9c29-6842ec6f15a1_Clarent LOGO.png",
       "AssetKind": "All",
@@ -656,10 +656,10 @@
       "OriginalItemSpec": "wwwroot\\images\\7e217272-c006-4583-9c29-6842ec6f15a1_Clarent LOGO.png"
     },
     {
-      "Identity": "F:\\MasterProject\\mvc\\wwwroot\\images\\8848d86c-3d9b-47c5-b785-204fee63f9b0_Screenshot (84).png",
+      "Identity": "G:\\MasterProject\\mvc\\wwwroot\\images\\8848d86c-3d9b-47c5-b785-204fee63f9b0_Screenshot (84).png",
       "SourceId": "mvc",
       "SourceType": "Project",
-      "ContentRoot": "F:\\MasterProject\\mvc\\wwwroot\\",
+      "ContentRoot": "G:\\MasterProject\\mvc\\wwwroot\\",
       "BasePath": "_content/mvc",
       "RelativePath": "images/8848d86c-3d9b-47c5-b785-204fee63f9b0_Screenshot (84).png",
       "AssetKind": "All",
@@ -675,10 +675,10 @@
       "OriginalItemSpec": "wwwroot\\images\\8848d86c-3d9b-47c5-b785-204fee63f9b0_Screenshot (84).png"
     },
     {
-      "Identity": "F:\\MasterProject\\mvc\\wwwroot\\images\\8892b59d-27a1-4c56-ba41-24687c236e01_my project.jpg",
+      "Identity": "G:\\MasterProject\\mvc\\wwwroot\\images\\8892b59d-27a1-4c56-ba41-24687c236e01_my project.jpg",
       "SourceId": "mvc",
       "SourceType": "Project",
-      "ContentRoot": "F:\\MasterProject\\mvc\\wwwroot\\",
+      "ContentRoot": "G:\\MasterProject\\mvc\\wwwroot\\",
       "BasePath": "_content/mvc",
       "RelativePath": "images/8892b59d-27a1-4c56-ba41-24687c236e01_my project.jpg",
       "AssetKind": "All",
@@ -694,10 +694,10 @@
       "OriginalItemSpec": "wwwroot\\images\\8892b59d-27a1-4c56-ba41-24687c236e01_my project.jpg"
     },
     {
-      "Identity": "F:\\MasterProject\\mvc\\wwwroot\\images\\8dbe3f99-1eff-4ecd-8b4a-1b699ed9b9d3_Clarent LOGO.png",
+      "Identity": "G:\\MasterProject\\mvc\\wwwroot\\images\\8dbe3f99-1eff-4ecd-8b4a-1b699ed9b9d3_Clarent LOGO.png",
       "SourceId": "mvc",
       "SourceType": "Project",
-      "ContentRoot": "F:\\MasterProject\\mvc\\wwwroot\\",
+      "ContentRoot": "G:\\MasterProject\\mvc\\wwwroot\\",
       "BasePath": "_content/mvc",
       "RelativePath": "images/8dbe3f99-1eff-4ecd-8b4a-1b699ed9b9d3_Clarent LOGO.png",
       "AssetKind": "All",
@@ -713,10 +713,10 @@
       "OriginalItemSpec": "wwwroot\\images\\8dbe3f99-1eff-4ecd-8b4a-1b699ed9b9d3_Clarent LOGO.png"
     },
     {
-      "Identity": "F:\\MasterProject\\mvc\\wwwroot\\images\\8f75953e-054c-4be6-a5d8-e315be05ec45_Internship Plan.png",
+      "Identity": "G:\\MasterProject\\mvc\\wwwroot\\images\\8f75953e-054c-4be6-a5d8-e315be05ec45_Internship Plan.png",
       "SourceId": "mvc",
       "SourceType": "Project",
-      "ContentRoot": "F:\\MasterProject\\mvc\\wwwroot\\",
+      "ContentRoot": "G:\\MasterProject\\mvc\\wwwroot\\",
       "BasePath": "_content/mvc",
       "RelativePath": "images/8f75953e-054c-4be6-a5d8-e315be05ec45_Internship Plan.png",
       "AssetKind": "All",
@@ -732,10 +732,10 @@
       "OriginalItemSpec": "wwwroot\\images\\8f75953e-054c-4be6-a5d8-e315be05ec45_Internship Plan.png"
     },
     {
-      "Identity": "F:\\MasterProject\\mvc\\wwwroot\\images\\93f7ef15-1877-4240-82a2-699c4cb43ba4_Clarent LOGO.png",
+      "Identity": "G:\\MasterProject\\mvc\\wwwroot\\images\\93f7ef15-1877-4240-82a2-699c4cb43ba4_Clarent LOGO.png",
       "SourceId": "mvc",
       "SourceType": "Project",
-      "ContentRoot": "F:\\MasterProject\\mvc\\wwwroot\\",
+      "ContentRoot": "G:\\MasterProject\\mvc\\wwwroot\\",
       "BasePath": "_content/mvc",
       "RelativePath": "images/93f7ef15-1877-4240-82a2-699c4cb43ba4_Clarent LOGO.png",
       "AssetKind": "All",
@@ -751,10 +751,10 @@
       "OriginalItemSpec": "wwwroot\\images\\93f7ef15-1877-4240-82a2-699c4cb43ba4_Clarent LOGO.png"
     },
     {
-      "Identity": "F:\\MasterProject\\mvc\\wwwroot\\images\\9ac6d268-72b8-461a-9270-460a5edf1a81_Internship Plan.png",
+      "Identity": "G:\\MasterProject\\mvc\\wwwroot\\images\\9ac6d268-72b8-461a-9270-460a5edf1a81_Internship Plan.png",
       "SourceId": "mvc",
       "SourceType": "Project",
-      "ContentRoot": "F:\\MasterProject\\mvc\\wwwroot\\",
+      "ContentRoot": "G:\\MasterProject\\mvc\\wwwroot\\",
       "BasePath": "_content/mvc",
       "RelativePath": "images/9ac6d268-72b8-461a-9270-460a5edf1a81_Internship Plan.png",
       "AssetKind": "All",
@@ -770,10 +770,10 @@
       "OriginalItemSpec": "wwwroot\\images\\9ac6d268-72b8-461a-9270-460a5edf1a81_Internship Plan.png"
     },
     {
-      "Identity": "F:\\MasterProject\\mvc\\wwwroot\\images\\a55351c5-2ddf-4149-a8eb-2b8d5aecdea2_my project.jpg",
+      "Identity": "G:\\MasterProject\\mvc\\wwwroot\\images\\a55351c5-2ddf-4149-a8eb-2b8d5aecdea2_my project.jpg",
       "SourceId": "mvc",
       "SourceType": "Project",
-      "ContentRoot": "F:\\MasterProject\\mvc\\wwwroot\\",
+      "ContentRoot": "G:\\MasterProject\\mvc\\wwwroot\\",
       "BasePath": "_content/mvc",
       "RelativePath": "images/a55351c5-2ddf-4149-a8eb-2b8d5aecdea2_my project.jpg",
       "AssetKind": "All",
@@ -789,10 +789,10 @@
       "OriginalItemSpec": "wwwroot\\images\\a55351c5-2ddf-4149-a8eb-2b8d5aecdea2_my project.jpg"
     },
     {
-      "Identity": "F:\\MasterProject\\mvc\\wwwroot\\images\\b24a2f1d-e2a0-4d5f-a15b-12f325156e15_i1.jpg",
+      "Identity": "G:\\MasterProject\\mvc\\wwwroot\\images\\b24a2f1d-e2a0-4d5f-a15b-12f325156e15_i1.jpg",
       "SourceId": "mvc",
       "SourceType": "Project",
-      "ContentRoot": "F:\\MasterProject\\mvc\\wwwroot\\",
+      "ContentRoot": "G:\\MasterProject\\mvc\\wwwroot\\",
       "BasePath": "_content/mvc",
       "RelativePath": "images/b24a2f1d-e2a0-4d5f-a15b-12f325156e15_i1.jpg",
       "AssetKind": "All",
@@ -808,10 +808,10 @@
       "OriginalItemSpec": "wwwroot\\images\\b24a2f1d-e2a0-4d5f-a15b-12f325156e15_i1.jpg"
     },
     {
-      "Identity": "F:\\MasterProject\\mvc\\wwwroot\\images\\b83a2ed9-d9af-4056-a985-adfead6e3af7_MS Dhoni.jpg",
+      "Identity": "G:\\MasterProject\\mvc\\wwwroot\\images\\b83a2ed9-d9af-4056-a985-adfead6e3af7_MS Dhoni.jpg",
       "SourceId": "mvc",
       "SourceType": "Project",
-      "ContentRoot": "F:\\MasterProject\\mvc\\wwwroot\\",
+      "ContentRoot": "G:\\MasterProject\\mvc\\wwwroot\\",
       "BasePath": "_content/mvc",
       "RelativePath": "images/b83a2ed9-d9af-4056-a985-adfead6e3af7_MS Dhoni.jpg",
       "AssetKind": "All",
@@ -827,10 +827,10 @@
       "OriginalItemSpec": "wwwroot\\images\\b83a2ed9-d9af-4056-a985-adfead6e3af7_MS Dhoni.jpg"
     },
     {
-      "Identity": "F:\\MasterProject\\mvc\\wwwroot\\images\\bbae5ffd-19e1-42e9-914f-adc0940487fa_i1.jpg",
+      "Identity": "G:\\MasterProject\\mvc\\wwwroot\\images\\bbae5ffd-19e1-42e9-914f-adc0940487fa_i1.jpg",
       "SourceId": "mvc",
       "SourceType": "Project",
-      "ContentRoot": "F:\\MasterProject\\mvc\\wwwroot\\",
+      "ContentRoot": "G:\\MasterProject\\mvc\\wwwroot\\",
       "BasePath": "_content/mvc",
       "RelativePath": "images/bbae5ffd-19e1-42e9-914f-adc0940487fa_i1.jpg",
       "AssetKind": "All",
@@ -846,10 +846,10 @@
       "OriginalItemSpec": "wwwroot\\images\\bbae5ffd-19e1-42e9-914f-adc0940487fa_i1.jpg"
     },
     {
-      "Identity": "F:\\MasterProject\\mvc\\wwwroot\\images\\bc1d7c04-b194-42a2-b300-2d7c488ba87f_Clarent LOGO.png",
+      "Identity": "G:\\MasterProject\\mvc\\wwwroot\\images\\bc1d7c04-b194-42a2-b300-2d7c488ba87f_Clarent LOGO.png",
       "SourceId": "mvc",
       "SourceType": "Project",
-      "ContentRoot": "F:\\MasterProject\\mvc\\wwwroot\\",
+      "ContentRoot": "G:\\MasterProject\\mvc\\wwwroot\\",
       "BasePath": "_content/mvc",
       "RelativePath": "images/bc1d7c04-b194-42a2-b300-2d7c488ba87f_Clarent LOGO.png",
       "AssetKind": "All",
@@ -865,10 +865,10 @@
       "OriginalItemSpec": "wwwroot\\images\\bc1d7c04-b194-42a2-b300-2d7c488ba87f_Clarent LOGO.png"
     },
     {
-      "Identity": "F:\\MasterProject\\mvc\\wwwroot\\images\\c0724c21-d63b-41c5-95ae-4bf33f5dd8e6_Clarent LOGO.png",
+      "Identity": "G:\\MasterProject\\mvc\\wwwroot\\images\\c0724c21-d63b-41c5-95ae-4bf33f5dd8e6_Clarent LOGO.png",
       "SourceId": "mvc",
       "SourceType": "Project",
-      "ContentRoot": "F:\\MasterProject\\mvc\\wwwroot\\",
+      "ContentRoot": "G:\\MasterProject\\mvc\\wwwroot\\",
       "BasePath": "_content/mvc",
       "RelativePath": "images/c0724c21-d63b-41c5-95ae-4bf33f5dd8e6_Clarent LOGO.png",
       "AssetKind": "All",
@@ -884,10 +884,10 @@
       "OriginalItemSpec": "wwwroot\\images\\c0724c21-d63b-41c5-95ae-4bf33f5dd8e6_Clarent LOGO.png"
     },
     {
-      "Identity": "F:\\MasterProject\\mvc\\wwwroot\\images\\c20332e4-2c03-4950-934e-9fe63b3e12b8_i1.jpg",
+      "Identity": "G:\\MasterProject\\mvc\\wwwroot\\images\\c20332e4-2c03-4950-934e-9fe63b3e12b8_i1.jpg",
       "SourceId": "mvc",
       "SourceType": "Project",
-      "ContentRoot": "F:\\MasterProject\\mvc\\wwwroot\\",
+      "ContentRoot": "G:\\MasterProject\\mvc\\wwwroot\\",
       "BasePath": "_content/mvc",
       "RelativePath": "images/c20332e4-2c03-4950-934e-9fe63b3e12b8_i1.jpg",
       "AssetKind": "All",
@@ -903,10 +903,10 @@
       "OriginalItemSpec": "wwwroot\\images\\c20332e4-2c03-4950-934e-9fe63b3e12b8_i1.jpg"
     },
     {
-      "Identity": "F:\\MasterProject\\mvc\\wwwroot\\images\\c3350043-beec-4bf7-a056-3f195ee3b1e7_Clarent LOGO.png",
+      "Identity": "G:\\MasterProject\\mvc\\wwwroot\\images\\c3350043-beec-4bf7-a056-3f195ee3b1e7_Clarent LOGO.png",
       "SourceId": "mvc",
       "SourceType": "Project",
-      "ContentRoot": "F:\\MasterProject\\mvc\\wwwroot\\",
+      "ContentRoot": "G:\\MasterProject\\mvc\\wwwroot\\",
       "BasePath": "_content/mvc",
       "RelativePath": "images/c3350043-beec-4bf7-a056-3f195ee3b1e7_Clarent LOGO.png",
       "AssetKind": "All",
@@ -922,10 +922,10 @@
       "OriginalItemSpec": "wwwroot\\images\\c3350043-beec-4bf7-a056-3f195ee3b1e7_Clarent LOGO.png"
     },
     {
-      "Identity": "F:\\MasterProject\\mvc\\wwwroot\\images\\cabinet salon.png",
+      "Identity": "G:\\MasterProject\\mvc\\wwwroot\\images\\cabinet salon.png",
       "SourceId": "mvc",
       "SourceType": "Project",
-      "ContentRoot": "F:\\MasterProject\\mvc\\wwwroot\\",
+      "ContentRoot": "G:\\MasterProject\\mvc\\wwwroot\\",
       "BasePath": "_content/mvc",
       "RelativePath": "images/cabinet salon.png",
       "AssetKind": "All",
@@ -941,10 +941,10 @@
       "OriginalItemSpec": "wwwroot\\images\\cabinet salon.png"
     },
     {
-      "Identity": "F:\\MasterProject\\mvc\\wwwroot\\images\\cbd94216-9851-47b0-8948-7034403cb2bf_Clarent LOGO.png",
+      "Identity": "G:\\MasterProject\\mvc\\wwwroot\\images\\cbd94216-9851-47b0-8948-7034403cb2bf_Clarent LOGO.png",
       "SourceId": "mvc",
       "SourceType": "Project",
-      "ContentRoot": "F:\\MasterProject\\mvc\\wwwroot\\",
+      "ContentRoot": "G:\\MasterProject\\mvc\\wwwroot\\",
       "BasePath": "_content/mvc",
       "RelativePath": "images/cbd94216-9851-47b0-8948-7034403cb2bf_Clarent LOGO.png",
       "AssetKind": "All",
@@ -960,10 +960,10 @@
       "OriginalItemSpec": "wwwroot\\images\\cbd94216-9851-47b0-8948-7034403cb2bf_Clarent LOGO.png"
     },
     {
-      "Identity": "F:\\MasterProject\\mvc\\wwwroot\\images\\d34396b5-0cc7-406e-8898-c70c28d1d701_i1.jpg",
+      "Identity": "G:\\MasterProject\\mvc\\wwwroot\\images\\d34396b5-0cc7-406e-8898-c70c28d1d701_i1.jpg",
       "SourceId": "mvc",
       "SourceType": "Project",
-      "ContentRoot": "F:\\MasterProject\\mvc\\wwwroot\\",
+      "ContentRoot": "G:\\MasterProject\\mvc\\wwwroot\\",
       "BasePath": "_content/mvc",
       "RelativePath": "images/d34396b5-0cc7-406e-8898-c70c28d1d701_i1.jpg",
       "AssetKind": "All",
@@ -979,10 +979,10 @@
       "OriginalItemSpec": "wwwroot\\images\\d34396b5-0cc7-406e-8898-c70c28d1d701_i1.jpg"
     },
     {
-      "Identity": "F:\\MasterProject\\mvc\\wwwroot\\images\\e582dd1e-0695-4b31-8a41-b41501611f4d_Clarent LOGO.png",
+      "Identity": "G:\\MasterProject\\mvc\\wwwroot\\images\\e582dd1e-0695-4b31-8a41-b41501611f4d_Clarent LOGO.png",
       "SourceId": "mvc",
       "SourceType": "Project",
-      "ContentRoot": "F:\\MasterProject\\mvc\\wwwroot\\",
+      "ContentRoot": "G:\\MasterProject\\mvc\\wwwroot\\",
       "BasePath": "_content/mvc",
       "RelativePath": "images/e582dd1e-0695-4b31-8a41-b41501611f4d_Clarent LOGO.png",
       "AssetKind": "All",
@@ -998,10 +998,10 @@
       "OriginalItemSpec": "wwwroot\\images\\e582dd1e-0695-4b31-8a41-b41501611f4d_Clarent LOGO.png"
     },
     {
-      "Identity": "F:\\MasterProject\\mvc\\wwwroot\\images\\e97c20c2-fece-4378-99af-b2828cc819d3_MS Dhoni.jpg",
+      "Identity": "G:\\MasterProject\\mvc\\wwwroot\\images\\e97c20c2-fece-4378-99af-b2828cc819d3_MS Dhoni.jpg",
       "SourceId": "mvc",
       "SourceType": "Project",
-      "ContentRoot": "F:\\MasterProject\\mvc\\wwwroot\\",
+      "ContentRoot": "G:\\MasterProject\\mvc\\wwwroot\\",
       "BasePath": "_content/mvc",
       "RelativePath": "images/e97c20c2-fece-4378-99af-b2828cc819d3_MS Dhoni.jpg",
       "AssetKind": "All",
@@ -1017,10 +1017,10 @@
       "OriginalItemSpec": "wwwroot\\images\\e97c20c2-fece-4378-99af-b2828cc819d3_MS Dhoni.jpg"
     },
     {
-      "Identity": "F:\\MasterProject\\mvc\\wwwroot\\images\\f0305149-49a4-4372-a2db-e30e46aa7a48_MS Dhoni.jpg",
+      "Identity": "G:\\MasterProject\\mvc\\wwwroot\\images\\f0305149-49a4-4372-a2db-e30e46aa7a48_MS Dhoni.jpg",
       "SourceId": "mvc",
       "SourceType": "Project",
-      "ContentRoot": "F:\\MasterProject\\mvc\\wwwroot\\",
+      "ContentRoot": "G:\\MasterProject\\mvc\\wwwroot\\",
       "BasePath": "_content/mvc",
       "RelativePath": "images/f0305149-49a4-4372-a2db-e30e46aa7a48_MS Dhoni.jpg",
       "AssetKind": "All",
@@ -1036,10 +1036,10 @@
       "OriginalItemSpec": "wwwroot\\images\\f0305149-49a4-4372-a2db-e30e46aa7a48_MS Dhoni.jpg"
     },
     {
-      "Identity": "F:\\MasterProject\\mvc\\wwwroot\\images\\f399ac90-f58e-4a61-8a7b-9fc3148172bb_Clarent LOGO.png",
+      "Identity": "G:\\MasterProject\\mvc\\wwwroot\\images\\f399ac90-f58e-4a61-8a7b-9fc3148172bb_Clarent LOGO.png",
       "SourceId": "mvc",
       "SourceType": "Project",
-      "ContentRoot": "F:\\MasterProject\\mvc\\wwwroot\\",
+      "ContentRoot": "G:\\MasterProject\\mvc\\wwwroot\\",
       "BasePath": "_content/mvc",
       "RelativePath": "images/f399ac90-f58e-4a61-8a7b-9fc3148172bb_Clarent LOGO.png",
       "AssetKind": "All",
@@ -1055,10 +1055,10 @@
       "OriginalItemSpec": "wwwroot\\images\\f399ac90-f58e-4a61-8a7b-9fc3148172bb_Clarent LOGO.png"
     },
     {
-      "Identity": "F:\\MasterProject\\mvc\\wwwroot\\images\\f666a165-cf46-45c8-b16c-d915d6ff7719_i1.jpg",
+      "Identity": "G:\\MasterProject\\mvc\\wwwroot\\images\\f666a165-cf46-45c8-b16c-d915d6ff7719_i1.jpg",
       "SourceId": "mvc",
       "SourceType": "Project",
-      "ContentRoot": "F:\\MasterProject\\mvc\\wwwroot\\",
+      "ContentRoot": "G:\\MasterProject\\mvc\\wwwroot\\",
       "BasePath": "_content/mvc",
       "RelativePath": "images/f666a165-cf46-45c8-b16c-d915d6ff7719_i1.jpg",
       "AssetKind": "All",
@@ -1074,10 +1074,10 @@
       "OriginalItemSpec": "wwwroot\\images\\f666a165-cf46-45c8-b16c-d915d6ff7719_i1.jpg"
     },
     {
-      "Identity": "F:\\MasterProject\\mvc\\wwwroot\\images\\i1.jpg",
+      "Identity": "G:\\MasterProject\\mvc\\wwwroot\\images\\i1.jpg",
       "SourceId": "mvc",
       "SourceType": "Project",
-      "ContentRoot": "F:\\MasterProject\\mvc\\wwwroot\\",
+      "ContentRoot": "G:\\MasterProject\\mvc\\wwwroot\\",
       "BasePath": "_content/mvc",
       "RelativePath": "images/i1.jpg",
       "AssetKind": "All",
@@ -1093,10 +1093,10 @@
       "OriginalItemSpec": "wwwroot\\images\\i1.jpg"
     },
     {
-      "Identity": "F:\\MasterProject\\mvc\\wwwroot\\images\\my project.jpg",
+      "Identity": "G:\\MasterProject\\mvc\\wwwroot\\images\\my project.jpg",
       "SourceId": "mvc",
       "SourceType": "Project",
-      "ContentRoot": "F:\\MasterProject\\mvc\\wwwroot\\",
+      "ContentRoot": "G:\\MasterProject\\mvc\\wwwroot\\",
       "BasePath": "_content/mvc",
       "RelativePath": "images/my project.jpg",
       "AssetKind": "All",
@@ -1112,10 +1112,10 @@
       "OriginalItemSpec": "wwwroot\\images\\my project.jpg"
     },
     {
-      "Identity": "F:\\MasterProject\\mvc\\wwwroot\\images\\Screenshot (82).png",
+      "Identity": "G:\\MasterProject\\mvc\\wwwroot\\images\\Screenshot (82).png",
       "SourceId": "mvc",
       "SourceType": "Project",
-      "ContentRoot": "F:\\MasterProject\\mvc\\wwwroot\\",
+      "ContentRoot": "G:\\MasterProject\\mvc\\wwwroot\\",
       "BasePath": "_content/mvc",
       "RelativePath": "images/Screenshot (82).png",
       "AssetKind": "All",
@@ -1131,10 +1131,10 @@
       "OriginalItemSpec": "wwwroot\\images\\Screenshot (82).png"
     },
     {
-      "Identity": "F:\\MasterProject\\mvc\\wwwroot\\images\\Screenshot (85).png",
+      "Identity": "G:\\MasterProject\\mvc\\wwwroot\\images\\Screenshot (85).png",
       "SourceId": "mvc",
       "SourceType": "Project",
-      "ContentRoot": "F:\\MasterProject\\mvc\\wwwroot\\",
+      "ContentRoot": "G:\\MasterProject\\mvc\\wwwroot\\",
       "BasePath": "_content/mvc",
       "RelativePath": "images/Screenshot (85).png",
       "AssetKind": "All",
@@ -1150,10 +1150,10 @@
       "OriginalItemSpec": "wwwroot\\images\\Screenshot (85).png"
     },
     {
-      "Identity": "F:\\MasterProject\\mvc\\wwwroot\\images\\Screenshot 2024-02-23 172838.png",
+      "Identity": "G:\\MasterProject\\mvc\\wwwroot\\images\\Screenshot 2024-02-23 172838.png",
       "SourceId": "mvc",
       "SourceType": "Project",
-      "ContentRoot": "F:\\MasterProject\\mvc\\wwwroot\\",
+      "ContentRoot": "G:\\MasterProject\\mvc\\wwwroot\\",
       "BasePath": "_content/mvc",
       "RelativePath": "images/Screenshot 2024-02-23 172838.png",
       "AssetKind": "All",
@@ -1169,10 +1169,10 @@
       "OriginalItemSpec": "wwwroot\\images\\Screenshot 2024-02-23 172838.png"
     },
     {
-      "Identity": "F:\\MasterProject\\mvc\\wwwroot\\images\\Screenshot 2024-02-24 002836.png",
+      "Identity": "G:\\MasterProject\\mvc\\wwwroot\\images\\Screenshot 2024-02-24 002836.png",
       "SourceId": "mvc",
       "SourceType": "Project",
-      "ContentRoot": "F:\\MasterProject\\mvc\\wwwroot\\",
+      "ContentRoot": "G:\\MasterProject\\mvc\\wwwroot\\",
       "BasePath": "_content/mvc",
       "RelativePath": "images/Screenshot 2024-02-24 002836.png",
       "AssetKind": "All",
@@ -1188,10 +1188,10 @@
       "OriginalItemSpec": "wwwroot\\images\\Screenshot 2024-02-24 002836.png"
     },
     {
-      "Identity": "F:\\MasterProject\\mvc\\wwwroot\\images\\Screenshot 2024-02-24 003335.png",
+      "Identity": "G:\\MasterProject\\mvc\\wwwroot\\images\\Screenshot 2024-02-24 003335.png",
       "SourceId": "mvc",
       "SourceType": "Project",
-      "ContentRoot": "F:\\MasterProject\\mvc\\wwwroot\\",
+      "ContentRoot": "G:\\MasterProject\\mvc\\wwwroot\\",
       "BasePath": "_content/mvc",
       "RelativePath": "images/Screenshot 2024-02-24 003335.png",
       "AssetKind": "All",
@@ -1207,10 +1207,10 @@
       "OriginalItemSpec": "wwwroot\\images\\Screenshot 2024-02-24 003335.png"
     },
     {
-      "Identity": "F:\\MasterProject\\mvc\\wwwroot\\images\\Screenshot 2024-02-24 010205.png",
+      "Identity": "G:\\MasterProject\\mvc\\wwwroot\\images\\Screenshot 2024-02-24 010205.png",
       "SourceId": "mvc",
       "SourceType": "Project",
-      "ContentRoot": "F:\\MasterProject\\mvc\\wwwroot\\",
+      "ContentRoot": "G:\\MasterProject\\mvc\\wwwroot\\",
       "BasePath": "_content/mvc",
       "RelativePath": "images/Screenshot 2024-02-24 010205.png",
       "AssetKind": "All",
@@ -1226,10 +1226,10 @@
       "OriginalItemSpec": "wwwroot\\images\\Screenshot 2024-02-24 010205.png"
     },
     {
-      "Identity": "F:\\MasterProject\\mvc\\wwwroot\\images\\Screenshot 2024-03-01 221023.png",
+      "Identity": "G:\\MasterProject\\mvc\\wwwroot\\images\\Screenshot 2024-03-01 221023.png",
       "SourceId": "mvc",
       "SourceType": "Project",
-      "ContentRoot": "F:\\MasterProject\\mvc\\wwwroot\\",
+      "ContentRoot": "G:\\MasterProject\\mvc\\wwwroot\\",
       "BasePath": "_content/mvc",
       "RelativePath": "images/Screenshot 2024-03-01 221023.png",
       "AssetKind": "All",
@@ -1245,10 +1245,10 @@
       "OriginalItemSpec": "wwwroot\\images\\Screenshot 2024-03-01 221023.png"
     },
     {
-      "Identity": "F:\\MasterProject\\mvc\\wwwroot\\images\\th.jpeg",
+      "Identity": "G:\\MasterProject\\mvc\\wwwroot\\images\\th.jpeg",
       "SourceId": "mvc",
       "SourceType": "Project",
-      "ContentRoot": "F:\\MasterProject\\mvc\\wwwroot\\",
+      "ContentRoot": "G:\\MasterProject\\mvc\\wwwroot\\",
       "BasePath": "_content/mvc",
       "RelativePath": "images/th.jpeg",
       "AssetKind": "All",
@@ -1264,10 +1264,10 @@
       "OriginalItemSpec": "wwwroot\\images\\th.jpeg"
     },
     {
-      "Identity": "F:\\MasterProject\\mvc\\wwwroot\\js\\site.js",
+      "Identity": "G:\\MasterProject\\mvc\\wwwroot\\js\\site.js",
       "SourceId": "mvc",
       "SourceType": "Project",
-      "ContentRoot": "F:\\MasterProject\\mvc\\wwwroot\\",
+      "ContentRoot": "G:\\MasterProject\\mvc\\wwwroot\\",
       "BasePath": "_content/mvc",
       "RelativePath": "js/site.js",
       "AssetKind": "All",
@@ -1283,10 +1283,10 @@
       "OriginalItemSpec": "wwwroot\\js\\site.js"
     },
     {
-      "Identity": "F:\\MasterProject\\mvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "Identity": "G:\\MasterProject\\mvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
       "SourceId": "mvc",
       "SourceType": "Project",
-      "ContentRoot": "F:\\MasterProject\\mvc\\wwwroot\\",
+      "ContentRoot": "G:\\MasterProject\\mvc\\wwwroot\\",
       "BasePath": "_content/mvc",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.css",
       "AssetKind": "All",
@@ -1302,10 +1302,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
     },
     {
-      "Identity": "F:\\MasterProject\\mvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "Identity": "G:\\MasterProject\\mvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
       "SourceId": "mvc",
       "SourceType": "Project",
-      "ContentRoot": "F:\\MasterProject\\mvc\\wwwroot\\",
+      "ContentRoot": "G:\\MasterProject\\mvc\\wwwroot\\",
       "BasePath": "_content/mvc",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.css.map",
       "AssetKind": "All",
@@ -1321,10 +1321,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
     },
     {
-      "Identity": "F:\\MasterProject\\mvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "Identity": "G:\\MasterProject\\mvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
       "SourceId": "mvc",
       "SourceType": "Project",
-      "ContentRoot": "F:\\MasterProject\\mvc\\wwwroot\\",
+      "ContentRoot": "G:\\MasterProject\\mvc\\wwwroot\\",
       "BasePath": "_content/mvc",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.min.css",
       "AssetKind": "All",
@@ -1340,10 +1340,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
     },
     {
-      "Identity": "F:\\MasterProject\\mvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "Identity": "G:\\MasterProject\\mvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
       "SourceId": "mvc",
       "SourceType": "Project",
-      "ContentRoot": "F:\\MasterProject\\mvc\\wwwroot\\",
+      "ContentRoot": "G:\\MasterProject\\mvc\\wwwroot\\",
       "BasePath": "_content/mvc",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.min.css.map",
       "AssetKind": "All",
@@ -1359,10 +1359,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
     },
     {
-      "Identity": "F:\\MasterProject\\mvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "Identity": "G:\\MasterProject\\mvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
       "SourceId": "mvc",
       "SourceType": "Project",
-      "ContentRoot": "F:\\MasterProject\\mvc\\wwwroot\\",
+      "ContentRoot": "G:\\MasterProject\\mvc\\wwwroot\\",
       "BasePath": "_content/mvc",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css",
       "AssetKind": "All",
@@ -1378,10 +1378,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
     },
     {
-      "Identity": "F:\\MasterProject\\mvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "Identity": "G:\\MasterProject\\mvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
       "SourceId": "mvc",
       "SourceType": "Project",
-      "ContentRoot": "F:\\MasterProject\\mvc\\wwwroot\\",
+      "ContentRoot": "G:\\MasterProject\\mvc\\wwwroot\\",
       "BasePath": "_content/mvc",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map",
       "AssetKind": "All",
@@ -1397,10 +1397,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
     },
     {
-      "Identity": "F:\\MasterProject\\mvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "Identity": "G:\\MasterProject\\mvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
       "SourceId": "mvc",
       "SourceType": "Project",
-      "ContentRoot": "F:\\MasterProject\\mvc\\wwwroot\\",
+      "ContentRoot": "G:\\MasterProject\\mvc\\wwwroot\\",
       "BasePath": "_content/mvc",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css",
       "AssetKind": "All",
@@ -1416,10 +1416,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
     },
     {
-      "Identity": "F:\\MasterProject\\mvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "Identity": "G:\\MasterProject\\mvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
       "SourceId": "mvc",
       "SourceType": "Project",
-      "ContentRoot": "F:\\MasterProject\\mvc\\wwwroot\\",
+      "ContentRoot": "G:\\MasterProject\\mvc\\wwwroot\\",
       "BasePath": "_content/mvc",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map",
       "AssetKind": "All",
@@ -1435,10 +1435,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
     },
     {
-      "Identity": "F:\\MasterProject\\mvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "Identity": "G:\\MasterProject\\mvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
       "SourceId": "mvc",
       "SourceType": "Project",
-      "ContentRoot": "F:\\MasterProject\\mvc\\wwwroot\\",
+      "ContentRoot": "G:\\MasterProject\\mvc\\wwwroot\\",
       "BasePath": "_content/mvc",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.css",
       "AssetKind": "All",
@@ -1454,10 +1454,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
     },
     {
-      "Identity": "F:\\MasterProject\\mvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "Identity": "G:\\MasterProject\\mvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
       "SourceId": "mvc",
       "SourceType": "Project",
-      "ContentRoot": "F:\\MasterProject\\mvc\\wwwroot\\",
+      "ContentRoot": "G:\\MasterProject\\mvc\\wwwroot\\",
       "BasePath": "_content/mvc",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.css.map",
       "AssetKind": "All",
@@ -1473,10 +1473,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
     },
     {
-      "Identity": "F:\\MasterProject\\mvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "Identity": "G:\\MasterProject\\mvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
       "SourceId": "mvc",
       "SourceType": "Project",
-      "ContentRoot": "F:\\MasterProject\\mvc\\wwwroot\\",
+      "ContentRoot": "G:\\MasterProject\\mvc\\wwwroot\\",
       "BasePath": "_content/mvc",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.min.css",
       "AssetKind": "All",
@@ -1492,10 +1492,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
     },
     {
-      "Identity": "F:\\MasterProject\\mvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "Identity": "G:\\MasterProject\\mvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
       "SourceId": "mvc",
       "SourceType": "Project",
-      "ContentRoot": "F:\\MasterProject\\mvc\\wwwroot\\",
+      "ContentRoot": "G:\\MasterProject\\mvc\\wwwroot\\",
       "BasePath": "_content/mvc",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.min.css.map",
       "AssetKind": "All",
@@ -1511,10 +1511,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
     },
     {
-      "Identity": "F:\\MasterProject\\mvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "Identity": "G:\\MasterProject\\mvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
       "SourceId": "mvc",
       "SourceType": "Project",
-      "ContentRoot": "F:\\MasterProject\\mvc\\wwwroot\\",
+      "ContentRoot": "G:\\MasterProject\\mvc\\wwwroot\\",
       "BasePath": "_content/mvc",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css",
       "AssetKind": "All",
@@ -1530,10 +1530,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
     },
     {
-      "Identity": "F:\\MasterProject\\mvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "Identity": "G:\\MasterProject\\mvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
       "SourceId": "mvc",
       "SourceType": "Project",
-      "ContentRoot": "F:\\MasterProject\\mvc\\wwwroot\\",
+      "ContentRoot": "G:\\MasterProject\\mvc\\wwwroot\\",
       "BasePath": "_content/mvc",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map",
       "AssetKind": "All",
@@ -1549,10 +1549,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
     },
     {
-      "Identity": "F:\\MasterProject\\mvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "Identity": "G:\\MasterProject\\mvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
       "SourceId": "mvc",
       "SourceType": "Project",
-      "ContentRoot": "F:\\MasterProject\\mvc\\wwwroot\\",
+      "ContentRoot": "G:\\MasterProject\\mvc\\wwwroot\\",
       "BasePath": "_content/mvc",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css",
       "AssetKind": "All",
@@ -1568,10 +1568,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
     },
     {
-      "Identity": "F:\\MasterProject\\mvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "Identity": "G:\\MasterProject\\mvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
       "SourceId": "mvc",
       "SourceType": "Project",
-      "ContentRoot": "F:\\MasterProject\\mvc\\wwwroot\\",
+      "ContentRoot": "G:\\MasterProject\\mvc\\wwwroot\\",
       "BasePath": "_content/mvc",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map",
       "AssetKind": "All",
@@ -1587,10 +1587,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
     },
     {
-      "Identity": "F:\\MasterProject\\mvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "Identity": "G:\\MasterProject\\mvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
       "SourceId": "mvc",
       "SourceType": "Project",
-      "ContentRoot": "F:\\MasterProject\\mvc\\wwwroot\\",
+      "ContentRoot": "G:\\MasterProject\\mvc\\wwwroot\\",
       "BasePath": "_content/mvc",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.css",
       "AssetKind": "All",
@@ -1606,10 +1606,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
     },
     {
-      "Identity": "F:\\MasterProject\\mvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "Identity": "G:\\MasterProject\\mvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
       "SourceId": "mvc",
       "SourceType": "Project",
-      "ContentRoot": "F:\\MasterProject\\mvc\\wwwroot\\",
+      "ContentRoot": "G:\\MasterProject\\mvc\\wwwroot\\",
       "BasePath": "_content/mvc",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.css.map",
       "AssetKind": "All",
@@ -1625,10 +1625,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
     },
     {
-      "Identity": "F:\\MasterProject\\mvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "Identity": "G:\\MasterProject\\mvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
       "SourceId": "mvc",
       "SourceType": "Project",
-      "ContentRoot": "F:\\MasterProject\\mvc\\wwwroot\\",
+      "ContentRoot": "G:\\MasterProject\\mvc\\wwwroot\\",
       "BasePath": "_content/mvc",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.min.css",
       "AssetKind": "All",
@@ -1644,10 +1644,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
     },
     {
-      "Identity": "F:\\MasterProject\\mvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "Identity": "G:\\MasterProject\\mvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
       "SourceId": "mvc",
       "SourceType": "Project",
-      "ContentRoot": "F:\\MasterProject\\mvc\\wwwroot\\",
+      "ContentRoot": "G:\\MasterProject\\mvc\\wwwroot\\",
       "BasePath": "_content/mvc",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.min.css.map",
       "AssetKind": "All",
@@ -1663,10 +1663,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
     },
     {
-      "Identity": "F:\\MasterProject\\mvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "Identity": "G:\\MasterProject\\mvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
       "SourceId": "mvc",
       "SourceType": "Project",
-      "ContentRoot": "F:\\MasterProject\\mvc\\wwwroot\\",
+      "ContentRoot": "G:\\MasterProject\\mvc\\wwwroot\\",
       "BasePath": "_content/mvc",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css",
       "AssetKind": "All",
@@ -1682,10 +1682,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
     },
     {
-      "Identity": "F:\\MasterProject\\mvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "Identity": "G:\\MasterProject\\mvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
       "SourceId": "mvc",
       "SourceType": "Project",
-      "ContentRoot": "F:\\MasterProject\\mvc\\wwwroot\\",
+      "ContentRoot": "G:\\MasterProject\\mvc\\wwwroot\\",
       "BasePath": "_content/mvc",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map",
       "AssetKind": "All",
@@ -1701,10 +1701,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
     },
     {
-      "Identity": "F:\\MasterProject\\mvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "Identity": "G:\\MasterProject\\mvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
       "SourceId": "mvc",
       "SourceType": "Project",
-      "ContentRoot": "F:\\MasterProject\\mvc\\wwwroot\\",
+      "ContentRoot": "G:\\MasterProject\\mvc\\wwwroot\\",
       "BasePath": "_content/mvc",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css",
       "AssetKind": "All",
@@ -1720,10 +1720,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
     },
     {
-      "Identity": "F:\\MasterProject\\mvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "Identity": "G:\\MasterProject\\mvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
       "SourceId": "mvc",
       "SourceType": "Project",
-      "ContentRoot": "F:\\MasterProject\\mvc\\wwwroot\\",
+      "ContentRoot": "G:\\MasterProject\\mvc\\wwwroot\\",
       "BasePath": "_content/mvc",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map",
       "AssetKind": "All",
@@ -1739,10 +1739,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
     },
     {
-      "Identity": "F:\\MasterProject\\mvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "Identity": "G:\\MasterProject\\mvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
       "SourceId": "mvc",
       "SourceType": "Project",
-      "ContentRoot": "F:\\MasterProject\\mvc\\wwwroot\\",
+      "ContentRoot": "G:\\MasterProject\\mvc\\wwwroot\\",
       "BasePath": "_content/mvc",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.css",
       "AssetKind": "All",
@@ -1758,10 +1758,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css"
     },
     {
-      "Identity": "F:\\MasterProject\\mvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "Identity": "G:\\MasterProject\\mvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
       "SourceId": "mvc",
       "SourceType": "Project",
-      "ContentRoot": "F:\\MasterProject\\mvc\\wwwroot\\",
+      "ContentRoot": "G:\\MasterProject\\mvc\\wwwroot\\",
       "BasePath": "_content/mvc",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.css.map",
       "AssetKind": "All",
@@ -1777,10 +1777,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
     },
     {
-      "Identity": "F:\\MasterProject\\mvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "Identity": "G:\\MasterProject\\mvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
       "SourceId": "mvc",
       "SourceType": "Project",
-      "ContentRoot": "F:\\MasterProject\\mvc\\wwwroot\\",
+      "ContentRoot": "G:\\MasterProject\\mvc\\wwwroot\\",
       "BasePath": "_content/mvc",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.min.css",
       "AssetKind": "All",
@@ -1796,10 +1796,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
     },
     {
-      "Identity": "F:\\MasterProject\\mvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "Identity": "G:\\MasterProject\\mvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
       "SourceId": "mvc",
       "SourceType": "Project",
-      "ContentRoot": "F:\\MasterProject\\mvc\\wwwroot\\",
+      "ContentRoot": "G:\\MasterProject\\mvc\\wwwroot\\",
       "BasePath": "_content/mvc",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.min.css.map",
       "AssetKind": "All",
@@ -1815,10 +1815,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
     },
     {
-      "Identity": "F:\\MasterProject\\mvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "Identity": "G:\\MasterProject\\mvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
       "SourceId": "mvc",
       "SourceType": "Project",
-      "ContentRoot": "F:\\MasterProject\\mvc\\wwwroot\\",
+      "ContentRoot": "G:\\MasterProject\\mvc\\wwwroot\\",
       "BasePath": "_content/mvc",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.css",
       "AssetKind": "All",
@@ -1834,10 +1834,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
     },
     {
-      "Identity": "F:\\MasterProject\\mvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "Identity": "G:\\MasterProject\\mvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
       "SourceId": "mvc",
       "SourceType": "Project",
-      "ContentRoot": "F:\\MasterProject\\mvc\\wwwroot\\",
+      "ContentRoot": "G:\\MasterProject\\mvc\\wwwroot\\",
       "BasePath": "_content/mvc",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.css.map",
       "AssetKind": "All",
@@ -1853,10 +1853,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
     },
     {
-      "Identity": "F:\\MasterProject\\mvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "Identity": "G:\\MasterProject\\mvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
       "SourceId": "mvc",
       "SourceType": "Project",
-      "ContentRoot": "F:\\MasterProject\\mvc\\wwwroot\\",
+      "ContentRoot": "G:\\MasterProject\\mvc\\wwwroot\\",
       "BasePath": "_content/mvc",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.min.css",
       "AssetKind": "All",
@@ -1872,10 +1872,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
     },
     {
-      "Identity": "F:\\MasterProject\\mvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "Identity": "G:\\MasterProject\\mvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
       "SourceId": "mvc",
       "SourceType": "Project",
-      "ContentRoot": "F:\\MasterProject\\mvc\\wwwroot\\",
+      "ContentRoot": "G:\\MasterProject\\mvc\\wwwroot\\",
       "BasePath": "_content/mvc",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.min.css.map",
       "AssetKind": "All",
@@ -1891,10 +1891,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
     },
     {
-      "Identity": "F:\\MasterProject\\mvc\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "Identity": "G:\\MasterProject\\mvc\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
       "SourceId": "mvc",
       "SourceType": "Project",
-      "ContentRoot": "F:\\MasterProject\\mvc\\wwwroot\\",
+      "ContentRoot": "G:\\MasterProject\\mvc\\wwwroot\\",
       "BasePath": "_content/mvc",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.js",
       "AssetKind": "All",
@@ -1910,10 +1910,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
     },
     {
-      "Identity": "F:\\MasterProject\\mvc\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "Identity": "G:\\MasterProject\\mvc\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
       "SourceId": "mvc",
       "SourceType": "Project",
-      "ContentRoot": "F:\\MasterProject\\mvc\\wwwroot\\",
+      "ContentRoot": "G:\\MasterProject\\mvc\\wwwroot\\",
       "BasePath": "_content/mvc",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.js.map",
       "AssetKind": "All",
@@ -1929,10 +1929,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
     },
     {
-      "Identity": "F:\\MasterProject\\mvc\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "Identity": "G:\\MasterProject\\mvc\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
       "SourceId": "mvc",
       "SourceType": "Project",
-      "ContentRoot": "F:\\MasterProject\\mvc\\wwwroot\\",
+      "ContentRoot": "G:\\MasterProject\\mvc\\wwwroot\\",
       "BasePath": "_content/mvc",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.min.js",
       "AssetKind": "All",
@@ -1948,10 +1948,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
     },
     {
-      "Identity": "F:\\MasterProject\\mvc\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "Identity": "G:\\MasterProject\\mvc\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
       "SourceId": "mvc",
       "SourceType": "Project",
-      "ContentRoot": "F:\\MasterProject\\mvc\\wwwroot\\",
+      "ContentRoot": "G:\\MasterProject\\mvc\\wwwroot\\",
       "BasePath": "_content/mvc",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.min.js.map",
       "AssetKind": "All",
@@ -1967,10 +1967,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
     },
     {
-      "Identity": "F:\\MasterProject\\mvc\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "Identity": "G:\\MasterProject\\mvc\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
       "SourceId": "mvc",
       "SourceType": "Project",
-      "ContentRoot": "F:\\MasterProject\\mvc\\wwwroot\\",
+      "ContentRoot": "G:\\MasterProject\\mvc\\wwwroot\\",
       "BasePath": "_content/mvc",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.js",
       "AssetKind": "All",
@@ -1986,10 +1986,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
     },
     {
-      "Identity": "F:\\MasterProject\\mvc\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "Identity": "G:\\MasterProject\\mvc\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
       "SourceId": "mvc",
       "SourceType": "Project",
-      "ContentRoot": "F:\\MasterProject\\mvc\\wwwroot\\",
+      "ContentRoot": "G:\\MasterProject\\mvc\\wwwroot\\",
       "BasePath": "_content/mvc",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.js.map",
       "AssetKind": "All",
@@ -2005,10 +2005,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
     },
     {
-      "Identity": "F:\\MasterProject\\mvc\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "Identity": "G:\\MasterProject\\mvc\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
       "SourceId": "mvc",
       "SourceType": "Project",
-      "ContentRoot": "F:\\MasterProject\\mvc\\wwwroot\\",
+      "ContentRoot": "G:\\MasterProject\\mvc\\wwwroot\\",
       "BasePath": "_content/mvc",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.min.js",
       "AssetKind": "All",
@@ -2024,10 +2024,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
     },
     {
-      "Identity": "F:\\MasterProject\\mvc\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "Identity": "G:\\MasterProject\\mvc\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
       "SourceId": "mvc",
       "SourceType": "Project",
-      "ContentRoot": "F:\\MasterProject\\mvc\\wwwroot\\",
+      "ContentRoot": "G:\\MasterProject\\mvc\\wwwroot\\",
       "BasePath": "_content/mvc",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.min.js.map",
       "AssetKind": "All",
@@ -2043,10 +2043,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
     },
     {
-      "Identity": "F:\\MasterProject\\mvc\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "Identity": "G:\\MasterProject\\mvc\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
       "SourceId": "mvc",
       "SourceType": "Project",
-      "ContentRoot": "F:\\MasterProject\\mvc\\wwwroot\\",
+      "ContentRoot": "G:\\MasterProject\\mvc\\wwwroot\\",
       "BasePath": "_content/mvc",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.js",
       "AssetKind": "All",
@@ -2062,10 +2062,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js"
     },
     {
-      "Identity": "F:\\MasterProject\\mvc\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "Identity": "G:\\MasterProject\\mvc\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
       "SourceId": "mvc",
       "SourceType": "Project",
-      "ContentRoot": "F:\\MasterProject\\mvc\\wwwroot\\",
+      "ContentRoot": "G:\\MasterProject\\mvc\\wwwroot\\",
       "BasePath": "_content/mvc",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.js.map",
       "AssetKind": "All",
@@ -2081,10 +2081,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
     },
     {
-      "Identity": "F:\\MasterProject\\mvc\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "Identity": "G:\\MasterProject\\mvc\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
       "SourceId": "mvc",
       "SourceType": "Project",
-      "ContentRoot": "F:\\MasterProject\\mvc\\wwwroot\\",
+      "ContentRoot": "G:\\MasterProject\\mvc\\wwwroot\\",
       "BasePath": "_content/mvc",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.min.js",
       "AssetKind": "All",
@@ -2100,10 +2100,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
     },
     {
-      "Identity": "F:\\MasterProject\\mvc\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "Identity": "G:\\MasterProject\\mvc\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
       "SourceId": "mvc",
       "SourceType": "Project",
-      "ContentRoot": "F:\\MasterProject\\mvc\\wwwroot\\",
+      "ContentRoot": "G:\\MasterProject\\mvc\\wwwroot\\",
       "BasePath": "_content/mvc",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.min.js.map",
       "AssetKind": "All",
@@ -2119,10 +2119,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
     },
     {
-      "Identity": "F:\\MasterProject\\mvc\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "Identity": "G:\\MasterProject\\mvc\\wwwroot\\lib\\bootstrap\\LICENSE",
       "SourceId": "mvc",
       "SourceType": "Project",
-      "ContentRoot": "F:\\MasterProject\\mvc\\wwwroot\\",
+      "ContentRoot": "G:\\MasterProject\\mvc\\wwwroot\\",
       "BasePath": "_content/mvc",
       "RelativePath": "lib/bootstrap/LICENSE",
       "AssetKind": "All",
@@ -2138,10 +2138,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\LICENSE"
     },
     {
-      "Identity": "F:\\MasterProject\\mvc\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "Identity": "G:\\MasterProject\\mvc\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
       "SourceId": "mvc",
       "SourceType": "Project",
-      "ContentRoot": "F:\\MasterProject\\mvc\\wwwroot\\",
+      "ContentRoot": "G:\\MasterProject\\mvc\\wwwroot\\",
       "BasePath": "_content/mvc",
       "RelativePath": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js",
       "AssetKind": "All",
@@ -2157,10 +2157,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
     },
     {
-      "Identity": "F:\\MasterProject\\mvc\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "Identity": "G:\\MasterProject\\mvc\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
       "SourceId": "mvc",
       "SourceType": "Project",
-      "ContentRoot": "F:\\MasterProject\\mvc\\wwwroot\\",
+      "ContentRoot": "G:\\MasterProject\\mvc\\wwwroot\\",
       "BasePath": "_content/mvc",
       "RelativePath": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js",
       "AssetKind": "All",
@@ -2176,10 +2176,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
     },
     {
-      "Identity": "F:\\MasterProject\\mvc\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "Identity": "G:\\MasterProject\\mvc\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
       "SourceId": "mvc",
       "SourceType": "Project",
-      "ContentRoot": "F:\\MasterProject\\mvc\\wwwroot\\",
+      "ContentRoot": "G:\\MasterProject\\mvc\\wwwroot\\",
       "BasePath": "_content/mvc",
       "RelativePath": "lib/jquery-validation-unobtrusive/LICENSE.txt",
       "AssetKind": "All",
@@ -2195,10 +2195,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
     },
     {
-      "Identity": "F:\\MasterProject\\mvc\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "Identity": "G:\\MasterProject\\mvc\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
       "SourceId": "mvc",
       "SourceType": "Project",
-      "ContentRoot": "F:\\MasterProject\\mvc\\wwwroot\\",
+      "ContentRoot": "G:\\MasterProject\\mvc\\wwwroot\\",
       "BasePath": "_content/mvc",
       "RelativePath": "lib/jquery-validation/dist/additional-methods.js",
       "AssetKind": "All",
@@ -2214,10 +2214,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js"
     },
     {
-      "Identity": "F:\\MasterProject\\mvc\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "Identity": "G:\\MasterProject\\mvc\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
       "SourceId": "mvc",
       "SourceType": "Project",
-      "ContentRoot": "F:\\MasterProject\\mvc\\wwwroot\\",
+      "ContentRoot": "G:\\MasterProject\\mvc\\wwwroot\\",
       "BasePath": "_content/mvc",
       "RelativePath": "lib/jquery-validation/dist/additional-methods.min.js",
       "AssetKind": "All",
@@ -2233,10 +2233,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js"
     },
     {
-      "Identity": "F:\\MasterProject\\mvc\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "Identity": "G:\\MasterProject\\mvc\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
       "SourceId": "mvc",
       "SourceType": "Project",
-      "ContentRoot": "F:\\MasterProject\\mvc\\wwwroot\\",
+      "ContentRoot": "G:\\MasterProject\\mvc\\wwwroot\\",
       "BasePath": "_content/mvc",
       "RelativePath": "lib/jquery-validation/dist/jquery.validate.js",
       "AssetKind": "All",
@@ -2252,10 +2252,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js"
     },
     {
-      "Identity": "F:\\MasterProject\\mvc\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "Identity": "G:\\MasterProject\\mvc\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
       "SourceId": "mvc",
       "SourceType": "Project",
-      "ContentRoot": "F:\\MasterProject\\mvc\\wwwroot\\",
+      "ContentRoot": "G:\\MasterProject\\mvc\\wwwroot\\",
       "BasePath": "_content/mvc",
       "RelativePath": "lib/jquery-validation/dist/jquery.validate.min.js",
       "AssetKind": "All",
@@ -2271,10 +2271,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
     },
     {
-      "Identity": "F:\\MasterProject\\mvc\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "Identity": "G:\\MasterProject\\mvc\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
       "SourceId": "mvc",
       "SourceType": "Project",
-      "ContentRoot": "F:\\MasterProject\\mvc\\wwwroot\\",
+      "ContentRoot": "G:\\MasterProject\\mvc\\wwwroot\\",
       "BasePath": "_content/mvc",
       "RelativePath": "lib/jquery-validation/LICENSE.md",
       "AssetKind": "All",
@@ -2290,10 +2290,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\LICENSE.md"
     },
     {
-      "Identity": "F:\\MasterProject\\mvc\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "Identity": "G:\\MasterProject\\mvc\\wwwroot\\lib\\jquery\\dist\\jquery.js",
       "SourceId": "mvc",
       "SourceType": "Project",
-      "ContentRoot": "F:\\MasterProject\\mvc\\wwwroot\\",
+      "ContentRoot": "G:\\MasterProject\\mvc\\wwwroot\\",
       "BasePath": "_content/mvc",
       "RelativePath": "lib/jquery/dist/jquery.js",
       "AssetKind": "All",
@@ -2309,10 +2309,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.js"
     },
     {
-      "Identity": "F:\\MasterProject\\mvc\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "Identity": "G:\\MasterProject\\mvc\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
       "SourceId": "mvc",
       "SourceType": "Project",
-      "ContentRoot": "F:\\MasterProject\\mvc\\wwwroot\\",
+      "ContentRoot": "G:\\MasterProject\\mvc\\wwwroot\\",
       "BasePath": "_content/mvc",
       "RelativePath": "lib/jquery/dist/jquery.min.js",
       "AssetKind": "All",
@@ -2328,10 +2328,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.min.js"
     },
     {
-      "Identity": "F:\\MasterProject\\mvc\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "Identity": "G:\\MasterProject\\mvc\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "SourceId": "mvc",
       "SourceType": "Project",
-      "ContentRoot": "F:\\MasterProject\\mvc\\wwwroot\\",
+      "ContentRoot": "G:\\MasterProject\\mvc\\wwwroot\\",
       "BasePath": "_content/mvc",
       "RelativePath": "lib/jquery/dist/jquery.min.map",
       "AssetKind": "All",
@@ -2347,10 +2347,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
-      "Identity": "F:\\MasterProject\\mvc\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "Identity": "G:\\MasterProject\\mvc\\wwwroot\\lib\\jquery\\LICENSE.txt",
       "SourceId": "mvc",
       "SourceType": "Project",
-      "ContentRoot": "F:\\MasterProject\\mvc\\wwwroot\\",
+      "ContentRoot": "G:\\MasterProject\\mvc\\wwwroot\\",
       "BasePath": "_content/mvc",
       "RelativePath": "lib/jquery/LICENSE.txt",
       "AssetKind": "All",
@@ -2366,10 +2366,86 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\LICENSE.txt"
     },
     {
-      "Identity": "F:\\MasterProject\\mvc\\wwwroot\\uploads\\39289488-1382-49f0-85f1-363240628f31_1324947.jpeg",
+      "Identity": "G:\\MasterProject\\mvc\\wwwroot\\uploads\\0a5ac3b6-8769-4b67-88f8-834df49a1697_pexels-creation-hill-1681010.jpg",
       "SourceId": "mvc",
       "SourceType": "Project",
-      "ContentRoot": "F:\\MasterProject\\mvc\\wwwroot\\",
+      "ContentRoot": "G:\\MasterProject\\mvc\\wwwroot\\",
+      "BasePath": "_content/mvc",
+      "RelativePath": "uploads/0a5ac3b6-8769-4b67-88f8-834df49a1697_pexels-creation-hill-1681010.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\0a5ac3b6-8769-4b67-88f8-834df49a1697_pexels-creation-hill-1681010.jpg"
+    },
+    {
+      "Identity": "G:\\MasterProject\\mvc\\wwwroot\\uploads\\0f4f23c9-5134-40ab-9d78-92fcee7bc225_pexels-godisable-jacob-871495.jpg",
+      "SourceId": "mvc",
+      "SourceType": "Project",
+      "ContentRoot": "G:\\MasterProject\\mvc\\wwwroot\\",
+      "BasePath": "_content/mvc",
+      "RelativePath": "uploads/0f4f23c9-5134-40ab-9d78-92fcee7bc225_pexels-godisable-jacob-871495.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\0f4f23c9-5134-40ab-9d78-92fcee7bc225_pexels-godisable-jacob-871495.jpg"
+    },
+    {
+      "Identity": "G:\\MasterProject\\mvc\\wwwroot\\uploads\\24d21bda-605d-4bd2-8e44-7f76a0e399cb_pexels-andrea-piacquadio-712513.jpg",
+      "SourceId": "mvc",
+      "SourceType": "Project",
+      "ContentRoot": "G:\\MasterProject\\mvc\\wwwroot\\",
+      "BasePath": "_content/mvc",
+      "RelativePath": "uploads/24d21bda-605d-4bd2-8e44-7f76a0e399cb_pexels-andrea-piacquadio-712513.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\24d21bda-605d-4bd2-8e44-7f76a0e399cb_pexels-andrea-piacquadio-712513.jpg"
+    },
+    {
+      "Identity": "G:\\MasterProject\\mvc\\wwwroot\\uploads\\2c2ba301-2ce6-44e1-a369-5ccc659498ec_pexels-bess-hamiti-35537.jpg",
+      "SourceId": "mvc",
+      "SourceType": "Project",
+      "ContentRoot": "G:\\MasterProject\\mvc\\wwwroot\\",
+      "BasePath": "_content/mvc",
+      "RelativePath": "uploads/2c2ba301-2ce6-44e1-a369-5ccc659498ec_pexels-bess-hamiti-35537.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\2c2ba301-2ce6-44e1-a369-5ccc659498ec_pexels-bess-hamiti-35537.jpg"
+    },
+    {
+      "Identity": "G:\\MasterProject\\mvc\\wwwroot\\uploads\\39289488-1382-49f0-85f1-363240628f31_1324947.jpeg",
+      "SourceId": "mvc",
+      "SourceType": "Project",
+      "ContentRoot": "G:\\MasterProject\\mvc\\wwwroot\\",
       "BasePath": "_content/mvc",
       "RelativePath": "uploads/39289488-1382-49f0-85f1-363240628f31_1324947.jpeg",
       "AssetKind": "All",
@@ -2385,10 +2461,10 @@
       "OriginalItemSpec": "wwwroot\\uploads\\39289488-1382-49f0-85f1-363240628f31_1324947.jpeg"
     },
     {
-      "Identity": "F:\\MasterProject\\mvc\\wwwroot\\uploads\\77f58981-fc58-4b45-ab5d-19d34ec0ecb5_1324947.jpeg",
+      "Identity": "G:\\MasterProject\\mvc\\wwwroot\\uploads\\77f58981-fc58-4b45-ab5d-19d34ec0ecb5_1324947.jpeg",
       "SourceId": "mvc",
       "SourceType": "Project",
-      "ContentRoot": "F:\\MasterProject\\mvc\\wwwroot\\",
+      "ContentRoot": "G:\\MasterProject\\mvc\\wwwroot\\",
       "BasePath": "_content/mvc",
       "RelativePath": "uploads/77f58981-fc58-4b45-ab5d-19d34ec0ecb5_1324947.jpeg",
       "AssetKind": "All",
@@ -2404,10 +2480,10 @@
       "OriginalItemSpec": "wwwroot\\uploads\\77f58981-fc58-4b45-ab5d-19d34ec0ecb5_1324947.jpeg"
     },
     {
-      "Identity": "F:\\MasterProject\\mvc\\wwwroot\\uploads\\80896176-b375-4e5c-bab1-4cee6acffb73_1324947.jpeg",
+      "Identity": "G:\\MasterProject\\mvc\\wwwroot\\uploads\\80896176-b375-4e5c-bab1-4cee6acffb73_1324947.jpeg",
       "SourceId": "mvc",
       "SourceType": "Project",
-      "ContentRoot": "F:\\MasterProject\\mvc\\wwwroot\\",
+      "ContentRoot": "G:\\MasterProject\\mvc\\wwwroot\\",
       "BasePath": "_content/mvc",
       "RelativePath": "uploads/80896176-b375-4e5c-bab1-4cee6acffb73_1324947.jpeg",
       "AssetKind": "All",
@@ -2423,10 +2499,10 @@
       "OriginalItemSpec": "wwwroot\\uploads\\80896176-b375-4e5c-bab1-4cee6acffb73_1324947.jpeg"
     },
     {
-      "Identity": "F:\\MasterProject\\mvc\\wwwroot\\uploads\\88872fd0-f5dd-44f4-b4bd-f06297e5b16c_IMG_4483.jpg",
+      "Identity": "G:\\MasterProject\\mvc\\wwwroot\\uploads\\88872fd0-f5dd-44f4-b4bd-f06297e5b16c_IMG_4483.jpg",
       "SourceId": "mvc",
       "SourceType": "Project",
-      "ContentRoot": "F:\\MasterProject\\mvc\\wwwroot\\",
+      "ContentRoot": "G:\\MasterProject\\mvc\\wwwroot\\",
       "BasePath": "_content/mvc",
       "RelativePath": "uploads/88872fd0-f5dd-44f4-b4bd-f06297e5b16c_IMG_4483.jpg",
       "AssetKind": "All",
@@ -2442,10 +2518,10 @@
       "OriginalItemSpec": "wwwroot\\uploads\\88872fd0-f5dd-44f4-b4bd-f06297e5b16c_IMG_4483.jpg"
     },
     {
-      "Identity": "F:\\MasterProject\\mvc\\wwwroot\\uploads\\89f3a7e5-28c7-4ffe-9f2c-72af1a0b9b9d_maths.png",
+      "Identity": "G:\\MasterProject\\mvc\\wwwroot\\uploads\\89f3a7e5-28c7-4ffe-9f2c-72af1a0b9b9d_maths.png",
       "SourceId": "mvc",
       "SourceType": "Project",
-      "ContentRoot": "F:\\MasterProject\\mvc\\wwwroot\\",
+      "ContentRoot": "G:\\MasterProject\\mvc\\wwwroot\\",
       "BasePath": "_content/mvc",
       "RelativePath": "uploads/89f3a7e5-28c7-4ffe-9f2c-72af1a0b9b9d_maths.png",
       "AssetKind": "All",
@@ -2461,10 +2537,10 @@
       "OriginalItemSpec": "wwwroot\\uploads\\89f3a7e5-28c7-4ffe-9f2c-72af1a0b9b9d_maths.png"
     },
     {
-      "Identity": "F:\\MasterProject\\mvc\\wwwroot\\uploads\\8e4da10f-4c70-43d3-9a36-d448f316a9da_IMG_4341.jpg",
+      "Identity": "G:\\MasterProject\\mvc\\wwwroot\\uploads\\8e4da10f-4c70-43d3-9a36-d448f316a9da_IMG_4341.jpg",
       "SourceId": "mvc",
       "SourceType": "Project",
-      "ContentRoot": "F:\\MasterProject\\mvc\\wwwroot\\",
+      "ContentRoot": "G:\\MasterProject\\mvc\\wwwroot\\",
       "BasePath": "_content/mvc",
       "RelativePath": "uploads/8e4da10f-4c70-43d3-9a36-d448f316a9da_IMG_4341.jpg",
       "AssetKind": "All",
@@ -2480,10 +2556,10 @@
       "OriginalItemSpec": "wwwroot\\uploads\\8e4da10f-4c70-43d3-9a36-d448f316a9da_IMG_4341.jpg"
     },
     {
-      "Identity": "F:\\MasterProject\\mvc\\wwwroot\\uploads\\b7d7f698-fc85-4858-aeb0-55e3b0086274_655293.jpg",
+      "Identity": "G:\\MasterProject\\mvc\\wwwroot\\uploads\\b7d7f698-fc85-4858-aeb0-55e3b0086274_655293.jpg",
       "SourceId": "mvc",
       "SourceType": "Project",
-      "ContentRoot": "F:\\MasterProject\\mvc\\wwwroot\\",
+      "ContentRoot": "G:\\MasterProject\\mvc\\wwwroot\\",
       "BasePath": "_content/mvc",
       "RelativePath": "uploads/b7d7f698-fc85-4858-aeb0-55e3b0086274_655293.jpg",
       "AssetKind": "All",
@@ -2499,10 +2575,48 @@
       "OriginalItemSpec": "wwwroot\\uploads\\b7d7f698-fc85-4858-aeb0-55e3b0086274_655293.jpg"
     },
     {
-      "Identity": "F:\\MasterProject\\mvc\\wwwroot\\uploads\\c99e32ad-307c-4ab2-bb68-9793235b16a9_1079546.png",
+      "Identity": "G:\\MasterProject\\mvc\\wwwroot\\uploads\\ba00e642-79f7-4819-b23f-3184edde2a4f_download.jpeg",
       "SourceId": "mvc",
       "SourceType": "Project",
-      "ContentRoot": "F:\\MasterProject\\mvc\\wwwroot\\",
+      "ContentRoot": "G:\\MasterProject\\mvc\\wwwroot\\",
+      "BasePath": "_content/mvc",
+      "RelativePath": "uploads/ba00e642-79f7-4819-b23f-3184edde2a4f_download.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\ba00e642-79f7-4819-b23f-3184edde2a4f_download.jpeg"
+    },
+    {
+      "Identity": "G:\\MasterProject\\mvc\\wwwroot\\uploads\\c64c6144-fc22-416b-a983-2d1f623d52fc_pexels-moose-photos-1587009.jpg",
+      "SourceId": "mvc",
+      "SourceType": "Project",
+      "ContentRoot": "G:\\MasterProject\\mvc\\wwwroot\\",
+      "BasePath": "_content/mvc",
+      "RelativePath": "uploads/c64c6144-fc22-416b-a983-2d1f623d52fc_pexels-moose-photos-1587009.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\c64c6144-fc22-416b-a983-2d1f623d52fc_pexels-moose-photos-1587009.jpg"
+    },
+    {
+      "Identity": "G:\\MasterProject\\mvc\\wwwroot\\uploads\\c99e32ad-307c-4ab2-bb68-9793235b16a9_1079546.png",
+      "SourceId": "mvc",
+      "SourceType": "Project",
+      "ContentRoot": "G:\\MasterProject\\mvc\\wwwroot\\",
       "BasePath": "_content/mvc",
       "RelativePath": "uploads/c99e32ad-307c-4ab2-bb68-9793235b16a9_1079546.png",
       "AssetKind": "All",
@@ -2518,10 +2632,10 @@
       "OriginalItemSpec": "wwwroot\\uploads\\c99e32ad-307c-4ab2-bb68-9793235b16a9_1079546.png"
     },
     {
-      "Identity": "F:\\MasterProject\\mvc\\wwwroot\\uploads\\cabinet salon.png",
+      "Identity": "G:\\MasterProject\\mvc\\wwwroot\\uploads\\cabinet salon.png",
       "SourceId": "mvc",
       "SourceType": "Project",
-      "ContentRoot": "F:\\MasterProject\\mvc\\wwwroot\\",
+      "ContentRoot": "G:\\MasterProject\\mvc\\wwwroot\\",
       "BasePath": "_content/mvc",
       "RelativePath": "uploads/cabinet salon.png",
       "AssetKind": "All",
@@ -2537,10 +2651,10 @@
       "OriginalItemSpec": "wwwroot\\uploads\\cabinet salon.png"
     },
     {
-      "Identity": "F:\\MasterProject\\mvc\\wwwroot\\uploads\\Course.png",
+      "Identity": "G:\\MasterProject\\mvc\\wwwroot\\uploads\\Course.png",
       "SourceId": "mvc",
       "SourceType": "Project",
-      "ContentRoot": "F:\\MasterProject\\mvc\\wwwroot\\",
+      "ContentRoot": "G:\\MasterProject\\mvc\\wwwroot\\",
       "BasePath": "_content/mvc",
       "RelativePath": "uploads/Course.png",
       "AssetKind": "All",
@@ -2556,10 +2670,10 @@
       "OriginalItemSpec": "wwwroot\\uploads\\Course.png"
     },
     {
-      "Identity": "F:\\MasterProject\\mvc\\wwwroot\\uploads\\db773808-a780-47f5-b31a-aac5d970550c_cabinet salon.png",
+      "Identity": "G:\\MasterProject\\mvc\\wwwroot\\uploads\\db773808-a780-47f5-b31a-aac5d970550c_cabinet salon.png",
       "SourceId": "mvc",
       "SourceType": "Project",
-      "ContentRoot": "F:\\MasterProject\\mvc\\wwwroot\\",
+      "ContentRoot": "G:\\MasterProject\\mvc\\wwwroot\\",
       "BasePath": "_content/mvc",
       "RelativePath": "uploads/db773808-a780-47f5-b31a-aac5d970550c_cabinet salon.png",
       "AssetKind": "All",
@@ -2575,10 +2689,10 @@
       "OriginalItemSpec": "wwwroot\\uploads\\db773808-a780-47f5-b31a-aac5d970550c_cabinet salon.png"
     },
     {
-      "Identity": "F:\\MasterProject\\mvc\\wwwroot\\uploads\\dc2d5cde-727d-4b2b-9bf0-0f8094613e84_IMG_4341.jpg",
+      "Identity": "G:\\MasterProject\\mvc\\wwwroot\\uploads\\dc2d5cde-727d-4b2b-9bf0-0f8094613e84_IMG_4341.jpg",
       "SourceId": "mvc",
       "SourceType": "Project",
-      "ContentRoot": "F:\\MasterProject\\mvc\\wwwroot\\",
+      "ContentRoot": "G:\\MasterProject\\mvc\\wwwroot\\",
       "BasePath": "_content/mvc",
       "RelativePath": "uploads/dc2d5cde-727d-4b2b-9bf0-0f8094613e84_IMG_4341.jpg",
       "AssetKind": "All",
@@ -2594,10 +2708,29 @@
       "OriginalItemSpec": "wwwroot\\uploads\\dc2d5cde-727d-4b2b-9bf0-0f8094613e84_IMG_4341.jpg"
     },
     {
-      "Identity": "F:\\MasterProject\\mvc\\wwwroot\\uploads\\f46d173f-c7a4-439e-8741-a58eabf5dc5c_000.jpg",
+      "Identity": "G:\\MasterProject\\mvc\\wwwroot\\uploads\\ddcea8db-7c6d-4057-b195-7b442b79fe92_images.jpeg",
       "SourceId": "mvc",
       "SourceType": "Project",
-      "ContentRoot": "F:\\MasterProject\\mvc\\wwwroot\\",
+      "ContentRoot": "G:\\MasterProject\\mvc\\wwwroot\\",
+      "BasePath": "_content/mvc",
+      "RelativePath": "uploads/ddcea8db-7c6d-4057-b195-7b442b79fe92_images.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\ddcea8db-7c6d-4057-b195-7b442b79fe92_images.jpeg"
+    },
+    {
+      "Identity": "G:\\MasterProject\\mvc\\wwwroot\\uploads\\f46d173f-c7a4-439e-8741-a58eabf5dc5c_000.jpg",
+      "SourceId": "mvc",
+      "SourceType": "Project",
+      "ContentRoot": "G:\\MasterProject\\mvc\\wwwroot\\",
       "BasePath": "_content/mvc",
       "RelativePath": "uploads/f46d173f-c7a4-439e-8741-a58eabf5dc5c_000.jpg",
       "AssetKind": "All",
@@ -2613,10 +2746,10 @@
       "OriginalItemSpec": "wwwroot\\uploads\\f46d173f-c7a4-439e-8741-a58eabf5dc5c_000.jpg"
     },
     {
-      "Identity": "F:\\MasterProject\\mvc\\wwwroot\\uploads\\GIT-FirstPart.ppt",
+      "Identity": "G:\\MasterProject\\mvc\\wwwroot\\uploads\\GIT-FirstPart.ppt",
       "SourceId": "mvc",
       "SourceType": "Project",
-      "ContentRoot": "F:\\MasterProject\\mvc\\wwwroot\\",
+      "ContentRoot": "G:\\MasterProject\\mvc\\wwwroot\\",
       "BasePath": "_content/mvc",
       "RelativePath": "uploads/GIT-FirstPart.ppt",
       "AssetKind": "All",
@@ -2632,10 +2765,10 @@
       "OriginalItemSpec": "wwwroot\\uploads\\GIT-FirstPart.ppt"
     },
     {
-      "Identity": "F:\\MasterProject\\mvc\\wwwroot\\uploads\\Golden Minimal Floral Frame Design Studio Logo.png",
+      "Identity": "G:\\MasterProject\\mvc\\wwwroot\\uploads\\Golden Minimal Floral Frame Design Studio Logo.png",
       "SourceId": "mvc",
       "SourceType": "Project",
-      "ContentRoot": "F:\\MasterProject\\mvc\\wwwroot\\",
+      "ContentRoot": "G:\\MasterProject\\mvc\\wwwroot\\",
       "BasePath": "_content/mvc",
       "RelativePath": "uploads/Golden Minimal Floral Frame Design Studio Logo.png",
       "AssetKind": "All",
@@ -2651,10 +2784,10 @@
       "OriginalItemSpec": "wwwroot\\uploads\\Golden Minimal Floral Frame Design Studio Logo.png"
     },
     {
-      "Identity": "F:\\MasterProject\\mvc\\wwwroot\\uploads\\GTU.png",
+      "Identity": "G:\\MasterProject\\mvc\\wwwroot\\uploads\\GTU.png",
       "SourceId": "mvc",
       "SourceType": "Project",
-      "ContentRoot": "F:\\MasterProject\\mvc\\wwwroot\\",
+      "ContentRoot": "G:\\MasterProject\\mvc\\wwwroot\\",
       "BasePath": "_content/mvc",
       "RelativePath": "uploads/GTU.png",
       "AssetKind": "All",
@@ -2670,10 +2803,10 @@
       "OriginalItemSpec": "wwwroot\\uploads\\GTU.png"
     },
     {
-      "Identity": "F:\\MasterProject\\mvc\\wwwroot\\uploads\\IMG_4341.jpg",
+      "Identity": "G:\\MasterProject\\mvc\\wwwroot\\uploads\\IMG_4341.jpg",
       "SourceId": "mvc",
       "SourceType": "Project",
-      "ContentRoot": "F:\\MasterProject\\mvc\\wwwroot\\",
+      "ContentRoot": "G:\\MasterProject\\mvc\\wwwroot\\",
       "BasePath": "_content/mvc",
       "RelativePath": "uploads/IMG_4341.jpg",
       "AssetKind": "All",
@@ -2689,10 +2822,10 @@
       "OriginalItemSpec": "wwwroot\\uploads\\IMG_4341.jpg"
     },
     {
-      "Identity": "F:\\MasterProject\\mvc\\wwwroot\\uploads\\IMG_4483.jpg",
+      "Identity": "G:\\MasterProject\\mvc\\wwwroot\\uploads\\IMG_4483.jpg",
       "SourceId": "mvc",
       "SourceType": "Project",
-      "ContentRoot": "F:\\MasterProject\\mvc\\wwwroot\\",
+      "ContentRoot": "G:\\MasterProject\\mvc\\wwwroot\\",
       "BasePath": "_content/mvc",
       "RelativePath": "uploads/IMG_4483.jpg",
       "AssetKind": "All",
@@ -2708,10 +2841,10 @@
       "OriginalItemSpec": "wwwroot\\uploads\\IMG_4483.jpg"
     },
     {
-      "Identity": "F:\\MasterProject\\mvc\\wwwroot\\uploads\\Internship Review.pdf",
+      "Identity": "G:\\MasterProject\\mvc\\wwwroot\\uploads\\Internship Review.pdf",
       "SourceId": "mvc",
       "SourceType": "Project",
-      "ContentRoot": "F:\\MasterProject\\mvc\\wwwroot\\",
+      "ContentRoot": "G:\\MasterProject\\mvc\\wwwroot\\",
       "BasePath": "_content/mvc",
       "RelativePath": "uploads/Internship Review.pdf",
       "AssetKind": "All",
@@ -2727,10 +2860,10 @@
       "OriginalItemSpec": "wwwroot\\uploads\\Internship Review.pdf"
     },
     {
-      "Identity": "F:\\MasterProject\\mvc\\wwwroot\\uploads\\Letter A Logo With Business and Arrow Concept..png",
+      "Identity": "G:\\MasterProject\\mvc\\wwwroot\\uploads\\Letter A Logo With Business and Arrow Concept..png",
       "SourceId": "mvc",
       "SourceType": "Project",
-      "ContentRoot": "F:\\MasterProject\\mvc\\wwwroot\\",
+      "ContentRoot": "G:\\MasterProject\\mvc\\wwwroot\\",
       "BasePath": "_content/mvc",
       "RelativePath": "uploads/Letter A Logo With Business and Arrow Concept..png",
       "AssetKind": "All",
@@ -2746,10 +2879,67 @@
       "OriginalItemSpec": "wwwroot\\uploads\\Letter A Logo With Business and Arrow Concept..png"
     },
     {
-      "Identity": "F:\\MasterProject\\mvc\\wwwroot\\uploads\\Screenshot 2024-01-15 104118.png",
+      "Identity": "G:\\MasterProject\\mvc\\wwwroot\\uploads\\pexels-christina-morillo-1181519.jpg",
       "SourceId": "mvc",
       "SourceType": "Project",
-      "ContentRoot": "F:\\MasterProject\\mvc\\wwwroot\\",
+      "ContentRoot": "G:\\MasterProject\\mvc\\wwwroot\\",
+      "BasePath": "_content/mvc",
+      "RelativePath": "uploads/pexels-christina-morillo-1181519.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\pexels-christina-morillo-1181519.jpg"
+    },
+    {
+      "Identity": "G:\\MasterProject\\mvc\\wwwroot\\uploads\\pexels-daniel-xavier-1212984.jpg",
+      "SourceId": "mvc",
+      "SourceType": "Project",
+      "ContentRoot": "G:\\MasterProject\\mvc\\wwwroot\\",
+      "BasePath": "_content/mvc",
+      "RelativePath": "uploads/pexels-daniel-xavier-1212984.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\pexels-daniel-xavier-1212984.jpg"
+    },
+    {
+      "Identity": "G:\\MasterProject\\mvc\\wwwroot\\uploads\\pexels-hannah-nelson-1065084.jpg",
+      "SourceId": "mvc",
+      "SourceType": "Project",
+      "ContentRoot": "G:\\MasterProject\\mvc\\wwwroot\\",
+      "BasePath": "_content/mvc",
+      "RelativePath": "uploads/pexels-hannah-nelson-1065084.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\pexels-hannah-nelson-1065084.jpg"
+    },
+    {
+      "Identity": "G:\\MasterProject\\mvc\\wwwroot\\uploads\\Screenshot 2024-01-15 104118.png",
+      "SourceId": "mvc",
+      "SourceType": "Project",
+      "ContentRoot": "G:\\MasterProject\\mvc\\wwwroot\\",
       "BasePath": "_content/mvc",
       "RelativePath": "uploads/Screenshot 2024-01-15 104118.png",
       "AssetKind": "All",
@@ -2765,10 +2955,10 @@
       "OriginalItemSpec": "wwwroot\\uploads\\Screenshot 2024-01-15 104118.png"
     },
     {
-      "Identity": "F:\\MasterProject\\mvc\\wwwroot\\uploads\\Screenshot 2024-02-24 002836.png",
+      "Identity": "G:\\MasterProject\\mvc\\wwwroot\\uploads\\Screenshot 2024-02-24 002836.png",
       "SourceId": "mvc",
       "SourceType": "Project",
-      "ContentRoot": "F:\\MasterProject\\mvc\\wwwroot\\",
+      "ContentRoot": "G:\\MasterProject\\mvc\\wwwroot\\",
       "BasePath": "_content/mvc",
       "RelativePath": "uploads/Screenshot 2024-02-24 002836.png",
       "AssetKind": "All",
@@ -2784,10 +2974,10 @@
       "OriginalItemSpec": "wwwroot\\uploads\\Screenshot 2024-02-24 002836.png"
     },
     {
-      "Identity": "F:\\MasterProject\\mvc\\wwwroot\\uploads\\Screenshot 2024-02-24 005011.png",
+      "Identity": "G:\\MasterProject\\mvc\\wwwroot\\uploads\\Screenshot 2024-02-24 005011.png",
       "SourceId": "mvc",
       "SourceType": "Project",
-      "ContentRoot": "F:\\MasterProject\\mvc\\wwwroot\\",
+      "ContentRoot": "G:\\MasterProject\\mvc\\wwwroot\\",
       "BasePath": "_content/mvc",
       "RelativePath": "uploads/Screenshot 2024-02-24 005011.png",
       "AssetKind": "All",
@@ -2803,10 +2993,10 @@
       "OriginalItemSpec": "wwwroot\\uploads\\Screenshot 2024-02-24 005011.png"
     },
     {
-      "Identity": "F:\\MasterProject\\mvc\\wwwroot\\uploads\\TechnoFy.jpg",
+      "Identity": "G:\\MasterProject\\mvc\\wwwroot\\uploads\\TechnoFy.jpg",
       "SourceId": "mvc",
       "SourceType": "Project",
-      "ContentRoot": "F:\\MasterProject\\mvc\\wwwroot\\",
+      "ContentRoot": "G:\\MasterProject\\mvc\\wwwroot\\",
       "BasePath": "_content/mvc",
       "RelativePath": "uploads/TechnoFy.jpg",
       "AssetKind": "All",
@@ -2822,10 +3012,10 @@
       "OriginalItemSpec": "wwwroot\\uploads\\TechnoFy.jpg"
     },
     {
-      "Identity": "F:\\MasterProject\\mvc\\wwwroot\\uploads\\TimeLine chart.png",
+      "Identity": "G:\\MasterProject\\mvc\\wwwroot\\uploads\\TimeLine chart.png",
       "SourceId": "mvc",
       "SourceType": "Project",
-      "ContentRoot": "F:\\MasterProject\\mvc\\wwwroot\\",
+      "ContentRoot": "G:\\MasterProject\\mvc\\wwwroot\\",
       "BasePath": "_content/mvc",
       "RelativePath": "uploads/TimeLine chart.png",
       "AssetKind": "All",
@@ -2841,10 +3031,10 @@
       "OriginalItemSpec": "wwwroot\\uploads\\TimeLine chart.png"
     },
     {
-      "Identity": "F:\\MasterProject\\mvc\\wwwroot\\uploads\\Untitled design.gif",
+      "Identity": "G:\\MasterProject\\mvc\\wwwroot\\uploads\\Untitled design.gif",
       "SourceId": "mvc",
       "SourceType": "Project",
-      "ContentRoot": "F:\\MasterProject\\mvc\\wwwroot\\",
+      "ContentRoot": "G:\\MasterProject\\mvc\\wwwroot\\",
       "BasePath": "_content/mvc",
       "RelativePath": "uploads/Untitled design.gif",
       "AssetKind": "All",
@@ -2860,10 +3050,10 @@
       "OriginalItemSpec": "wwwroot\\uploads\\Untitled design.gif"
     },
     {
-      "Identity": "F:\\MasterProject\\mvc\\wwwroot\\uploads\\Untitled design45454554.png",
+      "Identity": "G:\\MasterProject\\mvc\\wwwroot\\uploads\\Untitled design45454554.png",
       "SourceId": "mvc",
       "SourceType": "Project",
-      "ContentRoot": "F:\\MasterProject\\mvc\\wwwroot\\",
+      "ContentRoot": "G:\\MasterProject\\mvc\\wwwroot\\",
       "BasePath": "_content/mvc",
       "RelativePath": "uploads/Untitled design45454554.png",
       "AssetKind": "All",

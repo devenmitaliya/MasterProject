@@ -40,12 +40,12 @@
                 <td>@employee.department</td>
                 <td>
                     <a href="@Url.Action("Details", new { id = employee.c_empid })" class="btn btn-primary">Details</a>
-                    @if (role == "Admin")
+                    @* @if (role == "Admin")
                     {
                         <a href="@Url.Action("Edit", new { id = employee.c_empid })" class="btn btn-secondary">Edit</a>
                         <a href="@Url.Action("Delete", new { id = employee.c_empid })" class="btn btn-danger"
                             onclick="return confirm('Are you sure you want to delete this Employee?')">Delete</a>
-                    }
+                    } *@
                 </td>
             </tr>
         }

@@ -89,7 +89,7 @@ namespace mvc.Controllers
         {
             if (photo != null)
             {
-                var uploadsFolder = Path.Combine("D:\\GitProject\\MasterProject\\mvc\\wwwroot", "uploads");
+                var uploadsFolder = Path.Combine("G:\\MasterProject\\mvc\\wwwroot", "uploads");
                 string uniqueFilename = Guid.NewGuid().ToString() + "_" + photo.FileName;
                 string filepath = Path.Combine(uploadsFolder, uniqueFilename);
 

@@ -1967,11 +1967,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\MasterProject\\api\\api.csproj",
+      "projectUniqueName": "G:\\MasterProject\\api\\api.csproj",
       "projectName": "api",
-      "projectPath": "F:\\MasterProject\\api\\api.csproj",
+      "projectPath": "G:\\MasterProject\\api\\api.csproj",
       "packagesPath": "C:\\Users\\DELL\\.nuget\\packages\\",
-      "outputPath": "F:\\MasterProject\\api\\obj\\",
+      "outputPath": "G:\\MasterProject\\api\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -1992,8 +1992,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "F:\\MasterProject\\mvc\\mvc.csproj": {
-              "projectPath": "F:\\MasterProject\\mvc\\mvc.csproj"
+            "G:\\MasterProject\\mvc\\mvc.csproj": {
+              "projectPath": "G:\\MasterProject\\mvc\\mvc.csproj"
             }
           }
         }

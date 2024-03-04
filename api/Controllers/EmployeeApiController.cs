@@ -16,25 +16,25 @@ namespace api.Controllers
     {
         private readonly IEmployeeRepository _employeeRepository;
         private readonly IWebHostEnvironment _hostEnvironment;
-                private readonly IHttpContextAccessor _httpContextAccessor;
+        private readonly IHttpContextAccessor _httpContextAccessor;
 
 
 
-        public EmployeeApiController(IEmployeeRepository employeeRepository, IWebHostEnvironment hostEnvironment,IHttpContextAccessor httpContextAccessor)
+        public EmployeeApiController(IEmployeeRepository employeeRepository, IWebHostEnvironment hostEnvironment, IHttpContextAccessor httpContextAccessor)
         {
             _employeeRepository = employeeRepository;
             _hostEnvironment = hostEnvironment;
-                        _httpContextAccessor = httpContextAccessor;
+            _httpContextAccessor = httpContextAccessor;
 
         }
 
 
 
 
- [HttpGet("Dashboard")]
+        [HttpGet("Dashboard")]
         public IActionResult Dashboard()
         {
-              var session = HttpContext.Session;
+            var session = HttpContext.Session;
             if (string.IsNullOrEmpty(session.GetString("username")) || string.IsNullOrEmpty(session.GetString("email")))
             {
                 return RedirectToAction("Login");
@@ -44,7 +44,7 @@ namespace api.Controllers
         }
 
 
-         [HttpGet("Index")]
+        [HttpGet("Index")]
         public IActionResult Index()
         {
             var session = HttpContext.Session;
@@ -83,7 +83,7 @@ namespace api.Controllers
                 //  var uploadsFolder = Path.Combine(_hostEnvironment.WebRootPath, "images");
 
                 // var uploadsFolder = Path.Combine("/Users/yashveekotadiya/Desktop/newmaster/MasterProject/mvc/wwwroot/", "images");
-                var uploadsFolder = Path.Combine("/Users/yashveekotadiya/Desktop/newmaster/MasterProject/mvc/wwwroot/", "images");                
+                var uploadsFolder = Path.Combine("G:\\MasterProject\\mvc\\wwwroot", "uploads");
                 string uniqueFilename = Guid.NewGuid().ToString() + "_" + emp.photo.FileName;
                 string filepath = Path.Combine(uploadsFolder, uniqueFilename);
 
@@ -103,9 +103,6 @@ namespace api.Controllers
                 Console.WriteLine("NOT FOUND");
             }
 
-
-
-
             Console.WriteLine(emp);
             _employeeRepository.AddEmployeeApi(emp);
             return Ok("Employee added successfully");
@@ -118,74 +115,74 @@ namespace api.Controllers
 
 
 
-[HttpGet("current/{username}")]
-public IActionResult GetEmployeesForCurrentUser(string username)
-{
-    try
-    {
-        if (string.IsNullOrEmpty(username))
+        [HttpGet("current/{username}")]
+        public IActionResult GetEmployeesForCurrentUser(string username)
         {
-            return BadRequest("Username not provided");
+            try
+            {
+                if (string.IsNullOrEmpty(username))
+                {
+                    return BadRequest("Username not provided");
+                }
+
+                // Get role from session or any other source
+                string role = _httpContextAccessor.HttpContext.Session.GetString("role");
+
+                // Check if the user is an admin
+                if (!string.IsNullOrEmpty(role) && role.Equals("Admin", StringComparison.OrdinalIgnoreCase))
+                {
+                    // If user is admin, return all employees
+                    List<tblEmployee> allEmployees = _employeeRepository.GetAllEmployee();
+                    return Ok(allEmployees);
+                }
+                else
+                {
+                    // If user is not admin, return employees for the current user
+                    List<tblEmployee> employees = _employeeRepository.GetEmployeeFromUserName(username);
+                    return Ok(employees);
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+                return StatusCode(500, "Internal server error");
+            }
         }
 
-        // Get role from session or any other source
-        string role = _httpContextAccessor.HttpContext.Session.GetString("role");
 
-        // Check if the user is an admin
-        if (!string.IsNullOrEmpty(role) && role.Equals("Admin", StringComparison.OrdinalIgnoreCase))
+        [HttpGet("admin")]
+        public IActionResult GetEmployeesForAdmin()
         {
-            // If user is admin, return all employees
-            List<tblEmployee> allEmployees = _employeeRepository.GetAllEmployee();
-            return Ok(allEmployees);
+            try
+            {
+                // Get role from session
+                string role = _httpContextAccessor.HttpContext.Session.GetString("role");
+
+                // Check if the user is an admin
+                if (!string.IsNullOrEmpty(role) && role.Equals("Admin", StringComparison.OrdinalIgnoreCase))
+                {
+                    // If user is admin, return all employees
+                    List<tblEmployee> allEmployees = _employeeRepository.GetAllEmployee();
+                    return Ok(allEmployees);
+                }
+                else
+                {
+                    // If user is not admin, return Forbidden status
+                    return StatusCode(403, "Forbidden");
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+                return StatusCode(500, "Internal server error");
+            }
         }
-        else
-        {
-            // If user is not admin, return employees for the current user
-            List<tblEmployee> employees = _employeeRepository.GetEmployeeFromUserName(username);
-            return Ok(employees);
-        }
-    }
-    catch (Exception ex)
-    {
-        Console.WriteLine(ex.Message);
-        return StatusCode(500, "Internal server error");
-    }
-}
-
-
-[HttpGet("admin")]
-public IActionResult GetEmployeesForAdmin()
-{
-    try
-    {
-        // Get role from session
-        string role = _httpContextAccessor.HttpContext.Session.GetString("role");
-
-        // Check if the user is an admin
-        if (!string.IsNullOrEmpty(role) && role.Equals("Admin", StringComparison.OrdinalIgnoreCase))
-        {
-            // If user is admin, return all employees
-            List<tblEmployee> allEmployees = _employeeRepository.GetAllEmployee();
-            return Ok(allEmployees);
-        }
-        else
-        {
-            // If user is not admin, return Forbidden status
-            return StatusCode(403, "Forbidden");
-        }
-    }
-    catch (Exception ex)
-    {
-        Console.WriteLine(ex.Message);
-        return StatusCode(500, "Internal server error");
-    }
-}
 
 
 
-       
 
-          [HttpPut]
+
+        [HttpPut]
         public IActionResult Edit1([FromForm] tblUpdate emp)
         {
             _employeeRepository.EditEmployeeApi(emp);

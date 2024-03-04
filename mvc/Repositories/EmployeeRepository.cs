@@ -389,7 +389,7 @@ namespace mvc.Repositories
                 Console.WriteLine("Department ID ::::::" + deptId);
                 string shifts = string.Join(",", emp.c_empshift);
                 cmd.CommandType = CommandType.Text;
-                cmd.CommandText = "INSERT INTO t_employee(c_empname, c_empgender, c_empdob, c_empshift, c_empimg, c_empdepartment) VALUES ( @c_empname, @c_empgender, @c_empdob, @c_empshift, @c_empimg, @c_empdepartment)";
+                cmd.CommandText = "INSERT INTO t_employee(c_empname, c_empgender, c_empdob, c_empshift, c_empimg, c_empdepartment, c_username) VALUES ( @c_empname, @c_empgender, @c_empdob, @c_empshift, @c_empimg, @c_empdepartment, @name)";
 
                 // var session = _httpContextAccessor.HttpContext.Session;
                 // var user = session.GetString("username");
@@ -400,7 +400,7 @@ namespace mvc.Repositories
                 cmd.Parameters.AddWithValue("@c_empshift", shifts);
                 cmd.Parameters.AddWithValue("@c_empimg", emp.c_empimg);
                 cmd.Parameters.AddWithValue("@c_empdepartment", deptId);
-                // cmd.Parameters.AddWithValue("@c_username", user);
+                cmd.Parameters.AddWithValue("@name", "savan");
 
                 cmd.ExecuteNonQuery();
 

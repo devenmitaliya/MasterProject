@@ -28,6 +28,21 @@ namespace mvc.Controllers
 
         public IActionResult Index()
         {
+            var uname = HttpContext.Session.GetString("username");
+            Console.WriteLine("Indexing"+ uname);
+            var emp = _employeeRepository.GetEmployeeFromUserName(uname);
+
+            Console.WriteLine(emp);
+            if (emp == null)
+            {
+                return View("Error");
+            }
+
+            return View(emp);
+        }
+
+        public IActionResult Admin()
+        {
             var emp = _employeeRepository.GetAllEmployee();
 
             if (emp == null)
@@ -37,6 +52,8 @@ namespace mvc.Controllers
 
             return View(emp);
         }
+
+
 
         [Produces("application/json")]
         public IActionResult GetAllEmployee()
@@ -51,16 +68,25 @@ namespace mvc.Controllers
             return Json(dept);
         }
 
-       public IActionResult Details(int id)
+        public IActionResult GetUserData()
+        {
+            var uname = HttpContext.Session.GetString("username");
+
+            List<tblEmployee> emp = _employeeRepository.GetEmployeeFromUserName(uname);
+            return Json(emp);
+        }
+
+
+        public IActionResult Details(int id)
+        {
+            var employee = _employeeRepository.GetOneEmployee(id);
+            if (employee == null)
             {
-                var employee = _employeeRepository.GetOneEmployee(id);
-                if (employee == null)
-                {
-                    return NotFound();
-                }
-                //  ViewBag.Title = "Employee Details";
-                return View(employee);
+                return NotFound();
             }
+            //  ViewBag.Title = "Employee Details";
+            return View(employee);
+        }
 
 
 
@@ -108,14 +134,14 @@ namespace mvc.Controllers
 
 
 
-    [HttpPost]
+        [HttpPost]
         public IActionResult Delete(int id)
         {
             try
             {
 
                 tblEmployee employeeToDelete = _employeeRepository.GetOneEmployee(id);
-            
+
                 _employeeRepository.DeleteEmployee(employeeToDelete);
 
                 return RedirectToAction("Index");
@@ -144,39 +170,39 @@ namespace mvc.Controllers
         }
 
 
-       [HttpPost]
-public IActionResult Edit(tblEmployee emp, IFormFile c_empimg)
-{
-    try
-    {
-        if (c_empimg != null && c_empimg.Length > 0)
+        [HttpPost]
+        public IActionResult Edit(tblEmployee emp, IFormFile c_empimg)
         {
-            var uploadsFolder = Path.Combine(_hostingEnvironment.WebRootPath, "uploads");
-            string uniqueFilename = Guid.NewGuid().ToString() + "_" + Path.GetFileName(c_empimg.FileName);
-            string filePath = Path.Combine(uploadsFolder, uniqueFilename);
-
-            using (var stream = new FileStream(filePath, FileMode.Create))
+            try
             {
-                c_empimg.CopyTo(stream);
+                if (c_empimg != null && c_empimg.Length > 0)
+                {
+                    var uploadsFolder = Path.Combine(_hostingEnvironment.WebRootPath, "uploads");
+                    string uniqueFilename = Guid.NewGuid().ToString() + "_" + Path.GetFileName(c_empimg.FileName);
+                    string filePath = Path.Combine(uploadsFolder, uniqueFilename);
+
+                    using (var stream = new FileStream(filePath, FileMode.Create))
+                    {
+                        c_empimg.CopyTo(stream);
+                    }
+
+                    emp.c_empimg = uniqueFilename;
+                }
+
+                var department = Request.Form["c_empdepartment"].ToString();
+                emp.c_empdepartment = department;
+
+                _employeeRepository.EditEmployee(emp);
+                return RedirectToAction("Index");
             }
-
-            emp.c_empimg = uniqueFilename;
+            catch (Exception ex)
+            {
+                // Log the exception
+                Console.WriteLine("Error Updating Employee: " + ex.Message);
+                // Return an error response
+                return StatusCode(500, "An error occurred while Updating the Employee.");
+            }
         }
-
-        var department = Request.Form["c_empdepartment"].ToString();
-        emp.c_empdepartment = department;
-
-        _employeeRepository.EditEmployee(emp);
-        return RedirectToAction("Index");
-    }
-    catch (Exception ex)
-    {
-        // Log the exception
-        Console.WriteLine("Error Updating Employee: " + ex.Message);
-        // Return an error response
-        return StatusCode(500, "An error occurred while Updating the Employee.");
-    }
-}
 
 
 

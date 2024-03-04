@@ -51,7 +51,14 @@ namespace mvc.Controllers
         {
             if (_userRepositories.Login(user)==1)
             {
+                var role = HttpContext.Session.GetString("role");
+                if(role == "Admin"){
+
+                return RedirectToAction("Admin","KendoComponentEmployee");
+                }else{
                 return RedirectToAction("Index","KendoComponentEmployee");
+
+                }
             }
             else
             {

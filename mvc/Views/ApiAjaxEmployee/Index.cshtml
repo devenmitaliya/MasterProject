@@ -44,7 +44,7 @@
                             <td>${emp.c_empdob}</td>
                             <td>${emp.c_empshift}</td>
                             <td>${emp.c_empdepartment}</td>
-                            <td><img src="/images/${emp.c_empimg}" width = "100" alt="${emp.c_empimg}"></td>
+                            <td><img src="/uploads/${emp.c_empimg}" width = "100" alt="${emp.c_empimg}"></td>
                             @* <td><img src="${emp.c_empimg}" alt="Employee Image" style="max-width: 100px; max-height: 100px;" /></td> *@
                             <td><button  class="btn btn-danger" onclick="DeleteEmployee(${emp.c_empid})">Delete</button></td>
                             <td><a href="/ApiAjaxEmployee/Update/?id=${emp.c_empid}" class="text text-primary"><button type="button" class="btn btn-primary">Edit</button></a></td>

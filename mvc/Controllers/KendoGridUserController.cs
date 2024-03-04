@@ -14,7 +14,7 @@ namespace mvc.Controllers
     public class KendoGridUserController : Controller
     {
         private readonly ILogger<KendoGridUserController> _logger;
-                private readonly IUserRepositories _userRepo;
+        private readonly IUserRepositories _userRepo;
 
 
         public KendoGridUserController(ILogger<KendoGridUserController> logger, IUserRepositories userRepo)
@@ -68,6 +68,47 @@ namespace mvc.Controllers
         //         return Json(new { success = false, error = ex.Message });
         //     }
         // }
+        [HttpPost]
+        public IActionResult RegisterUser([FromBody] tblUser user)
+        {
+            try
+            {
+                _userRepo.Register(user);
+
+                return Json(new { success = true });
+            }
+            catch (Exception ex)
+            {
+                return Json(new { success = false, error = ex.Message });
+            }
+        }
+
+        [HttpPost]
+        public IActionResult Login([FromBody] tblUser user)
+        {
+            try
+            {
+                int rowCount = _userRepo.Login(user);
+
+                if (rowCount > 0)
+                {
+                    var role = HttpContext.Session.GetString("role");
+                    var username = HttpContext.Session.GetString("username");
+
+                    return Json(new { success = true, role = role, username = username });
+
+                }
+                else
+                {
+                    // Login failed
+                    return Json(new { success = false, error = "Invalid credentials" });
+                }
+            }
+            catch (Exception ex)
+            {
+                return Json(new { success = false, error = ex.Message });
+            }
+        }
 
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]

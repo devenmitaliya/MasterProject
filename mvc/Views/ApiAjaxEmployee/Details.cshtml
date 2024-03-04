@@ -45,7 +45,7 @@
                 employeeDataHtml += '<p><strong>Date of Birth:</strong> ' + response.c_empdob + '</p>';
                 employeeDataHtml += '<p><strong>Shift:</strong> ' + response.c_empshift.join(', ') + '</p>';
                 employeeDataHtml += '<p><strong>Department:</strong> ' + response.c_empdepartment + '</p>';
-                employeeDataHtml += '<p><strong>Image:</strong> <img src="/images/' + response.c_empimg + '" width="100" alt="' + response.c_empimg + '"></p>';
+                employeeDataHtml += '<p><strong>Image:</strong> <img src="/uploads/' + response.c_empimg + '" width="100" alt="' + response.c_empimg + '"></p>';
 
 
                 $('#employeeData').html(employeeDataHtml);
