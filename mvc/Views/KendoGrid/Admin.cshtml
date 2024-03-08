@@ -28,8 +28,8 @@
                     dataType: "json",
                     data: function (data) {
                         data.c_empdob = kendo.toString(data.c_empdob, "yyyy-MM-dd");
-                        console.log("Data to be sent:", data);
-                        return JSON.stringify(data);
+                        console.log("Data to be sent:", data); 
+                        return JSON.stringify(dat a);
                     },
                 },
                 update: {
@@ -140,11 +140,10 @@
 
         function imageupload(container, options) {
             if (options.model.isNew()) {
-                $('<input name="photo" type="file" id="photo" data-role="upload" data-async=\'{ "saveUrl": "http://localhost:5110/KendoGrid/UploadPhoto", "autoUpload": true }\' class="k-input k-textbox">').appendTo(container);
+                $('<input name="c_empimg" type="file" id="photo" data-role="upload" data-async=\'{ "saveUrl": "http://localhost:5110/KendoGrid/UploadPhoto", "autoUpload": true }\' class="k-input k-textbox">').appendTo(container);
             } else {
                 var imgElement = $('<img id="existingImage" src="/uploads/' + options.model.c_empimg + '" alt="emp Photo" style="max-width: 100px; max-height: 100px;"/>');
                 imgElement.appendTo(container);
-
                 imgElement.click(function () {
                     $("#photo").click();
                 });

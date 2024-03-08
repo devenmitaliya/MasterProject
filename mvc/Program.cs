@@ -6,6 +6,8 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllersWithViews();
 builder.Services.AddSingleton<IEmployeeRepository, EmployeeRepository>();
 builder.Services.AddSingleton<IUserRepositories, UserRepositories>();
+
+
 builder.Services.AddHttpContextAccessor();
 builder.Services.AddSession();
 // In Startup.cs

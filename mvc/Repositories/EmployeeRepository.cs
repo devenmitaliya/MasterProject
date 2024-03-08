@@ -393,6 +393,7 @@ namespace mvc.Repositories
 
                 // var session = _httpContextAccessor.HttpContext.Session;
                 // var user = session.GetString("username");
+                // Console.WriteLine("Name + + + + + + + + + + + + + + + + :   " + username);
 
                 cmd.Parameters.AddWithValue("@c_empname", emp.c_empname);
                 cmd.Parameters.AddWithValue("@c_empgender", emp.c_empgender);

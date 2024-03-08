@@ -1,6 +1,5 @@
 @model mvc.Models.tblEmployee
 @{
-    var genders = new List<string> { "Male", "Female", "Other" };
     var shifts = new List<string> { "Morning", "Afternoon" };
 }
 
@@ -15,25 +14,23 @@
         <form method="post" enctype="multipart/form-data" action="/KendoComponentEmployee/Add">
             <div class="k-content">
                 <label for="c_empname">Name</label>
-                <input id="c_empname" name="c_empname" />
+                <input id="c_empname" name="c_empname" /><br>
 
                 <label for="c_empgender">Gender</label><br>
-                @foreach (var gender in genders)
-                {
-                    <input type="radio" id="@gender" name="c_empgender" value="@gender" />
-                    <label for="@gender">@gender</label>
-                }
-                <br>
+                <div>
+                    <input id="empMGender" name="c_empgender" type="radio" value="Male">
+                    <input id="empFGender" name="c_empgender" type="radio" value="Female">
+                    <input id="empOGender" name="c_empgender" type="radio" value="Other">
+                </div>
 
                 <label  for="c_empdob">Date of Birth</label>
-                <input id="c_empdob" name="c_empdob" />
+                <input id="c_empdob" name="c_empdob" /><br>
 
-                <label for="c_empshift">Shift</label><br>
-                @foreach (var shift in shifts)
-                {
-                    <input type="checkbox" id="@shift" name="c_empshift" value="@shift" />
-                    <label for="@shift">@shift</label>
-                }<br>
+                    <label for="c_empshift">Shift</label><br>
+                    <div>
+                        <input id="M" type="checkbox" name="c_empshift" value="Morning" />
+                        <input id="A" type="checkbox" name="c_empshift" value="Afternoon" />
+                    </div>
 
                 <label for="c_empimg">Image</label>
                 <input type="file" id="c_empimg" name="c_empimg" />
@@ -60,13 +57,41 @@
                 $("#c_empname").kendoTextBox();
               $(document).ready(function() {
     $("#c_empdob").kendoDatePicker({
-        format: "yyyy-MM-dd" // Example format: "yyyy-MM-dd"
+        format: "yyyy-MM-dd" 
     });
 });
+
+
+                $("#empMGender").kendoRadioButton({
+                    label: "Male",
+                    size: "medium"
+                });
+
+                $("#empFGender").kendoRadioButton({
+                    label: "Female",
+                    size: "medium"
+                });
+                $("#empOGender").kendoRadioButton({
+                    label: "Other",
+                    size: "medium"
+                });
+
+                $("#A").kendoCheckBox({
+                    label: "Afternoon",
+                    size: "medium",
+                    rounded: "large"
+                });
+
+                $("#M").kendoCheckBox({
+                    label: "Morning",
+                    size: "medium",
+                    rounded: "large"
+                });
 
                 $("#c_empimg").kendoUpload();
                 $("#c_empdepartment").kendoDropDownList();
             });
+
         </script>
     }
 </body>

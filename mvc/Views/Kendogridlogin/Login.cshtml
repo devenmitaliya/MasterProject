@@ -1,0 +1,63 @@
+@model mvc.Models.tblLogin
+@{
+    ViewData["Title"] = "Login";
+}
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<link rel="stylesheet" href="https://kendo.cdn.telerik.com/2021.2.616/styles/kendo.common.min.css" />
+<link rel="stylesheet" href="https://kendo.cdn.telerik.com/2021.2.616/styles/kendo.default.min.css" />
+<script src="https://kendo.cdn.telerik.com/2021.2.616/js/kendo.all.min.js"></script>
+
+<h2>Login</h2> <br>
+
+<form id="loginForm">
+    <label for="uemail">Email:</label>
+    <input type="email" id="uemail" name="uemail" data-bind="value: c_uemail" /><br /> <br />
+
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" data-bind="value: c_password" /><br /> <br />
+
+    <button type="button" id="loginButton">Login</button> <br /><br />
+    <p>Don't have an account? <a href="/Kendogridlogin/Register">Register here</a>.</p>
+</form>
+
+@section Scripts {
+    <script>
+        $(document).ready(function () {
+            $("#loginButton").click(function () {
+                var formData = {
+                    c_uemail: $("#uemail").val(),
+                    c_password: $("#password").val()
+                };
+
+                $.ajax({
+                    url: "/Kendogridlogin/Login",
+                    type: "POST",
+                    contentType: "application/json; charset=utf-8",
+                    dataType: "json",
+                    data: JSON.stringify(formData),
+                    success: function (result) {
+                        if (result.success) {
+                            alert("Successfully logged in");
+                            sessionStorage.setItem("role", result.role);
+                            console.log("Role received:", result.role);
+
+                            // Redirect based on the role
+                            var redirectUrl = result.role.toLowerCase() === "admin"
+                                ? "/Kendogrid/Admin"  // adjust the path accordingly
+                                : "/Kendogrid/Index"; // adjust the path accordingly
+
+                            window.location.href = redirectUrl;
+                        } else {
+                            alert(result.message);
+                        }
+                    },
+                    error: function (xhr, status, error) {
+                        console.error("AJAX Error:", status, error);
+                        alert("An error occurred during login.");
+                    }
+                });
+            });
+        });
+    </script>
+}

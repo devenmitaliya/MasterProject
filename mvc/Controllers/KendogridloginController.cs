@@ -13,7 +13,12 @@ namespace mvc.Controllers
             _userRepo = userRepo;
         }
 
-        public IActionResult Index1()
+        public IActionResult Login()
+        {
+            return View();
+        }
+
+        public IActionResult Register()
         {
             return View();
         }

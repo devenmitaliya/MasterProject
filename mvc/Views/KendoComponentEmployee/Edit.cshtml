@@ -16,7 +16,7 @@
     <div id="example">
         <form method="post" enctype="multipart/form-data" action="/KendoComponentEmployee/Edit">
             <div class="k-content">
-                <!-- Hidden input for employee ID -->
+
                 <input type="hidden" id="c_empid" name="c_empid" value="@Model.c_empid" />
 
                 <label for="c_empname">Name</label>
@@ -26,31 +26,38 @@
                 <input type="text" name="c_empgender" id="c_empgender" value="@Model.c_empgender" readonly>
 
                 <label for="c_empdob">Date of Birth</label>
-                <input id="c_empdob" name="c_empdob" value="@Model.c_empdob.ToString("yyyy-MM-dd")" readonly/>
+                <input id="c_empdob" name="c_empdob" value="@Model.c_empdob.ToString("yyyy-MM-dd")" readonly />
 
-                <label for="c_empshift">Shift</label><br>
-                @foreach (var shift in shifts)
-                {
-                    
-                    <input type="checkbox" id="@shift" name="c_empshift" value="@shift" @(Model.c_empshift.Contains(shift) ?
-                    "checked" : "") />
-                    <label for="@shift">@shift</label>
-                }<br>
+                <div>
+                    <label for="c_empshift">Shift:</label>
+                    <div>
+                        <input id="M" name="c_empshift" type="checkbox" value="Morning"
+                            checked='@(@Model.c_empshift!=null && Model.c_empshift.Contains("Morning"))' />
+                        <input id="A" name="c_empshift" type="checkbox" value="Afternoon"
+                            checked='@(@Model.c_empshift!=null && Model.c_empshift.Contains("Afternoon"))' /><br>
+                    </div>
+
+                </div>
 
                 <label for="c_empimg">Image</label>
-                <input type="file" id="c_empimg" name="c_empimg" />
+                <input id="c_empimg" name="c_empimg" value="@Model.c_empimg" readonly />
 
                 <label for="c_empdepartment">Department</label>
                 <select id="c_empdepartment" name="c_empdepartment">
-                    @{
-                        foreach (var department in ViewBag.Departments)
-                        {
-                            var isSelected = department.c_departmentname == Model.c_empdepartment ? "selected" : "";
-                            <option value="@department.c_departmentname" selected="@isSelected">@department.c_departmentname
-                            </option>
-                        }
-                    }
+                @{
+                foreach (var department in ViewBag.Departments)
+                {
+                var isSelected = department.c_departmentname == Model.c_empdepartment ? "selected" : "";
+                <option value="@department.c_departmentname" selected="@isSelected">@department.c_departmentname
+                </option>
+                }
+                }
                 </select><br><br>
+                @* <label for="c_empdepartment">Department</label>
+                <select id="c_empdepartment" name="c_empdepartment" asp-for="c_empdepartment"
+                    asp-items="@(new SelectList(ViewBag.Departments, "c_departmentname", "c_departmentname", Model.c_empdepartment))">
+                </select><br><br> *@
+
 
 
                 <input type="submit" value="Update Employee" class="k-button k-primary" />
@@ -69,7 +76,19 @@
                 $("#c_empdob").kendoDatePicker({
                     format: "yyyy-MM-dd"
                 });
-                $("#c_empimg").kendoUpload();
+
+                $("#A").kendoCheckBox({
+                    label: "Afternoon",
+                    size: "large",
+                    rounded: "large"
+                });
+                $("#M").kendoCheckBox({
+                    label: "Morning",
+                    size: "large",
+                    rounded: "large"
+                });
+
+                $("#c_empimg").kendoTextBox();
                 $("#c_empdepartment").kendoDropDownList();
             });
         </script>

@@ -2,60 +2,67 @@
 
 @{
     ViewBag.Title = "Index";
-                    var role  = Context.Session.GetString("role");  
-                    var username = Context.Session.GetString("username");            
+    var role = Context.Session.GetString("role");
+    var username = Context.Session.GetString("username");
 
 }
 
 <h2>Employee List</h2>
 
 <p>
-    @Html.ActionLink("Add Employee", "Add", "KendoComponentEmployee", null, new { @class = "btn btn-primary" })&nbsp;<button class="btn btn-primary" onclick="logout()">Logout</button>
+    @Html.ActionLink("Add Employee", "Add", "KendoComponentEmployee", null, new { @class = "k-button" })
+    <button class='k-button' style='background-color: gray; color: white;' onclick="logout()">Logout</button>
 </p>
+<div id="grid"></div>
 
-<div class="table-responsive">
-    <table class="table table-striped table-bordered">
-        <thead class="thead-dark">
-            <tr>
-                <th>#</th>
-                <th>Name</th>
-                <th>Gender</th>
-                <th>Date of Birth</th>
-                <th>Shift</th>
-                <th>Image</th>
-                <th>Department</th>
-                <th>Action</th>
-            </tr>
-        </thead>
-        <tbody>
-            @foreach (var item in Model)
-            {
-                <tr>
-                    <td>@item.c_empid</td>
-                    <td>@item.c_empname</td>
-                    <td>@item.c_empgender</td>
-                    <td>@item.c_empdob.ToShortDateString()</td>
-                    <td>@string.Join(", ", item.c_empshift)</td>
-                    <td><img src="@Url.Content("~/uploads/" + item.c_empimg)" alt="Employee Image" style="max-width: 100px;" /></td>
-                    <td>@item.c_empdepartment</td>
-                    <td>
-                        @Html.ActionLink("Details", "Details", new { id = item.c_empid }, new { @class = "btn btn-info btn-sm" })
-                        @if (role == "Admin"){
-                                                   @Html.ActionLink("Edit", "Edit", new { id = item.c_empid }, new { @class = "btn btn-primary btn-sm" })
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
+    integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-                                                <button class="btn btn-danger btn-sm delete-btn" data-empid="@item.c_empid">Delete</button>
+<script src="https://kendo.cdn.telerik.com/2021.2.616/js/kendo.all.min.js"></script>
+<link rel="stylesheet" href="https://kendo.cdn.telerik.com/2021.2.616/styles/kendo.common.min.css" />
+<link rel="stylesheet" href="https://kendo.cdn.telerik.com/2021.2.616/styles/kendo.default.min.css" />
 
-                        }
-                    </td>
-                     
-                </tr>
-            }
-        </tbody>
-    </table>
-</div>
 @section Scripts {
     <script>
         $(document).ready(function () {
+            var employeeData = @Html.Raw(Json.Serialize(Model));
+
+            $("#grid").kendoGrid({
+                dataSource: {
+                    data: employeeData,
+                    schema: {
+                        model: {
+                            fields: {
+                                c_empid: { type: "number" },
+                                c_empname: { type: "string" },
+                                c_empgender: { type: "string" },
+                                c_empdob: { type: "date" },
+                                c_empshift: { type: "string" },
+                                c_empdepartment: { type: "string" },
+                                c_empimg: { type: "string" }
+                            }
+                        }
+                    }
+                },
+                columns: [
+                    { field: "c_empid", hidden: true },
+                    { field: "c_empname", title: "Name" },
+                    { field: "c_empgender", title: "Gender" },
+                    { field: "c_empdob", title: "Dob", template: "#= kendo.toString(c_empdob, 'dd/MM/yyyy') #" },
+                    {
+                        field: "c_empshift",
+                        title: "Shift",
+                        template: "#if (c_empshift instanceof Array) { # #= c_empshift.join(', ') # #} else {# #= c_empshift # #}#"
+                    },
+                    { field: "department", title: "Department" },
+                    { field: "c_empimg", title: "Employee Pic", template: "<img src='/uploads/${c_empimg}' alt='#= c_empimg #' width='100px' />" },
+                ],
+                sortable: true,
+            });
+
+
+
             $(".delete-btn").click(function () {
                 var empId = $(this).data("empid");
                 if (confirm("Are you sure you want to delete this employee?")) {
@@ -76,10 +83,7 @@
 
 
         function logout() {
-        window.location.href = '@Url.Action("Login", "KendoComponentUser")';
+            window.location.href = '@Url.Action("Login", "KendoComponentUser")';
         }
     </script>
 }
-
-
-

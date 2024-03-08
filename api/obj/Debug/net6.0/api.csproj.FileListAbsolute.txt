@@ -268,3 +268,8 @@ G:\MasterProject\api\obj\Debug\net6.0\refint\api.dll
 G:\MasterProject\api\obj\Debug\net6.0\api.pdb
 G:\MasterProject\api\obj\Debug\net6.0\api.genruntimeconfig.cache
 G:\MasterProject\api\obj\Debug\net6.0\ref\api.dll
+G:\MasterProject\api\bin\Debug\net6.0\Newtonsoft.Json.dll
+G:\MasterProject\api\bin\Debug\net6.0\ServiceStack.Common.dll
+G:\MasterProject\api\bin\Debug\net6.0\ServiceStack.Interfaces.dll
+G:\MasterProject\api\bin\Debug\net6.0\ServiceStack.Redis.dll
+G:\MasterProject\api\bin\Debug\net6.0\ServiceStack.Text.dll

@@ -1,0 +1,230 @@
+@model tblUpdate
+@{
+    ViewData["Title"] = "UpdateEmployeeData";
+}
+<link rel="stylesheet" href="https://kendo.cdn.telerik.com/2022.1.119/styles/kendo.default-v2.min.css" />
+<h2>@ViewBag.id</h2>
+
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <h2>Update Employee Data</h2>
+        </div>
+    </div>
+
+    <form method="post">
+        <input type="hidden" asp-for="c_empid">
+
+        <div class="mb-3">
+            <label for="c_empname" class="form-label">Employee Name</label>
+            <input class="form-control" name="c_empname" id="c_empname" readonly>
+            <div class="invalid-feedback">
+                Please enter employee name.
+            </div>
+        </div>
+        <div class="mb-3">
+            <label for="c_empgender" class="form-label">Employee Gender</label>
+            <input class="form-control" name="c_empgender" id="c_empgender" readonly>
+            <div class="invalid-feedback">
+                Please enter employee gender.
+            </div>
+        </div>
+
+        <div class="mb-3">
+            <label for="c_empdob" class="form-label">Date of Birth</label>
+            <input type="date" class="form-control" name="c_empdob" id="c_empdob" readonly>
+            <div class="invalid-feedback">
+                Please enter date of birth.
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="c_empshift">Shift</label><br>
+            <div>
+                <input id="M" type="checkbox" name="c_empshift" value="Morning" />
+                <input id="A" type="checkbox" name="c_empshift" value="Afternoon" />
+            </div>
+        </div><br>
+
+
+        <div class="form-group">
+            <label class="control-label">Department</label>
+            <select class="form-control" id="c_empdepartment" name="c_empdepartment">
+                <option value="">Select Department</option>
+            </select>
+            <span class="text-danger"></span>
+        </div>
+
+        <div class="mb-3">
+            <label for="c_empimg" class="form-label">Photo</label>
+            <input class="form-control" name="c_empimg" id="c_empimg" readonly>
+        </div>
+
+
+
+        <button type="submit" id="updateEmployeeBtn" class="k-button k-secondary">Update Employee</button>
+
+    </form>
+</div>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script src="https://kendo.cdn.telerik.com/2022.1.119/js/jquery.min.js"></script>
+<script src="https://kendo.cdn.telerik.com/2022.1.119/js/kendo.all.min.js"></script>
+
+
+@section Scripts {
+    <script>
+        $(document).ready(function () {
+            $("#c_empname").kendoTextBox();
+            $("#c_empgender").kendoTextBox();
+
+            $("#c_empdob").kendoTextBox();
+            $("#c_empimg").kendoTextBox();
+
+            $("#A").kendoCheckBox({
+                size: "small",
+                label: "Afternoon",
+                rounded: "large"
+            });
+
+            $("#M").kendoCheckBox({
+                size: "small",
+                label: "Morning",
+                rounded: "large",
+            });
+
+            $("#c_empdepartment").kendoDropDownList();
+        });
+
+        $(document).ready(function () {
+
+            fetchEmployeeData();
+            var department;
+
+
+            $('#updateEmployeeBtn').click(function (event) {
+                event.preventDefault();
+
+                EditEmployee();
+            });
+        });
+
+        function fetchEmployeeData() {
+            $.ajax({
+                url: 'https://localhost:7084/api/EmployeeApi/' + @ViewBag.id,
+                method: 'GET',
+                timeout: 0,
+                success: function (response) {
+                    $('#c_empid').val(response.c_empid);
+                    $('#c_empname').val(response.c_empname);
+                    $('#c_empgender').val(response.c_empgender);
+
+                    $('#c_empdob').val(response.c_empdob.split('T')[0]);
+                    $('#c_empimg').val(response.c_empimg);
+
+                    $.each(response.c_empshift, function (index, value) {
+                        $("input[name='c_empshift'][value='" + value + "']").prop("checked", true);
+                    });
+
+
+                    $('#c_empdepartment').val(response.c_empdepartment);
+                    console.log(response.c_empdepartment)
+
+                    fetchDepartmentData(response);
+                    console.log(response)
+
+
+
+                },
+                error: function (xhr, status, error) {
+                    console.error('Error fetching employee data:', status, error);
+
+                }
+            });
+
+        }
+
+
+        function fetchDepartmentData(response) {
+            $.ajax({
+                url: 'https://localhost:7084/api/EmployeeApi/api/Department',
+                type: 'GET',
+                dataType: 'json',
+                success: function (data) {
+                    console.log(data);
+
+                    populateDepartmentDropdown(data, response);
+                },
+                error: function (xhr, status, error) {
+                    handleDepartmentFetchError(xhr, status, error);
+                }
+            });
+        }
+
+
+        function populateDepartmentDropdown(data, response) {
+            var dropdown = $('#c_empdepartment');
+            dropdown.empty().append($('<option value="">Select Department</option>'));
+
+
+            data.forEach(function (department) {
+                var option = $('<option>').val(department.c_departmentname).text(department.c_departmentname);
+                dropdown.append(option);
+
+                if (department.c_departmentid == response.c_empdepartment) {
+                    option.attr('selected', 'selected');
+                }
+            });
+
+            // Initialize the Kendo DropDownList after appending options
+            dropdown.kendoDropDownList();
+        }
+
+        function handleDepartmentFetchError(xhr, status, error) {
+            console.error('Error fetching departments:', status, error);
+            $('#departmentValidationError').text('Error fetching departments. Please try again.');
+        }
+
+
+        function EditEmployee() {
+            var formData = new FormData();
+
+            formData.append('c_empid', @ViewBag.id),
+                formData.append('c_empname', $('input[name="c_empname"]').val());
+            formData.append('c_empgender', $('input[name="c_empgender"]').val());
+            formData.append('c_empdob', $('input[name="c_empdob"]').val());
+
+            var selectedShifts = $('input[name="c_empshift"]:checked').map(function () { return $(this).val(); }).get();
+            formData.append('c_empshift', selectedShifts.join(','));
+
+            formData.append('c_empdepartment', $('#c_empdepartment').val());
+            formData.append('c_empimg', $('#c_empimg').val());
+
+            console.log($('input[name="c_empname"]').val());
+            console.log($('input[name="c_empgender"]').val());
+            console.log($('input[name="c_empdob"]').val());
+            console.log($('input[name="c_empshift"]:checked').map(function () { return $(this).val(); }).get().join());
+            console.log($('#c_empdepartment').val());
+            console.log($('#c_empimg').val());
+
+            $.ajax({
+                url: 'https://localhost:7084/api/EmployeeApi',
+                method: 'PUT',
+                timeout: 0,
+                processData: false,
+                contentType: false,
+                data: formData,
+                success: function (response) {
+                    alert('Successfully Edited Employee!');
+                    window.location.href = '/ApiKendoComponentEmployee/Index';
+                },
+                error: function (xhr, status, error) {
+                    console.error('Error fetching departments:', status, error);
+                    console.log('Response:', xhr.responseText);
+                    $('#departmentValidationError').text('Error fetching departments. Please try again.');
+                }
+            });
+        }
+
+    </script>
+}

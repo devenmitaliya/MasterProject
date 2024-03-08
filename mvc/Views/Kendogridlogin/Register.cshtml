@@ -1,0 +1,67 @@
+@model mvc.Models.tblUser
+
+@{
+    ViewData["Title"] = "Registration";
+}
+
+<link rel="stylesheet" href="https://kendo.cdn.telerik.com/2021.3.1109/styles/kendo.common.min.css" />
+<link rel="stylesheet" href="https://kendo.cdn.telerik.com/2021.3.1109/styles/kendo.default.min.css" />
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://kendo.cdn.telerik.com/2021.3.1109/js/kendo.all.min.js"></script>
+
+<h2>Registration</h2> <br>
+
+<form id="registrationForm">
+    <label for="uname">Username:</label>
+    <input type="text" id="uname" name="uname" /><br /><br />
+
+    <label for="uemail">Email:</label>
+    <input type="email" id="uemail" name="uemail" /><br /><br />
+
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" /><br /><br />
+
+    <label for="role">Role:</label>
+    <input type="text" id="role" name="role" value="User" /><br /><br />
+
+    <button type="button" id="registrationButton">Register</button><br /><br />
+    <p>Already have an account? <a href="/KendoGridLogin/Login">Login here</a>.</p>
+</form>
+
+@section Scripts {
+    <script>
+        $(document).ready(function () {
+            // Set default value for the role input
+            $("#role").val("User");
+
+            $("#registrationButton").click(function () {
+                var formData = {
+                    c_uname: $("#uname").val(),
+                    c_u+email: $("#uemail").val(),
+                    c_password: $("#password").val(),
+                    c_role: $("#role").val()
+                };
+
+                $.ajax({
+                    url: "/KendoGridLogin/RegisterUser",
+                    type: "POST",
+                    contentType: "application/json",
+                    dataType: "json",
+                    data: JSON.stringify(formData),
+                    success: function (result) {
+                        if (result.success) {
+                            alert("Successfully Registered");
+                            window.location.href = "/KendoGridLogin/Login";
+                        } else {
+                            alert(result.message);
+                        }
+                    },
+                    error: function (xhr, status, error) {
+                        console.error("AJAX Error:", status, error);
+                        alert("An error occurred during registration.");
+                    }
+                });
+            });
+        });
+    </script>
+}

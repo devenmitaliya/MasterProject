@@ -37,11 +37,13 @@ namespace mvc.Controllers
             ViewData["Username"] = username;
             // var username1 = ViewBag.username; // Assuming ViewBag.username contains the dynamic username
             HttpContext.Session.SetString("username", username);
-            var ok = HttpContext.Session.GetString("username");
+            var uname = HttpContext.Session.GetString("username");
 
             //  ViewBag.role = role;
             Console.WriteLine("IDDDDD::::::::::::::: " + ViewBag.username);
-            Console.WriteLine("OKOKOKOKOKOKOKOKOKO::::::::::::::: " + ok);
+            // Console.WriteLine("OKOKOKOKOKOKOKOKOKO::::::::::::::: " + ok);
+
+
             return View();
         }
         // [Route("Update")]

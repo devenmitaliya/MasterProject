@@ -35,6 +35,8 @@ namespace api.Controllers
         public IActionResult Dashboard()
         {
             var session = HttpContext.Session;
+            Console.WriteLine(session.GetString("username"));
+
             if (string.IsNullOrEmpty(session.GetString("username")) || string.IsNullOrEmpty(session.GetString("email")))
             {
                 return RedirectToAction("Login");
@@ -48,12 +50,13 @@ namespace api.Controllers
         public IActionResult Index()
         {
             var session = HttpContext.Session;
+            Console.WriteLine(session.GetString("username"));
             if (string.IsNullOrEmpty(session.GetString("username")) || string.IsNullOrEmpty(session.GetString("email")))
             {
                 return RedirectToAction("Login");
             }
 
-            return Ok();
+            return Ok(session.GetString("username"));
         }
 
 
@@ -104,15 +107,11 @@ namespace api.Controllers
             }
 
             Console.WriteLine(emp);
+            var session = _httpContextAccessor.HttpContext.Session;
+            var username = session.GetString("username");
             _employeeRepository.AddEmployeeApi(emp);
             return Ok("Employee added successfully");
         }
-
-
-
-
-
-
 
 
         [HttpGet("current/{username}")]

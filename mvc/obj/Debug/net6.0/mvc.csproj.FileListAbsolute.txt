@@ -297,3 +297,8 @@ G:\MasterProject\mvc\obj\Debug\net6.0\refint\mvc.dll
 G:\MasterProject\mvc\obj\Debug\net6.0\mvc.pdb
 G:\MasterProject\mvc\obj\Debug\net6.0\mvc.genruntimeconfig.cache
 G:\MasterProject\mvc\obj\Debug\net6.0\ref\mvc.dll
+G:\MasterProject\mvc\bin\Debug\net6.0\Newtonsoft.Json.dll
+G:\MasterProject\mvc\bin\Debug\net6.0\ServiceStack.Common.dll
+G:\MasterProject\mvc\bin\Debug\net6.0\ServiceStack.Interfaces.dll
+G:\MasterProject\mvc\bin\Debug\net6.0\ServiceStack.Redis.dll
+G:\MasterProject\mvc\bin\Debug\net6.0\ServiceStack.Text.dll

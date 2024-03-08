@@ -1,0 +1,86 @@
+@model List<tblEmployee>
+@{
+    var uname = Context.Session.GetString("usernmame");
+}
+<h2>Index</h2>
+<p>
+    @Html.ActionLink("Add Employee", "Add", "ApiKendoComponentEmployee", null, new { @class = "k-button" })
+    <button class='k-button' style='background-color: gray; color: white;' onclick="logout()">Logout</button>
+</p>
+
+<div id="grid"></div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
+    integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://kendo.cdn.telerik.com/2021.2.616/js/kendo.all.min.js"></script>
+<link rel="stylesheet" href="https://kendo.cdn.telerik.com/2021.2.616/styles/kendo.common.min.css" />
+<link rel="stylesheet" href="https://kendo.cdn.telerik.com/2021.2.616/styles/kendo.default.min.css" />
+
+
+@section scripts {
+    <script>
+        $(document).ready(function () {
+            var name = '@ViewBag.username';
+
+            $("#grid").kendoGrid({
+                dataSource: {
+                    transport: {
+                        read: {
+                            url: 'https://localhost:7084/api/EmployeeApi/current/' + name,
+                            dataType: "json"
+                        }
+                    },
+                    schema: {
+                        model: {
+                            fields: {
+                                c_empid: { type: "number" },
+                                c_empname: { type: "string" },
+                                c_empgender: { type: "string" },
+                                c_empdob: { type: "date" },
+                                c_empshift: { type: "string" },
+                                c_empdepartment: { type: "string" },
+                                c_empimg: { type: "string" }
+                            }
+                        }
+                    }
+                },
+                columns: [
+                    { field: "c_empid", hidden: true },
+                    { field: "c_empname", title: "Name" },
+                    { field: "c_empgender", title: "Gender" },
+                    { field: "c_empdob", title: "Dob", template: "#= kendo.toString(c_empdob, 'dd/MM/yyyy') #" },
+                    {
+                        field: "c_empshift",
+                        title: "Shift",
+                        template: "#if (c_empshift instanceof Array) { # #= c_empshift.join(', ') # #} else {# #= c_empshift # #}#"
+                    },
+                    { field: "department", title: "Department" },
+                    { field: "c_empimg", title: "Employee Pic", template: "<img src='/uploads/${c_empimg}' alt='#= c_empimg #' width='100px' />" },
+                   
+                ],
+                sortable: true,
+
+            });
+        });
+
+        function deleteEmployee(id) {
+            if (confirm("Are you sure you want to delete this employee?")) {
+                $.ajax({
+                    url: `https://localhost:7084/api/EmployeeApi/${id}`,
+                    method: 'DELETE',
+                    success: function (response) {
+                        window.location.reload();
+                    },
+                    error: function (xhr, status, error) {
+                        console.error("Error deleting employee:", error);
+                    }
+                });
+            }
+        }
+
+        function logout() {
+            window.location.href = "/ApiKendoComponentUser/Login"
+        }
+    </script>
+}

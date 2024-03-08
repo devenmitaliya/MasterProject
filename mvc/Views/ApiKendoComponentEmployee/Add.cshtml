@@ -1,0 +1,187 @@
+@model mvc.Models.tblEmployee
+@{
+    var shifts = new List<string> { "Morning", "Afternoon" };
+}
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Add Employee</title>
+    <link rel="stylesheet" href="https://kendo.cdn.telerik.com/2022.1.119/styles/kendo.default-v2.min.css" />
+</head>
+
+<body>
+    <div id="example">
+        <form id="employeeForm" enctype="multipart/form-data">
+            <div class="k-content">
+                <div>
+                    <label for="c_empname">Name</label>
+                    <input id="c_empname" name="c_empname" />
+                </div><br>
+
+                <label for="c_empgender">Gender</label><br>
+                <div>
+                    <input id="empMGender" name="c_empgender" type="radio" value="Male">
+                    <input id="empFGender" name="c_empgender" type="radio" value="Female">
+                    <input id="empOGender" name="c_empgender" type="radio" value="Other">
+                </div><br>
+
+                <div>
+                    <label for="c_empdob">Date of Birth</label>
+                    <input id="c_empdob" name="c_empdob" /><br>
+                </div><br>
+
+                <div class="form-group">
+                    <label for="c_empshift">Shift</label><br>
+                    <div>
+                        <input id="M" type="checkbox" name="c_empshift" value="Morning" />
+                        <input id="A" type="checkbox" name="c_empshift" value="Afternoon" />
+                    </div>
+                </div><br>
+
+                <div class="form-group">
+                    <label for="photo">Image</label>
+                    <input id="photo" asp-for = "photo" name="photo" />
+                </div><br>
+
+                 @* <div class="form-group">
+            <label for="photo">Image</label>
+            <input id="filePicker" kendo-upload asp-for="c_empimg">
+        </div> *@
+
+                <div class="form-group">
+                    <div>
+                        <label>Department</label>
+                        <select class="form-control" id="c_empdepartment" name="c_empdepartment">
+                            <option value="">Select Department</option>
+                        </select>
+                        <span class="text-danger" id="departmentValidationError"></span>
+                    </div>
+                </div><br>
+
+
+                <button type="button" class="k-button k-primary" onclick="addEmployee()">Add Employee</button>
+            </div>
+        </form>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    @section Scripts {
+        <script src="https://kendo.cdn.telerik.com/2022.1.119/js/jquery.min.js"></script>
+        <script src="https://kendo.cdn.telerik.com/2022.1.119/js/kendo.all.min.js"></script>
+        
+        <script>
+            $(document).ready(function () {
+                $("#c_empname").kendoTextBox();
+                $("#c_empdob").kendoDatePicker({
+                    format: "yyyy-MM-dd"
+                });
+
+                $("#empMGender").kendoRadioButton({
+                    label: "Male",
+                    size: "medium"
+                });
+
+                $("#empFGender").kendoRadioButton({
+                    label: "Female",
+                    size: "medium"
+                });
+                $("#empOGender").kendoRadioButton({
+                    label: "Other",
+                    size: "medium"
+                });
+
+
+                $("#A").kendoCheckBox({
+                    label: "Afternoon",
+                    size: "medium",
+                    rounded: "large"
+                });
+
+                $("#M").kendoCheckBox({
+                    label: "Morning",
+                    size: "medium",
+                    rounded: "large"
+                });
+
+                $("#c_empdepartment").kendoDropDownList();
+                      @* $("#photo").kendoUpload(); *@
+
+
+                setTimeout(function () {
+                    loadDepartments();
+                    console.log('Employee data loaded successfully');
+                }, 500);
+            });
+
+            function loadDepartments() {
+                $.ajax({
+                    url: 'https://localhost:7084/api/EmployeeApi/api/Department',
+                    type: 'GET',
+                    dataType: 'json',
+                    success: function (data) {
+                        console.log('Department data:', data);
+
+                        if (Array.isArray(data)) {
+                            var dropdown = $('#c_empdepartment');
+                            dropdown.empty().append($('<option value="">Select Department</option>'));
+
+                            data.forEach(function (department) {
+                                console.log('Department:', department);
+                                dropdown.append($('<option>').val(department.c_departmentname).text(department.c_departmentname));
+                            });
+
+                            dropdown.kendoDropDownList();
+                            dropdown.data("kendoDropDownList").value(data[0].c_departmentname);
+                        } else {
+                            console.error('Invalid data format:', data);
+                        }
+                    },
+                    error: function (xhr, status, error) {
+                        console.error('Error fetching departments:', status, error);
+                        console.log('Response:', xhr.responseText);
+                        $('#departmentValidationError').text('Error fetching departments. Please try again.');
+                    }
+                });
+            };
+
+            function addEmployee() {
+    var formData = new FormData();
+    var photoFile = $('#photo')[0].files[0];
+
+    formData.append('c_empname', $('#c_empname').val());
+    formData.append('c_empgender', $('input[name="c_empgender"]:checked').val());
+    formData.append('c_empdob', $('#c_empdob').val());
+    formData.append('c_empshift', $('input[name="c_empshift"]:checked').map(function () { return $(this).val(); }).get().join(','));
+    formData.append('c_empdepartment', $('#c_empdepartment').val());
+    formData.append('c_empimg', 'a'); // Assuming you still need this value
+    formData.append('c_username', 'abc');
+    formData.append('photo', photoFile);
+
+    $.ajax({
+        url: 'https://localhost:7084/api/EmployeeApi',
+        method: 'POST',
+        timeout: 0,
+        processData: false,
+        contentType: false,
+        data: formData,
+        success: function (response) {
+            alert('Successfully Added Employee!');
+            window.location.href = '/ApiKendoComponentEmployee/Index';
+        },
+        error: function (xhr, status, error) {
+            console.error('Error:', error);
+            console.log('Response:', xhr.responseText);
+            alert('Error adding employee. Please check the console for details.');
+        }
+    });
+}
+
+
+
+        </script>
+    }
+</body>
+
+</html>

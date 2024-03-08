@@ -54,6 +54,30 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXBpQWpheFVzZXJcUmVnaXN0ZXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[G:/MasterProject/mvc/Views/ApiKendoComponentEmployee/Add.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXBpS2VuZG9Db21wb25lbnRFbXBsb3llZVxBZGQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/MasterProject/mvc/Views/ApiKendoComponentEmployee/Dashboard.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXBpS2VuZG9Db21wb25lbnRFbXBsb3llZVxEYXNoYm9hcmQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/MasterProject/mvc/Views/ApiKendoComponentEmployee/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXBpS2VuZG9Db21wb25lbnRFbXBsb3llZVxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/MasterProject/mvc/Views/ApiKendoComponentEmployee/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXBpS2VuZG9Db21wb25lbnRFbXBsb3llZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/MasterProject/mvc/Views/ApiKendoComponentUser/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXBpS2VuZG9Db21wb25lbnRVc2VyXExvZ2luLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/MasterProject/mvc/Views/ApiKendoComponentUser/Register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXBpS2VuZG9Db21wb25lbnRVc2VyXFJlZ2lzdGVyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [G:/MasterProject/mvc/Views/Employee/Add.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbG95ZWVcQWRkLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
@@ -86,14 +110,6 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS2VuZG9Db21wb25lbnRFbXBsb3llZVxBZG1pbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[G:/MasterProject/mvc/Views/KendoComponentEmployee/Delete.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS2VuZG9Db21wb25lbnRFbXBsb3llZVxEZWxldGUuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[G:/MasterProject/mvc/Views/KendoComponentEmployee/Details.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS2VuZG9Db21wb25lbnRFbXBsb3llZVxEZXRhaWxzLmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
 [G:/MasterProject/mvc/Views/KendoComponentEmployee/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS2VuZG9Db21wb25lbnRFbXBsb3llZVxFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
@@ -112,6 +128,14 @@ build_metadata.AdditionalFiles.CssScope =
 
 [G:/MasterProject/mvc/Views/Kendogridlogin/Index1.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS2VuZG9ncmlkbG9naW5cSW5kZXgxLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/MasterProject/mvc/Views/Kendogridlogin/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS2VuZG9ncmlkbG9naW5cTG9naW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/MasterProject/mvc/Views/Kendogridlogin/Register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS2VuZG9ncmlkbG9naW5cUmVnaXN0ZXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [G:/MasterProject/mvc/Views/KendoGridUser/Login.cshtml]

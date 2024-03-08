@@ -31,7 +31,7 @@ namespace mvc.Controllers
         }
 
         //  [Route("Register")]
-        public IActionResult Register()
+        public IActionResult Register() 
         {
             return View();
         }
